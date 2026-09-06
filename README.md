@@ -2,7 +2,7 @@
 
 <!-- HERO BANNER -->
 <a href="https://github.com/Priya-Ranjan-0201">
-  <img src="assets/hero-banner.svg" alt="Priya Ranjan — Engineer • Builder • Problem Solver" width="100%" />
+  <img src="assets/hero-header.svg" alt="Priya Ranjan — Engineer • Builder • Problem Solver" width="100%" />
 </a>
 
 <br/><br/>
