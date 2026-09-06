@@ -103,16 +103,18 @@
     <rect x="6" y="6" width="106" height="106" rx="12" fill="#0A0E13" stroke="url(#cyanAccent)" stroke-width="1" stroke-opacity="0.4"/>
 
     <!-- Geometric "PR" Monogram -->
-    <g transform="translate(23, 23)">
-      <!-- 'P' Stem and Loop -->
-      <path d="M 8 10 L 8 62 M 8 10 L 26 10 C 35 10 40 15 40 24 C 40 33 35 38 26 38 L 8 38" 
-            stroke="#F0F6FC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <g>
+      <!-- Letter 'P' -->
+      <path d="M 25 33 L 25 85" stroke="#F0F6FC" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+      <path d="M 25 33 L 42 33 C 51 33 55 38 55 46 C 55 54 51 59 42 59 L 25 59" stroke="#F0F6FC" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+      <!-- Letter 'R' -->
+      <path d="M 62 33 L 62 85" stroke="#F0F6FC" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+      <path d="M 62 33 L 79 33 C 88 33 92 38 92 46 C 92 54 88 59 79 59 L 62 59" stroke="#F0F6FC" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
       
-      <!-- 'R' Leg Anchor with Cyan Accent -->
-      <path d="M 24 38 L 41 62" 
-            stroke="url(#cyanAccent)" stroke-width="5" stroke-linecap="round" fill="none" filter="url(#glow)"/>
-      <path d="M 24 38 L 41 62" 
-            stroke="#00F2FE" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <!-- 'R' Dynamic Cyan Leg with Glow -->
+      <path d="M 75 59 L 92 85" stroke="url(#cyanAccent)" stroke-width="5.5" stroke-linecap="round" fill="none" filter="url(#glow)"/>
+      <path d="M 75 59 L 92 85" stroke="#00F2FE" stroke-width="5.5" stroke-linecap="round" fill="none"/>
     </g>
 
     <!-- Status Dot in Corner -->
