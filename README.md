@@ -263,18 +263,18 @@ Real-time telemetry showing live development consistency:
 
 <!-- Dual Stats & Streak Cards (Dark Mode & Cyan Accent) -->
 <a href="https://github.com/Priya-Ranjan-0201">
-  <img src="https://github-readme-stats.vercel.app/api?username=Priya-Ranjan-0201&show_icons=true&theme=tokyonight&bg_color=0D1117&title_color=00F2FE&icon_color=00F2FE&text_color=8B949E&border_color=21262D&hide_border=false" alt="Priya Ranjan GitHub Stats" height="160" />
+  <img src="https://github-readme-stats-fast.vercel.app/api?username=Priya-Ranjan-0201&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&bg_color=0D1117&title_color=00F2FE&icon_color=00F2FE&text_color=8B949E&border_color=21262D&hide_border=false" alt="Priya Ranjan GitHub Stats" height="195" />
 </a>
 &nbsp;
 <a href="https://github.com/Priya-Ranjan-0201">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Priya-Ranjan-0201&theme=tokyonight&background=0D1117&stroke=21262D&ring=00F2FE&fire=38EF7D&currStreakLabel=00F2FE&sideLabels=8B949E&dates=8B949E&hide_border=false" alt="Priya Ranjan GitHub Streak" height="160" />
+  <img src="https://streak-stats.demolab.com/?user=Priya-Ranjan-0201&theme=tokyonight&background=0D1117&stroke=21262D&ring=00F2FE&fire=38EF7D&currStreakLabel=00F2FE&sideLabels=8B949E&dates=8B949E&hide_border=false" alt="Priya Ranjan GitHub Streak" height="195" />
 </a>
 
 <br/><br/>
 
 <!-- Top Languages Card -->
 <a href="https://github.com/Priya-Ranjan-0201">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Priya-Ranjan-0201&layout=compact&theme=tokyonight&bg_color=0D1117&title_color=00F2FE&text_color=8B949E&border_color=21262D&hide_border=false" alt="Top Languages" height="140" />
+  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Priya-Ranjan-0201&layout=compact&theme=tokyonight&bg_color=0D1117&title_color=00F2FE&text_color=8B949E&border_color=21262D&hide_border=false" alt="Top Languages" height="165" />
 </a>
 
 <br/><br/>
