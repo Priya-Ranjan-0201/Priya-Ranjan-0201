@@ -112,7 +112,7 @@ A curated index of public projects, system simulations, and technical exploratio
 <td width="50%" valign="top">
 
 <a href="https://github.com/Priya-Ranjan-0201/VIREONIQ">
-  <img src="assets/cards/card-vireoniq.svg" alt="01 VIREONIQ Card" width="100%" />
+  <img src="assets/cards/card-vireoniq-v2.svg" alt="01 VIREONIQ Card" width="100%" />
 </a>
 
 **01 / VIREONIQ**  
@@ -124,7 +124,7 @@ AI-driven platform designed for career intelligence, skill mapping, and guided t
 <td width="50%" valign="top">
 
 <a href="https://github.com/Priya-Ranjan-0201/TrustShield-X">
-  <img src="assets/cards/card-trustshield.svg" alt="02 TrustShield-X Card" width="100%" />
+  <img src="assets/cards/card-trustshield-v2.svg" alt="02 TrustShield-X Card" width="100%" />
 </a>
 
 **02 / TrustShield-X**  
@@ -138,7 +138,7 @@ Security framework examining defensive software paradigms, trust scoring, and an
 <td width="50%" valign="top">
 
 <a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR">
-  <img src="assets/cards/card-techontour.svg" alt="03 TECH-ON-TOUR Card" width="100%" />
+  <img src="assets/cards/card-techontour-v2.svg" alt="03 TECH-ON-TOUR Card" width="100%" />
 </a>
 
 **03 / TECH-ON-TOUR**  
@@ -150,7 +150,7 @@ A full-stack web platform built to demonstrate responsive interface architecture
 <td width="50%" valign="top">
 
 <a href="https://github.com/Priya-Ranjan-0201/HRCV-">
-  <img src="assets/cards/card-hrcv.svg" alt="04 HRCV- Card" width="100%" />
+  <img src="assets/cards/card-hrcv-v2.svg" alt="04 HRCV- Card" width="100%" />
 </a>
 
 **04 / HRCV-**  
@@ -164,7 +164,7 @@ Computer vision repository exploring human recognition, feature tracking, and im
 <td width="50%" valign="top">
 
 <a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI">
-  <img src="assets/cards/card-priocardix.svg" alt="05 Priocardix-AI Card" width="100%" />
+  <img src="assets/cards/card-priocardix-v2.svg" alt="05 Priocardix-AI Card" width="100%" />
 </a>
 
 **05 / Priocardix-AI**  
@@ -176,7 +176,7 @@ Predictive modeling project exploring machine learning applications in cardiac a
 <td width="50%" valign="top">
 
 <a href="https://github.com/Priya-Ranjan-0201/BrainCheck">
-  <img src="assets/cards/card-braincheck.svg" alt="06 BrainCheck Card" width="100%" />
+  <img src="assets/cards/card-braincheck-v2.svg" alt="06 BrainCheck Card" width="100%" />
 </a>
 
 **06 / BrainCheck**  
@@ -190,7 +190,7 @@ Exploratory diagnostic project analyzing cognitive benchmarks, pattern evaluatio
 <td colspan="2" valign="top">
 
 <a href="https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm">
-  <img src="assets/cards/card-diskscheduling.svg" alt="07 Disk Scheduling Algorithm Card" width="100%" />
+  <img src="assets/cards/card-diskscheduling-v2.svg" alt="07 Disk Scheduling Algorithm Card" width="100%" />
 </a>
 
 **07 / Disk_Scheduling_Algorithm**  
