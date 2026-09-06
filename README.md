@@ -24,12 +24,12 @@
     <img src="https://img.shields.io/badge/PORTFOLIO-ENTER_THE_MIND-0D1117?style=for-the-badge&logo=googlechrome&logoColor=00F2FE&labelColor=080B0F" alt="Portfolio" />
   </a>
   &nbsp;
-  <a href="REPLACE_THIS_WITH_LINKEDIN_URL">
-    <img src="https://img.shields.io/badge/LINKEDIN-CONNECT-0D1117?style=for-the-badge&logo=linkedin&logoColor=00F2FE&labelColor=080B0F" alt="LinkedIn" />
+  <a href="https://www.linkedin.com/in/priyaranjan01/">
+    <img src="https://img.shields.io/badge/LINKEDIN-priyaranjan01-0D1117?style=for-the-badge&logo=linkedin&logoColor=00F2FE&labelColor=080B0F" alt="LinkedIn" />
   </a>
   &nbsp;
-  <a href="mailto:REPLACE_THIS_WITH_EMAIL">
-    <img src="https://img.shields.io/badge/EMAIL-DIRECT_CONTACT-0D1117?style=for-the-badge&logo=gmail&logoColor=38EF7D&labelColor=080B0F" alt="Email" />
+  <a href="mailto:priye0201@gmail.com">
+    <img src="https://img.shields.io/badge/EMAIL-priye0201@gmail.com-0D1117?style=for-the-badge&logo=gmail&logoColor=38EF7D&labelColor=080B0F" alt="Email" />
   </a>
 </p>
 
@@ -316,8 +316,8 @@ Whether you want to discuss system architectures, collaborate on an open-source 
 <div align="left">
 
 - 🌐 **Portfolio:** [REPLACE_THIS_WITH_PORTFOLIO_URL](REPLACE_THIS_WITH_PORTFOLIO_URL)
-- 💼 **LinkedIn:** [REPLACE_THIS_WITH_LINKEDIN_URL](REPLACE_THIS_WITH_LINKEDIN_URL)
-- ✉️ **Direct Email:** [REPLACE_THIS_WITH_EMAIL](mailto:REPLACE_THIS_WITH_EMAIL)
+- 💼 **LinkedIn:** [linkedin.com/in/priyaranjan01](https://www.linkedin.com/in/priyaranjan01/)
+- ✉️ **Direct Email:** [priye0201@gmail.com](mailto:priye0201@gmail.com)
 - 🐙 **GitHub:** [github.com/Priya-Ranjan-0201](https://github.com/Priya-Ranjan-0201)
 
 </div>
