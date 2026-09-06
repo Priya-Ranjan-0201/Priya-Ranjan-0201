@@ -20,8 +20,8 @@
     <img src="https://img.shields.io/badge/GITHUB-Priya--Ranjan--0201-0D1117?style=for-the-badge&logo=github&logoColor=00F2FE&labelColor=080B0F" alt="GitHub Profile" />
   </a>
   &nbsp;
-  <a href="REPLACE_THIS_WITH_PORTFOLIO_URL">
-    <img src="https://img.shields.io/badge/PORTFOLIO-ENTER_THE_MIND-0D1117?style=for-the-badge&logo=googlechrome&logoColor=00F2FE&labelColor=080B0F" alt="Portfolio" />
+  <a href="https://github.com/Priya-Ranjan-0201">
+    <img src="https://img.shields.io/badge/PORTFOLIO-IN_DEVELOPMENT-0D1117?style=for-the-badge&logo=googlechrome&logoColor=00F2FE&labelColor=080B0F" alt="Portfolio In Development" />
   </a>
   &nbsp;
   <a href="https://www.linkedin.com/in/priyaranjan01/">
@@ -315,7 +315,7 @@ Whether you want to discuss system architectures, collaborate on an open-source 
 
 <div align="left">
 
-- 🌐 **Portfolio:** [REPLACE_THIS_WITH_PORTFOLIO_URL](REPLACE_THIS_WITH_PORTFOLIO_URL)
+- 🌐 **Portfolio:** *Interactive 3D Experience — In Active Development*
 - 💼 **LinkedIn:** [linkedin.com/in/priyaranjan01](https://www.linkedin.com/in/priyaranjan01/)
 - ✉️ **Direct Email:** [priye0201@gmail.com](mailto:priye0201@gmail.com)
 - 🐙 **GitHub:** [github.com/Priya-Ranjan-0201](https://github.com/Priya-Ranjan-0201)
