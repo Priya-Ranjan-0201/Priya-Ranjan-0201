@@ -41,7 +41,7 @@
 
 ```
 WHO_I_AM:
-├─ Name:         Priya Ranjan
+├─ Name:         Priya Ranjan.
 ├─ Discipline:   Computer Science & Engineering
 ├─ Core Mindset: Problem-first engineering over tech-stack chasing
 ├─ Focus Areas:  Artificial Intelligence • Cybersecurity • Full-Stack Systems
