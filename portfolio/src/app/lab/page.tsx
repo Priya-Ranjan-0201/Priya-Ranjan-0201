@@ -297,26 +297,24 @@ export default function LabPage() {
   }, [activeSlug]);
 
   return (
-    <div className="lab-root">
-      {/* ── 01. LAB HERO ─────────────────── */}
-      <section className="lab-hero-section">
-        <div className="lab-container">
-          <div className="lab-hero-header">
-            <div className="lab-eyebrow">
-              <Sparkles size={13} className="text-cyan-400 inline mr-1" />
-              <span>THE DIGITAL LAB &bull; 06 REAL INTERACTIVE EXPERIMENTS</span>
-            </div>
-
-            <h1 className="lab-main-title">
-              EXPERIMENTAL SANDBOX<br />
-              <span className="text-gradient-cyan">&amp; PROCEDURAL</span> PLAYGROUND.
-            </h1>
-
-            <p className="lab-lead-para">
-              Real engineering curiosity extends beyond structured production apps.
-              This laboratory houses mathematical simulations, physics algorithms, and graphics experiments built to test the limits of the browser runtime.
-            </p>
+    <div className="lab-page-wrapper">
+      <div className="subpage-container">
+        {/* ── 01. LAB HERO ─────────────────── */}
+        <div className="subpage-header-block">
+          <div className="subpage-eyebrow">
+            <span className="w-2 h-2 rounded-full bg-[rgb(var(--accent))]" />
+            <span>THE DIGITAL LAB &bull; 06 REAL INTERACTIVE EXPERIMENTS</span>
           </div>
+
+          <h1 className="subpage-headline">
+            Experimental Sandbox &amp; Procedural Playground.
+          </h1>
+
+          <p className="subpage-lead-para">
+            Real engineering curiosity extends beyond structured production apps.
+            This laboratory houses mathematical simulations, physics algorithms, and graphics experiments built to test the limits of the browser runtime.
+          </p>
+        </div>
 
           {/* Filter Bar */}
           <div className="lab-filter-bar">
@@ -432,7 +430,7 @@ export default function LabPage() {
             {activeSlug === 'type-distortion' && (
               <div className="p-8 rounded-2xl bg-black/50 border border-white/10 m-4 flex flex-col items-center justify-center text-center space-y-6 select-none">
                 <div
-                  className="text-3xl sm:text-5xl font-black font-mono tracking-tighter uppercase text-white hover:tracking-[0.12em] hover:scale-105 hover:skew-x-6 hover:text-cyan-300 transition-all duration-300 cursor-pointer"
+                  className="text-3xl sm:text-5xl font-black font-mono tracking-tighter uppercase text-white hover:tracking-[0.12em] hover:scale-105 hover:skew-x-6 hover:text-[#123023] transition-all duration-300 cursor-pointer"
                   onMouseEnter={() => sound.playHover(700)}
                 >
                   KINETIC DISTORTION
@@ -456,7 +454,7 @@ export default function LabPage() {
               </div>
               <div className="meta-right">
                 <span className="key-learning-badge">
-                  <CheckCircle2 size={12} className="inline mr-1 text-cyan-400" />
+                  <CheckCircle2 size={12} className="inline mr-1 text-[rgb(var(--accent))]" />
                   {activeExp.keyLearning}
                 </span>
               </div>
@@ -496,7 +494,7 @@ export default function LabPage() {
                         setActiveSlug(exp.slug);
                       }}
                     >
-                      <Play size={12} className={isSelected ? 'text-cyan-400' : ''} />
+                      <Play size={12} className={isSelected ? 'text-[rgb(var(--accent))]' : ''} />
                       <span>{isSelected ? 'Simulating' : 'Preview'}</span>
                     </button>
 
@@ -514,7 +512,6 @@ export default function LabPage() {
             })}
           </div>
         </div>
-      </section>
     </div>
   );
 }

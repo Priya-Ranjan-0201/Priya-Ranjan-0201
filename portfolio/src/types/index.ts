@@ -139,6 +139,30 @@ export interface ProjectMetric {
   detail?: string;
 }
 
+export interface ProjectDNA {
+  nodes: string[];
+}
+
+export interface ProjectThinkingMode {
+  whatIBuilt: string;
+  problem: string;
+  tradeoff: string;
+  decision: string;
+  learning: string;
+}
+
+export interface ProjectBuildTraceStep {
+  phase: 'IDEA' | 'PROTOTYPE' | 'BUILD' | 'REVISE' | 'CURRENT';
+  title: string;
+  detail: string;
+}
+
+export interface ProjectRelatedItems {
+  skills: string[];
+  projects: { title: string; slug: string }[];
+  experiments?: string[];
+}
+
 export interface Project {
   id: string;
   slug: string;
@@ -177,6 +201,11 @@ export interface Project {
   heroImage?: string;
   images: string[];
   coreVisual: CoreState;
+  domain?: 'AI' | 'CYBERSECURITY' | 'FULL STACK' | 'COMPUTER VISION' | 'SYSTEMS' | 'PRODUCT';
+  dna?: ProjectDNA;
+  thinkingMode?: ProjectThinkingMode;
+  buildTrace?: ProjectBuildTraceStep[];
+  relatedItems?: ProjectRelatedItems;
 }
 
 export interface ProjectLink {

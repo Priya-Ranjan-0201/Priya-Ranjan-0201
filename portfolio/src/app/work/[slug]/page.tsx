@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { useParams, notFound } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowLeft,
@@ -22,8 +21,13 @@ import {
   Workflow,
   Code2,
   Terminal,
+  Compass,
+  GitBranch,
+  Network,
+  Share2,
 } from 'lucide-react';
 import { GithubIcon } from '@/components/ui/Icons';
+import ProjectVisual from '@/components/work/ProjectVisual';
 import { projects, getProjectBySlug } from '@/data/projects';
 import { useSettingsStore } from '@/stores/settings-store';
 import { playSound } from '@/lib/sound';
@@ -33,7 +37,8 @@ export default function ProjectCaseStudy() {
   const slug = params.slug as string;
   const project = getProjectBySlug(slug);
 
-  const [viewMode, setViewMode] = useState<'PRODUCT' | 'SYSTEM'>('PRODUCT');
+  const [perspective, setPerspective] = useState<'PRODUCT' | 'ENGINEERING'>('PRODUCT');
+  const [thinkingTab, setThinkingTab] = useState<'BUILT' | 'THOUGHT'>('BUILT');
   const [selectedArchNode, setSelectedArchNode] = useState<number>(0);
   const openArchitecture = useSettingsStore((s) => s.openArchitectureModal);
 
@@ -45,57 +50,67 @@ export default function ProjectCaseStudy() {
   const prevProject = projects[(currentIndex - 1 + projects.length) % projects.length];
   const nextProject = projects[(currentIndex + 1) % projects.length];
 
+  const productMode = project.productMode || (project as any).productModeData;
+  const systemMode = project.systemMode || (project as any).systemModeData;
+  const learnings = project.learnings || (project as any).learned;
+
   return (
-    <div className="case-root">
-      {/* ── PROJECT HERO ─────────────────────────────────── */}
-      <section className="case-hero-section">
-        <div className="case-container">
-          {/* Breadcrumb Row */}
-          <div className="case-breadcrumb-row">
-            <Link
-              href="/work"
-              className="back-link"
-              onClick={() => playSound('click')}
-            >
-              <ArrowLeft size={14} />
-              <span>/ WORK / {project.slug.toUpperCase()}</span>
-            </Link>
+    <div className="case-study-root min-h-screen bg-[rgb(var(--bg-primary))] text-[rgb(var(--fg-primary))] pt-36 sm:pt-44 pb-24">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8">
+        {/* ── BREADCRUMB ROW ───────────────────────────────── */}
+        <div className="flex flex-wrap items-center justify-between gap-4 pb-8 mb-8 border-b border-[rgb(var(--border))]">
+          <Link
+            href="/work"
+            className="inline-flex items-center gap-2 text-xs font-mono text-[rgb(var(--fg-muted))] hover:text-[rgb(var(--accent))] transition-colors"
+            onClick={() => playSound('click')}
+          >
+            <ArrowLeft size={13} />
+            <span>/ WORK / {project.slug.toUpperCase()}</span>
+          </Link>
 
-            <div className="breadcrumb-meta">
-              <span className="project-status-pill">{project.status}</span>
-              <span className="breadcrumb-index">
-                0{currentIndex + 1} / 0{projects.length}
-              </span>
-            </div>
+          <div className="flex items-center gap-4 text-xs font-mono text-[rgb(var(--fg-muted))]">
+            <span className="px-2.5 py-0.5 rounded bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] text-[rgb(var(--accent))] font-bold uppercase">
+              {project.status}
+            </span>
+            <span>
+              PROJECT 0{currentIndex + 1} / 0{projects.length}
+            </span>
           </div>
+        </div>
 
-          {/* Hero Header Area */}
-          <div className="case-hero-grid">
-            <div className="case-left-col">
-              <div className="case-eyebrow">
-                <Sparkles size={12} className="inline mr-1 text-cyan-400" />
-                <span>CASE STUDY &mdash; {project.year}</span>
+        {/* ── PROJECT HERO ─────────────────────────────────── */}
+        <section className="mb-20 sm:mb-24">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+            <div className="lg:col-span-7 min-w-0">
+              <div className="inline-flex items-center gap-2 text-xs font-mono tracking-widest text-[rgb(var(--accent))] font-bold uppercase mb-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[rgb(var(--accent))]" />
+                CASE STUDY &bull; {project.year} &bull; {project.category}
               </div>
 
-              <h1 className="case-main-title">{project.title}</h1>
-              <h2 className="case-sub-title">{project.subtitle}</h2>
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[rgb(var(--fg-primary))] mb-4 leading-[1.08]">
+                {project.title}
+              </h1>
 
-              <p className="case-description">
+              <h2 className="text-lg sm:text-xl font-medium text-[rgb(var(--fg-muted))] mb-6">
+                {project.subtitle}
+              </h2>
+
+              <p className="text-base sm:text-lg text-[rgb(var(--fg-muted))] leading-relaxed mb-8 max-w-2xl font-normal">
                 {project.longDescription || project.description}
               </p>
 
               {/* Action Buttons */}
-              <div className="case-actions-row">
+              <div className="flex flex-wrap items-center gap-3.5 mb-8">
                 {project.links.find((l) => l.type === 'live') && (
                   <a
                     href={project.links.find((l) => l.type === 'live')?.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-primary-glow"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-[rgb(var(--accent))] hover:opacity-90 text-white text-xs font-mono uppercase tracking-wider font-semibold transition-all shadow-sm"
                     onClick={() => playSound('click')}
                   >
                     <span>Live Application</span>
-                    <ExternalLink size={14} />
+                    <ExternalLink size={13} />
                   </a>
                 )}
 
@@ -104,7 +119,7 @@ export default function ProjectCaseStudy() {
                     href={project.links.find((l) => l.type === 'github')?.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-secondary-ghost"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-[rgb(var(--bg-secondary))] hover:bg-[rgb(var(--bg-tertiary))] text-[rgb(var(--fg-primary))] hover:text-[rgb(var(--accent))] border border-[rgb(var(--border))] text-xs font-mono uppercase tracking-wider transition-all shadow-sm"
                     onClick={() => playSound('click')}
                   >
                     <GithubIcon size={14} />
@@ -117,334 +132,559 @@ export default function ProjectCaseStudy() {
                     playSound('click');
                     openArchitecture(project.slug);
                   }}
-                  className="btn-arch-modal"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-[rgb(var(--bg-secondary))] hover:bg-[rgb(var(--bg-tertiary))] text-[rgb(var(--fg-muted))] hover:text-[rgb(var(--fg-primary))] border border-[rgb(var(--border))] text-xs font-mono transition-all"
                 >
-                  <Layers size={14} />
+                  <Layers size={13} />
                   <span>Architecture Modal</span>
                 </button>
               </div>
+
+              {/* ── SECTION 55: PROJECT DNA ─────────────────────── */}
+              {project.dna && (
+                <div className="mt-8 p-4 rounded-xl bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] flex flex-col gap-2 w-full max-w-xl shadow-xs">
+                  <div className="flex items-center justify-between text-[11px] font-mono text-[rgb(var(--fg-muted))] tracking-wider uppercase">
+                    <span>PROJECT DNA</span>
+                    <span className="text-[rgb(var(--accent))] font-bold">STRUCTURAL COMPOSITION</span>
+                  </div>
+                  <div className="flex flex-wrap items-center gap-2 text-xs font-mono pt-1">
+                    {project.dna.nodes.map((node, i) => (
+                      <span key={node} className="flex items-center gap-2">
+                        <span className="px-2.5 py-1 rounded bg-[rgb(var(--bg-tertiary))] border border-[rgb(var(--border))] text-[rgb(var(--fg-primary))] font-semibold">
+                          {node}
+                        </span>
+                        {i < project.dna!.nodes.length - 1 && (
+                          <span className="text-[rgb(var(--accent))] font-bold">───</span>
+                        )}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
 
-            {/* Right: Mockup / Visual */}
-            <div className="case-right-col">
-              <div className="laptop-mockup-wrap">
-                <div className="laptop-glow-ambient" />
-                <Image
-                  src={project.heroImage || '/images/laptop-mockup.jpg'}
-                  alt={project.title}
-                  fill
-                  priority
-                  sizes="(max-width: 768px) 100vw, 620px"
-                  style={{ objectFit: 'cover' }}
-                  className="rounded-xl"
-                />
+            {/* Right: Technical Inspector / Architecture Visual */}
+            <div className="lg:col-span-5 min-w-0 w-full">
+              <div className="relative rounded-2xl bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] overflow-hidden shadow-2xl p-2 sm:p-3">
+                <ProjectVisual slug={project.slug} title={project.title} />
+              </div>
+
+              {/* Metadata strip */}
+              <div className="mt-4 p-4 rounded-xl bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] grid grid-cols-3 gap-3 text-xs font-mono">
+                <div>
+                  <span className="text-[rgb(var(--fg-muted))] block text-[10px] uppercase">Domain</span>
+                  <span className="text-[rgb(var(--fg-primary))] font-bold">{project.domain || project.category}</span>
+                </div>
+                <div>
+                  <span className="text-[rgb(var(--fg-muted))] block text-[10px] uppercase">Status</span>
+                  <span className="text-[rgb(var(--accent))] font-bold">{project.status.toUpperCase()}</span>
+                </div>
+                <div>
+                  <span className="text-[rgb(var(--fg-muted))] block text-[10px] uppercase">GitHub Source</span>
+                  <a
+                    href={project.links.find((l) => l.type === 'github')?.url || 'https://github.com/Priya-Ranjan-0201'}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[rgb(var(--accent))] font-bold hover:underline inline-flex items-center gap-1"
+                  >
+                    <span>Verified</span>
+                    <ExternalLink size={10} />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
+        </section>
 
-          {/* ── DUAL PERSPECTIVE TOGGLE: PRODUCT VS SYSTEM ── */}
-          <div className="perspective-toggle-container">
-            <div className="perspective-toggle-box">
-              <span className="perspective-label">VIEW PERSPECTIVE:</span>
-              <div className="perspective-buttons">
+        {/* ── SECTION 57: UNIQUE FEATURE: THINKING MODE ─────── */}
+        {project.thinkingMode && (
+          <section className="mb-20 sm:mb-24 p-6 sm:p-8 rounded-2xl bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] shadow-sm">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-[rgb(var(--border))]">
+              <div>
+                <span className="text-xs font-mono tracking-widest text-emerald-400 dark:text-emerald-400 uppercase block mb-1 font-bold">
+                  ENGINEERING MATURITY
+                </span>
+                <h3 className="text-lg font-bold text-[rgb(var(--fg-primary))]">
+                  Thinking Mode &bull; Design Tradeoffs
+                </h3>
+              </div>
+
+              {/* Toggle Buttons: WHAT I BUILT vs HOW I THOUGHT */}
+              <div className="inline-flex items-center gap-1.5 rounded-lg bg-[rgb(var(--bg-primary))] p-1 border border-[rgb(var(--border))] shadow-inner">
                 <button
-                  className={`perspective-btn ${viewMode === 'PRODUCT' ? 'active' : ''}`}
+                  className={`px-4 py-2 rounded-md text-xs font-mono font-semibold transition-all cursor-pointer ${
+                    thinkingTab === 'BUILT'
+                      ? 'bg-[rgb(var(--accent))] text-white shadow-sm'
+                      : 'text-[rgb(var(--fg-muted))] hover:text-[rgb(var(--fg-primary))]'
+                  }`}
                   onClick={() => {
                     playSound('toggle');
-                    setViewMode('PRODUCT');
+                    setThinkingTab('BUILT');
                   }}
                 >
-                  <Activity size={14} />
-                  <span>PRODUCT EXPERIENCE</span>
+                  WHAT I BUILT
                 </button>
                 <button
-                  className={`perspective-btn ${viewMode === 'SYSTEM' ? 'active' : ''}`}
+                  className={`px-4 py-2 rounded-md text-xs font-mono font-semibold transition-all cursor-pointer ${
+                    thinkingTab === 'THOUGHT'
+                      ? 'bg-[rgb(var(--accent))] text-white shadow-sm'
+                      : 'text-[rgb(var(--fg-muted))] hover:text-[rgb(var(--fg-primary))]'
+                  }`}
                   onClick={() => {
                     playSound('toggle');
-                    setViewMode('SYSTEM');
+                    setThinkingTab('THOUGHT');
                   }}
                 >
-                  <Workflow size={14} />
-                  <span>SYSTEM &amp; ARCHITECTURE</span>
+                  HOW I THOUGHT
                 </button>
               </div>
             </div>
-          </div>
 
-          {/* ── PERSPECTIVE CONTENT ── */}
-          <AnimatePresence mode="wait">
-            {viewMode === 'PRODUCT' ? (
-              <motion.div
-                key="product-mode"
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.3 }}
-                className="perspective-panel"
+            <AnimatePresence mode="wait">
+              {thinkingTab === 'BUILT' ? (
+                <motion.div
+                  key="built"
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                  className="space-y-4"
+                >
+                  <p className="text-base text-[rgb(var(--fg-primary))] leading-relaxed font-medium">
+                    {project.thinkingMode.whatIBuilt}
+                  </p>
+                  <div className="p-4 rounded-xl bg-[rgb(var(--bg-primary))] border border-[rgb(var(--border))] text-xs font-mono text-[rgb(var(--fg-muted))]">
+                    <strong className="text-emerald-400 dark:text-emerald-400 font-bold">Outcome: </strong>
+                    <span className="text-[rgb(var(--fg-primary))]">{project.solution}</span>
+                  </div>
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="thought"
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+                >
+                  <div className="p-4 rounded-xl bg-[rgb(var(--bg-primary))] border border-[rgb(var(--border))]">
+                    <span className="text-[10px] font-mono uppercase tracking-wider text-amber-500 dark:text-amber-400 font-bold block mb-1">
+                      01 &bull; PROBLEM
+                    </span>
+                    <p className="text-xs text-[rgb(var(--fg-secondary))] leading-relaxed">
+                      {project.thinkingMode.problem}
+                    </p>
+                  </div>
+                  <div className="p-4 rounded-xl bg-[rgb(var(--bg-primary))] border border-[rgb(var(--border))]">
+                    <span className="text-[10px] font-mono uppercase tracking-wider text-emerald-400 dark:text-emerald-400 font-bold block mb-1">
+                      02 &bull; TRADEOFF
+                    </span>
+                    <p className="text-xs text-[rgb(var(--fg-secondary))] leading-relaxed">
+                      {project.thinkingMode.tradeoff}
+                    </p>
+                  </div>
+                  <div className="p-4 rounded-xl bg-[rgb(var(--bg-primary))] border border-[rgb(var(--border))]">
+                    <span className="text-[10px] font-mono uppercase tracking-wider text-purple-500 dark:text-purple-400 font-bold block mb-1">
+                      03 &bull; DECISION
+                    </span>
+                    <p className="text-xs text-[rgb(var(--fg-secondary))] leading-relaxed">
+                      {project.thinkingMode.decision}
+                    </p>
+                  </div>
+                  <div className="p-4 rounded-xl bg-[rgb(var(--bg-primary))] border border-[rgb(var(--border))]">
+                    <span className="text-[10px] font-mono uppercase tracking-wider text-emerald-500 dark:text-emerald-400 font-bold block mb-1">
+                      04 &bull; LEARNING
+                    </span>
+                    <p className="text-xs text-[rgb(var(--fg-secondary))] leading-relaxed">
+                      {project.thinkingMode.learning}
+                    </p>
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </section>
+        )}
+
+        {/* ── SECTION 24: PRODUCT / ENGINEERING TOGGLE ──────── */}
+        <section className="mb-20">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 pb-4 border-b border-[rgb(var(--border))]">
+            <div>
+              <span className="text-xs font-mono tracking-widest text-emerald-400 dark:text-emerald-400 uppercase block mb-1 font-bold">
+                DUAL PERSPECTIVE
+              </span>
+              <h2 className="text-2xl font-bold tracking-tight text-[rgb(var(--fg-primary))]">
+                Product vs. Engineering Architecture
+              </h2>
+            </div>
+
+            <div className="inline-flex items-center gap-1.5 rounded-lg bg-[rgb(var(--bg-secondary))] p-1 border border-[rgb(var(--border))] shadow-inner">
+              <button
+                className={`flex items-center gap-2 px-4 py-2 rounded-md text-xs font-mono font-semibold transition-all cursor-pointer ${
+                  perspective === 'PRODUCT'
+                    ? 'bg-[rgb(var(--accent))] text-white shadow-sm'
+                    : 'text-[rgb(var(--fg-muted))] hover:text-[rgb(var(--fg-primary))]'
+                }`}
+                onClick={() => {
+                  playSound('toggle');
+                  setPerspective('PRODUCT');
+                }}
               >
-                {/* 1. Core Problem & Solution Narrative */}
-                <div className="case-section-grid">
-                  <div className="case-card-bordered">
-                    <div className="card-badge-header">
-                      <AlertTriangle size={15} className="text-amber-400" />
+                <Activity size={13} />
+                <span>PRODUCT</span>
+              </button>
+              <button
+                className={`flex items-center gap-2 px-4 py-2 rounded-md text-xs font-mono font-semibold transition-all cursor-pointer ${
+                  perspective === 'ENGINEERING'
+                    ? 'bg-[rgb(var(--accent))] text-white shadow-sm'
+                    : 'text-[rgb(var(--fg-muted))] hover:text-[rgb(var(--fg-primary))]'
+                }`}
+                onClick={() => {
+                  playSound('toggle');
+                  setPerspective('ENGINEERING');
+                }}
+              >
+                <Workflow size={13} />
+                <span>ENGINEERING</span>
+              </button>
+            </div>
+          </div>
+
+          <AnimatePresence mode="wait">
+            {perspective === 'PRODUCT' ? (
+              <motion.div
+                key="product-perspective"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.2 }}
+                className="space-y-12"
+              >
+                {/* Problem & Solution Cards */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="p-6 rounded-2xl bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] shadow-sm">
+                    <div className="flex items-center gap-2 text-xs font-mono text-amber-400 dark:text-amber-300 mb-3 uppercase tracking-wider font-bold">
+                      <AlertTriangle size={14} />
                       <span>THE CORE PROBLEM</span>
                     </div>
-                    <p className="card-body-text">{project.problem}</p>
+                    <p className="text-sm sm:text-base text-[rgb(var(--fg-secondary))] leading-relaxed">
+                      {project.problem}
+                    </p>
                   </div>
 
-                  <div className="case-card-bordered">
-                    <div className="card-badge-header">
-                      <Lightbulb size={15} className="text-cyan-400" />
+                  <div className="p-6 rounded-2xl bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] shadow-sm">
+                    <div className="flex items-center gap-2 text-xs font-mono text-emerald-400 dark:text-emerald-400 mb-3 uppercase tracking-wider font-bold">
+                      <Lightbulb size={14} />
                       <span>THE SOLUTION APPROACH</span>
                     </div>
-                    <p className="card-body-text">{project.solution}</p>
+                    <p className="text-sm sm:text-base text-[rgb(var(--fg-secondary))] leading-relaxed">
+                      {project.solution}
+                    </p>
                   </div>
                 </div>
 
-                {/* 2. Key User Capabilities */}
-                <div className="case-features-section">
-                  <h3 className="section-subtitle">ENGINEERED CAPABILITIES &amp; FLOWS</h3>
-                  <div className="features-grid-3col">
+                {/* Key Engineered Capabilities */}
+                <div>
+                  <h3 className="text-lg font-bold text-[rgb(var(--fg-primary))] mb-4">
+                    Key Product Capabilities
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {project.features.map((feat, idx) => (
-                      <div key={idx} className="feature-item-card">
-                        <CheckCircle2 size={16} className="text-cyan-400 shrink-0 mt-0.5" />
-                        <div>
-                          <p className="feature-text">{feat}</p>
-                        </div>
+                      <div
+                        key={idx}
+                        className="p-5 rounded-xl bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] flex items-start gap-3 shadow-sm hover:border-[rgb(var(--accent))]/40 transition-colors"
+                      >
+                        <CheckCircle2 size={16} className="text-emerald-400 dark:text-emerald-400 shrink-0 mt-0.5" />
+                        <p className="text-xs sm:text-sm text-[rgb(var(--fg-primary))] leading-relaxed font-normal">
+                          {feat}
+                        </p>
                       </div>
                     ))}
                   </div>
                 </div>
 
-                {/* 3. Product Mode Deep Dive Highlights */}
-                {project.productMode && (
-                  <div className="product-highlights-box">
-                    <h3 className="section-subtitle">USER-FACING EXPERIENCE HIGHLIGHTS</h3>
-                    <div className="product-grid">
-                      <div className="product-info-card">
-                        <span className="info-label">PRIMARY USER AUDIENCE</span>
-                        <p className="info-val">{project.productMode.userAudience || project.productMode.targetAudience}</p>
+                {/* Product Mode Deep Dive if available */}
+                {productMode && (
+                  <div className="p-6 rounded-2xl bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] space-y-4 shadow-sm">
+                    <span className="text-xs font-mono text-[rgb(var(--accent))] uppercase tracking-wider block font-bold">
+                      USER EXPERIENCE HIGHLIGHTS
+                    </span>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono">
+                      <div className="p-4 rounded-xl bg-[rgb(var(--bg-primary))] border border-[rgb(var(--border))]">
+                        <span className="text-[rgb(var(--fg-muted))] block text-[10px] uppercase mb-1">Target Audience</span>
+                        <p className="text-[rgb(var(--fg-primary))] font-semibold">{productMode.userAudience || productMode.targetAudience}</p>
                       </div>
-                      <div className="product-info-card">
-                        <span className="info-label">MEASURABLE OUTCOME</span>
-                        <p className="info-val">{project.productMode.measurableOutcome || project.productMode.keyDifferentiator}</p>
+                      <div className="p-4 rounded-xl bg-[rgb(var(--bg-primary))] border border-[rgb(var(--border))]">
+                        <span className="text-[rgb(var(--fg-muted))] block text-[10px] uppercase mb-1">Primary Outcome</span>
+                        <p className="text-[rgb(var(--fg-primary))] font-semibold">{productMode.measurableOutcome || productMode.keyDifferentiator}</p>
                       </div>
                     </div>
-
-                    {((project.productMode.keyFlows && project.productMode.keyFlows.length > 0) || (project.productMode.visualHighlights && project.productMode.visualHighlights.length > 0)) && (
-                      <div className="flows-list-container">
-                        <span className="info-label">CRITICAL FLOWS &amp; HIGHLIGHTS</span>
-                        <div className="flows-grid">
-                          {(project.productMode.keyFlows || project.productMode.visualHighlights || []).map((flow, i) => (
-                            <div key={i} className="flow-step-pill">
-                              <span className="flow-step-num">0{i + 1}</span>
-                              <span className="flow-step-desc">{flow}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
                   </div>
                 )}
               </motion.div>
             ) : (
               <motion.div
-                key="system-mode"
-                initial={{ opacity: 0, y: 15 }}
+                key="engineering-perspective"
+                initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.3 }}
-                className="perspective-panel"
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.2 }}
+                className="space-y-10"
               >
-                {/* 1. Interactive Architecture Flow Canvas */}
-                <div className="interactive-arch-container">
-                  <div className="arch-header-row">
-                    <h3 className="section-subtitle">INTERACTIVE SYSTEM PIPELINE</h3>
-                    <span className="arch-hint">CLICK ANY NODE TO INSPECT SUBSYSTEM DETAILS</span>
+                {/* ── SECTION 25: INTERACTIVE ARCHITECTURE ─────── */}
+                <div className="p-6 rounded-2xl bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] shadow-sm">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6 pb-4 border-b border-[rgb(var(--border))]">
+                    <div>
+                      <span className="text-xs font-mono text-[rgb(var(--accent))] uppercase tracking-wider block font-bold">
+                        SYSTEM ARCHITECTURE &bull; INTERACTIVE PIPELINE
+                      </span>
+                      <h3 className="text-base font-bold text-[rgb(var(--fg-primary))]">
+                        Click any subsystem node to inspect component responsibilities
+                      </h3>
+                    </div>
+                    <span className="text-[11px] font-mono text-[rgb(var(--fg-muted))]">
+                      {project.architecture?.length || 0} DECOUPLED NODES
+                    </span>
                   </div>
 
-                  <div className="arch-nodes-pipeline">
+                  {/* Nodes pipeline */}
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-6">
                     {project.architecture?.map((layer, idx) => (
                       <button
                         key={layer.label}
-                        className={`arch-pipeline-node ${selectedArchNode === idx ? 'active' : ''}`}
+                        className={`p-3.5 rounded-xl border text-left transition-all ${
+                          selectedArchNode === idx
+                            ? 'bg-[rgb(var(--accent))]/10 border-[rgb(var(--accent))] shadow-sm ring-1 ring-[rgb(var(--accent))]/30'
+                            : 'bg-[rgb(var(--bg-primary))] border-[rgb(var(--border))] hover:border-[rgb(var(--accent))]/40'
+                        }`}
                         onClick={() => {
                           playSound('click');
                           setSelectedArchNode(idx);
                         }}
                       >
-                        <span className="node-num">0{idx + 1}</span>
-                        <span className="node-name">{layer.label}</span>
+                        <span className="text-[10px] font-mono text-[rgb(var(--fg-muted))] block">0{idx + 1}</span>
+                        <span className={`text-xs font-mono font-semibold block truncate ${
+                          selectedArchNode === idx ? 'text-[rgb(var(--accent))] font-bold' : 'text-[rgb(var(--fg-primary))]'
+                        }`}>
+                          {layer.label}
+                        </span>
                       </button>
                     ))}
                   </div>
 
-                  {/* Selected Node Details Box */}
-                  <div className="arch-node-detail-card">
-                    <div className="node-detail-header">
-                      <Terminal size={15} className="text-cyan-400" />
-                      <span className="node-detail-title">
-                        SUBSYSTEM {selectedArchNode + 1}: {project.architecture?.[selectedArchNode]?.label}
-                      </span>
+                  {/* Selected Node Details */}
+                  {project.architecture?.[selectedArchNode] && (
+                    <div className="p-5 rounded-xl bg-[rgb(var(--bg-primary))] border border-[rgb(var(--border))] shadow-inner">
+                      <div className="flex items-center justify-between gap-4 mb-2">
+                        <div className="flex items-center gap-2">
+                          <Terminal size={14} className="text-[rgb(var(--accent))]" />
+                          <span className="text-xs font-mono font-bold text-[rgb(var(--fg-primary))]">
+                            SUBSYSTEM 0{selectedArchNode + 1}: {project.architecture[selectedArchNode].label}
+                          </span>
+                        </div>
+                        <span className="text-[10px] font-mono px-2.5 py-0.5 rounded bg-[rgb(var(--bg-secondary))] text-[rgb(var(--accent))] border border-[rgb(var(--border))] font-semibold">
+                          {project.architecture[selectedArchNode].protocol || 'Internal Service'}
+                        </span>
+                      </div>
+                      <p className="text-xs sm:text-sm text-[rgb(var(--fg-secondary))] leading-relaxed">
+                        {project.architecture[selectedArchNode].description}
+                      </p>
                     </div>
-                    <p className="node-detail-desc">
-                      {project.architecture?.[selectedArchNode]?.description}
-                    </p>
-                  </div>
+                  )}
                 </div>
 
-                {/* 2. System Mode Technical Details & Tradeoffs */}
-                {project.systemMode && (
-                  <div className="system-deep-dive-grid">
-                    <div className="system-card">
-                      <span className="info-label">DATA FLOW ORCHESTRATION</span>
-                      <p className="system-card-text">{project.systemMode.dataFlow}</p>
+                {/* System details */}
+                {systemMode && (
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="p-5 rounded-xl bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] shadow-sm">
+                      <span className="text-[10px] font-mono uppercase text-[rgb(var(--accent))] font-bold block mb-2">
+                        DATA FLOW ORCHESTRATION
+                      </span>
+                      <p className="text-xs text-[rgb(var(--fg-secondary))] leading-relaxed">{systemMode.dataFlow}</p>
                     </div>
-
-                    <div className="system-card">
-                      <span className="info-label">ENGINEERING TRADEOFFS</span>
-                      <p className="system-card-text">{project.systemMode.tradeoffs || project.systemMode.securityTradeoffs || 'Defensive boundary validation & latency optimization.'}</p>
+                    <div className="p-5 rounded-xl bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] shadow-sm">
+                      <span className="text-[10px] font-mono uppercase text-[rgb(var(--accent))] font-bold block mb-2">
+                        ENGINEERING TRADEOFFS
+                      </span>
+                      <p className="text-xs text-[rgb(var(--fg-secondary))] leading-relaxed">
+                        {systemMode.tradeoffs || systemMode.securityTradeoffs || 'Defensive boundary validation & latency optimization.'}
+                      </p>
                     </div>
-
-                    <div className="system-card">
-                      <span className="info-label">SECURITY &amp; PERFORMANCE POSTURE</span>
-                      <p className="system-card-text">{project.systemMode.securityOrPerf || project.systemMode.architectureSummary || 'Resilient zero-trust design.'}</p>
+                    <div className="p-5 rounded-xl bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] shadow-sm">
+                      <span className="text-[10px] font-mono uppercase text-[rgb(var(--accent))] font-bold block mb-2">
+                        SECURITY &amp; PERFORMANCE POSTURE
+                      </span>
+                      <p className="text-xs text-[rgb(var(--fg-secondary))] leading-relaxed">
+                        {systemMode.securityOrPerf || systemMode.architectureSummary || 'Resilient zero-trust design.'}
+                      </p>
                     </div>
                   </div>
                 )}
               </motion.div>
             )}
           </AnimatePresence>
+        </section>
 
-          {/* ── TECHNICAL CHALLENGES & RESOLUTIONS ── */}
-          <div className="case-challenges-section">
-            <h3 className="section-subtitle">DIFFICULT ENGINEERING CHALLENGES</h3>
-            <div className="challenges-grid">
-              {(project.challenges || []).map((ch, idx) => {
-                const isString = typeof ch === 'string';
-                const title = isString ? `Challenge 0${idx + 1}` : ch.title;
-                const obstacle = isString ? ch : ch.obstacle;
-                const resolution = isString ? 'Engineered defensive isolation and streamlined data pipelines.' : ch.resolution;
+        {/* ── SECTION 58: BUILD TRACE ──────────────────────── */}
+        {project.buildTrace && project.buildTrace.length > 0 && (
+          <section className="mb-20 pb-16 border-b border-[rgb(var(--border))]">
+            <div className="mb-8">
+              <span className="text-xs font-mono tracking-widest text-[rgb(var(--accent))] uppercase block mb-1 font-bold">
+                EVOLUTIONARY HISTORY
+              </span>
+              <h2 className="text-2xl font-bold tracking-tight text-[rgb(var(--fg-primary))]">
+                Build Trace: Idea to Production
+              </h2>
+              <p className="text-xs text-[rgb(var(--fg-muted))] mt-1 font-mono">
+                IDEA &rarr; PROTOTYPE &rarr; BUILD &rarr; REVISE &rarr; CURRENT
+              </p>
+            </div>
 
-                return (
-                  <div key={idx} className="challenge-card">
-                    <div className="challenge-head">
-                      <span className="challenge-num">0{idx + 1}</span>
-                      <h4 className="challenge-title">{title}</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+              {project.buildTrace.map((step, idx) => (
+                <div
+                  key={step.phase}
+                  className="p-4 rounded-xl bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] flex flex-col justify-between shadow-sm"
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-[10px] font-mono text-[rgb(var(--accent))] font-bold">
+                        0{idx + 1} &bull; {step.phase}
+                      </span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-[rgb(var(--accent))]" />
                     </div>
-                    <div className="challenge-body">
-                      <p className="challenge-problem">
-                        <strong className="text-white/80">Obstacle: </strong>
-                        {obstacle}
-                      </p>
-                      <p className="challenge-solution">
-                        <strong className="text-cyan-400">Resolution: </strong>
-                        {resolution}
-                      </p>
-                    </div>
+                    <h4 className="text-xs font-bold text-[rgb(var(--fg-primary))] mb-2">{step.title}</h4>
+                    <p className="text-xs text-[rgb(var(--fg-secondary))] leading-relaxed">{step.detail}</p>
                   </div>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* ── BUILD JOURNEY & ITERATIONS ── */}
-          {project.iterations && project.iterations.length > 0 && (
-            <div className="case-iterations-section">
-              <h3 className="section-subtitle">BUILD JOURNEY &amp; EVOLUTION</h3>
-              <div className="iterations-timeline">
-                {project.iterations.map((iter, idx) => (
-                  <div key={idx} className="iteration-node">
-                    <div className="iter-marker">
-                      <span className="iter-dot" />
-                      {idx < (project.iterations?.length || 0) - 1 && <span className="iter-line" />}
-                    </div>
-                    <div className="iter-content">
-                      <div className="iter-top">
-                        <span className="iter-version">{iter.version || iter.phase || `Stage 0${idx + 1}`}</span>
-                        <span className="iter-date">{iter.date || iter.title || ''}</span>
-                      </div>
-                      <p className="iter-desc">{iter.description || iter.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* ── WHAT I LEARNED ── */}
-          {project.learnings && (
-            <div className="case-learnings-section">
-              <h3 className="section-subtitle">RETROSPECTIVE &amp; LEARNINGS</h3>
-              <div className="learnings-grid">
-                <div className="learning-box">
-                  <span className="learning-label">TECHNICAL LEARNING</span>
-                  <p className="learning-text">{project.learnings.technical}</p>
                 </div>
-                <div className="learning-box">
-                  <span className="learning-label">SYSTEMS / ARCHITECTURE LESSON</span>
-                  <p className="learning-text">{project.learnings.systems || project.learnings.product || 'Robust state management and decoupling.'}</p>
-                </div>
-                <div className="learning-box">
-                  <span className="learning-label">INITIAL MISTAKE RECTIFIED</span>
-                  <p className="learning-text">{project.learnings.mistake}</p>
-                </div>
-                <div className="learning-box">
-                  <span className="learning-label">NEXT PLANNED IMPROVEMENT</span>
-                  <p className="learning-text">{project.learnings.nextStep || project.learnings.nextImprovement || 'Comprehensive performance test coverage.'}</p>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* ── TECHNOLOGIES MATRIX ── */}
-          <div className="case-tech-matrix">
-            <h3 className="section-subtitle">TECHNOLOGY MATRIX</h3>
-            <div className="tech-matrix-tags">
-              {project.technologies.map((t) => (
-                <span key={t} className="tech-tag-badge">
-                  {t}
-                </span>
               ))}
             </div>
-          </div>
+          </section>
+        )}
 
-          {/* ── NAVIGATION: PREVIOUS / INDEX / NEXT ── */}
-          <div className="case-footer-nav">
-            <Link
-              href={`/work/${prevProject.slug}`}
-              className="case-nav-btn prev"
-              onClick={() => playSound('click')}
-            >
-              <ArrowLeft size={14} />
-              <div>
-                <span className="nav-dir">PREVIOUS PROJECT</span>
-                <span className="nav-proj-name">{prevProject.title}</span>
+        {/* ── SECTION 56: PROJECT RELATIONSHIPS / RELATED TO ─ */}
+        {project.relatedItems && (
+          <section className="mb-20 p-6 sm:p-8 rounded-2xl bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] shadow-sm">
+            <div className="flex items-center justify-between mb-6 pb-4 border-b border-[rgb(var(--border))]">
+              <div className="flex items-center gap-2">
+                <Network size={16} className="text-[rgb(var(--accent))]" />
+                <span className="text-xs font-mono uppercase tracking-widest text-[rgb(var(--accent))] font-bold">
+                  RELATED TO &bull; CONNECTION MAPPING
+                </span>
               </div>
-            </Link>
+              <span className="text-[11px] font-mono text-[rgb(var(--fg-muted))]">CROSS-SYSTEM EDGES</span>
+            </div>
 
-            <Link
-              href="/work"
-              className="case-nav-index"
-              onClick={() => playSound('click')}
-            >
-              <span>PROJECT ARCHIVE</span>
-            </Link>
-
-            <Link
-              href={`/work/${nextProject.slug}`}
-              className="case-nav-btn next"
-              onClick={() => playSound('click')}
-            >
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Related Skills */}
               <div>
-                <span className="nav-dir">NEXT PROJECT</span>
-                <span className="nav-proj-name">{nextProject.title}</span>
+                <span className="text-xs font-mono uppercase text-[rgb(var(--fg-muted))] block mb-3 font-semibold">
+                  Applied Skills:
+                </span>
+                <div className="flex flex-wrap gap-1.5">
+                  {project.relatedItems.skills.map((s) => (
+                    <span
+                      key={s}
+                      className="px-2.5 py-1 rounded bg-[rgb(var(--bg-primary))] border border-[rgb(var(--border))] text-xs font-mono text-[rgb(var(--fg-primary))] font-medium"
+                    >
+                      {s}
+                    </span>
+                  ))}
+                </div>
               </div>
-              <ArrowRight size={14} />
-            </Link>
+
+              {/* Related Projects */}
+              <div>
+                <span className="text-xs font-mono uppercase text-[rgb(var(--fg-muted))] block mb-3 font-semibold">
+                  Related Projects:
+                </span>
+                <div className="flex flex-col gap-2">
+                  {project.relatedItems.projects.map((p) => (
+                    <Link
+                      key={p.slug}
+                      href={`/work/${p.slug}`}
+                      className="inline-flex items-center justify-between p-2.5 rounded bg-[rgb(var(--bg-primary))] border border-[rgb(var(--border))] text-xs font-mono text-[rgb(var(--fg-primary))] hover:border-[rgb(var(--accent))] transition-colors"
+                      onClick={() => playSound('click')}
+                    >
+                      <span>{p.title}</span>
+                      <ArrowRight size={12} className="text-[rgb(var(--accent))]" />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* Related Experiments */}
+              <div>
+                <span className="text-xs font-mono uppercase text-[rgb(var(--fg-muted))] block mb-3 font-semibold">
+                  Lab Experiments:
+                </span>
+                <div className="flex flex-col gap-2">
+                  {project.relatedItems?.experiments?.map((exp) => (
+                    <Link
+                      key={exp}
+                      href="/lab"
+                      className="inline-flex items-center justify-between p-2.5 rounded bg-[rgb(var(--bg-primary))] border border-[rgb(var(--border))] text-xs font-mono text-[rgb(var(--fg-muted))] hover:text-[rgb(var(--fg-primary))] hover:border-[rgb(var(--accent))] transition-colors"
+                    >
+                      <span>/lab #{exp}</span>
+                      <ArrowRight size={12} className="text-[rgb(var(--fg-muted))]" />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* ── TECHNOLOGIES LIST ────────────────────────────── */}
+        <section className="mb-20 pb-16 border-b border-[rgb(var(--border))]">
+          <h3 className="text-sm font-mono text-[rgb(var(--fg-muted))] uppercase tracking-wider mb-4 font-bold">
+            VERIFIED TECHNOLOGIES IN THIS REPOSITORY
+          </h3>
+          <div className="flex flex-wrap gap-2">
+            {project.technologies.map((t) => (
+              <span
+                key={t}
+                className="px-3 py-1.5 rounded bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] text-xs font-mono text-[rgb(var(--fg-primary))] font-medium shadow-sm"
+              >
+                {t}
+              </span>
+            ))}
           </div>
+        </section>
+
+        {/* ── PREVIOUS / NEXT FOOTER NAV ───────────────────── */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+          <Link
+            href={`/work/${prevProject.slug}`}
+            className="p-4 rounded-xl bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] hover:border-[rgb(var(--accent))] transition-colors flex items-center gap-3 text-left group shadow-sm"
+            onClick={() => playSound('click')}
+          >
+            <ArrowLeft size={14} className="text-[rgb(var(--fg-muted))] group-hover:text-[rgb(var(--accent))] transition-colors" />
+            <div>
+              <span className="text-[10px] font-mono text-[rgb(var(--fg-muted))] block uppercase">PREVIOUS</span>
+              <span className="text-xs font-semibold text-[rgb(var(--fg-primary))] block truncate">{prevProject.title}</span>
+            </div>
+          </Link>
+
+          <Link
+            href="/work"
+            className="p-4 rounded-xl bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] hover:border-[rgb(var(--accent))] transition-colors text-center text-xs font-mono text-[rgb(var(--fg-muted))] hover:text-[rgb(var(--fg-primary))] shadow-sm"
+            onClick={() => playSound('click')}
+          >
+            ALL PROJECTS ARCHIVE
+          </Link>
+
+          <Link
+            href={`/work/${nextProject.slug}`}
+            className="p-4 rounded-xl bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] hover:border-[rgb(var(--accent))] transition-colors flex items-center justify-between text-right group shadow-sm"
+            onClick={() => playSound('click')}
+          >
+            <div className="w-full text-right">
+              <span className="text-[10px] font-mono text-[rgb(var(--fg-muted))] block uppercase">NEXT</span>
+              <span className="text-xs font-semibold text-[rgb(var(--fg-primary))] block truncate">{nextProject.title}</span>
+            </div>
+            <ArrowRight size={14} className="text-[rgb(var(--fg-muted))] group-hover:text-[rgb(var(--accent))] transition-colors shrink-0 ml-3" />
+          </Link>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

@@ -277,7 +277,7 @@ class SoundEngine {
 
 export const sound = new SoundEngine();
 
-export function playSound(_type?: 'click' | 'hover' | 'toggle' | 'scan' | 'whoosh') {
+export function playSound(_type?: 'click' | 'hover' | 'toggle' | 'scan' | 'whoosh' | 'success') {
   // Silent by default for a clean, distraction-free, professional engineering experience
   return;
 }

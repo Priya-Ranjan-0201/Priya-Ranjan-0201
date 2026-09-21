@@ -3,32 +3,71 @@
 import Link from 'next/link';
 import { ArrowUp, Mail } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '@/components/ui/Icons';
+import { playSound } from '@/lib/sound';
 
 export default function Footer() {
   const scrollToTop = () => {
+    playSound('click');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  const navLinks = [
+    { label: 'Home', href: '/' },
+    { label: 'About', href: '/about' },
+    { label: 'Work', href: '/work' },
+    { label: 'Lab', href: '/lab' },
+    { label: 'Resume', href: '/resume' },
+    { label: 'Contact', href: '/contact' },
+  ];
 
   return (
     <footer className="footer-root">
       <div className="footer-container">
         {/* Main Grid */}
         <div className="footer-grid">
-          {/* Brand Col */}
+          {/* Left Brand Col */}
           <div className="footer-brand">
             <div className="footer-logo-row">
               <span className="footer-logo">PR</span>
-              <span className="footer-tagline">Turn ideas into impact.</span>
+              <div>
+                <h3 className="footer-brand-name">PRIYA RANJAN</h3>
+                <p className="footer-brand-sub">Computer Science Engineer · Builder · Problem Solver</p>
+              </div>
             </div>
-            <div className="footer-socials">
+            <p className="footer-tagline">TURN IDEAS INTO IMPACT.</p>
+          </div>
+
+          {/* Center Navigation Col */}
+          <div className="footer-center-nav">
+            <span className="footer-col-title">NAVIGATION</span>
+            <nav className="footer-links-grid">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="footer-nav-item"
+                  onClick={() => playSound('click')}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
+
+          {/* Right Socials & Contact Col */}
+          <div className="footer-social-col">
+            <span className="footer-col-title">CONNECT</span>
+            <div className="footer-socials-row">
               <a
                 href="https://github.com/Priya-Ranjan-0201"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-btn"
                 aria-label="GitHub"
+                onClick={() => playSound('click')}
               >
-                <GithubIcon size={16} />
+                <GithubIcon size={15} />
+                <span>GitHub</span>
               </a>
               <a
                 href="https://linkedin.com/in/priye-ranjan"
@@ -36,73 +75,40 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="social-btn"
                 aria-label="LinkedIn"
+                onClick={() => playSound('click')}
               >
-                <LinkedinIcon size={16} />
+                <LinkedinIcon size={15} />
+                <span>LinkedIn</span>
               </a>
               <a
                 href="mailto:priye0201@gmail.com"
                 className="social-btn"
                 aria-label="Email"
+                onClick={() => playSound('click')}
               >
-                <Mail size={16} />
+                <Mail size={15} />
+                <span>Email</span>
               </a>
             </div>
-          </div>
-
-          {/* Navigate Col */}
-          <div className="footer-col">
-            <span className="footer-col-title">Navigate</span>
-            <nav className="footer-nav">
-              <Link href="/">Home</Link>
-              <Link href="/about">About</Link>
-              <Link href="/work">Work</Link>
-              <Link href="/lab">Lab</Link>
-              <Link href="/experience">Experience</Link>
-              <Link href="/journal">Journal</Link>
-              <Link href="/contact">Contact</Link>
-              <Link href="/resume">Resume</Link>
-            </nav>
-          </div>
-
-          {/* Let's Connect Col */}
-          <div className="footer-col">
-            <span className="footer-col-title">Let&apos;s Connect</span>
-            <p className="footer-connect-text">
-              Open for collaborations, systems engineering opportunities, or technical inquiries.
-            </p>
-            <a href="mailto:priye0201@gmail.com" className="footer-email">
-              priye0201@gmail.com
-            </a>
-            <div className="footer-location">
-              <span className="location-dot" />
-              <span>India, IN</span>
-            </div>
+            <p className="footer-location-note">Based in India · B.Tech CSE (2023&ndash;2027)</p>
           </div>
         </div>
 
-        {/* Bottom copyright and scroll to top */}
+        {/* Bottom copyright */}
         <div className="footer-bottom">
           <span className="footer-copy">
-            &copy; 2026 Priya Ranjan. All rights reserved.
+            &copy; {new Date().getFullYear()} PRIYA RANJAN. All rights reserved. &bull; TURN IDEAS INTO IMPACT.
           </span>
           <button
             onClick={scrollToTop}
             className="scroll-top-btn"
             aria-label="Scroll to top"
           >
-            <ArrowUp size={16} />
+            <ArrowUp size={15} />
+            <span>TOP</span>
           </button>
         </div>
       </div>
-
-      {/* Marquee / Ticker bottom banner */}
-      <div className="footer-ticker">
-        <div className="ticker-track">
-          <span>PRIYA RANJAN &bull; COMPUTER SCIENCE &amp; SYSTEMS BUILDER &bull; ARTIFICIAL INTELLIGENCE &bull; CYBERSECURITY &bull; SPATIAL COMPUTING &bull; B.TECH CSE (2023&ndash;2027) &bull;&nbsp;</span>
-          <span>PRIYA RANJAN &bull; COMPUTER SCIENCE &amp; SYSTEMS BUILDER &bull; ARTIFICIAL INTELLIGENCE &bull; CYBERSECURITY &bull; SPATIAL COMPUTING &bull; B.TECH CSE (2023&ndash;2027) &bull;&nbsp;</span>
-        </div>
-      </div>
-
     </footer>
   );
 }

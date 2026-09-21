@@ -9,13 +9,23 @@ import { themeTokens, accentTokens } from '@/data/settings';
  * Runs reactively whenever theme/accent/font/motion/grain/density changes.
  */
 export function useThemeEngine() {
-  const { theme, accent, font, motion, grain, density } = useSettingsStore();
+  const { theme, accent, font, motion, grain, density, setTheme } = useSettingsStore();
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const urlTheme = params.get('theme');
+      if (urlTheme && (urlTheme === 'dark' || urlTheme === 'paper' || urlTheme === 'mono' || urlTheme === 'midnight' || urlTheme === 'light')) {
+        setTheme(urlTheme as any);
+      }
+    }
+  }, [setTheme]);
 
   useEffect(() => {
     const root = document.documentElement;
 
     // Apply theme tokens
-    const tokens = themeTokens[theme as keyof typeof themeTokens] || themeTokens.dark;
+    const tokens = themeTokens[theme as keyof typeof themeTokens] || themeTokens.paper;
     Object.entries(tokens).forEach(([key, value]) => {
       root.style.setProperty(key, value as string);
     });

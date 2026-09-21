@@ -1,77 +1,57 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { ArrowLeft, Home, Terminal } from 'lucide-react';
+import { GithubIcon } from '@/components/ui/Icons';
 
 export default function NotFound() {
   return (
-    <div className="notfound-root">
-      {/* ── 15. 404 PAGE (Panel 15) ─────────────────────────────────── */}
-      <section className="notfound-container">
-        {/* Left Column: 404 Typography & Action */}
-        <div className="notfound-left-col">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-          >
-            <span className="notfound-huge-num">404</span>
-          </motion.div>
-
-          <motion.h1
-            className="notfound-title"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            LOST IN THE SYSTEM.
-          </motion.h1>
-
-          <motion.p
-            className="notfound-desc"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.35 }}
-          >
-            Even great explorers often find new paths.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-          >
-            <Link href="/" className="return-home-btn">
-              <span>Return Home</span>
-              <ArrowRight size={14} />
-            </Link>
-          </motion.div>
+    <div className="min-h-screen bg-[rgb(var(--bg-primary))] text-[rgb(var(--fg-primary))] flex items-center justify-center px-6 py-24">
+      <div className="max-w-xl w-full text-center">
+        {/* Monospace Code Pill */}
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] text-xs font-mono text-[rgb(var(--accent))] font-bold mb-8">
+          <Terminal size={13} />
+          <span>HTTP 404: ROUTE_NOT_FOUND</span>
         </div>
 
-        {/* Right Column: Astronaut on Cosmic Moon Rock */}
-        <div className="notfound-right-col">
-          <motion.div
-            className="astronaut-card"
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+        {/* Candid Title */}
+        <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-[rgb(var(--fg-primary))] mb-6">
+          Nothing here but silence.
+        </h1>
+
+        {/* Dry, personal explanation */}
+        <p className="text-base sm:text-lg text-[rgb(var(--fg-muted))] leading-relaxed mb-8 max-w-md mx-auto font-normal">
+          You reached a route that doesn&apos;t exist. Maybe I refactored an endpoint, maybe there&apos;s a typo in the URL bar, or an unmapped state.
+        </p>
+
+        {/* Action Buttons */}
+        <div className="flex flex-wrap items-center justify-center gap-4">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-[rgb(var(--accent))] hover:opacity-90 text-white text-xs font-mono uppercase tracking-wider font-semibold transition-all shadow-sm"
           >
-            <div className="astronaut-img-wrap">
-              <Image
-                src="/images/astronaut-404.jpg"
-                alt="Astronaut lost in space"
-                fill
-                priority
-                sizes="(max-width: 768px) 100vw, 600px"
-                style={{ objectFit: 'cover' }}
-              />
-              <div className="astronaut-fade-overlay" />
-            </div>
-          </motion.div>
+            <Home size={14} />
+            <span>Return to Home</span>
+          </Link>
+
+          <a
+            href="https://github.com/Priya-Ranjan-0201"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] hover:border-[rgb(var(--accent))] text-[rgb(var(--fg-muted))] hover:text-[rgb(var(--fg-primary))] text-xs font-mono uppercase tracking-wider transition-all"
+          >
+            <GithubIcon size={14} />
+            <span>Inspect Repositories</span>
+          </a>
         </div>
-      </section>
+
+        {/* Small terminal Easter egg */}
+        <div className="mt-16 p-4 rounded-xl bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] text-left font-mono text-xs text-[rgb(var(--fg-muted))] max-w-sm mx-auto">
+          <p className="text-[rgb(var(--fg-primary))]">$ curl -I https://priyaranjan.dev/unmapped-path</p>
+          <p className="text-red-400 mt-1">HTTP/2 404 Not Found</p>
+          <p className="text-[rgb(var(--fg-muted))]/60">x-server-action: redirect-to-home</p>
+        </div>
+      </div>
     </div>
   );
 }

@@ -9,7 +9,7 @@
 
 <!-- TYPING ANIMATION (readme-typing-svg) -->
 <a href="https://github.com/Priya-Ranjan-0201">
-  <img src="https://readme-typing-svg.demolab.com?font=SF+Mono,Fira+Code,Consolas,monospace&weight=500&size=16&pause=2000&color=00F2FE&center=true&vCenter=true&width=680&height=40&lines=Building+systems+that+solve+real+problems.;Exploring+AI%2C+cybersecurity+and+full-stack+engineering.;Turning+ideas+into+working+software.;Learning+by+building+from+first+principles." alt="Priya Ranjan Developer Typist" />
+  <img src="https://readme-typing-svg.demolab.com?font=SF+Mono,Fira+Code,Consolas,monospace&weight=500&size=16&pause=2000&color=00F2FE&center=true&vCenter=true&width=720&height=40&lines=Building+systems+that+solve+tangible%2C+real-world+problems.;Bridging+AI%2C+defensive+cybersecurity%2C+and+low-level+systems.;Turning+raw+curiosity+into+resilient%2C+tested+software.;Learning+by+building+from+first+principles." alt="Priya Ranjan Typist" />
 </a>
 
 <br/>
@@ -21,7 +21,7 @@
   </a>
   &nbsp;
   <a href="portfolio/">
-    <img src="https://img.shields.io/badge/PORTFOLIO-VIEW_SOURCE_CODE-0D1117?style=for-the-badge&logo=googlechrome&logoColor=00F2FE&labelColor=080B0F" alt="Portfolio Source Code" />
+    <img src="https://img.shields.io/badge/3D_PORTFOLIO-VIEW_SOURCE-0D1117?style=for-the-badge&logo=googlechrome&logoColor=00F2FE&labelColor=080B0F" alt="Portfolio Source Code" />
   </a>
   &nbsp;
   <a href="https://www.linkedin.com/in/priyaranjan01/">
@@ -37,47 +37,87 @@
 
 ---
 
-### 01 // IDENTITY
+### 01 // IDENTITY & THE STORY
 
 ```
 WHO_I_AM:
 ├─ Name:         Priya Ranjan
-├─ Discipline:   Computer Science & Engineering
-├─ Core Mindset: Problem-first engineering over tech-stack chasing
-├─ Focus Areas:  Artificial Intelligence • Cybersecurity • Full-Stack Systems
+├─ Discipline:   Computer Science & Engineering (B.Tech 2023–2027)
+├─ Core Mindset: Problem-first engineering over buzzword chasing
+├─ Focus Areas:  Intelligent Systems • Defensive Cybersecurity • Operating Systems & Full-Stack
 └─ Philosophy:   "Ideas → Systems → Code → Impact"
 ```
 
-I am a Computer Science & Engineering student driven by a desire to build software that solves tangible, practical problems. Rather than viewing engineering as isolated lines of syntax, I approach development as an end-to-end discipline: moving methodically from **problem discovery**, to **deep research**, to **system architecture**, and finally to **resilient code**.
+> *"I like difficult problems. They create better questions. Better questions create better systems."*
 
-My day-to-day focus centers on exploring machine learning applications, dissecting security and digital trust protocols, and engineering clean, interactive web systems.
+I didn't grow up disassembling circuit boards in a machine workshop. My journey began with simple, stubborn curiosity: I wanted to understand what actually happens in the silent milliseconds between pressing <kbd>Enter</kbd> in a browser address bar and having a webpage appear on screen. 
 
-> *"I care more about solving the right problem than using the newest technology."*
+Once I discovered network sockets, operating system processes, kernel scheduling, and algorithmic tradeoffs, I was hooked. It transformed computing from a black box into a machine built by human hands—one that I could learn to build, audit, and improve from first principles.
+
+Today, I am a Computer Science & Engineering undergraduate building software that bridges **AI/ML**, **defensive cybersecurity**, and **systems architecture**. Whether evaluating AST syntax trees to bypass code execution vulnerabilities, visualizing disk arm kinematics, or architecting digital public infrastructure for Smart India Hackathon, I care deeply about how systems behave when pushed to their limits.
 
 ---
 
-### 02 // SYSTEM PIPELINE
+### 02 // HARD-WON LESSONS & FAILURE RETROSPECTIVES
+
+Real engineering is learned through broken builds, dropped packets, and humbled assumptions:
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### ⚡ The Unbounded Connection Storm
+**Project:** *TrustShield-X (Network Scanner)*
+
+- **What Happened:** While scanning a subnet concurrently, I spawned hundreds of raw async sockets without enforcing a semaphore pool. Within 3 seconds, the runtime exhausted OS file descriptors, choked my local network interface, and froze the machine.
+- **The Takeaway:** Concurrency without strict rate-limiting, bounded pools, and deterministic timeouts is indistinguishable from a self-inflicted denial-of-service. Every network boundary I build now has strict limits.
+
+</td>
+<td width="50%" valign="top">
+
+#### 🧩 The Premature Microservices Trap
+**Project:** *VIREONIQ (Career Roadmap Engine)*
+
+- **What Happened:** In an early prototype, I prematurely split the architecture into four separate microservices with an async message broker. I spent three weeks debugging Docker virtual network bridges and serialization latency rather than refining the core career graph algorithms.
+- **The Takeaway:** Start with a clean, modular monolith. Extract distributed services only when computational bottlenecks demand it—never for architectural vanity.
+
+</td>
+</tr>
+</table>
+
+---
+
+### 03 // THE ENGINEERING PIPELINE
 
 <div align="center">
   <img src="assets/workflow-pipeline.svg" alt="Engineering Pipeline: Idea to Research to Architecture to Code to System to Impact" width="100%" />
 </div>
 
+```
+01 // FIND THE REAL PROBLEM      Never patch a superficial symptom when the architectural root remains untouched.
+02 // DRAW BEFORE YOU CODE       Map state machines, database schemas, and failure states on paper first.
+03 // BUILD THE SMALLEST CORE    Validate technical hypotheses with minimal, functioning prototypes.
+04 // BREAK YOUR OWN CODE        Fuzz inputs, inject packet latency, and test edge cases under stress.
+05 // OPTIMIZE WITH TELEMETRY    Measure with profilers and benchmark suites—never optimize through guesswork.
+06 // RESPONSIBLE STEWARDSHIP    Deploy with automated health checks, atomic commits, and clear documentation.
+```
+
 ---
 
-### 03 // CURRENTLY BUILDING
+### 04 // CURRENTLY BUILDING
 
-High-focus, active development initiatives where core system architectures are being implemented and refined:
+Active flagship engineering projects undergoing active architecture and feature iterations:
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
 #### 🚀 [VIREONIQ](https://github.com/Priya-Ranjan-0201/VIREONIQ)
-**AI-Powered Career Intelligence Platform**
+**Developer Career Roadmap & AST Code Analysis Engine**
 
-- **Why It Exists:** Navigating career transitions and skill-market alignment is noisy, opaque, and inefficient. VIREONIQ explores intelligent parsing and contextual data modeling to deliver actionable career direction.
-- **What I Am Exploring:** NLP pipelines, full-stack application architecture, intelligent recommendation logic, and clean UI workflows.
-- **Status:** Active development & structural iteration.
+- **Why It Exists:** Traditional hiring platforms rely on shallow keyword matching, rewarding buzzword-stuffed resumes rather than verified structural coding ability.
+- **How It Works:** Uses Python Abstract Syntax Trees (AST) to evaluate code complexity without vulnerable runtime execution, coupled with Qdrant vector similarity for semantic career trajectory mapping.
+- **Engineering Status:** Validated with 153/153 passing automated test suites across FastAPI endpoints, AST visitors, and vector searches.
 
 <br/>
 
@@ -87,11 +127,11 @@ High-focus, active development initiatives where core system architectures are b
 <td width="50%" valign="top">
 
 #### 🛡️ [TrustShield-X](https://github.com/Priya-Ranjan-0201/TrustShield-X)
-**Digital Trust & Cyber Defense Architecture**
+**High-Speed Concurrent Network & Threat Intelligence Engine**
 
-- **Why It Exists:** Systems are increasingly susceptible to spoofing, credential compromise, and untrusted vectors. TrustShield-X investigates systematic trust verification and threat defense mechanisms.
-- **What I Am Exploring:** Security design patterns, threat surface mitigation, defensive validation logic, and resilient backend rules.
-- **Status:** Prototyping core validation models.
+- **Why It Exists:** Web and network services are frequently exposed to misconfigured headers, unpatched ports, and weak TLS configurations.
+- **How It Works:** Built on Python 3.13 AsyncIO for sub-15ms parallel socket checks, HTTP security header verification, and SHA-256 tamper-evident cryptographic audit logging.
+- **Engineering Status:** Enforces 7 strict defensive security invariants with STIX 2.1 threat modeling integration.
 
 <br/>
 
@@ -103,9 +143,9 @@ High-focus, active development initiatives where core system architectures are b
 
 ---
 
-### 04 // SELECTED WORK
+### 05 // SELECTED PROJECTS & ARCHITECTURES
 
-A curated index of public projects, system simulations, and technical explorations:
+A curated index of public engineering repositories, system simulations, and research prototypes:
 
 <table width="100%">
 <tr>
@@ -116,8 +156,8 @@ A curated index of public projects, system simulations, and technical exploratio
 </a>
 
 **01 / VIREONIQ**  
-AI-driven platform designed for career intelligence, skill mapping, and guided trajectory analysis.  
-`Focus: AI/ML • Full-Stack • NLP`  
+Career intelligence OS combining Python AST static code inspection, 9-dimensional skill readiness modeling, and Qdrant vector retrieval.  
+`Stack: Python • FastAPI • React 18 • Qdrant • Docker`  
 🔗 **[View Repository](https://github.com/Priya-Ranjan-0201/VIREONIQ)**
 
 </td>
@@ -128,8 +168,8 @@ AI-driven platform designed for career intelligence, skill mapping, and guided t
 </a>
 
 **02 / TrustShield-X**  
-Security framework examining defensive software paradigms, trust scoring, and anomaly awareness.  
-`Focus: Cybersecurity • Threat Modeling • Systems`  
+High-speed defensive security framework delivering sub-15ms multi-vector socket inspection, header auditing, and cryptographic audit trails.  
+`Stack: Python 3.13 AsyncIO • Sockets • STIX 2.1 • Security`  
 🔗 **[View Repository](https://github.com/Priya-Ranjan-0201/TrustShield-X)**
 
 </td>
@@ -142,8 +182,8 @@ Security framework examining defensive software paradigms, trust scoring, and an
 </a>
 
 **03 / TECH-ON-TOUR (TravelSathi)**  
-India's Digital Public Infrastructure for Smart Tourism — multilingual travel twin, anti-overtourism gatekeeper, and regional search graph engine.  
-`Focus: Smart Tourism DPI • Search Graph • Full-Stack Web`  
+India's Digital Public Infrastructure for Smart Tourism (Smart India Hackathon Grand Finale) — multilingual travel twin, anti-overtourism gatekeeper, and regional search graph.  
+`Stack: React • FastAPI • Python • Leaflet • Search Graphs`  
 🔗 **[View Repository](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR)**
 
 </td>
@@ -154,8 +194,8 @@ India's Digital Public Infrastructure for Smart Tourism — multilingual travel 
 </a>
 
 **04 / HRCV-**  
-AI-powered career intelligence platform exploring ATS compatibility scoring, NLP skill extraction, and candidate-role alignment.  
-`Focus: Career Intelligence • ATS Compatibility • NLP & ML`  
+AI-powered career intelligence platform providing ATS compatibility scoring, NLP skill extraction, and candidate-role alignment analysis.  
+`Stack: Python • React 19 • FastAPI • NLP • Scikit-Learn`  
 🔗 **[View Repository](https://github.com/Priya-Ranjan-0201/HRCV-)**
 
 </td>
@@ -168,8 +208,8 @@ AI-powered career intelligence platform exploring ATS compatibility scoring, NLP
 </a>
 
 **05 / Priocardix-AI**  
-Enterprise preventive cardiology platform powered by PulseIQ Guardian Engine™ for multi-parametric cardiac risk assessment.  
-`Focus: Healthcare AI • Predictive Modeling • Preventive Cardiology`  
+Enterprise preventive cardiology platform powered by PulseIQ Guardian Engine™ for multi-parametric risk assessment with explainable clinical attribution.  
+`Stack: React • Zustand • Machine Learning • Healthcare AI`  
 🔗 **[View Repository](https://github.com/Priya-Ranjan-0201/Priocardix-AI)**
 
 </td>
@@ -180,8 +220,8 @@ Enterprise preventive cardiology platform powered by PulseIQ Guardian Engine™ 
 </a>
 
 **06 / BrainCheck**  
-Containerized cognitive assessment and MCQ architecture platform engineered with Flask Blueprints, PostgreSQL, and Docker microservices.  
-`Focus: Containerized Systems • Flask & Docker • PostgreSQL`  
+Containerized cognitive assessment and MCQ architecture platform engineered with decoupled Flask Blueprints, PostgreSQL schemas, and Docker microservices.  
+`Stack: Flask • PostgreSQL • Docker Compose • Python`  
 🔗 **[View Repository](https://github.com/Priya-Ranjan-0201/BrainCheck)**
 
 </td>
@@ -194,8 +234,8 @@ Containerized cognitive assessment and MCQ architecture platform engineered with
 </a>
 
 **07 / Disk_Scheduling_Algorithm**  
-Operating systems simulator implementing and benchmarking 11 classical disk arm scheduling algorithms (FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK) with real-time canvas kinematics.  
-`Focus: Operating Systems • Storage Architecture • Canvas & Algorithms`  
+Operating systems simulator implementing and benchmarking 11 classical disk arm scheduling algorithms (FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK) with 60 FPS HTML5 Canvas kinematics.  
+`Stack: JavaScript • HTML5 Canvas • OS Storage Architecture • Algorithms`  
 🔗 **[View Repository](https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm)**
 
 </td>
@@ -204,50 +244,26 @@ Operating systems simulator implementing and benchmarking 11 classical disk arm 
 
 ---
 
-### 05 // ENGINEERING STACK
+### 06 // TECHNICAL TOOLBOX & STACK
 
-Grounded in practical usage—no inflated percentages or artificial skill bars:
-
-```
-[PRIMARY LANGUAGES]
- Python                     JavaScript                 C                          HTML5 / CSS3
-
-[WEB & SYSTEMS]
- React                      Node.js                    Django                     RESTful APIs
-
-[CORE TOOLING & WORKFLOW]
- Git                        GitHub                     Linux / Bash               VS Code
-
-[ACTIVE EXPLORATION & RESEARCH]
- Machine Learning / AI      Computer Vision (CV)       Cybersecurity Protocols    Interactive Web UI
-```
-
----
-
-### 06 // HOW I THINK
-
-An engineering framework derived from iterative problem-solving:
+Grounded in practical, day-to-day engineering usage:
 
 ```
-01 // FIND THE REAL PROBLEM      Never solve a symptom when the core bottleneck remains untouched.
-02 // UNDERSTAND THE SYSTEM      Map dependencies, data flow, and failure states before writing code.
-03 // BUILD THE SMALLEST VERSION Test hypothesis with a minimal, functioning prototype first.
-04 // TEST ASSUMPTIONS           Stress test corner cases and measure actual behavior against theory.
-05 // IMPROVE WHAT MATTERS       Optimize algorithms and architectures only where it adds real value.
-06 // KEEP LEARNING              Treat every broken build as system feedback, not failure.
+[LANGUAGES]
+ Python 3.11/3.13            JavaScript (ES6+)          TypeScript                 C (Systems / OS)
+
+[FRAMEWORKS & ENGINES]
+ FastAPI                    React 18 / 19              Next.js 15                 Flask Blueprints
+
+[DATABASES & CACHE]
+ PostgreSQL 16              Qdrant (Vector DB)         Redis 7                    MongoDB (2dsphere)
+
+[SYSTEMS & INFRASTRUCTURE]
+ Docker & Docker Compose    Linux / Bash / WSL2        Git & GitHub CI/CD         Nginx Reverse Proxy
+
+[CORE CONCEPTS & FOCUS]
+ Abstract Syntax Trees      Zero-Trust Security        OS Storage Kinematics      Search Graph Traversal
 ```
-
----
-
-### 07 // THE LAB
-
-*The Lab* represents my sandbox of active research, technical experiments, and continuous learning:
-
-- 🧠 **AI & ML Exploration:** Experimenting with feature extraction, data classification pipelines, and evaluating lightweight models for edge or web deployment.
-- 🛡️ **Cybersecurity Heuristics:** Analyzing common security vulnerabilities, input sanitization routines, and defensive authentication flows.
-- 👁️ **Computer Vision Experiments:** Prototyping contour detection, facial landmark recognition, and motion tracking using Python.
-- 🌐 **Creative & Interactive Web:** Exploring performant DOM manipulations, glassmorphism, responsive micro-interactions, and 3D web fundamentals.
-- ⚙️ **Systems & Optimization:** Studying OS scheduling mechanics, memory management fundamentals, and algorithm efficiency tradeoffs.
 
 <div align="center">
   <img src="assets/build-cycle.svg" alt="Build Test Break Understand Rebuild Cycle" width="100%" />
@@ -255,13 +271,28 @@ An engineering framework derived from iterative problem-solving:
 
 ---
 
-### 08 // SYSTEM TELEMETRY & GITHUB ACTIVITY
+### 07 // DAILY DESK & WORKFLOW
 
-Real-time telemetry showing live development consistency:
+```
+WORKSPACE & HARDWARE:
+├─ Rig:          Windows Dev Workstation + WSL2 Linux for kernel experiments & Docker
+├─ Keyboard:     Custom 75% Mechanical Keyboard (lubricated tactile switches & tuned stabilizers)
+├─ Screen:       High-res IPS display scaled for side-by-side terminal splits
+└─ Editor:       VS Code (minimal chrome, Error Lens, GitLens) with JetBrains Mono + Ligatures
+
+OUTSIDE THE CODE:
+├─ 🏃 Running:   Debugging stubborn race conditions by stepping away for a 5km run
+├─ 📚 Reading:   Fascinated by computing history (Bell Labs Unix, Apollo guidance computers)
+└─ ☕ Coffee:    Dialing in morning pour-overs with the precision of a build pipeline
+```
+
+---
+
+### 08 // GITHUB TELEMETRY & ACTIVITY FEED
 
 <div align="center">
 
-<!-- Dual Stats & Streak Cards (Dark Mode & Cyan Accent) -->
+<!-- Dual Stats & Streak Cards -->
 <a href="https://github.com/Priya-Ranjan-0201">
   <img src="https://github-readme-stats-fast.vercel.app/api?username=Priya-Ranjan-0201&show_icons=true&include_all_commits=true&count_private=true&theme=tokyonight&bg_color=0D1117&title_color=00F2FE&icon_color=00F2FE&text_color=8B949E&border_color=21262D&hide_border=false" alt="Priya Ranjan GitHub Stats" height="195" />
 </a>
@@ -284,7 +315,6 @@ Real-time telemetry showing live development consistency:
   <b>CONTRIBUTION ACTIVITY FEED</b>
 </p>
 
-<!-- Note: Generated automatically by .github/workflows/snake.yml to the 'output' branch -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Priya-Ranjan-0201/Priya-Ranjan-0201/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Priya-Ranjan-0201/Priya-Ranjan-0201/output/github-contribution-grid-snake.svg" />
@@ -295,35 +325,18 @@ Real-time telemetry showing live development consistency:
 
 ---
 
-### 09 // CURRENT FOCUS & TIMELINE
+### 09 // LET'S TALK & COLLABORATE
 
-```
-NOW   ──► Deepening core architectures for VIREONIQ and TrustShield-X.
-          Refining computer vision pipelines and foundational algorithmic performance.
-
-NEXT  ──► Integrating lightweight predictive inference into web-based interfaces.
-          Strengthening security threat validation heuristics.
-
-LATER ──► Experimenting with distributed microservices and advanced creative web technologies.
-```
-
----
-
-### 10 // LET'S CONNECT
-
-Whether you want to discuss system architectures, collaborate on an open-source tool, or exchange ideas around AI and security, feel free to reach out:
+Whether you want to dissect operating system storage kinematics, collaborate on an open-source tool, discuss defensive security patterns, or talk about tech history:
 
 <div align="left">
 
-- 🌐 **Portfolio:** [Interactive 3D Experience (View Source Code)](portfolio/)
+- 🌐 **Interactive 3D Portfolio:** [Explore Source & Architecture](portfolio/)
 - 💼 **LinkedIn:** [linkedin.com/in/priyaranjan01](https://www.linkedin.com/in/priyaranjan01/)
 - ✉️ **Direct Email:** [priye0201@gmail.com](mailto:priye0201@gmail.com)
 - 🐙 **GitHub:** [github.com/Priya-Ranjan-0201](https://github.com/Priya-Ranjan-0201)
 
 </div>
-
-<!-- EASTER EGG: System Heartbeat -->
-<!-- [SYSTEM HEARTBEAT: OK // KERNEL 0201 // LATENCY 0ms // TURN IDEAS INTO IMPACT] -->
 
 <br/>
 

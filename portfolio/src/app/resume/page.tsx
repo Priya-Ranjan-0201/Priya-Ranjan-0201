@@ -38,27 +38,34 @@ export default function ResumePage() {
   };
 
   return (
-    <div className="resume-page-root">
-      <section className="resume-container-section">
-        <div className="resume-screen-wrapper">
-          {/* Top Actions Bar (Hidden in Print) */}
-          <div className="resume-actions-bar no-print">
-            <div className="resume-badge-group">
-              <Sparkles size={13} className="text-cyan-400 inline mr-1" />
+    <div className="resume-page-wrapper">
+      <div className="subpage-container">
+        {/* Top Actions Bar (Hidden in Print) */}
+        <div className="subpage-header-block no-print">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="subpage-eyebrow mb-0">
+              <span className="w-2 h-2 rounded-full bg-[rgb(var(--accent))]" />
               <span>ACADEMIC CURRICULUM VITAE &bull; ATS VERIFIED FORMAT</span>
             </div>
 
-            <div className="resume-action-buttons flex items-center gap-3">
-              <button onClick={handlePrint} className="btn-print-primary">
+            <div className="flex items-center gap-3">
+              <button onClick={handlePrint} className="btn-solid-accent inline-flex items-center gap-2 px-4 py-2 rounded-lg font-mono text-xs font-semibold transition-all shadow-sm">
                 <Printer size={14} />
                 <span>VIEW PDF / PRINT</span>
               </button>
-              <button onClick={handlePrint} className="btn-print-secondary px-3 py-1.5 rounded-lg border border-cyan-500/30 text-cyan-400 hover:bg-cyan-500/10 text-xs font-mono transition-all flex items-center gap-1.5">
-                <Download size={13} />
+              <a
+                href="/Priya_Ranjan_Resume.pdf"
+                download="Priya_Ranjan_Resume.pdf"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-[rgb(var(--border))] hover:border-[rgb(var(--accent))] bg-[rgb(var(--bg-secondary))] text-[rgb(var(--fg-primary))] hover:text-[rgb(var(--accent))] font-mono text-xs transition-all shadow-sm"
+              >
+                <Download size={14} />
                 <span>DOWNLOAD PDF</span>
-              </button>
+              </a>
             </div>
           </div>
+        </div>
+
+        <div className="resume-screen-wrapper">
 
           {/* ── PRINT-OPTIMIZED RESUME DOCUMENT ── */}
           <div className="resume-sheet">
@@ -73,7 +80,7 @@ export default function ResumePage() {
               <div className="sheet-contact-grid">
                 <div className="sheet-contact-item">
                   <Mail size={13} className="sheet-icon" />
-                  <span onClick={handleCopyEmail} className="cursor-pointer hover:text-cyan-400">
+                  <span onClick={handleCopyEmail} className="cursor-pointer hover:text-[rgb(var(--accent))] font-medium">
                     {profile.email} {copiedEmail ? '(Copied!)' : ''}
                   </span>
                 </div>
@@ -194,7 +201,7 @@ export default function ResumePage() {
             </section>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

@@ -37,37 +37,35 @@ export default function JournalPage() {
 
   const getCategoryColor = (cat: string) => {
     switch (cat) {
-      case 'BUILD': return 'border-cyan-500/40 text-cyan-400 bg-cyan-500/10';
+      case 'BUILD': return 'border-[rgb(var(--accent))]/40 text-[rgb(var(--accent))] bg-[rgb(var(--accent))]/10';
       case 'SECURITY': return 'border-emerald-500/40 text-emerald-400 bg-emerald-500/10';
       case 'AI': return 'border-purple-500/40 text-purple-400 bg-purple-500/10';
       case 'LEARNING':
       case 'LEARN': return 'border-blue-500/40 text-blue-400 bg-blue-500/10';
       case 'WEB': return 'border-amber-500/40 text-amber-400 bg-amber-500/10';
       case 'EXPERIMENTS': return 'border-pink-500/40 text-pink-400 bg-pink-500/10';
-      default: return 'border-white/20 text-white/70 bg-white/5';
+      default: return 'border-[rgb(var(--border))] text-[rgb(var(--fg-muted))] bg-[rgb(var(--bg-secondary))]';
     }
   };
 
   return (
-    <div className="journal-root">
-      {/* ── 01. JOURNAL HERO ─────────────────── */}
-      <section className="journal-hero-section">
-        <div className="journal-container">
-          <div className="journal-hero-header">
-            <div className="journal-eyebrow">
-              <Sparkles size={13} className="text-cyan-400 inline mr-1" />
-              <span>OBSERVATORY OF ENGINEERING NOTES &bull; 06 TECHNICAL ESSAYS</span>
-            </div>
-
-            <h1 className="journal-main-title">
-              THOUGHTS, SYSTEMS<br />
-              <span className="text-gradient-cyan">&amp; ARCHITECTURAL</span> RETROSPECTIVES.
-            </h1>
-
-            <p className="journal-lead-desc">
-              Writing forces clear thinking. Here are technical dissections of real project obstacles, operating system mechanics, explainable AI, and software design principles.
-            </p>
+    <div className="journal-page-wrapper">
+      <div className="subpage-container">
+        {/* ── 01. JOURNAL HERO ─────────────────── */}
+        <div className="subpage-header-block">
+          <div className="subpage-eyebrow">
+            <span className="w-2 h-2 rounded-full bg-[rgb(var(--accent))]" />
+            <span>OBSERVATORY OF ENGINEERING NOTES &bull; 06 TECHNICAL ESSAYS</span>
           </div>
+
+          <h1 className="subpage-headline">
+            Thoughts, Systems &amp; Architectural Retrospectives.
+          </h1>
+
+          <p className="subpage-lead-para">
+            Writing forces clear thinking. Here are technical dissections of real project obstacles, operating system mechanics, explainable AI, and software design principles.
+          </p>
+        </div>
 
           {/* ── 02. CONTROLS BAR: CATEGORIES & SEARCH ─────────────────── */}
           <div className="journal-controls-bar">
@@ -146,7 +144,7 @@ export default function JournalPage() {
                   <div className="entry-read-cta flex items-center gap-3">
                     <Link
                       href={`/journal/${entry.slug}`}
-                      className="inline-flex items-center gap-1 text-cyan-400 hover:text-cyan-300 transition-colors text-xs font-mono"
+                      className="inline-flex items-center gap-1 text-[rgb(var(--accent))] hover:opacity-80 transition-colors text-xs font-mono font-medium"
                       onClick={(e) => {
                         e.stopPropagation();
                         playSound('click');
@@ -155,8 +153,8 @@ export default function JournalPage() {
                       <span>Dedicated Page</span>
                       <ArrowRight size={13} />
                     </Link>
-                    <span className="text-white/40 text-xs">&bull;</span>
-                    <span className="text-xs text-white/60">Quick View &rarr;</span>
+                    <span className="text-[rgb(var(--fg-muted))] text-xs">&bull;</span>
+                    <span className="text-xs text-[rgb(var(--fg-muted))]">Quick View &rarr;</span>
                   </div>
                 </div>
               </motion.article>
@@ -164,13 +162,12 @@ export default function JournalPage() {
 
             {filteredEntries.length === 0 && (
               <div className="journal-empty-state">
-                <BookOpen size={28} className="text-white/30 mb-2" />
-                <p className="text-white/60">No essays matching the current query.</p>
+                <BookOpen size={28} className="text-[rgb(var(--fg-muted))] mb-2" />
+                <p className="text-[rgb(var(--fg-muted))]">No essays matching the current query.</p>
               </div>
             )}
           </div>
         </div>
-      </section>
 
       {/* ── 04. EDITORIAL ESSAY READER MODAL ─────────────────── */}
       <AnimatePresence>
@@ -191,10 +188,10 @@ export default function JournalPage() {
               exit={{ opacity: 0, y: 30, scale: 0.96 }}
               transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
             >
-              <div className="flex items-center justify-between border-b border-white/10 pb-3 mb-6">
+              <div className="flex items-center justify-between border-b border-[rgb(var(--border))] pb-3 mb-6">
                 <Link
                   href={`/journal/${selectedEntry.slug}`}
-                  className="inline-flex items-center gap-1.5 text-xs font-mono text-cyan-400 hover:text-cyan-300"
+                  className="inline-flex items-center gap-1.5 text-xs font-mono text-[rgb(var(--accent))] hover:opacity-80 font-medium"
                   onClick={() => playSound('click')}
                 >
                   <ExternalLink size={13} />

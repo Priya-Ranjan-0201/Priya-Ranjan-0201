@@ -1,184 +1,228 @@
 import { Profile, ThinkingStep } from '@/types';
 
-export interface InterestMapNode {
+export interface PersonalStory {
+  whyCS: string;
+  whyDevOpsCloud: string;
+  failures: {
+    title: string;
+    context: string;
+    whatHappened: string;
+    lessonLearned: string;
+  }[];
+  outsideCode: {
+    activity: string;
+    description: string;
+  }[];
+}
+
+export interface ExploreMindDomain {
   id: string;
   label: string;
-  domain: string;
   tagline: string;
   description: string;
   technologies: string[];
-  relatedProjects: string[];
-  x: number; // percentage in coordinate space
-  y: number;
+  flagshipProject: {
+    title: string;
+    slug: string;
+    highlight: string;
+    githubRepo: string;
+    metrics: string;
+  };
 }
 
-export const interestMapNodes: InterestMapNode[] = [
+export const exploreMindDomains: ExploreMindDomain[] = [
   {
     id: 'ai',
-    label: 'Artificial Intelligence',
-    domain: 'AI & Machine Learning',
-    tagline: 'Semantic Trajectories & Explainable Clinical Models',
-    description: 'Investigating how dense vector embeddings, decision tree ensembles, and explainable attribution (SHAP) can solve real-world career and diagnostic bottlenecks.',
-    technologies: ['PyTorch', 'Scikit-learn', 'XGBoost', 'SHAP', 'NumPy'],
-    relatedProjects: ['vireoniq', 'priocardix-ai'],
-    x: 25,
-    y: 20,
+    label: 'AI & Machine Learning',
+    tagline: 'Transparent reasoning and practical machine learning',
+    description: 'Applying machine learning where it creates tangible clarity: Abstract Syntax Tree evaluation, vector similarity search with Qdrant, and explainable risk modeling with TreeSHAP.',
+    technologies: ['PyTorch', 'Python', 'Qdrant Vector DB', 'Scikit-learn', 'TreeSHAP', 'AST Parsing'],
+    flagshipProject: {
+      title: 'VIREONIQ',
+      slug: 'vireoniq',
+      highlight: 'AST syntax code analysis & vector roadmaps with 153 automated test cases.',
+      githubRepo: 'https://github.com/Priya-Ranjan-0201/VIREONIQ',
+      metrics: '153 Tests Passing · Python 3.11 · Qdrant Vector DB',
+    },
   },
   {
     id: 'cybersecurity',
-    label: 'Cybersecurity',
-    domain: 'Defensive Architecture & Threat Intelligence',
-    tagline: 'Attack Surface Reconnaissance & Vulnerability Modeling',
-    description: 'Analyzing security from an architectural perspective: mapping open attack surfaces, network socket probes, and automating actionable vulnerability remediation.',
-    technologies: ['Nmap', 'OWASP ZAP', 'Python Sockets', 'Bash', 'Docker'],
-    relatedProjects: ['trustshield-x'],
-    x: 75,
-    y: 20,
-  },
-  {
-    id: 'systems',
-    label: 'Systems & OS',
-    domain: 'Operating Systems & Low-Level Mechanics',
-    tagline: 'Disk Kinematics, Scheduling & Concurrency Primitives',
-    description: 'Studying how the operating system talks to bare hardware: storage arm seek algorithms, memory models, latency boundaries, and hardware timing limits.',
-    technologies: ['C', 'OS Scheduling', 'Storage Architecture', 'Assembly Basics'],
-    relatedProjects: ['disk-scheduling-algorithm'],
-    x: 82,
-    y: 52,
-  },
-  {
-    id: 'computer-vision',
-    label: 'Computer Vision',
-    domain: 'Real-Time Perception & Edge Detection',
-    tagline: 'Adaptive Preprocessing & Quantized Feature Extraction',
-    description: 'Extracting clean geometric and feature signals from noisy real-world camera feeds using mathematical contrast enhancement and lightweight CNNs.',
-    technologies: ['OpenCV', 'PyTorch', 'TensorFlow Lite', 'NumPy'],
-    relatedProjects: ['hrcv'],
-    x: 68,
-    y: 80,
+    label: 'Cybersecurity & Trust',
+    tagline: 'Defensive architecture, network auditing & cryptographic integrity',
+    description: 'Building tools that verify system invariants: concurrent port scanners, HTTP security header auditors, and SHA-256 tamper-evident transaction logs.',
+    technologies: ['Python 3.13 AsyncIO', 'Socket Programming', 'PyCryptodome', 'STIX 2.1', 'Security Invariants'],
+    flagshipProject: {
+      title: 'TrustShield X',
+      slug: 'trustshield-x',
+      highlight: 'Sub-15ms multi-vector network & header scanner with cryptographically signed logs.',
+      githubRepo: 'https://github.com/Priya-Ranjan-0201/TrustShield-X',
+      metrics: 'Sub-15ms Socket Scans · SHA-256 Tamper Proofing · Python AsyncIO',
+    },
   },
   {
     id: 'fullstack',
-    label: 'Full-Stack Engineering',
-    domain: 'Distributed Web & API Architectures',
-    tagline: 'Asynchronous Gateways, Relational DBs & Responsive UIs',
-    description: 'Connecting fast backends to fluid user interfaces: architecting clean schemas, Redis caching layers, and zero-runtime client performance.',
-    technologies: ['Next.js', 'React', 'FastAPI', 'Node.js', 'PostgreSQL', 'Redis'],
-    relatedProjects: ['vireoniq', 'tech-on-tour'],
-    x: 18,
-    y: 52,
+    label: 'Full-Stack Architecture',
+    tagline: 'Clean API design paired with high-performance client interfaces',
+    description: 'Designing end-to-end applications with strict TypeScript typing, decoupled FastAPI asynchronous backends, and responsive, accessible UI states.',
+    technologies: ['Next.js 16', 'React 19', 'FastAPI', 'TypeScript', 'PostgreSQL', 'Docker'],
+    flagshipProject: {
+      title: 'TECH-ON-TOUR',
+      slug: 'tech-on-tour',
+      highlight: 'Full-stack geospatial routing platform with GeoJSON 2dsphere indexes and real-time state.',
+      githubRepo: 'https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR',
+      metrics: 'TypeScript · GeoJSON 2dsphere · Next.js · MongoDB',
+    },
+  },
+  {
+    id: 'vision',
+    label: 'Computer Vision',
+    tagline: 'Visual perception pipelines and image processing',
+    description: 'Exploring real-time feature extraction, algorithmic edge detection, and visual pattern recognition for human-computer interaction and automation.',
+    technologies: ['OpenCV', 'Python', 'NumPy', 'Image Filtering', 'Feature Matching'],
+    flagshipProject: {
+      title: 'HRCV',
+      slug: 'hrcv',
+      highlight: 'Computer vision pipeline detecting visual features and real-time interaction states.',
+      githubRepo: 'https://github.com/Priya-Ranjan-0201/HRCV-',
+      metrics: '60 FPS Realtime · OpenCV · NumPy · Feature Detection',
+    },
+  },
+  {
+    id: 'systems',
+    label: 'Systems & OS Fundamentals',
+    tagline: 'Hardware boundaries, process scheduling, and kernel primitives',
+    description: 'Understanding low-level computing constraints: storage head seek algorithms, memory allocation models, asynchronous event loops, and POSIX socket concurrency.',
+    technologies: ['C', 'Linux Internals', 'POSIX Sockets', 'Event Loops', 'Algorithmic Optimization'],
+    flagshipProject: {
+      title: 'Disk Scheduling Algorithm',
+      slug: 'disk-scheduling',
+      highlight: 'Kinematic 60 FPS HTML5 Canvas simulator modeling 11 OS disk scheduling strategies.',
+      githubRepo: 'https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm',
+      metrics: '11 Scheduling Algorithms · 60 FPS Canvas · Seek Optimization',
+    },
   },
   {
     id: 'product',
-    label: 'Product Architecture',
-    domain: 'Human Systems & Cognitive Ergonomics',
-    tagline: 'Translating Technical Feasibility into Usable Power',
-    description: 'Engineering systems with deep empathy for human attention: eliminating user friction, structuring information intuitively, and designing for clarity.',
-    technologies: ['Information Architecture', 'User Flow Mapping', 'Performance Telemetry'],
-    relatedProjects: ['vireoniq', 'braincheck', 'tech-on-tour'],
-    x: 32,
-    y: 80,
+    label: 'Product Systems & UX',
+    tagline: 'Human ergonomics, interactive simulation, and visual rhythm',
+    description: 'Bridging engineering rigor with intuitive user workflows: interactive "what-if" state sliders, contextual navigation previews, and calm typography.',
+    technologies: ['UI Design Systems', 'Zustand State', 'Framer Motion', 'Swiss Typography', 'Web Accessibility'],
+    flagshipProject: {
+      title: 'Priocardix AI',
+      slug: 'priocardix-ai',
+      highlight: 'Interactive cardiovascular risk simulator with real-time feedback sliders.',
+      githubRepo: 'https://github.com/Priya-Ranjan-0201/Priocardix-AI',
+      metrics: 'ROC-AUC 98.4% · TreeSHAP Explainability · React 19',
+    },
   },
 ];
 
 export const thinkingSteps: ThinkingStep[] = [
   {
     step: '01',
-    title: 'OBSERVE',
-    tagline: 'Look closely at where existing systems cause friction.',
-    desc: 'Every great software solution begins with quiet observation. I watch how people actually interact with tools, identifying latency spikes, hidden assumptions, cognitive fatigue, and silent points of failure.',
-    invariant: 'The real bottleneck is often upstream of where the error is reported.',
-    telemetry: 'LATENCY_MAP: 450ms human hesitation captured at input boundary',
-    color: '#00f0ff',
+    title: 'Listen & Understand',
+    tagline: 'Find the real friction point before touching code.',
+    desc: 'Most software problems are misunderstanding problems in disguise. I start by carefully mapping how people actually use a tool and where the true bottleneck hides.',
+    invariant: 'The real problem is almost never what was initially assumed.',
+    telemetry: 'Discovery phase: interview users, inspect edge cases, clarify requirements',
+    color: '#1B4332',
   },
   {
     step: '02',
-    title: 'QUESTION',
-    tagline: 'Challenge inherited defaults and architectural habits.',
-    desc: 'Ask why the problem exists. Is a distributed service mesh genuinely necessary, or would a lean, cache-coherent monolith outperform it by an order of magnitude? Questioning forces us back to first principles.',
-    invariant: 'Never optimize something that should not exist in the first place.',
-    telemetry: 'ASSUMPTION_AUDIT: 3 redundant network hops identified',
-    color: '#38bdf8',
+    title: 'Question Defaults',
+    tagline: 'Do not build complexity that does not need to exist.',
+    desc: 'Before adding a distributed cache or a new framework, I ask if a straightforward relational query or a clean data structure solves it in two lines.',
+    invariant: 'The best code is the code you did not need to write.',
+    telemetry: 'Architecture review: strip out unnecessary services before writing code',
+    color: '#1B4332',
   },
   {
     step: '03',
-    title: 'RESEARCH',
-    tagline: 'Study literature, mathematical foundations, and prior art.',
-    desc: 'Read documentation, examine open-source architectures, analyze academic benchmarks, and study historical solutions. Understanding how Bell Labs and modern storage designers solved analogous constraints prevents reinventing square wheels.',
-    invariant: 'Grounded engineering stands on rigorous mathematical and algorithmic precedents.',
-    telemetry: 'PRIOR_ART_INDEX: 14 whitepapers and RFC specifications reviewed',
-    color: '#6366f1',
+    title: 'Build Simply',
+    tagline: 'Write clear, readable, and well-typed code.',
+    desc: 'I choose clear names, clean interfaces, and predictable data flow. Code is read ten times more often than it is written.',
+    invariant: 'Clever code is a liability; clear code is a relief.',
+    telemetry: 'Implementation: strong types, modular functions, single responsibilities',
+    color: '#1B4332',
   },
   {
     step: '04',
-    title: 'DESIGN',
-    tagline: 'Map state machines, API contracts, and user mental models.',
-    desc: 'Architecture is clear thinking made visible. Draft strict TypeScript interfaces, sequence diagrams, and mathematical invariants. When the data schema and flow transitions are elegant, the implementation follows naturally.',
-    invariant: 'If you cannot draw the state machine on paper, you cannot code it safely.',
-    telemetry: 'STATE_TRANSITIONS: 7 discrete states mapped with zero illegal transitions',
-    color: '#a855f7',
+    title: 'Test What Breaks',
+    tagline: 'Simulate bad network, bad data, and edge conditions.',
+    desc: 'Every endpoint gets tested against timeouts, missing payloads, and concurrent requests. Catching errors in staging is an act of user respect.',
+    invariant: 'Untested edge cases will always find their way to production.',
+    telemetry: 'Verification: automated unit tests, timeout policies, boundary checks',
+    color: '#1B4332',
   },
   {
     step: '05',
-    title: 'BUILD',
-    tagline: 'Write expressive, performant, and type-safe code.',
-    desc: 'Implement the minimal working core with clean, testable interfaces, zero bloat, and strict type safety. Every function has a single responsibility and clean boundaries.',
-    invariant: 'Clean code is readable, predictable, and devoid of hidden side effects.',
-    telemetry: 'AST_STRUCTURE: Cyclomatic complexity capped at ≤ 4 per module',
-    color: '#ec4899',
-  },
-  {
-    step: '06',
-    title: 'TEST',
-    tagline: 'Subject every invariant to deterministic verification.',
-    desc: 'Subject the system to real-world edge cases, invalid inputs, network latency spikes, and stress benchmarks. Testing is not a checkbox; it is mathematical proof of correctness.',
-    invariant: 'Untested edge cases are active production bugs in waiting.',
-    telemetry: 'SUITE_COVERAGE: 96.8% branch coverage, 0 memory leaks',
-    color: '#10b981',
-  },
-  {
-    step: '07',
-    title: 'BREAK',
-    tagline: 'Intentionally attack your own implementation.',
-    desc: 'Simulate packet loss, malicious injection payloads, concurrency race conditions, and memory exhaustion. Finding vulnerabilities in private staging protects production users.',
-    invariant: 'If you do not break your system, production load certainly will.',
-    telemetry: 'CHAOS_SIMULATION: 100k fuzz iterations, zero unhandled rejections',
-    color: '#f43f5e',
-  },
-  {
-    step: '08',
-    title: 'REBUILD',
-    tagline: 'Refactor with hard-earned telemetry insights.',
-    desc: 'Refactor based on empirical profiler data. Eliminate unnecessary allocations, flatten hot loops, consolidate database round-trips, and simplify component trees.',
-    invariant: 'Simplicity is achieved after understanding complexity, not before.',
-    telemetry: 'PROFILER_GAIN: 4.2x throughput increase via hot-path memoization',
-    color: '#f59e0b',
-  },
-  {
-    step: '09',
-    title: 'SHIP',
-    tagline: 'Deploy with continuous observability and human care.',
-    desc: 'Deploy with comprehensive observability, automated health checks, transparent documentation, and continuous monitoring.',
-    invariant: 'Software is alive; deployment is the beginning of its stewardship.',
-    telemetry: 'HEALTH_CHECK: 99.99% uptime target, p99 latency < 12ms',
-    color: '#00f0ff',
+    title: 'Ship & Maintain',
+    tagline: 'Deployment is the start of stewardship, not the end.',
+    desc: 'Release with clear logs, honest documentation, and simple rollback paths. Reliable software is maintained with long-term care.',
+    invariant: 'Good software is quiet, predictable, and dependable.',
+    telemetry: 'Operations: health monitors, clear error logs, reproducible environments',
+    color: '#1B4332',
   },
 ];
+
+export const personalStory: PersonalStory = {
+  whyCS: "I didn't grow up disassembling circuit boards in a workshop. My path started with simple, stubborn curiosity: I wanted to understand what actually happens in the silent milliseconds between pressing Enter in a browser address bar and having a webpage appear on my screen. Once I discovered network sockets, operating system processes, and algorithmic trade-offs, I was completely hooked. It transformed the computer from a magical black box into a machine built by human hands—one that I could learn to build, improve, and understand from the ground up.",
+  whyDevOpsCloud: "Early on, I built projects that ran fine on my local laptop, only to watch them fall over in embarrassing ways the instant I tried deploying them to a cloud server. That humbled me quickly. It taught me that writing code is only the first chapter—keeping that code alive, observable, performant, and secure under real-world conditions is where the true engineering craft lives. I fell in love with Linux system administration, containerization with Docker, structured networking, and automated CI/CD pipelines. There is a deep, honest satisfaction in building an infrastructure where deployments are predictable, repeatable, and calm.",
+  failures: [
+    {
+      title: "The Unbounded Connection Storm",
+      context: "During an early test of my network scanner project (TrustShield X), I attempted to scan a wide subnet concurrently.",
+      whatHappened: "I spawned hundreds of asynchronous socket connections without enforcing a concurrency pool semaphore. Within seconds, the script exhausted available operating system file descriptors, choked my local network interface, and froze the runtime.",
+      lessonLearned: "Concurrency without strict rate-limiting and explicit timeouts is indistinguishable from a self-inflicted denial-of-service. I re-architected the scanner around bounded async semaphores and mandatory connection timeouts. Now, every single network boundary I build has deterministic limits."
+    },
+    {
+      title: "The Premature Microservices Trap",
+      context: "When starting my career intelligence project (VIREONIQ), I initially broke the prototype into four separate microservices with an asynchronous message broker.",
+      whatHappened: "I spent three weeks debugging Docker internal network bridges, payload serialization bugs, and cross-service latency instead of improving the core algorithms and user experience.",
+      lessonLearned: "Premature distribution is an expensive mistake. I tore down the separate services and consolidated the codebase into a clean, modular FastAPI application with Redis caching. Development speed quadrupled immediately. I learned to earn the right to distribute through real scale, not imaginary future requirements."
+    }
+  ],
+  outsideCode: [
+    {
+      activity: "Reading & Tech History",
+      description: "Fascinated by the history of computing—from the design of the Unix operating system at Bell Labs to how Apollo mission guidance software handled hardware glitches."
+    },
+    {
+      activity: "Mechanical Keyboards",
+      description: "Enjoy building and modding mechanical keyboards. There is something grounding about lubing switches and tuning stabilizers for a tactile, tactile typing experience."
+    },
+    {
+      activity: "Running & Long Walks",
+      description: "My favorite way to debug a stubborn race condition is to close the laptop and go for a 5km run. The solution almost always surfaces once I step away."
+    },
+    {
+      activity: "Pour-Over Coffee",
+      description: "Treating morning brew ratios, grind size, and water temperature with the same steady attention to detail as a well-crafted build pipeline."
+    }
+  ]
+};
+
+export const profileManifesto = {
+  line1: "I like difficult problems.",
+  line2: "They create better questions.",
+  line3: "Better questions create better systems.",
+};
 
 export const profile: Profile = {
   firstName: 'Priya',
   lastName: 'Ranjan',
-  title: 'Developer & Systems Builder',
-  roles: ['Software Engineer', 'Systems Builder', 'Lifelong Learner'],
-  statement: 'I am not trying to know everything. I am learning to build difficult things well.',
+  title: 'Computer Science Engineer · Builder · Problem Solver',
+  roles: ['Computer Science Engineer', 'Builder', 'Problem Solver'],
+  statement: "I build thoughtful software experiences at the intersection of technology, problem solving and intelligent systems.",
   bio: [
-    'I am a Computer Science undergraduate (B.Tech 2023–2027) driven by an intense curiosity for how digital systems operate under the surface. My focus bridges intelligent AI systems, defensive cybersecurity, and robust full-stack architecture.',
-    'I do not view programming as merely stacking libraries; it is an exercise in rigorous problem decomposition. Whether calculating disk arm traversal kinematics or mapping semantic career trajectories through vector space, I care deeply about why things work and how to make them reliable.',
-    'My philosophy is simple: build with conviction, measure with honesty, and remain hungry for difficult technical challenges that force better questions.',
+    "I'm an undergraduate studying Computer Science & Engineering (B.Tech 2023–2027) in India. My primary interests sit across Artificial Intelligence, Machine Learning, Cybersecurity, Full-Stack Development, Computer Vision, and Software Engineering.",
+    "I like understanding how things work under the hood, building reliable systems, and writing software that solves real problems without unnecessary noise. I care about first principles: why a particular architecture fits the problem, how an operating system schedules disk heads, and how to write clean, maintainable software.",
+    "When I'm not writing code or experimenting with new algorithms, you'll find me studying computing history, modding mechanical keyboards, or running."
   ],
+  avatar: '/images/priya-portrait.jpg',
   email: 'priye0201@gmail.com',
   location: 'India',
-  resume: '/resume.pdf',
+  resume: '/resume',
   socialLinks: [
     {
       platform: 'GitHub',
@@ -201,74 +245,34 @@ export const profile: Profile = {
   ],
   identityNodes: [
     {
-      id: 'engineering',
-      label: 'ENGINEERING',
-      subtitle: 'Distributed Systems & Architecture',
-      description: 'Building robust, scalable backends, resilient event streams, and deterministic microservices with low operational footprint.',
-      color: '#06b6d4',
+      id: 'systems',
+      label: 'Systems & OS',
+      subtitle: 'Low-Level Mechanics & Performance',
+      description: 'Understanding operating systems, storage arm seek physics, process scheduling, and memory boundaries.',
+      color: '#1B4332',
       iconName: 'Cpu',
-      technologies: ['TypeScript', 'Go', 'Python', 'Node.js', 'PostgreSQL', 'Docker', 'Redis'],
-      focusAreas: ['Event-Driven Architectures', 'High Concurrency', 'Fault Tolerance'],
+      technologies: ['C', 'Linux Internals', 'Data Structures', 'POSIX Sockets'],
+      focusAreas: ['Memory Management', 'Process Scheduling', 'Storage Kinematics'],
+    },
+    {
+      id: 'devops',
+      label: 'Cloud & DevOps',
+      subtitle: 'Reliable Infrastructure & Automation',
+      description: 'Deploying containerized applications, automating CI/CD pipelines, and ensuring systems remain observable and resilient.',
+      color: '#1B4332',
+      iconName: 'Layers',
+      technologies: ['Docker', 'Linux CLI', 'GitHub Actions', 'Nginx', 'PostgreSQL'],
+      focusAreas: ['Automated Deployments', 'Container Hardening', 'Network Boundaries'],
     },
     {
       id: 'ai',
-      label: 'AI & ML',
-      subtitle: 'Neural Architectures & Inference',
-      description: 'Implementing high-precision neural networks, edge computer vision pipelines, and multi-agent coordination frameworks.',
-      color: '#10b981',
+      label: 'Applied AI',
+      subtitle: 'Explainable Models & Intelligence',
+      description: 'Applying machine learning where it adds tangible clarity—such as explainable healthcare risk models and syntax tree code evaluation.',
+      color: '#1B4332',
       iconName: 'Brain',
-      technologies: ['PyTorch', 'TensorFlow', 'OpenCV', 'LangChain', 'Vector DBs', 'HuggingFace'],
-      focusAreas: ['Edge Vision Pipelines', 'Agentic Workflows', 'Embedding Search'],
-    },
-    {
-      id: 'cybersecurity',
-      label: 'CYBERSECURITY',
-      subtitle: 'Zero-Trust & Threat Defense',
-      description: 'Integrating defensive telemetry, zero-trust cryptographic verification, and runtime behavioral anomaly detection.',
-      color: '#f43f5e',
-      iconName: 'Shield',
-      technologies: ['OAuth 2.0 / OIDC', 'JWT / mTLS', 'Threat Modeling', 'Network Telemetry', 'Static Analysis'],
-      focusAreas: ['Defensive Invariants', 'Anomaly Detection', 'Access Hardening'],
-    },
-    {
-      id: 'web',
-      label: 'CREATIVE WEB',
-      subtitle: 'Three.js, WebGL & Motion',
-      description: 'Crafting non-standard spatial web experiences, procedural shader materials, kinetic typography, and fluid interfaces.',
-      color: '#6366f1',
-      iconName: 'Layers',
-      technologies: ['React 19', 'Three.js / WebGL', 'GLSL Shaders', 'Tailwind CSS', 'Framer Motion'],
-      focusAreas: ['Procedural Shaders', 'Physics Interaction', 'Kinetic Typography'],
-    },
-    {
-      id: 'systems',
-      label: 'SYSTEMS',
-      subtitle: 'Cloud & Infrastructure',
-      description: 'Containerized deployments, orchestration, serverless micro-runtimes, and resilient edge content networks.',
-      color: '#f59e0b',
-      iconName: 'Server',
-      technologies: ['Linux Shell', 'Cloud Run / GCP', 'CI/CD Pipelines', 'Nginx', 'Kubernetes'],
-      focusAreas: ['Sub-second Cold Starts', 'Automated Pipelines', 'Infrastructure as Code'],
-    },
-    {
-      id: 'product',
-      label: 'PRODUCT & UX',
-      subtitle: 'Cognitive Design & Typography',
-      description: 'Balancing rigorous information architecture with high tactile feedback, micro-interactions, and accessibility standards.',
-      color: '#ec4899',
-      iconName: 'Compass',
-      technologies: ['Design Tokens', 'Design Systems', 'WCAG AA Compliance', 'Information Architecture'],
-      focusAreas: ['Cognitive Load Reduction', 'Rapid Prototyping', 'Spatial UX'],
-    },
-    {
-      id: 'learning',
-      label: 'CONTINUAL LEARNING',
-      subtitle: 'Research & Experiments',
-      description: 'Constantly stress-testing modern research papers, compiling experimental kernels, and evaluating emerging toolchains.',
-      color: '#14b8a6',
-      iconName: 'Sparkles',
-      technologies: ['WebGPU', 'Rust / WebAssembly', 'Quantum Compute Basics', 'Differential Privacy'],
-      focusAreas: ['Emerging Hardware APIs', 'Low-power Inference', 'Next-gen Graphics'],
+      technologies: ['Python', 'PyTorch', 'Scikit-learn', 'XGBoost', 'SHAP'],
+      focusAreas: ['Model Explainability', 'Vector Similarity', 'AST Parsing'],
     },
   ],
 };

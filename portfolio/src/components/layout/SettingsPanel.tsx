@@ -20,22 +20,20 @@ export default function SettingsPanel() {
   } = useSettingsStore();
 
   const themes: { value: ThemeMode; label: string }[] = [
-    { value: 'dark', label: 'Dark' },
+    { value: 'paper', label: 'Paper' },
     { value: 'light', label: 'Light' },
     { value: 'mono', label: 'Mono' },
-    { value: 'midnight', label: 'Midnight' },
+    { value: 'dark', label: 'Dark' },
   ];
 
-  // 8 accent color swatches matching Panel 03
+  // Natural botanical & mineral pigment swatches
   const accentSwatches = [
-    { value: 'arctic' as AccentPalette, color: '#00f0ff', label: 'Cyan' },
-    { value: 'ember' as AccentPalette, color: '#ff4d4d', label: 'Coral' },
-    { value: 'copper' as AccentPalette, color: '#ffffff', label: 'White' },
-    { value: 'ocean' as AccentPalette, color: '#38b6e1', label: 'Sky' },
-    { value: 'violet' as AccentPalette, color: '#a855f7', label: 'Purple' },
-    { value: 'sage' as AccentPalette, color: '#ec4899', label: 'Magenta' },
-    { value: 'violet' as AccentPalette, color: '#8b5cf6', label: 'Violet' },
-    { value: 'sage' as AccentPalette, color: '#22c55e', label: 'Green' },
+    { value: 'ember' as AccentPalette, color: '#1B4332', label: 'Forest Pine' },
+    { value: 'sage' as AccentPalette, color: '#4B5F3C', label: 'Olive Sage' },
+    { value: 'copper' as AccentPalette, color: '#B84B29', label: 'Terracotta' },
+    { value: 'ocean' as AccentPalette, color: '#1E3A5F', label: 'Navy Ink' },
+    { value: 'arctic' as AccentPalette, color: '#3C4B5A', label: 'Slate' },
+    { value: 'violet' as AccentPalette, color: '#6C2A41', label: 'Burgundy' },
   ];
 
   const fonts: { value: FontSystem; label: string }[] = [
@@ -47,7 +45,7 @@ export default function SettingsPanel() {
   ];
 
   const motions: { value: MotionLevel; label: string }[] = [
-    { value: 'calm', label: 'Cyber' },
+    { value: 'calm', label: 'Calm' },
     { value: 'balanced', label: 'Balanced' },
     { value: 'cinematic', label: 'Cinematic' },
   ];

@@ -14,11 +14,7 @@ import { useThemeEngine } from '@/hooks/useThemeEngine';
 import { useSettingsStore } from '@/stores/settings-store';
 import type { CoreState } from '@/types';
 
-// Dynamically import 3D scene to avoid SSR issues
-const Scene = dynamic(() => import('@/components/three/Scene'), {
-  ssr: false,
-  loading: () => <div className="three-canvas-wrapper" />,
-});
+
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   // Apply theme engine
@@ -77,9 +73,6 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
 
   return (
     <>
-      {/* Persistent Subtle 3D Ambient Core */}
-      <Scene />
-
       {/* Optional Subtle Grain */}
       {grain && <div className="grain-overlay" aria-hidden="true" />}
 

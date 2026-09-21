@@ -420,7 +420,7 @@ export default function LabExperimentSandbox() {
           {/* Sandbox Hero Header */}
           <div className="sandbox-hero-header">
             <div className="hero-eyebrow">
-              <Sparkles size={13} className="text-cyan-400 inline mr-1" />
+              <Sparkles size={13} className="text-[rgb(var(--accent))] inline mr-1" />
               <span>EXPERIMENT SPECIFICATION &bull; {exp.category.toUpperCase()}</span>
             </div>
 
@@ -451,7 +451,7 @@ export default function LabExperimentSandbox() {
             {/* Right: Parameter Sliders Panel */}
             <div className="sandbox-controls-panel">
               <div className="controls-panel-header">
-                <Sliders size={16} className="text-cyan-400" />
+                <Sliders size={16} className="text-[rgb(var(--accent))]" />
                 <h3 className="controls-title">RUNTIME PARAMETERS</h3>
               </div>
 
@@ -508,7 +508,7 @@ export default function LabExperimentSandbox() {
           <div className="sandbox-code-viewer">
             <div className="code-viewer-header">
               <div className="code-header-left">
-                <Terminal size={14} className="text-cyan-400" />
+                <Terminal size={14} className="text-[rgb(var(--accent))]" />
                 <span className="code-filename">core_simulation_loop.ts</span>
               </div>
               <button onClick={handleCopy} className="btn-copy-code">

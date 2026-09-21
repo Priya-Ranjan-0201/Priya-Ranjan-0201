@@ -1,113 +1,147 @@
-# 🌐 Priya Ranjan — Cinematic 3D Interactive Portfolio
+# PRIYA RANJAN — SOFTWARE ENGINEER & SYSTEMS BUILDER
 
-<div align="center">
+> **Human-Crafted Personal Engineering Portfolio & Technical Dossier**  
+> Built with Next.js 16 (Turbopack), React 19, TypeScript 5, Tailwind CSS 4, and an editorial Warm Ink design system.
 
-### A Next-Generation Editorial & 3D Interactive Web Experience
-
-[![Next.js](https://img.shields.io/badge/Next.js-15+-00F2FE?style=flat-square&logo=next.js&logoColor=white)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-38EF7D?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![TailwindCSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/License-Proprietary-FF5E62?style=flat-square)](../LICENSE)
-[![Author](https://img.shields.io/badge/Author-Priya%20Ranjan-8B949E?style=flat-square&logo=github)](https://github.com/Priya-Ranjan-0201)
-
-[Overview](#-overview) • [Core Features](#-core-features) • [Architecture](#-architecture) • [Local Setup](#-local-development) • [Deployment](#-deployment)
-
-</div>
+[![Next.js](https://img.shields.io/badge/Next.js-16.3.4-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.2.8-blue?style=for-the-badge&logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-e05d38?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 ---
 
-## 📌 Overview
+## 📑 Table of Contents
 
-This repository houses the source code for the **official personal portfolio and digital identity of Priya Ranjan**. Designed around a high-tech editorial aesthetic, the web application combines modern web animation, interactive system HUDs, custom shaders, and responsive UI components.
-
-- **Design Philosophy:** *"Ideas → Systems → Code → Impact"*
-- **Core Aesthetic:** Monochromatic near-black slate backdrop, electric cyan / mint accents, glassmorphic HUD overlays, and precision typography.
-
----
-
-## ⚡ Core Features
-
-- **Interactive 3D Mind Scan & System Diagnostics:** Interactive modal interfaces simulating system telemetry, mind state mapping, and engineering heuristics.
-- **Dynamic Command Palette (`Ctrl + K` / `Cmd + K`):** Instant keyboard-driven navigation across sections, external links, and system actions.
-- **Custom Cursor & Smooth Micro-Interactions:** Custom trailing cursor, progress scroll indicators, audio feedback toggles, and settings controls.
-- **Curated Technical Showcases:** Dedicated responsive editorial views for **Work & Projects**, **Technical Skills**, **Experience**, and **Direct Contact**.
+1. [About the Redesign](#-about-the-redesign)
+2. [Design System & Palette (Warm Ink)](#-design-system--palette-warm-ink)
+3. [Typography Identity](#-typography-identity)
+4. [Showcase Projects](#-showcase-projects)
+5. [Story & Philosophy](#-story--philosophy)
+6. [Project Structure](#-project-structure)
+7. [Running Locally](#-running-locally)
+8. [Automated Verification](#-automated-verification)
+9. [Author Coordinates](#-author-coordinates)
 
 ---
 
-## 🏗️ Architecture & Directory Structure
+## 🌿 About the Redesign
 
-Built using the **Next.js App Router** with strict TypeScript type safety:
+This portfolio has been intentionally crafted to feel **human-built, restrained, and authentic**, moving far away from AI-generated cyberpunk clichés:
 
-```text
-portfolio/
-├── public/                 # Static assets, fonts, icons, and 3D models
-├── src/
-│   ├── app/                # Next.js App Router pages
-│   │   ├── contact/        # Direct contact & communication hub
-│   │   ├── experience/     # Timeline & engineering background
-│   │   ├── skills/         # Categorized engineering stack & competencies
-│   │   ├── work/           # Deep-dive project showcases
-│   │   ├── layout.tsx      # Root application layout & providers
-│   │   └── page.tsx        # Hero landing page & interactive 3D portal
-│   ├── components/         # Modular React UI components
-│   │   ├── home/           # Landing page components (MindScan, Hero HUD)
-│   │   └── layout/         # Navigation, Footer, CommandPalette, SettingsPanel, CustomCursor
-│   └── lib/                # Utilities, hooks, and data definitions
-├── next.config.ts          # Next.js configuration
-├── tailwind.config.ts      # Tailwind design system tokens
-├── tsconfig.json           # TypeScript configuration
-└── package.json            # Dependencies and scripts
-```
+- **No Cyberpunk Gimmicks**: Replaced overused neon cyan/purple gradients and heavy glassmorphism with a single, restrained **Warm Ink & Terracotta** palette.
+- **Genuine First-Person Story**: The "About" page documents Priya's genuine journey into Computer Science, his fascination with DevOps and cloud infrastructure, concrete lessons learned from broken code and production failures, and his life outside the terminal.
+- **Clear Visual Hierarchy**: One authoritative hero statement on the landing page, generous whitespace, comfortable reading line lengths (65–75 characters max), and zero badge clutter.
+- **Fast Page Load**: Removed persistent background WebGL particle loops (`<Scene />`) across standard pages, reducing initial payload and achieving instant hydration.
+- **Honest Project Language**: Explains projects in plain, confident engineering language with real metrics, verifiable architecture diagrams, and open-source GitHub repositories.
 
 ---
 
-## 🚀 Local Development
+## 🎨 Design System & Palette (Warm Ink)
 
-### Prerequisites
-- **Node.js:** `v18.17.0` or higher
-- **Package Manager:** `npm`, `pnpm`, or `yarn`
+The design enforces a strict **90% Neutral / 10% Accent** ratio:
 
-### 1. Navigate to Portfolio Directory
+| Token | Hex / RGB | Role |
+|---|---|---|
+| **Background Primary** | `#0f1013` | Deep, warm charcoal obsidian ink |
+| **Card / Surface** | `#16181d` | Warm elevated card surface with subtle border |
+| **Borders** | `#282a32` | Restrained hairline dividers |
+| **Text Primary** | `#f4f3ef` | Soft, warm alabaster paper white |
+| **Text Secondary** | `#9c9a95` | Muted neutral gray for readable body text |
+| **Single Accent** | `#e05d38` | Warm Terracotta / Burnt Amber for focal highlights |
+| **Accent Hover** | `#ea6e49` | Interactive button and link hover state |
+
+---
+
+## ✍️ Typography Identity
+
+Standardized on **two cohesive fonts**:
+- **Display**: `Space Grotesk` — clean, structural, modern headings with subtle character.
+- **Body**: `Inter` — highly legible, comfortable letter-spacing for long-form reading.
+- **Code / Monospace**: `JetBrains Mono` — strictly reserved for technical snippets, commands, and metadata.
+
+---
+
+## 🚀 Showcase Projects
+
+### 01. VIREONIQ
+> **Developer Career Roadmap & Code Analysis Engine**  
+> *Stack: Python, FastAPI, React 18, Qdrant Vector DB, Docker Compose*
+- Parses submitted code via Python Abstract Syntax Trees (AST) to evaluate structural complexity without dynamic execution vulnerabilities.
+- Calculates prerequisite learning roadmaps using semantic similarity in Qdrant.
+- Verified with 153 automated test cases.
+
+### 02. TRUSTSHIELD X
+> **Concurrent Threat Scanner & Security Analysis Tool**  
+> *Stack: Python 3.13, AsyncIO, FastAPI, PyCryptodome, Docker*
+- Executes concurrent asynchronous socket and HTTP probes to test open ports and security headers in sub-15ms.
+- Generates cryptographically signed SHA-256 audit logs to guarantee record integrity.
+
+### 03. PRIOCARDIX AI
+> **Cardiovascular Risk Calculator & Scenario Simulator**  
+> *Stack: React, Vite, Zustand, Chart.js, Tailwind CSS*
+- Multi-factor cardiovascular risk evaluation with real-time "what-if" scenario simulation sliders.
+- Powered by a reactive Zustand store for instant, zero-latency recalculations.
+
+### 04. DISK SCHEDULING ALGORITHM
+> **Operating System Storage Kinematics Simulator**  
+> *Stack: Vanilla JavaScript, HTML5 Canvas, CSS Grid*
+- Interactive 60 FPS Canvas simulator comparing 11 operating system disk scheduling algorithms (FCFS, SSTF, SCAN, LOOK, etc.).
+- Normalized track coordinates enable smooth, resolution-independent rendering.
+
+---
+
+## 📖 Story & Philosophy
+
+Read Priya's full story in [`/about`](file:///c:/Users/PRIYE%20RANJAN/OneDrive/Desktop/PORTFOLIO/portfolio-app/src/app/about/page.tsx):
+- **Why Computer Science**: Driven by simple curiosity about what happens behind the browser address bar.
+- **Why DevOps & Cloud**: The humbling reality of code that works on a laptop breaking on a server, and the satisfaction of automated, calm deployments.
+- **Lessons from Failure**:
+  - *The Unbounded Connection Storm* (socket leaks, learning bounded semaphores and timeouts).
+  - *The Premature Microservices Trap* (over-engineering, learning that simple modular monoliths with Redis caching beat distributed microservice sprawl).
+- **Life Beyond the Terminal**: Computing history books, building mechanical keyboards, long-distance running, and pour-over coffee.
+
+---
+
+## 💻 Running Locally
+
 ```bash
-cd portfolio
-```
+# 1. Enter the application directory
+cd portfolio-app
 
-### 2. Install Dependencies
-```bash
+# 2. Install dependencies
 npm install
-```
 
-### 3. Launch Development Server
-```bash
+# 3. Start the Turbopack development server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
 ---
 
-## ☁️ Deployment
+## 🔍 Automated Verification
 
-### One-Click Deploy on Vercel
-1. Import this repository into [Vercel](https://vercel.com).
-2. Set the **Root Directory** to:
-   ```text
-   portfolio
-   ```
-3. Framework Preset: **Next.js**
-4. Click **Deploy**.
+Verify all 26 production routes:
+```bash
+node scripts/verify-content.js
+```
+Expected output:
+```
+--- DETAILED SSR HTML VALIDATION ---
+[VERIFIED 200] /                      | Size: 40.2 KB | Valid HTML: true
+[VERIFIED 200] /about                 | Size: 33.6 KB | Valid HTML: true
+[VERIFIED 200] /work                  | Size: 53.8 KB | Valid HTML: true
+...
+--- ALL ROUTES SERVED CLEANLY ---
+```
 
 ---
 
-## 📜 License
+## 📬 Author Coordinates
 
-This portfolio and its custom design assets are protected under the [Proprietary & Strict Source-Available Copyright License](../LICENSE). All Rights Reserved.
-
----
-
-<div align="center">
-
-Designed &amp; Engineered by **[Priya Ranjan](https://github.com/Priya-Ranjan-0201)**  
-*Building at the intersection of AI, cybersecurity, and software systems.*
-
-</div>
+**Priya Ranjan**  
+*Computer Science & Engineering Undergraduate (2023–2027)*  
+*Email*: [priye0201@gmail.com](mailto:priye0201@gmail.com)  
+*GitHub*: [github.com/Priya-Ranjan-0201](https://github.com/Priya-Ranjan-0201)  
+*LinkedIn*: [linkedin.com/in/priye-ranjan](https://linkedin.com/in/priye-ranjan)  

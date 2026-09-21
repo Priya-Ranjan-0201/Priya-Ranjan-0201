@@ -1,363 +1,582 @@
 'use client';
 
-import { useEffect } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
   ArrowRight,
-  Sparkles,
   ExternalLink,
   Code2,
   Cpu,
-  Shield,
   Layers,
-  Briefcase,
   Terminal,
   Mail,
   FileText,
+  CheckCircle2,
+  Sparkles,
+  Shield,
+  Activity,
+  Compass,
 } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '@/components/ui/Icons';
 import { projects } from '@/data/projects';
-import { skillCategories } from '@/data/skills';
-import { useSettingsStore } from '@/stores/settings-store';
+import { profile } from '@/data/profile';
+import { journalEntries } from '@/data/journal';
+import Hero3D from '@/components/home/Hero3D';
+import ExploreMyMind from '@/components/home/ExploreMyMind';
+import ConnectionSystem from '@/components/home/ConnectionSystem';
+import GitHubFeed from '@/components/home/GitHubFeed';
 import { playSound } from '@/lib/sound';
 
 export default function Home() {
-  const setCoreState = useSettingsStore((s) => s.setCoreState);
-
-  useEffect(() => {
-    setCoreState('neural');
-  }, [setCoreState]);
-
-  const featuredProjects = projects.filter((p) => p.featured).slice(0, 4);
+  const flagshipProject = projects.find((p) => p.slug === 'vireoniq') || projects[0];
+  const secondaryProjects = projects.filter((p) => p.slug !== 'vireoniq' && p.featured).slice(0, 4);
+  const recentArticles = journalEntries.slice(0, 3);
 
   return (
     <div className="home-root">
-      {/* ── 01. CLEAN EDITORIAL HERO ───────────────────────── */}
-      <section className="hero-section" id="hero">
-        <div className="hero-container">
-          <div className="hero-left-col">
-            {/* Professional Status Pill */}
-            <motion.div
-              className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-xs font-mono mb-6"
-              initial={{ opacity: 0, y: -8 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
-            >
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span>Available for Software Engineering Roles &amp; Research</span>
-            </motion.div>
-
-            {/* Clean Name & Title */}
-            <motion.div
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="mb-6"
-            >
-              <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-2">
-                Priya Ranjan
-              </h1>
-              <p className="text-lg sm:text-2xl font-medium text-cyan-400 font-mono tracking-tight">
-                Software Engineer &bull; Systems Builder
-              </p>
-            </motion.div>
-
-            {/* Narrative */}
-            <motion.p
-              className="text-base sm:text-lg text-zinc-300 max-w-2xl leading-relaxed mb-8 font-light"
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              Undergraduate in Computer Science &amp; Engineering (B.Tech 2023&ndash;2027). Driven by first-principles problem decomposition: building verifiable AI systems, defensive cybersecurity engines, and high-performance distributed architectures.
-            </motion.p>
-
-            {/* Action Buttons */}
-            <motion.div
-              className="flex flex-wrap items-center gap-3.5 mb-8"
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
-              <a
-                href="#selected-work"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-black font-semibold text-sm transition-all shadow-md shadow-cyan-500/20"
+      {/* ── 01. EDITORIAL CINEMATIC HERO (Section 10, 11, 12) ──── */}
+      <section className="hero-editorial-clean" id="hero">
+        <div className="hero-container-clean">
+          <div className="hero-grid-split">
+            {/* Left Column: Oversized Typography & Positioning */}
+            <div className="hero-copy-col">
+              {/* Category Eyebrow */}
+              <motion.div
+                className="hero-eyebrow-pill"
+                initial={{ opacity: 0, y: -6 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.35 }}
               >
-                <span>View Projects</span>
-                <ArrowRight size={15} />
-              </a>
+                <span className="eyebrow-dot" />
+                <span>COMPUTER SCIENCE ENGINEER</span>
+              </motion.div>
 
-              <Link
-                href="/resume"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-zinc-900 border border-zinc-700 hover:border-zinc-500 text-white text-sm font-medium transition-all"
+              {/* Oversized Typography Name (Section 05 & 10) */}
+              <motion.div
+                className="hero-name-block"
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.08 }}
               >
-                <FileText size={15} />
-                <span>Resume / CV</span>
-              </Link>
+                <h1 className="hero-giant-title" aria-label="PRIYA RANJAN">
+                  <span className="name-line" aria-hidden="true">
+                    {'PRIYA'.split('').map((char, i) => (
+                      <span
+                        key={i}
+                        className="kinetic-char"
+                        style={{ '--char-idx': i } as React.CSSProperties}
+                      >
+                        {char}
+                      </span>
+                    ))}
+                  </span>
+                  <span className="name-line name-accent" aria-hidden="true">
+                    {'RANJAN'.split('').map((char, i) => (
+                      <span
+                        key={i}
+                        className="kinetic-char"
+                        style={{ '--char-idx': i + 5 } as React.CSSProperties}
+                      >
+                        {char}
+                      </span>
+                    ))}
+                  </span>
+                  <span className="hero-title-underline" aria-hidden="true" />
+                </h1>
+              </motion.div>
 
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-lg border border-transparent hover:border-zinc-800 text-zinc-300 hover:text-white text-sm font-medium transition-all"
+              {/* Positioning Statement (Section 10) */}
+              <motion.p
+                className="hero-lead-statement"
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.45, delay: 0.16 }}
               >
-                <Mail size={15} />
-                <span>Contact</span>
-              </Link>
-            </motion.div>
+                I build thoughtful software experiences at the intersection of technology, problem solving and intelligent systems.
+              </motion.p>
 
-            {/* Direct Verified Channels */}
-            <motion.div
-              className="flex flex-wrap items-center gap-4 text-xs font-mono text-zinc-400 border-t border-zinc-800/80 pt-4"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
-              <a
-                href="https://github.com/Priya-Ranjan-0201"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-1.5 hover:text-cyan-400 transition-colors"
+              {/* Action Buttons */}
+              <motion.div
+                className="hero-actions-row"
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.45, delay: 0.24 }}
               >
-                <GithubIcon size={14} />
-                <span>github.com/Priya-Ranjan-0201</span>
-              </a>
+                <a
+                  href="#featured-work"
+                  className="btn-cobalt-primary"
+                  onClick={() => playSound('click')}
+                >
+                  <span>VIEW MY WORK</span>
+                  <ArrowRight size={14} />
+                </a>
 
-              <span className="text-zinc-600">&bull;</span>
+                <Link
+                  href="/about"
+                  className="btn-editorial-secondary"
+                  onClick={() => playSound('click')}
+                >
+                  <span>ABOUT ME</span>
+                </Link>
 
-              <a
-                href="https://linkedin.com/in/priye-ranjan"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-1.5 hover:text-cyan-400 transition-colors"
+                <Link
+                  href="/resume"
+                  className="btn-editorial-ghost"
+                  onClick={() => playSound('click')}
+                >
+                  <FileText size={14} />
+                  <span>RESUME</span>
+                </Link>
+              </motion.div>
+
+              {/* Metadata strip (Section 10) */}
+              <motion.div
+                className="hero-meta-strip"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.45, delay: 0.32 }}
               >
-                <LinkedinIcon size={14} />
-                <span>linkedin.com/in/priye-ranjan</span>
-              </a>
+                <div className="meta-item">
+                  <span className="meta-lbl">LOCATION</span>
+                  <span className="meta-val">India, IN</span>
+                </div>
+                <span className="meta-sep">/</span>
+                <div className="meta-item">
+                  <span className="meta-lbl">DISCIPLINE</span>
+                  <span className="meta-val">AI · Security · Full-Stack</span>
+                </div>
+                <span className="meta-sep">/</span>
+                <div className="meta-item">
+                  <span className="meta-lbl">DEGREE</span>
+                  <span className="meta-val">B.Tech CSE (2023&ndash;2027)</span>
+                </div>
+              </motion.div>
 
-              <span className="text-zinc-600">&bull;</span>
-
-              <a
-                href="mailto:priye0201@gmail.com"
-                className="inline-flex items-center gap-1.5 hover:text-cyan-400 transition-colors"
+              {/* Unique Hero Feature: EXPLORE MY MIND → (Section 13) */}
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.45, delay: 0.4 }}
               >
-                <Mail size={14} />
-                <span>priye0201@gmail.com</span>
-              </a>
-            </motion.div>
+                <ExploreMyMind />
+              </motion.div>
+            </div>
 
-            {/* Horizontal Key Stats */}
-            <motion.div
-              className="grid grid-cols-3 gap-4 mt-8 max-w-xl"
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-            >
-              <div className="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
-                <span className="block text-2xl font-bold text-white font-mono">07</span>
-                <span className="text-xs text-zinc-400">Verified Repositories</span>
+            {/* Right Column: Refined Abstract 3D Geometric Sculpture (Section 11 & 12) */}
+            <div className="hero-sculpture-col">
+              <Hero3D />
+              <div className="sculpture-annotation">
+                <span className="sculpture-lbl">INTERCONNECTED IDEAS · 3D SYSTEM</span>
+                <span className="sculpture-hint">Subtle rotation responsive to cursor &amp; depth scroll</span>
               </div>
-              <div className="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
-                <span className="block text-2xl font-bold text-cyan-400 font-mono">B.Tech</span>
-                <span className="text-xs text-zinc-400">CSE (2023&ndash;2027)</span>
-              </div>
-              <div className="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800">
-                <span className="block text-2xl font-bold text-emerald-400 font-mono">100%</span>
-                <span className="text-xs text-zinc-400">Open-Source Code</span>
-              </div>
-            </motion.div>
+            </div>
           </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="hero-scroll-indicator">
-          <div className="mouse-icon">
-            <span className="mouse-wheel" />
-          </div>
-          <span className="scroll-text">SCROLL TO EXPLORE WORK</span>
         </div>
       </section>
 
-      {/* ── 02. SELECTED WORK — EDITORIAL PROJECT ARCHIVE ─────── */}
-      <section className="selected-work-section" id="selected-work">
-        <div className="section-container">
-          <div className="work-header-row">
+      {/* ── 02. TRUST & CREDIBILITY STRIP (Section 14) ─────────── */}
+      <section className="trust-strip-section" aria-label="Core Technical Disciplines">
+        <div className="section-container-clean">
+          <div className="trust-strip-inner">
+            <span className="trust-node">COMPUTER SCIENCE</span>
+            <span className="trust-divider">&bull;</span>
+            <span className="trust-node">AI / ML</span>
+            <span className="trust-divider">&bull;</span>
+            <span className="trust-node">CYBERSECURITY</span>
+            <span className="trust-divider">&bull;</span>
+            <span className="trust-node">FULL STACK</span>
+            <span className="trust-divider">&bull;</span>
+            <span className="trust-node">PROJECT BUILDER</span>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 03. SELECTED WORK (Section 18, 19, 20) ──────────────── */}
+      <section className="work-editorial-section" id="featured-work">
+        <div className="section-container-clean">
+          <div className="section-header-clean">
             <div>
-              <div className="section-head-badge">
-                <Briefcase size={14} className="badge-icon" />
-                <span>FLAGSHIP SYSTEMS</span>
-              </div>
-              <h2 className="section-title-massive">Selected Engineering</h2>
-              <p className="text-sm text-white/60 mt-2 max-w-2xl">
-                Real software platforms built from first principles with verified architectures, unit tests, and source code.
-              </p>
+              <span className="section-eyebrow">SELECTED WORK</span>
+              <h2 className="section-title-clean">A few things I&apos;ve built, explored and learned from.</h2>
             </div>
             <Link
               href="/work"
-              className="view-archive-link inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-xs font-mono font-semibold"
+              className="view-all-link"
               onClick={() => playSound('click')}
             >
-              <span>View All 07 Projects</span>
+              <span>View All 7 Projects</span>
               <ArrowRight size={14} />
             </Link>
           </div>
 
-          {/* Projects List */}
-          <div className="editorial-projects-list">
-            {featuredProjects.map((project, idx) => (
-              <article key={project.id} className="editorial-project-row">
-                <div className="row-number-col">
-                  <span className="row-index">0{idx + 1}</span>
-                  <span className="row-year">{project.year}</span>
-                </div>
+          {/* Asymmetrical Layout: Project 01 (VIREONIQ) Large Showcase */}
+          <div className="flagship-showcase-card">
+            <div className="flagship-copy-col">
+              <div className="flagship-top-meta">
+                <span className="flagship-num">{flagshipProject.number}</span>
+                <span className="flagship-cat">{flagshipProject.category}</span>
+                <span className="flagship-domain">{flagshipProject.domain || 'AI'}</span>
+              </div>
 
-                <div className="row-main-content">
-                  <div className="row-title-bar">
-                    <h3 className="row-title">{project.title}</h3>
-                    <span className="row-category-pill">{project.category}</span>
-                  </div>
+              <h3 className="flagship-title">
+                <Link
+                  href={`/work/${flagshipProject.slug}`}
+                  onClick={() => playSound('click')}
+                >
+                  {flagshipProject.title}
+                </Link>
+              </h3>
 
-                  <p className="row-subtitle font-medium text-white/90">{project.subtitle}</p>
-                  <p className="row-problem text-white/70">{project.description}</p>
+              <p className="flagship-sub">{flagshipProject.subtitle}</p>
+              <p className="flagship-desc">{flagshipProject.longDescription || flagshipProject.description}</p>
 
-                  {/* Quantitative Metric Badges */}
-                  {project.metrics && project.metrics.length > 0 && (
-                    <div className="project-metrics-strip flex flex-wrap gap-2.5 my-3.5">
-                      {project.metrics.map((m, mi) => (
-                        <div key={mi} className="metric-pill">
-                          <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_6px_#00f0ff]" />
-                          <span className="text-cyan-300 font-bold">{m.value}</span>
-                          <span className="text-zinc-300 text-[11px]">{m.label}</span>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-
-                  <div className="row-techs-list">
-                    {project.technologies.slice(0, 6).map((tech) => (
-                      <span key={tech} className="row-tech-badge">
-                        {tech}
+              {/* Project DNA (Section 55) */}
+              {flagshipProject.dna && (
+                <div className="project-dna-strip">
+                  <span className="dna-label">PROJECT DNA:</span>
+                  <div className="dna-chain">
+                    {flagshipProject.dna.nodes.map((node, i) => (
+                      <span key={i} className="dna-node">
+                        {node}
+                        {i < flagshipProject.dna!.nodes.length - 1 && <span className="dna-link-dash">───</span>}
                       </span>
                     ))}
                   </div>
+                </div>
+              )}
 
-                  <div className="row-actions-group">
-                    <Link
-                      href={`/work/${project.slug}`}
-                      className="row-action-btn primary"
-                      onClick={() => playSound('click')}
-                    >
-                      <span>Explore Case Study</span>
-                      <ArrowRight size={14} />
-                    </Link>
-                    {project.links.find((l) => l.type === 'github') && (
-                      <a
-                        href={project.links.find((l) => l.type === 'github')!.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="row-action-btn secondary"
-                      >
-                        <GithubIcon size={14} />
-                        <span>Source Code</span>
-                        <ExternalLink size={12} className="opacity-60" />
-                      </a>
-                    )}
+              {/* Real Metrics Strip */}
+              {flagshipProject.metrics && (
+                <div className="flagship-metrics-row">
+                  {flagshipProject.metrics.map((m, i) => (
+                    <div key={i} className="flagship-metric-chip">
+                      <span className="m-val">{m.value}</span>
+                      <span className="m-lbl">{m.label}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Technologies */}
+              <div className="flagship-tech-row">
+                {flagshipProject.technologies.slice(0, 5).map((tech) => (
+                  <span key={tech} className="tech-chip-cobalt">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              {/* Action */}
+              <div className="flagship-actions">
+                <Link
+                  href={`/work/${flagshipProject.slug}`}
+                  className="btn-cobalt-primary"
+                  onClick={() => playSound('click')}
+                >
+                  <span>VIEW CASE STUDY</span>
+                  <ArrowRight size={14} />
+                </Link>
+
+                {flagshipProject.links.find((l) => l.type === 'github') && (
+                  <a
+                    href={flagshipProject.links.find((l) => l.type === 'github')?.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn-editorial-ghost"
+                    onClick={() => playSound('click')}
+                  >
+                    <GithubIcon size={14} />
+                    <span>Source Code</span>
+                    <ExternalLink size={12} />
+                  </a>
+                )}
+              </div>
+            </div>
+
+            {/* Right Side: Architecture & Visual Preview */}
+            <div className="flagship-visual-col">
+              <div className="flagship-wire-frame">
+                <div className="wire-header-bar">
+                  <span className="wire-dot" />
+                  <span className="wire-dot" />
+                  <span className="wire-dot" />
+                  <span className="wire-title">AST Syntax Analysis &amp; Qdrant Retrieval Engine</span>
+                </div>
+                <div className="wire-body">
+                  <div className="wire-arch-flow">
+                    <div className="arch-flow-node">Untrusted Python Source</div>
+                    <span className="flow-arrow">&darr;</span>
+                    <div className="arch-flow-node highlight">AST Complexity Visitor</div>
+                    <span className="flow-arrow">&darr;</span>
+                    <div className="arch-flow-node">Qdrant Vector Embeddings</div>
+                    <span className="flow-arrow">&darr;</span>
+                    <div className="arch-flow-node">Prerequisite Learning Tree</div>
+                  </div>
+                  <div className="wire-stat-row">
+                    <span>153 Test Suites Passed</span>
+                    <span>Zero Execution Sandbox Risk</span>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <div className="row-visual-col">
-                  <div className="row-preview-frame group/frame">
-                    <Image
-                      src={project.images[0] || '/images/vireoniq-thumb.jpg'}
-                      alt={project.title}
-                      fill
-                      sizes="(max-width: 900px) 100vw, 360px"
-                      style={{ objectFit: 'cover' }}
-                      className="row-preview-img"
-                    />
-                    <div className="row-preview-overlay" />
+          {/* Secondary Projects: 2-Column Asymmetric Grid */}
+          <div className="secondary-projects-grid">
+            {secondaryProjects.map((proj) => (
+              <article key={proj.id} className="secondary-project-card">
+                <div className="card-top-row">
+                  <span className="card-num">{proj.number}</span>
+                  <span className="card-domain-badge">{proj.domain || proj.category}</span>
+                </div>
+
+                <h3 className="card-title-clean">
+                  <Link
+                    href={`/work/${proj.slug}`}
+                    onClick={() => playSound('click')}
+                  >
+                    {proj.title}
+                  </Link>
+                </h3>
+
+                <p className="card-sub-clean">{proj.subtitle}</p>
+                <p className="card-desc-clean">{proj.description}</p>
+
+                {/* DNA Chain */}
+                {proj.dna && (
+                  <div className="secondary-dna-chain">
+                    {proj.dna.nodes.map((n, i) => (
+                      <span key={i} className="sec-dna-node">
+                        {n}
+                        {i < proj.dna!.nodes.length - 1 && <span className="sec-dash">─</span>}
+                      </span>
+                    ))}
                   </div>
+                )}
+
+                {/* Tech Pills */}
+                <div className="card-tech-wrap">
+                  {proj.technologies.slice(0, 4).map((tech) => (
+                    <span key={tech} className="tech-chip-muted">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Bottom Action */}
+                <div className="card-bottom-actions">
+                  <Link
+                    href={`/work/${proj.slug}`}
+                    className="card-link-cobalt"
+                    onClick={() => playSound('click')}
+                  >
+                    <span>Read Case Study</span>
+                    <ArrowRight size={13} />
+                  </Link>
+
+                  {proj.links && proj.links[0] && (
+                    <a
+                      href={proj.links[0].url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="card-repo-link"
+                      onClick={() => playSound('click')}
+                    >
+                      <GithubIcon size={13} />
+                      <span>Code</span>
+                    </a>
+                  )}
                 </div>
               </article>
             ))}
           </div>
+
+          {/* Real GitHub Activity Feed */}
+          <div className="mt-16 sm:mt-20">
+            <GitHubFeed />
+          </div>
         </div>
       </section>
 
-      {/* ── 03. CORE TECHNICAL CAPABILITIES ───────────────────────── */}
-      <section className="skills-overview-section border-t border-white/10" id="skills-overview">
-        <div className="section-container py-20">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+      {/* ── 04. THE CONNECTION SYSTEM (Section 62 & 63) ────────── */}
+      <section className="connection-section-wrap">
+        <div className="section-container-clean">
+          <ConnectionSystem />
+        </div>
+      </section>
+
+      {/* ── 05. PHILOSOPHY / HOW I APPROACH ENGINEERING ───────── */}
+      <section className="philosophy-clean-section">
+        <div className="section-container-clean">
+          <div className="section-header-clean">
             <div>
-              <div className="section-head-badge inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-white/5 border border-white/10 text-cyan-400 text-xs font-mono mb-2">
-                <Code2 size={13} />
-                <span>TECHNICAL COMPETENCIES</span>
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">Core Capabilities</h2>
-              <p className="text-sm text-white/60 mt-1 max-w-xl">
-                Languages, frameworks, systems, and tools applied across my engineering projects.
+              <span className="section-eyebrow">DEVELOPMENT PHILOSOPHY</span>
+              <h2 className="section-title-clean">How I Approach Engineering</h2>
+              <p className="section-desc-clean">
+                Guiding principles that keep software clear, dependable, and pleasant to maintain.
               </p>
             </div>
             <Link
-              href="/skills"
-              className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 text-xs font-mono font-semibold transition-colors"
+              href="/about"
+              className="view-all-link"
               onClick={() => playSound('click')}
             >
-              <span>Interactive Knowledge Graph</span>
+              <span>Read Full Philosophy</span>
               <ArrowRight size={14} />
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {skillCategories.slice(0, 4).map((cat) => (
-              <div
-                key={cat.id}
-                className="p-6 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-cyan-500/30 transition-all duration-300"
+          <div className="philosophy-grid-clean">
+            <div className="philosophy-card-clean">
+              <span className="phi-number">01</span>
+              <h3 className="phi-title">Find the Real Friction First</h3>
+              <p className="phi-text">
+                Most software bugs and delays stem from misunderstanding the actual problem. I invest time mapping assumptions and clarifying requirements before writing a line of code.
+              </p>
+            </div>
+
+            <div className="philosophy-card-clean">
+              <span className="phi-number">02</span>
+              <h3 className="phi-title">Earn the Right to Distribute</h3>
+              <p className="phi-text">
+                Premature microservices create accidental complexity. A well-architected modular monolith with a solid relational database and simple cache runs circles around bloated microservice graphs.
+              </p>
+            </div>
+
+            <div className="philosophy-card-clean">
+              <span className="phi-number">03</span>
+              <h3 className="phi-title">Observability from Day One</h3>
+              <p className="phi-text">
+                Code running without timeouts, structured logs, and automated tests is an outage in waiting. Every network boundary needs an explicit deadline and graceful fallbacks.
+              </p>
+            </div>
+
+            <div className="philosophy-card-clean">
+              <span className="phi-number">04</span>
+              <h3 className="phi-title">Clarity Over Cleverness</h3>
+              <p className="phi-text">
+                Code is read far more often than it is written. I prefer simple, typed functions with single responsibilities over dense, obscure one-liners that confuse the next engineer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 06. LAB & EXPERIMENTS TEASER (Section 29) ──────────── */}
+      <section className="lab-clean-teaser">
+        <div className="section-container-clean">
+          <div className="lab-teaser-box">
+            <div className="lab-teaser-copy">
+              <span className="section-eyebrow">CREATIVE PLAYGROUND</span>
+              <h2 className="lab-teaser-title">The Interactive Lab</h2>
+              <p className="lab-teaser-desc">
+                Where creative technologist experiments happen: interactive particle dynamics, typography distortion, gravity simulations, and GLSL shaders.
+              </p>
+              <Link
+                href="/lab"
+                className="btn-cobalt-primary inline-flex"
+                onClick={() => playSound('click')}
               >
-                <h3 className="text-sm font-mono uppercase tracking-wider text-cyan-400 font-bold mb-3">
-                  {cat.label}
-                </h3>
-                <ul className="space-y-2.5 text-xs text-white/80 font-mono">
-                  {cat.skills.map((s) => (
-                    <li key={s.name} className="flex items-center justify-between">
-                      <span className="text-white/90">{s.name}</span>
-                      <span className="text-[10px] text-white/40 uppercase">{s.level}</span>
-                    </li>
-                  ))}
-                </ul>
+                <span>EXPLORE THE LAB</span>
+                <ArrowRight size={14} />
+              </Link>
+            </div>
+
+            <div className="lab-teaser-visual">
+              <div className="lab-mini-grid">
+                <div className="mini-exp-card">
+                  <span className="mini-tag">PARTICLES</span>
+                  <p className="mini-name">Kinematic Particle Field</p>
+                </div>
+                <div className="mini-exp-card">
+                  <span className="mini-tag">TYPOGRAPHY</span>
+                  <p className="mini-name">Interactive Type Distortion</p>
+                </div>
+                <div className="mini-exp-card">
+                  <span className="mini-tag">SIMULATION</span>
+                  <p className="mini-name">Gravitational Node Physics</p>
+                </div>
+                <div className="mini-exp-card">
+                  <span className="mini-tag">SECURITY</span>
+                  <p className="mini-name">STIX 2.1 Threat Canvas</p>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 07. RECENT NOTES & WRITING (Section 30) ────────────── */}
+      <section className="notes-clean-section">
+        <div className="section-container-clean">
+          <div className="section-header-clean">
+            <div>
+              <span className="section-eyebrow">NOTES &amp; WRITING</span>
+              <h2 className="section-title-clean">Technical Notes &amp; Research</h2>
+              <p className="section-desc-clean">
+                Engineering breakdowns, architecture post-mortems, and reflections on systems.
+              </p>
+            </div>
+            <Link
+              href="/journal"
+              className="view-all-link"
+              onClick={() => playSound('click')}
+            >
+              <span>View All Notes</span>
+              <ArrowRight size={14} />
+            </Link>
+          </div>
+
+          <div className="notes-list-clean">
+            {recentArticles.map((article) => (
+              <Link
+                key={article.id}
+                href={`/journal/${article.slug}`}
+                className="note-row-clean"
+                onClick={() => playSound('click')}
+              >
+                <div className="note-meta-col">
+                  <span className="note-date">{article.date}</span>
+                  <span className="note-time">{article.readTime}</span>
+                </div>
+                <div className="note-content-col">
+                  <h3 className="note-title">{article.title}</h3>
+                  <p className="note-excerpt">{article.excerpt}</p>
+                </div>
+                <div className="note-arrow-col">
+                  <ArrowRight size={16} />
+                </div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── 04. CLEAN CALL TO ACTION ─────────────────────── */}
-      <section className="convergence-cta-section border-t border-white/10" id="contact-cta">
-        <div className="section-container py-24">
-          <div className="p-8 sm:p-14 rounded-3xl bg-gradient-to-b from-white/[0.03] to-transparent border border-white/10 text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight mb-4">
-              Let&apos;s Build Something Useful.
-            </h2>
-            <p className="text-base sm:text-lg text-white/70 max-w-2xl mx-auto mb-8 font-light leading-relaxed">
-              Interested in collaboration, engineering internships, or discussing systems architecture, AI systems, and defensive cybersecurity?
+      {/* ── 08. CONTACT CALLOUT (Section 32) ───────────────────── */}
+      <section className="contact-callout-clean">
+        <div className="section-container-clean">
+          <div className="contact-box-clean">
+            <span className="section-eyebrow">GET IN TOUCH</span>
+            <h2 className="contact-box-title">Let&apos;s build something useful.</h2>
+            <p className="contact-box-desc">
+              Whether you want to discuss systems engineering, explore an internship opportunity, or review a codebase together, I&apos;d love to connect.
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-4">
+            <div className="contact-box-actions">
               <Link
                 href="/contact"
-                className="px-7 py-3.5 rounded-xl bg-cyan-500 text-black font-semibold text-sm hover:bg-cyan-400 transition-all shadow-[0_0_25px_rgba(0,240,255,0.3)] inline-flex items-center gap-2"
+                className="btn-cobalt-primary"
                 onClick={() => playSound('click')}
               >
-                <span>Start A Conversation</span>
-                <ArrowRight size={15} />
+                <Mail size={15} />
+                <span>LET&apos;S TALK &rarr;</span>
               </Link>
-              <Link
-                href="/resume"
-                className="px-6 py-3.5 rounded-xl border border-white/20 text-white text-sm hover:bg-white/10 hover:border-white/40 transition-all inline-flex items-center gap-2"
+              <a
+                href="mailto:priye0201@gmail.com"
+                className="btn-editorial-secondary"
                 onClick={() => playSound('click')}
               >
-                <FileText size={15} />
-                <span>Curriculum Vitae</span>
-              </Link>
+                <span>priye0201@gmail.com</span>
+              </a>
             </div>
           </div>
         </div>

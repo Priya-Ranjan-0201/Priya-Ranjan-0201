@@ -7,23 +7,35 @@
 /* ── Design Tokens ─────────────────────────────────────────── */
 
 :root {
-  /* Colors (RGB values for alpha compositing) */
-  --bg-primary: 8, 8, 12;
-  --bg-secondary: 14, 14, 20;
-  --bg-tertiary: 22, 22, 30;
-  --fg-primary: 245, 243, 240;
-  --fg-secondary: 180, 178, 175;
-  --fg-muted: 110, 108, 105;
-  --border: 40, 38, 35;
-  --border-subtle: 28, 26, 24;
-  --accent: 235, 87, 47;
-  --accent-hover: 245, 107, 67;
-  --accent-muted: 235, 87, 47;
+  /* Colors (RGB values for alpha compositing) — Warm Paper & Charcoal Editorial */
+  --bg-primary: 250, 248, 245;          /* #FBF9F5 Warm Cream / Alabaster */
+  --bg-secondary: 244, 240, 232;        /* #F5F2EB Warm Paper Card */
+  --bg-tertiary: 255, 255, 255;         /* #FFFFFF Elevated White Paper */
+  --fg-primary: 24, 24, 27;             /* #1C1917 Deep Warm Charcoal */
+  --fg-secondary: 68, 64, 60;           /* #44403C Stone Charcoal */
+  --fg-muted: 120, 113, 108;           /* #78716C Warm Stone Muted */
+  --border: 228, 223, 213;              /* #E3DED4 Subtle Warm Border */
+  --border-subtle: 238, 235, 227;       /* #EEEAE2 */
+  --accent: 27, 67, 50;                /* #1B4332 Deep Botanical Forest Pine */
+  --accent-hover: 18, 48, 35;          /* #123023 */
+  --accent-muted: 27, 67, 50;
+  --accent-secondary: 45, 106, 79;     /* #2D6A4F Botanical Foliage Green */
 
-  /* Typography */
-  --font-display: var(--font-inter), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Direct HEX tokens */
+  --color-deep-ink: #1C1917;
+  --color-surface: #F5F2EB;
+  --color-surface-elevated: #FFFFFF;
+  --color-warm-white: #1C1917;
+  --color-muted: #78716C;
+  --color-border: #E3DED4;
+  --color-border-subtle: #EEEAE2;
+  --color-accent: #1B4332;
+  --color-accent-secondary: #2D6A4F;
+
+  /* Typography: Confident Editorial Serif (Newsreader) + Clean Body (Inter) */
+  --font-display: var(--font-display), 'Newsreader', Georgia, serif;
   --font-body: var(--font-inter), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: var(--font-jetbrains), 'JetBrains Mono', 'Fira Code', monospace;
+  --font-mono: var(--font-mono), 'JetBrains Mono', monospace;
 
   /* Spacing */
   --space-xs: 0.25rem;
@@ -45,7 +57,7 @@
 
   /* Layout */
   --nav-height: 4rem;
-  --page-padding: clamp(1.5rem, 3vw, 2.5rem);
+  --page-padding: clamp(1rem, 3.5vw, 2.5rem);
   --max-width: 1280px;
   --radius-sm: 4px;
   --radius-md: 8px;
@@ -54,6 +66,31 @@
   /* 3D */
   --three-intensity: 1;
   --grain-opacity: 0.03;
+}
+
+[data-theme="dark"] {
+  --bg-primary: 19, 18, 17;          /* #131211 Warm Earth Charcoal / Graphite */
+  --bg-secondary: 26, 25, 23;        /* #1A1917 Aged Slate Surface */
+  --bg-tertiary: 35, 33, 30;         /* #23211E Elevated Stone Card */
+  --fg-primary: 237, 232, 226;       /* #EDE8E2 Soft Warm Vellum / Ivory */
+  --fg-secondary: 179, 172, 162;     /* #B3ACA2 Warm Pumice */
+  --fg-muted: 125, 119, 110;         /* #7D776E Muted Stone */
+  --border: 46, 43, 39;              /* #2E2B27 Warm Hairline Border */
+  --border-subtle: 36, 33, 30;       /* #24211E */
+  --accent: 52, 211, 153;             /* #34D399 Vibrant Emerald for high-contrast dark theme */
+  --accent-hover: 110, 231, 183;      /* #6EE7B7 Lighter Emerald Hover */
+  --accent-muted: 16, 185, 129;
+  --accent-secondary: 45, 212, 191;   /* #2DD4BF Bright Teal */
+
+  --color-deep-ink: #EDE8E2;
+  --color-surface: #1A1917;
+  --color-surface-elevated: #23211E;
+  --color-warm-white: #131211;
+  --color-muted: #7D776E;
+  --color-border: #2E2B27;
+  --color-border-subtle: #24211E;
+  --color-accent: #34D399;
+  --color-accent-secondary: #2DD4BF;
 }
 
 /* ── Font System Variants ──────────────────────────────────── */
@@ -224,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(var(--fg-primary));
 }
 
-/* ── Links ─────────────────────────────────────────────────── */
+/* ── Links & Solid Action Buttons ───────────────────────────── */
 
 a {
   color: inherit;
@@ -232,8 +269,37 @@ a {
   transition: color var(--duration-fast) var(--ease-smooth);
 }
 
-a:hover {
+a:hover:not([class*="bg-"]):not([class*="btn-"]):not([class*="text-white"]):not(.lets-talk-btn) {
   color: rgb(var(--accent));
+}
+
+/* Ensure utility classes override general element selectors */
+.text-white,
+a.text-white,
+button.text-white {
+  color: #ffffff !important;
+}
+
+.text-white:hover,
+a.text-white:hover,
+button.text-white:hover {
+  color: #ffffff !important;
+}
+
+.btn-solid-accent,
+a.btn-solid-accent,
+button.btn-solid-accent {
+  background-color: rgb(var(--accent)) !important;
+  border: 1px solid rgb(var(--accent)) !important;
+  color: #ffffff !important;
+}
+
+.btn-solid-accent:hover,
+a.btn-solid-accent:hover,
+button.btn-solid-accent:hover {
+  background-color: rgb(var(--accent-hover)) !important;
+  border-color: rgb(var(--accent-hover)) !important;
+  color: #ffffff !important;
 }
 
 /* ── Scrollbar ─────────────────────────────────────────────── */

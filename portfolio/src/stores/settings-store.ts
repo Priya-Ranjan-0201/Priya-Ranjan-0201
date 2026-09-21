@@ -86,7 +86,7 @@ export const useSettingsStore = create<SettingsState>()(
       resetSettings: () => set({ ...defaultSettings }),
     }),
     {
-      name: 'priya-portfolio-settings',
+      name: 'priya-portfolio-settings-v3',
       partialize: (state) => ({
         theme: state.theme,
         accent: state.accent,

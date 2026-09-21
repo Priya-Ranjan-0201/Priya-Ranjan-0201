@@ -10,9 +10,11 @@ const routes = [
   '/work/hrcv',
   '/work/tech-on-tour',
   '/work/braincheck',
-  '/work/disk-scheduling-algorithm',
+  '/work/disk-scheduling',
   '/skills',
   '/experience',
+  '/now',
+  '/uses',
   '/lab',
   '/lab/particle-field',
   '/lab/type-distortion',
@@ -25,9 +27,11 @@ const routes = [
   '/contact',
 ];
 
+const PORT = process.env.PORT || 3000;
+
 async function verifyRoute(route) {
   return new Promise((resolve) => {
-    http.get('http://localhost:3001' + route, (res) => {
+    http.get(`http://localhost:${PORT}` + route, (res) => {
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {

@@ -6,7 +6,7 @@ export const skillCategories: SkillCategory[] = [
     label: 'Core Languages',
     description: 'Foundational programming languages used across systems, web, and algorithmic pipelines.',
     icon: 'code',
-    color: '#00f0ff',
+    color: '#1B4332',
     skills: [
       { name: 'Python', level: 'advanced', tags: ['Backend', 'AI/ML', 'Automation'], relatedProjects: ['vireoniq', 'trustshield-x', 'hrcv', 'priocardix-ai'] },
       { name: 'TypeScript', level: 'proficient', tags: ['Frontend', 'Full-Stack', 'Type Safety'], relatedProjects: ['vireoniq', 'braincheck', 'tech-on-tour'] },
@@ -21,14 +21,14 @@ export const skillCategories: SkillCategory[] = [
     label: 'Frameworks & Engines',
     description: 'Modern application frameworks and web runtime environments.',
     icon: 'layers',
-    color: '#38bdf8',
+    color: '#D97706',
     skills: [
       { name: 'Next.js 15 (App Router)', level: 'proficient', tags: ['Full-Stack', 'Server Components', 'SSR'], relatedProjects: ['vireoniq'] },
       { name: 'React 18', level: 'advanced', tags: ['State Machines', 'Hooks', 'Component Architecture'], relatedProjects: ['vireoniq', 'braincheck', 'tech-on-tour'] },
       { name: 'FastAPI', level: 'proficient', tags: ['Async Python', 'Pydantic', 'OpenAPI'], relatedProjects: ['vireoniq', 'priocardix-ai'] },
       { name: 'Node.js / Express', level: 'proficient', tags: ['Asynchronous I/O', 'REST APIs', 'Middleware'], relatedProjects: ['tech-on-tour'] },
       { name: 'Flask', level: 'proficient', tags: ['Lightweight API', 'Task Coordination'], relatedProjects: ['trustshield-x', 'hrcv'] },
-      { name: 'TailwindCSS / CSS Modules', level: 'advanced', tags: ['Design Systems', 'Responsive UI', 'Glassmorphism'], relatedProjects: ['vireoniq', 'braincheck'] },
+      { name: 'TailwindCSS / CSS Modules', level: 'advanced', tags: ['Design Systems', 'Responsive UI', 'Semantic Spacing'], relatedProjects: ['vireoniq', 'braincheck'] },
     ],
   },
   {
@@ -36,7 +36,7 @@ export const skillCategories: SkillCategory[] = [
     label: 'AI & Data Science',
     description: 'Machine learning frameworks, vector retrieval, and computer vision tools.',
     icon: 'cpu',
-    color: '#818cf8',
+    color: '#9A3412',
     skills: [
       { name: 'PyTorch', level: 'familiar', tags: ['Deep Learning', 'Neural Tensors', 'Embeddings'], relatedProjects: ['vireoniq', 'hrcv'] },
       { name: 'OpenCV', level: 'proficient', tags: ['Image Processing', 'Contrast CLAHE', 'Keypoint Tracking'], relatedProjects: ['hrcv'] },
@@ -51,7 +51,7 @@ export const skillCategories: SkillCategory[] = [
     label: 'Cybersecurity & Networks',
     description: 'Security testing tools, network socket analysis, and threat modeling methodologies.',
     icon: 'shield',
-    color: '#f43f5e',
+    color: '#B45309',
     skills: [
       { name: 'Nmap & Port Auditing', level: 'proficient', tags: ['Socket Sweeps', 'NSE Scripts', 'Fingerprinting'], relatedProjects: ['trustshield-x'] },
       { name: 'OWASP ZAP / Web Security', level: 'proficient', tags: ['Top 10 Vulnerabilities', 'Auth Flaws', 'XSS/CSRF'], relatedProjects: ['trustshield-x'] },
@@ -65,7 +65,7 @@ export const skillCategories: SkillCategory[] = [
     label: 'Systems & Infrastructure',
     description: 'Databases, containerization, and operating system fundamental concepts.',
     icon: 'database',
-    color: '#34d399',
+    color: '#57534E',
     skills: [
       { name: 'OS Disk Scheduling Algorithms', level: 'advanced', tags: ['FCFS', 'SSTF', 'SCAN', 'C-LOOK'], relatedProjects: ['disk-scheduling-algorithm'] },
       { name: 'PostgreSQL', level: 'proficient', tags: ['Relational Schema', 'Indexes', 'ACID Pool'], relatedProjects: ['vireoniq', 'trustshield-x'] },

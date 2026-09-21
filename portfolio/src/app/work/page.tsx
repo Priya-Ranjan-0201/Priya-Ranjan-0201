@@ -2,29 +2,25 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import {
   ArrowRight,
-  ExternalLink,
   Layers,
-  Sparkles,
   Cpu,
   Shield,
   Eye,
   Globe,
   HardDrive,
-  Activity,
   Terminal,
 } from 'lucide-react';
-import { GithubIcon } from '@/components/ui/Icons';
 import { projects } from '@/data/projects';
 import { useSettingsStore } from '@/stores/settings-store';
 import { playSound } from '@/lib/sound';
+import ProjectVisual from '@/components/work/ProjectVisual';
+import GitHubFeed from '@/components/home/GitHubFeed';
 
 export default function WorkPage() {
   const [activeCategory, setActiveCategory] = useState<string>('ALL');
-  const [hoveredSlug, setHoveredSlug] = useState<string | null>(null);
   const openArchitecture = useSettingsStore((s) => s.openArchitectureModal);
 
   const categories = ['ALL', 'AI / ML', 'SECURITY', 'SYSTEMS & CS', 'VISION & TOOLS'];
@@ -32,69 +28,57 @@ export default function WorkPage() {
   const filteredProjects = activeCategory === 'ALL'
     ? projects
     : projects.filter((p) => {
-        if (activeCategory === 'AI / ML') return p.category === 'AI/ML';
-        if (activeCategory === 'SECURITY') return p.category === 'SECURITY';
-        if (activeCategory === 'SYSTEMS & CS') return p.category === 'SYSTEMS' || p.category === 'TOOLS';
+        if (activeCategory === 'AI / ML') return p.category === 'AI/ML' || p.tags.includes('PyTorch') || p.tags.includes('AI');
+        if (activeCategory === 'SECURITY') return p.category === 'SECURITY' || p.tags.includes('Security');
+        if (activeCategory === 'SYSTEMS & CS') return p.category === 'SYSTEMS' || p.category === 'TOOLS' || p.slug === 'disk-scheduling';
         if (activeCategory === 'VISION & TOOLS') return p.category === 'VISION' || p.category === 'TOOLS' || p.category === 'WEB';
         return true;
       });
 
-  const getCategoryIcon = (category: string) => {
-    switch (category) {
-      case 'AI/ML': return <Cpu size={14} className="text-cyan-400" />;
-      case 'SECURITY': return <Shield size={14} className="text-emerald-400" />;
-      case 'VISION': return <Eye size={14} className="text-purple-400" />;
-      case 'SYSTEMS': return <HardDrive size={14} className="text-amber-400" />;
-      case 'TOOLS': return <Terminal size={14} className="text-blue-400" />;
-      default: return <Globe size={14} className="text-cyan-400" />;
-    }
-  };
-
-  const getStatusColor = (status: string) => {
-    switch (status) {
-      case 'ACTIVE': return 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30';
-      case 'COMPLETED': return 'bg-cyan-500/20 text-cyan-400 border-cyan-500/30';
-      case 'ITERATING': return 'bg-amber-500/20 text-amber-400 border-amber-500/30';
-      case 'PROTOTYPE': return 'bg-purple-500/20 text-purple-400 border-purple-500/30';
-      default: return 'bg-white/10 text-white/70 border-white/20';
+  const getStatusBadge = (status: string) => {
+    switch (status.toUpperCase()) {
+      case 'ACTIVE':
+        return 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20';
+      case 'COMPLETED':
+        return 'bg-[rgb(var(--accent))]/15 text-[rgb(var(--accent))] border-[rgb(var(--accent))]/30';
+      case 'ITERATING':
+        return 'bg-amber-500/10 text-amber-400 border-amber-500/20';
+      case 'PROTOTYPE':
+        return 'bg-purple-500/10 text-purple-400 border-purple-500/20';
+      default:
+        return 'bg-white/5 text-[rgb(var(--fg-muted))] border-white/10';
     }
   };
 
   return (
-    <div className="work-root">
-      {/* ── WORK HERO: ARCHIVE OF ENGINEERED SYSTEMS ── */}
-      <section className="archive-section">
-        <div className="archive-container">
-          {/* Header Banner */}
-          <div className="work-editorial-header">
-            <div className="work-header-meta">
-              <span className="eyebrow-tag">
-                <Sparkles size={12} className="inline mr-1" />
-                INDEX OF WORK &mdash; 07 OPEN-SOURCE SYSTEMS
-              </span>
-              <span className="work-index-counter">
-                PROJECTS: {filteredProjects.length} / {projects.length}
-              </span>
-            </div>
-
-            <h1 className="work-hero-headline">
-              SELECTED PROJECTS<br />
-              <span className="text-gradient-cyan">&amp; SOFTWARE ARCHITECTURE</span>.
-            </h1>
-
-            <p className="work-hero-para">
-              A curated collection of production applications, intelligent algorithms, and systems architectures.
-              Every project represents a deep technical problem deconstructed and solved from first principles.
-            </p>
+    <div className="work-page-wrapper">
+      <div className="subpage-container">
+        {/* ── SUBPAGE EDITORIAL HEADER ───────────────────────── */}
+        <div className="subpage-header-block">
+          <div className="subpage-eyebrow">
+            <span className="w-2 h-2 rounded-full bg-[rgb(var(--accent))]" />
+            <span>SELECTED WORK &bull; FIRST-PRINCIPLES SYSTEMS</span>
           </div>
 
-          {/* Filter Bar */}
-          <div className="filter-nav-bar">
-            <div className="filter-tabs-group">
+          <h1 className="subpage-headline">
+            Engineered Systems &amp; Case Studies.
+          </h1>
+
+          <p className="subpage-lead-para">
+            Production-grade platforms, algorithmic simulators, and security tooling built to test hardware limits and solve concrete problems.
+          </p>
+
+          {/* Filter Pills */}
+          <div className="flex flex-wrap items-center justify-between gap-4 pt-4">
+            <div className="flex flex-wrap items-center gap-2">
               {categories.map((cat) => (
                 <button
                   key={cat}
-                  className={`tab-btn ${activeCategory === cat ? 'active' : ''}`}
+                  className={`px-3.5 py-1.5 rounded-full text-xs font-mono transition-all ${
+                    activeCategory === cat
+                      ? 'bg-[rgb(var(--accent))] text-white border border-[rgb(var(--accent))] shadow-sm font-semibold'
+                      : 'bg-[rgb(var(--bg-secondary))] text-[rgb(var(--fg-muted))] border border-[rgb(var(--border))] hover:text-[rgb(var(--fg-primary))] hover:border-[rgb(var(--accent))]/40'
+                  }`}
                   onClick={() => {
                     playSound('click');
                     setActiveCategory(cat);
@@ -105,146 +89,125 @@ export default function WorkPage() {
               ))}
             </div>
 
-            <div className="filter-stats-badge">
-              <Activity size={13} className="text-cyan-400" />
-              <span>07 VERIFIED REPOSITORIES &bull; OPEN-SOURCE</span>
+            <div className="text-xs font-mono text-[rgb(var(--fg-muted))]">
+              SHOWING <span className="text-[rgb(var(--fg-primary))] font-bold">{filteredProjects.length}</span> OF {projects.length} PROJECTS
             </div>
           </div>
+        </div>
 
-          {/* Project Editorial Archive List */}
-          <div className="projects-archive-list">
-            {filteredProjects.map((item, i) => (
-              <motion.article
+        {/* ── PROJECTS LIST ──────────────────────────────────── */}
+        <div className="space-y-12">
+          {filteredProjects.map((item, i) => {
+            const isFlagship = item.slug === 'vireoniq' && activeCategory === 'ALL';
+
+            return (
+              <article
                 key={item.slug}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
-                className={`work-editorial-item ${hoveredSlug === item.slug ? 'is-hovered' : ''}`}
-                onMouseEnter={() => {
-                  setHoveredSlug(item.slug);
-                  playSound('hover');
-                }}
-                onMouseLeave={() => setHoveredSlug(null)}
+                className={`p-6 sm:p-10 rounded-2xl bg-[rgb(var(--bg-secondary))] border transition-all duration-300 ${
+                  isFlagship
+                    ? 'border-[rgb(var(--accent))]/60 shadow-md ring-1 ring-[rgb(var(--accent))]/20'
+                    : 'border-[rgb(var(--border))] hover:border-[rgb(var(--accent))]/40 shadow-sm'
+                }`}
               >
-                {/* Left: Project Number, Index & Main Details */}
-                <div className="editorial-main-col">
-                  <div className="editorial-meta-row">
-                    <span className="editorial-num">0{i + 1}</span>
-                    <span className={`editorial-status-tag ${getStatusColor(item.status)}`}>
-                      {item.status}
-                    </span>
-                    <span className="editorial-year">{item.year}</span>
-                    <div className="editorial-cat-badge">
-                      {getCategoryIcon(item.category)}
-                      <span>{item.category}</span>
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                  {/* Left Column: Details & Typography */}
+                  <div className="lg:col-span-7 space-y-5">
+                    {/* Index & Status Header */}
+                    <div className="flex items-center gap-3 text-xs font-mono">
+                      <span className="font-extrabold text-[rgb(var(--accent))]">
+                        0{i + 1}
+                      </span>
+                      <span className="text-[#32363F]">/</span>
+                      <span className="text-[rgb(var(--fg-muted))]">{item.year}</span>
+                      <span
+                        className={`px-2.5 py-0.5 rounded-full text-[10px] font-semibold border ${getStatusBadge(
+                          item.status
+                        )}`}
+                      >
+                        {isFlagship ? 'FLAGSHIP' : item.status.toUpperCase()}
+                      </span>
+                      {item.category && (
+                        <span className="text-[#6E7480] uppercase hidden sm:inline-block">
+                          &bull; {item.category}
+                        </span>
+                      )}
+                    </div>
+
+                    {/* Title & Subtitle */}
+                    <div>
+                      <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[rgb(var(--fg-primary))] mb-1.5">
+                        <Link
+                          href={`/work/${item.slug}`}
+                          className="hover:text-[rgb(var(--accent))] transition-colors"
+                          onClick={() => playSound('click')}
+                        >
+                          {item.title}
+                        </Link>
+                      </h2>
+                      <h3 className="text-sm sm:text-base font-medium text-[rgb(var(--accent))]">
+                        {item.subtitle}
+                      </h3>
+                    </div>
+
+                    {/* Description Paragraph */}
+                    <p className="text-sm text-[rgb(var(--fg-muted))] leading-relaxed max-w-xl">
+                      {item.description}
+                    </p>
+
+                    {/* Tech Badges */}
+                    <div className="flex flex-wrap gap-2 pt-1">
+                      {item.technologies.slice(0, 6).map((tech) => (
+                        <span key={tech} className="tech-pill">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+
+                    {/* CTAs */}
+                    <div className="flex flex-wrap items-center gap-4 pt-3 text-xs font-mono">
+                      <Link
+                        href={`/work/${item.slug}`}
+                        className="btn-solid-accent inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-semibold transition-all shadow-sm"
+                        onClick={() => playSound('click')}
+                      >
+                        <span>VIEW CASE STUDY</span>
+                        <ArrowRight size={13} />
+                      </Link>
+
+                      <button
+                        onClick={() => {
+                          playSound('click');
+                          openArchitecture(item.slug);
+                        }}
+                        className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-[rgb(var(--bg-secondary))] hover:bg-[rgb(var(--bg-tertiary))] text-[rgb(var(--fg-muted))] hover:text-[rgb(var(--fg-primary))] border border-[rgb(var(--border))] transition-all"
+                      >
+                        <Layers size={13} />
+                        <span>System Architecture</span>
+                      </button>
                     </div>
                   </div>
 
-                  <Link href={`/work/${item.slug}`} className="editorial-title-link">
-                    <h2 className="editorial-title">{item.title}</h2>
-                    <span className="editorial-sub-text">{item.subtitle}</span>
-                  </Link>
-
-                  <p className="editorial-problem-statement">
-                    <strong className="text-white/80">Problem: </strong>
-                    {item.problem}
-                  </p>
-
-                  {/* Tech stack badges */}
-                  <div className="editorial-tech-pills">
-                    {item.technologies.slice(0, 6).map((tech) => (
-                      <span key={tech} className="tech-pill">
-                        {tech}
-                      </span>
-                    ))}
-                    {item.technologies.length > 6 && (
-                      <span className="tech-pill-more">
-                        +{item.technologies.length - 6} more
-                      </span>
-                    )}
-                  </div>
-
-                  {/* Actions Row */}
-                  <div className="editorial-actions-bar">
+                  {/* Right Column: Bespoke Engineering Preview */}
+                  <div className="lg:col-span-5">
                     <Link
                       href={`/work/${item.slug}`}
-                      className="btn-case-study"
-                      data-cursor="VIEW"
+                      className="block group cursor-pointer"
                       onClick={() => playSound('click')}
                     >
-                      <span>Explore Case Study</span>
-                      <ArrowRight size={14} />
+                      <ProjectVisual slug={item.slug} title={item.title} />
                     </Link>
-
-                    <button
-                      onClick={() => {
-                        playSound('click');
-                        openArchitecture(item.slug);
-                      }}
-                      className="btn-arch-trigger"
-                      title="Inspect Interactive Architecture Diagram"
-                    >
-                      <Layers size={14} />
-                      <span>System Architecture</span>
-                    </button>
-
-                    {item.links.find((l) => l.type === 'github') && (
-                      <a
-                        href={item.links.find((l) => l.type === 'github')?.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn-source-link"
-                        title="View GitHub Repository"
-                      >
-                        <GithubIcon size={14} />
-                        <span>Source</span>
-                      </a>
-                    )}
-
-                    {item.links.find((l) => l.type === 'live') && (
-                      <a
-                        href={item.links.find((l) => l.type === 'live')?.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn-demo-link"
-                        title="Open Live Preview"
-                      >
-                        <ExternalLink size={14} />
-                        <span>Live</span>
-                      </a>
-                    )}
                   </div>
                 </div>
-
-                {/* Right: Project Visual with Inertia Hover Feel */}
-                <div className="editorial-preview-col">
-                  <Link
-                    href={`/work/${item.slug}`}
-                    className="editorial-preview-card"
-                    data-cursor="EXPLORE"
-                  >
-                    <div className="preview-image-wrap">
-                      <Image
-                        src={item.heroImage || '/images/laptop-mockup.jpg'}
-                        alt={item.title}
-                        fill
-                        sizes="(max-width: 768px) 100vw, 420px"
-                        style={{ objectFit: 'cover' }}
-                      />
-                      <div className="preview-mesh-overlay" />
-                    </div>
-
-                    <div className="preview-card-floating-badge">
-                      <span>{item.title}</span>
-                      <ArrowRight size={14} className="preview-arrow-icon" />
-                    </div>
-                  </Link>
-                </div>
-              </motion.article>
-            ))}
-          </div>
+              </article>
+            );
+          })}
         </div>
-      </section>
+
+        {/* Real GitHub Activity Feed */}
+        <div className="mt-20 sm:mt-24">
+          <GitHubFeed />
+        </div>
+      </div>
     </div>
   );
 }
