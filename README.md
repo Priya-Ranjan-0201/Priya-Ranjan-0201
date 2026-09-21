@@ -41,7 +41,7 @@
 
 ```
 WHO_I_AM:
-├─ Name:         Priya Ranjan.
+├─ Name:         Priya Ranjan
 ├─ Discipline:   Computer Science & Engineering
 ├─ Core Mindset: Problem-first engineering over tech-stack chasing
 ├─ Focus Areas:  Artificial Intelligence • Cybersecurity • Full-Stack Systems
@@ -141,9 +141,9 @@ Security framework examining defensive software paradigms, trust scoring, and an
   <img src="assets/cards/card-techontour-v2.svg" alt="03 TECH-ON-TOUR Card" width="100%" />
 </a>
 
-**03 / TECH-ON-TOUR**  
-A full-stack web platform built to demonstrate responsive interface architectures and dynamic user journeys.  
-`Focus: Full-Stack Web • UI/UX • Modern Architecture`  
+**03 / TECH-ON-TOUR (TravelSathi)**  
+India's Digital Public Infrastructure for Smart Tourism — multilingual travel twin, anti-overtourism gatekeeper, and regional search graph engine.  
+`Focus: Smart Tourism DPI • Search Graph • Full-Stack Web`  
 🔗 **[View Repository](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR)**
 
 </td>
@@ -154,8 +154,8 @@ A full-stack web platform built to demonstrate responsive interface architecture
 </a>
 
 **04 / HRCV-**  
-Computer vision repository exploring human recognition, feature tracking, and image-based inference.  
-`Focus: Computer Vision • OpenCV • Python`  
+AI-powered career intelligence platform exploring ATS compatibility scoring, NLP skill extraction, and candidate-role alignment.  
+`Focus: Career Intelligence • ATS Compatibility • NLP & ML`  
 🔗 **[View Repository](https://github.com/Priya-Ranjan-0201/HRCV-)**
 
 </td>
@@ -168,8 +168,8 @@ Computer vision repository exploring human recognition, feature tracking, and im
 </a>
 
 **05 / Priocardix-AI**  
-Predictive modeling project exploring machine learning applications in cardiac assessment and health markers.  
-`Focus: Healthcare AI • Predictive Modeling • Data Analysis`  
+Enterprise preventive cardiology platform powered by PulseIQ Guardian Engine™ for multi-parametric cardiac risk assessment.  
+`Focus: Healthcare AI • Predictive Modeling • Preventive Cardiology`  
 🔗 **[View Repository](https://github.com/Priya-Ranjan-0201/Priocardix-AI)**
 
 </td>
@@ -180,8 +180,8 @@ Predictive modeling project exploring machine learning applications in cardiac a
 </a>
 
 **06 / BrainCheck**  
-Exploratory diagnostic project analyzing cognitive benchmarks, pattern evaluation, and data pipelines.  
-`Focus: Diagnostics Exploration • ML • Systems`  
+Containerized cognitive assessment and MCQ architecture platform engineered with Flask Blueprints, PostgreSQL, and Docker microservices.  
+`Focus: Containerized Systems • Flask & Docker • PostgreSQL`  
 🔗 **[View Repository](https://github.com/Priya-Ranjan-0201/BrainCheck)**
 
 </td>
@@ -194,8 +194,8 @@ Exploratory diagnostic project analyzing cognitive benchmarks, pattern evaluatio
 </a>
 
 **07 / Disk_Scheduling_Algorithm**  
-Operating systems simulator implementing and benchmarking classical disk arm scheduling algorithms (FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK) to minimize seek latency and head travel.  
-`Focus: Operating Systems • Algorithm Optimization • C / Python`  
+Operating systems simulator implementing and benchmarking 11 classical disk arm scheduling algorithms (FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK) with real-time canvas kinematics.  
+`Focus: Operating Systems • Storage Architecture • Canvas & Algorithms`  
 🔗 **[View Repository](https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm)**
 
 </td>

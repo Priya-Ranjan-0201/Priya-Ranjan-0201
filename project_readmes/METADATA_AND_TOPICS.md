@@ -1,76 +1,94 @@
 # 🏷️ GitHub Repository Metadata & Discoverability Cheat-Sheet
 
-Use this reference to update the **"About"** section (Description & Topics) for each of your 7 repositories on GitHub. Adding these descriptions and topics improves repository SEO, search visibility, and makes your pinned cards look polished.
+Use this reference to update the **"About"** section (Description & Topics) for each of your repositories on GitHub. Adding these descriptions and topics maximizes repository SEO, search discoverability, and ensures your pinned showcase cards look clean and professional.
 
 ---
 
 ### 1. `VIREONIQ`
+- **Repository:** [`https://github.com/Priya-Ranjan-0201/VIREONIQ`](https://github.com/Priya-Ranjan-0201/VIREONIQ)
 - **Description (1 line):**
   ```text
-  🚀 AI-powered career intelligence platform for skill gap analysis and guided career trajectories.
+  🚀 Autonomous AI Career & Workforce Intelligence OS — Career Digital Twin, 9D Readiness Index & AST Static Code Analysis.
   ```
 - **Topics / Tags:**
-  `ai`, `machine-learning`, `nlp`, `career-intelligence`, `full-stack`, `python`, `docker`
+  `ai`, `machine-learning`, `career-intelligence`, `ast-analysis`, `fastapi`, `react`, `qdrant`, `vector-search`, `docker`, `python`
 
 ---
 
 ### 2. `TrustShield-X`
+- **Repository:** [`https://github.com/Priya-Ranjan-0201/TrustShield-X`](https://github.com/Priya-Ranjan-0201/TrustShield-X)
 - **Description (1 line):**
   ```text
-  🛡️ Digital trust and cybersecurity framework exploring threat analysis, defense architecture, and system validation.
+  🛡️ Autonomous Cyber Defense & Threat Intelligence OS — Async Multi-Vector Scanning, STIX 2.1 & 7 Security Invariants.
   ```
 - **Topics / Tags:**
-  `cybersecurity`, `digital-trust`, `threat-modeling`, `security-architecture`, `python`, `defensive-security`
+  `cybersecurity`, `threat-intelligence`, `stix-2-1`, `asyncio`, `security-architecture`, `python`, `defensive-security`, `threat-modeling`
 
 ---
 
 ### 3. `TECH-ON-TOUR`
+- **Repository:** [`https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR`](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR)
 - **Description (1 line):**
   ```text
-  🧭 Intelligent travel and regional exploration graph engine mapping destinations, states, and search graph topologies.
+  🇮🇳 TravelSathi: India's Digital Public Infrastructure for Smart Tourism — Multilingual Travel Twin, Anti-Overtourism & Verified Host Hub.
   ```
 - **Topics / Tags:**
-  `travel-tech`, `search-graph`, `data-engineering`, `datasets`, `python`, `graph-traversal`
+  `smart-tourism`, `travel-tech`, `sih`, `digital-public-infrastructure`, `ai-travel`, `react`, `fastapi`, `python`, `search-graph`
 
 ---
 
 ### 4. `HRCV-`
+- **Repository:** [`https://github.com/Priya-Ranjan-0201/HRCV-`](https://github.com/Priya-Ranjan-0201/HRCV-)
 - **Description (1 line):**
   ```text
-  👁️ Computer vision pipeline exploring human recognition, facial landmark detection, and image analysis in Python.
+  🎯 AI-Powered Career Intelligence Platform — ATS Compatibility Engine, NLP Skill Extraction & Role Fit Classification.
   ```
 - **Topics / Tags:**
-  `computer-vision`, `opencv`, `human-recognition`, `image-processing`, `python`, `deep-learning`
+  `career-intelligence`, `resume-parser`, `nlp`, `ats-checker`, `machine-learning`, `python`, `react`, `fastapi`, `full-stack`
 
 ---
 
 ### 5. `Priocardix-AI`
+- **Repository:** [`https://github.com/Priya-Ranjan-0201/Priocardix-AI`](https://github.com/Priya-Ranjan-0201/Priocardix-AI)
 - **Description (1 line):**
   ```text
-  ❤️ Healthcare machine learning exploration for cardiac marker evaluation and predictive risk assessment.
+  🫀 Enterprise Preventive Cardiology Platform powered by PulseIQ Guardian Engine™ for multi-parametric risk assessment.
   ```
 - **Topics / Tags:**
-  `healthcare-ai`, `machine-learning`, `predictive-modeling`, `cardiac-care`, `python`, `data-science`
+  `healthcare-ai`, `cardiology`, `preventive-care`, `machine-learning`, `predictive-modeling`, `health-tech`, `python`, `data-science`
 
 ---
 
 ### 6. `BrainCheck`
+- **Repository:** [`https://github.com/Priya-Ranjan-0201/BrainCheck`](https://github.com/Priya-Ranjan-0201/BrainCheck)
 - **Description (1 line):**
   ```text
-  🧠 Exploratory diagnostic system analyzing cognitive benchmarks, neural indicators, and health data modeling.
+  🧠 Containerized Cognitive Assessment & MCQ Architecture Platform built with Flask Blueprints, PostgreSQL & Docker.
   ```
 - **Topics / Tags:**
-  `cognitive-ai`, `diagnostics`, `machine-learning`, `health-tech`, `python`, `flask`
+  `quiz-platform`, `cognitive-assessment`, `docker`, `flask`, `postgresql`, `microservices`, `python`, `docker-compose`
 
 ---
 
 ### 7. `Disk_Scheduling_Algorithm`
+- **Repository:** [`https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm`](https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm)
 - **Description (1 line):**
   ```text
-  ⚙️ Interactive OS simulator benchmarking disk arm scheduling algorithms (FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK).
+  💽 Operating System Storage Architecture & Disk Kinematics Simulator with interactive canvas visualizer and 11 algorithms.
   ```
 - **Topics / Tags:**
-  `operating-systems`, `disk-scheduling`, `algorithms`, `systems-architecture`, `javascript`, `data-structures`
+  `operating-systems`, `disk-scheduling`, `storage-architecture`, `simulation`, `algorithms`, `javascript`, `canvas-api`, `data-structures`
+
+---
+
+### 8. `Priya-Ranjan-0201` *(Profile Repository)*
+- **Repository:** [`https://github.com/Priya-Ranjan-0201/Priya-Ranjan-0201`](https://github.com/Priya-Ranjan-0201/Priya-Ranjan-0201)
+- **Description (1 line):**
+  ```text
+  ⚡ Master Portfolio & Engineering Ecosystem of Priya Ranjan — Full-Stack Systems, AI/ML, and Cybersecurity.
+  ```
+- **Topics / Tags:**
+  `portfolio`, `developer-profile`, `github-readme`, `nextjs`, `threejs`, `systems-engineering`, `cybersecurity`, `ai-ml`
 
 ---
 
