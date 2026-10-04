@@ -1,12 +1,12 @@
 # 🇮🇳 TravelSathi — India's Digital Public Infrastructure for Smart Tourism
 ### *Unified Multilingual Travel Twin, Anti-Overtourism Gatekeeper, Verified Host Hub & Government Investment Intelligence*
 
-[![SIH Grand Finale](https://img.shields.io/badge/SIH-Grand%20Finale%20Ready-success?style=for-the-badge&logo=shield)](https://github.com)
-[![FastAPI](https://img.shields.io/badge/Backend-FastAPI%20Async-009688?style=for-the-badge&logo=fastapi)](http://127.0.0.1:8000/docs)
-[![React Vite](https://img.shields.io/badge/Frontend-React%2019%20%2B%20Vite-61DAFB?style=for-the-badge&logo=react)](http://localhost:5173)
-[![Machine Learning](https://img.shields.io/badge/ML%20Models-8%20Local%20Pipelines-FF6F00?style=for-the-badge&logo=scikit-learn)](file:///c:/Users/PRIYE%20RANJAN/OneDrive/Desktop/SIH/backend/app/services)
-[![Database](https://img.shields.io/badge/POIs%20Scored-12%2C601%20Destinations-blueviolet?style=for-the-badge)](http://localhost:5173/dmo/potential)
-[![Gov Intelligence](https://img.shields.io/badge/Gov%20Districts-508%20Analyzed-darkgreen?style=for-the-badge)](http://localhost:5173/gov/tourism-intelligence)
+[![DPI Platform](https://img.shields.io/badge/Architecture-Digital%20Public%20Infrastructure-success?style=for-the-badge&logo=shield)](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR)
+[![FastAPI](https://img.shields.io/badge/Backend-FastAPI%20Async-009688?style=for-the-badge&logo=fastapi)](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR)
+[![React Vite](https://img.shields.io/badge/Frontend-React%2019%20%2B%20Vite-61DAFB?style=for-the-badge&logo=react)](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR)
+[![Machine Learning](https://img.shields.io/badge/ML%20Models-8%20Local%20Pipelines-FF6F00?style=for-the-badge&logo=scikit-learn)](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR)
+[![Database](https://img.shields.io/badge/POIs%20Scored-12%2C601%20Destinations-blueviolet?style=for-the-badge)](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR)
+[![Gov Intelligence](https://img.shields.io/badge/Gov%20Districts-508%20Analyzed-darkgreen?style=for-the-badge)](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR)
 
 ---
 
@@ -220,7 +220,7 @@ python scripts/master_audit_runner.py
 ## 📁 Repository Structure
 
 ```
-SIH/
+TravelSathi/
 ├── backend/
 │   ├── app/
 │   │   ├── api/             # FastAPI REST endpoints (dmo, destinations, safety, gov tourism, etc.)
@@ -274,5 +274,5 @@ SIH/
 
 ---
 
-## 🤝 Developed for Smart India Hackathon (SIH)
+## 🤝 Open Architecture & Community Engineering
 *Crafted with heart, rigorous engineering, and deep respect for India's incredible heritage and hospitality.*

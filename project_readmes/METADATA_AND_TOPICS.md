@@ -30,10 +30,10 @@ This cheat-sheet documents the **"About"** metadata (one-line descriptions and t
 - **Repository:** [`https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR`](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR)
 - **Description (Live on GitHub):**
   ```text
-  🇮🇳 TravelSathi: Digital Public Infrastructure for Smart Tourism (SIH Finale) — multilingual travel twin, anti-overtourism & search graph.
+  🇮🇳 TravelSathi: Digital Public Infrastructure for Smart Tourism — multilingual travel twin, anti-overtourism & search graph.
   ```
 - **Topics / Tags:**
-  `smart-tourism`, `travel-tech`, `sih`, `digital-public-infrastructure`, `ai-travel`, `react`, `fastapi`, `python`, `search-graph`
+  `smart-tourism`, `travel-tech`, `geospatial`, `digital-public-infrastructure`, `ai-travel`, `react`, `fastapi`, `python`, `search-graph`
 
 ---
 
