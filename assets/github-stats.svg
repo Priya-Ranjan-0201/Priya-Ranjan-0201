@@ -186,9 +186,9 @@
       </g>
 
       <!-- Current Streak Count -->
-      <text x="145" y="138" text-anchor="middle" font-size="26" font-weight="900" fill="#F0F6FC" class="value-text">15</text>
+      <text x="145" y="138" text-anchor="middle" font-size="26" font-weight="900" fill="#F0F6FC" class="value-text">14</text>
       <text x="145" y="173" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="9.5" font-weight="700" fill="#39D353" letter-spacing="1.2px">CURRENT STREAK</text>
-      <text x="145" y="187" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="8.5" font-weight="600" fill="#8B949E">15 CONSECUTIVE DAYS</text>
+      <text x="145" y="187" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="8.5" font-weight="600" fill="#8B949E">14 CONSECUTIVE DAYS</text>
     </g>
 
     <!-- Bottom Streak Stats (Total Contributions & Longest Streak) -->
@@ -196,12 +196,12 @@
     
     <g transform="translate(18, 214)">
       <text x="0" y="12" class="label-text">TOTAL CONTRIBUTIONS</text>
-      <text x="0" y="33" font-size="19" class="value-text">141+</text>
+      <text x="0" y="33" font-size="19" class="value-text">134+</text>
     </g>
 
     <g transform="translate(170, 214)">
       <text x="0" y="12" class="label-text">LONGEST STREAK</text>
-      <text x="0" y="33" font-size="19" fill="#39D353" class="value-text">15 <tspan font-size="12" fill="#8B949E">Days</tspan></text>
+      <text x="0" y="33" font-size="19" fill="#39D353" class="value-text">14 <tspan font-size="12" fill="#8B949E">Days</tspan></text>
     </g>
   </g>
 
@@ -223,11 +223,11 @@
         <clipPath id="langBarClip">
           <rect x="0" y="0" width="252" height="6" rx="3"/>
         </clipPath>
-        <rect x="0.0" y="0" width="123.3" height="6" fill="#3178C6"/>
-<rect x="123.3" y="0" width="109.0" height="6" fill="#3572A5"/>
-<rect x="232.3" y="0" width="13.0" height="6" fill="#F7DF1E"/>
-<rect x="245.4" y="0" width="4.4" height="6" fill="#563D7C"/>
-<rect x="249.8" y="0" width="1.3" height="6" fill="#E34C26"/>
+        <rect x="0.0" y="0" width="122.6" height="6" fill="#3572A5"/>
+<rect x="122.6" y="0" width="109.1" height="6" fill="#3178C6"/>
+<rect x="231.6" y="0" width="14.4" height="6" fill="#F7DF1E"/>
+<rect x="246.0" y="0" width="3.8" height="6" fill="#563D7C"/>
+<rect x="249.8" y="0" width="1.5" height="6" fill="#E34C26"/>
       </g>
     </g>
 
@@ -235,15 +235,15 @@
     <g transform="translate(18, 92)">
       
         <g transform="translate(0, 0)">
-          <circle cx="5" cy="5" r="4" fill="#3178C6"/>
-          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#C9D1D9">TypeScript</text>
-          <text x="94" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">48.9%</text>
+          <circle cx="5" cy="5" r="4" fill="#3572A5"/>
+          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#C9D1D9">Python</text>
+          <text x="94" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">48.6%</text>
         </g>
         
 
         <g transform="translate(132, 0)">
-          <circle cx="5" cy="5" r="4" fill="#3572A5"/>
-          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#C9D1D9">Python</text>
+          <circle cx="5" cy="5" r="4" fill="#3178C6"/>
+          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#C9D1D9">TypeScript</text>
           <text x="94" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">43.3%</text>
         </g>
         
@@ -251,21 +251,21 @@
         <g transform="translate(0, 22)">
           <circle cx="5" cy="5" r="4" fill="#F7DF1E"/>
           <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#C9D1D9">JavaScript</text>
-          <text x="94" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">5.2%</text>
+          <text x="94" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">5.7%</text>
         </g>
         
 
         <g transform="translate(132, 22)">
           <circle cx="5" cy="5" r="4" fill="#563D7C"/>
           <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#C9D1D9">CSS</text>
-          <text x="94" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">1.8%</text>
+          <text x="94" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">1.5%</text>
         </g>
         
 
         <g transform="translate(0, 44)">
           <circle cx="5" cy="5" r="4" fill="#E34C26"/>
           <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#C9D1D9">HTML</text>
-          <text x="94" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">0.5%</text>
+          <text x="94" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">0.6%</text>
         </g>
         
     </g>
@@ -287,10 +287,10 @@
     <!-- Calendar Title and Status -->
     <g transform="translate(20, 18)">
       <text x="0" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#F0F6FC">
-        141 contributions in the last year
+        134 contributions in the last year
       </text>
       <text x="245" y="12" font-family="'SF Mono', Consolas, monospace" font-size="9.5" font-weight="700" fill="#39D353">
-        • 15-DAY ACTIVE STREAK RUNNING
+        • 14-DAY ACTIVE STREAK RUNNING
       </text>
 
       <!-- Less / More Legend -->
@@ -685,7 +685,7 @@
 <rect x="844.0" y="135.0" width="11" height="11" rx="2.5" fill="#006D32" class="streak-cell"><title>2026-10-02: 4 contributions</title></rect>
 <rect x="844.0" y="150.0" width="11" height="11" rx="2.5" fill="#006D32" class="streak-cell"><title>2026-10-03: 5 contributions</title></rect>
 <rect x="859.6" y="60.0" width="11" height="11" rx="2.5" fill="#39D353" class="streak-cell"><title>2026-10-04: 20 contributions</title></rect>
-<rect x="859.6" y="75.0" width="11" height="11" rx="2.5" fill="#26A641" class="streak-cell"><title>2026-10-05: 7 contributions</title></rect>
+<rect x="859.6" y="75.0" width="11" height="11" rx="2.5" fill="#0D1117"><title>2026-10-05: 7 contributions</title></rect>
 <rect x="859.6" y="90.0" width="11" height="11" rx="2.5" fill="#0D1117"><title>2026-10-06: 0 contributions</title></rect>
 <rect x="859.6" y="105.0" width="11" height="11" rx="2.5" fill="#0D1117"><title>2026-10-07: 0 contributions</title></rect>
 <rect x="859.6" y="120.0" width="11" height="11" rx="2.5" fill="#0D1117"><title>2026-10-08: 0 contributions</title></rect>
