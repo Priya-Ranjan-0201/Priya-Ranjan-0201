@@ -31,7 +31,7 @@ def fetch_stats():
 
     query = '''
     query {
-      viewer {
+      user(login: "Priya-Ranjan-0201") {
         login
         repositories(first: 100, ownerAffiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER]) {
           nodes {
@@ -81,8 +81,8 @@ def fetch_stats():
     with urllib.request.urlopen(req) as resp:
         data = json.loads(resp.read().decode('utf-8'))
         
-    viewer = data['data']['viewer']
-    repos = viewer['repositories']['nodes']
+    user_data = data['data']['user']
+    repos = user_data['repositories']['nodes']
     
     total_stars = sum(r['stargazerCount'] for r in repos)
     total_commits = 0
@@ -96,7 +96,7 @@ def fetch_stats():
             size = edge['size']
             lang_bytes[name] = lang_bytes.get(name, 0) + size
             
-    col = viewer['contributionsCollection']
+    col = user_data['contributionsCollection']
     cal = col['contributionCalendar']
     
     days = []
