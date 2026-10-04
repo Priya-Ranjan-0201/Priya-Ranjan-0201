@@ -51,21 +51,21 @@
   <!-- Left Content Block -->
   <g transform="translate(22, 0)">
     <!-- Category Tag -->
-    <text x="0" y="32" font-family="'SF Mono', 'Segoe UI Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#79C0FF" letter-spacing="1.5px">07 // SYSTEMS</text>
+    <text x="0" y="32" font-family="'SF Mono', 'Segoe UI Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#79C0FF" letter-spacing="1.5px">SYSTEMS &amp; OS</text>
 
     <!-- Project Title -->
     <text x="0" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#F0F6FC" letter-spacing="1.5px">Disk Scheduling</text>
 
     <!-- Subtitle -->
-    <text x="0" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#8B949E" letter-spacing="0.2px">OS Head Optimization Simulator (SCAN, LOOK, SSTF)</text>
+    <text x="0" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#8B949E" letter-spacing="0.2px">OS Storage Arm Seek Simulator</text>
 
     <!-- Tags -->
     <g transform="translate(0, 92)">
       <text font-family="'SF Mono', Consolas, monospace" font-size="9" font-weight="600" fill="#79C0FF">OS ALGORITHMS</text>
       <text x="86" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
-      <text x="98" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">SIMULATION</text>
-      <text x="174" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
-      <text x="186" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">C / JAVASCRIPT</text>
+      <text x="98" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">CANVAS</text>
+      <text x="146" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
+      <text x="158" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">C / JS</text>
     </g>
   </g>
 

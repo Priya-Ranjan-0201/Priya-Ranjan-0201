@@ -58,21 +58,23 @@
   <!-- Left Content Block -->
   <g transform="translate(22, 0)">
     <!-- Category Tag -->
-    <text x="0" y="32" font-family="'SF Mono', 'Segoe UI Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#00F2FE" letter-spacing="1.5px">01 // PLATFORM</text>
+    <text x="0" y="32" font-family="'SF Mono', 'Segoe UI Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#00F2FE" letter-spacing="1.5px">AI &amp; DEVTOOLS</text>
 
     <!-- Project Title -->
     <text x="0" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="800" fill="#F0F6FC" letter-spacing="2.5px">VIREONIQ</text>
 
     <!-- Subtitle -->
-    <text x="0" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="500" fill="#8B949E" letter-spacing="0.3px">AI-Powered Career Intelligence</text>
+    <text x="0" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#8B949E" letter-spacing="0.2px">AST Code Analysis &amp; Career Roadmaps</text>
 
     <!-- Tags -->
     <g transform="translate(0, 92)">
-      <text font-family="'SF Mono', Consolas, monospace" font-size="9" font-weight="600" fill="#00F2FE">AI/ML</text>
-      <text x="36" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
-      <text x="48" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">FULL-STACK</text>
-      <text x="120" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
-      <text x="132" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">NLP PIPELINE</text>
+      <text font-family="'SF Mono', Consolas, monospace" font-size="9" font-weight="600" fill="#00F2FE">PYTHON</text>
+      <text x="48" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
+      <text x="60" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">FASTAPI</text>
+      <text x="114" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
+      <text x="126" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">AST</text>
+      <text x="156" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
+      <text x="168" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">QDRANT</text>
     </g>
   </g>
 

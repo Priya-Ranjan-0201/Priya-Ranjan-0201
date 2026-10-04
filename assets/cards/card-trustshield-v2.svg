@@ -18,6 +18,9 @@
       <feGaussianBlur stdDeviation="3" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
+    <clipPath id="shieldClip">
+      <polygon points="350,26 378,36 378,60 350,80 322,60 322,36" />
+    </clipPath>
   </defs>
 
   <style>
@@ -54,21 +57,21 @@
   <!-- Left Content Block -->
   <g transform="translate(22, 0)">
     <!-- Category Tag -->
-    <text x="0" y="32" font-family="'SF Mono', 'Segoe UI Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#38EF7D" letter-spacing="1.5px">02 // SECURITY</text>
+    <text x="0" y="32" font-family="'SF Mono', 'Segoe UI Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#38EF7D" letter-spacing="1.5px">SECURITY &amp; AUDIT</text>
 
     <!-- Project Title -->
     <text x="0" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="800" fill="#F0F6FC" letter-spacing="2px">TrustShield-X</text>
 
     <!-- Subtitle -->
-    <text x="0" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="500" fill="#8B949E" letter-spacing="0.3px">Digital Trust &amp; Cyber Defense Architecture</text>
+    <text x="0" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#8B949E" letter-spacing="0.2px">Concurrent Threat &amp; Network Scanner</text>
 
     <!-- Tags -->
     <g transform="translate(0, 92)">
-      <text font-family="'SF Mono', Consolas, monospace" font-size="9" font-weight="600" fill="#38EF7D">CYBERSECURITY</text>
-      <text x="94" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
-      <text x="106" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">THREAT MODELING</text>
-      <text x="214" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
-      <text x="226" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">SYSTEMS</text>
+      <text font-family="'SF Mono', Consolas, monospace" font-size="9" font-weight="600" fill="#38EF7D">ASYNCIO</text>
+      <text x="56" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
+      <text x="68" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">SOCKETS</text>
+      <text x="128" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
+      <text x="140" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">SHA-256 LOGS</text>
     </g>
   </g>
 
