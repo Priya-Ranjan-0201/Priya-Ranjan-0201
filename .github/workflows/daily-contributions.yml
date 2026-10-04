@@ -24,6 +24,8 @@ jobs:
     name: Record Verified Daily Contribution (Hourly Token)
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: 📥 Checkout Repository
@@ -39,6 +41,8 @@ jobs:
 
       - name: 📝 Record Dynamic Daily Contribution
         id: record
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           FORCE_FLAG=""
           if [ "${{ inputs.force }}" = "true" ]; then
