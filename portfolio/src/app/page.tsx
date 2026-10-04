@@ -148,7 +148,7 @@ export default function Home() {
                 <span className="meta-sep">/</span>
                 <div className="meta-item">
                   <span className="meta-lbl">DEGREE</span>
-                  <span className="meta-val">B.Tech CSE (2023&ndash;2027)</span>
+                  <span className="meta-val">B.Tech CSE (2024&ndash;2028)</span>
                 </div>
               </motion.div>
 

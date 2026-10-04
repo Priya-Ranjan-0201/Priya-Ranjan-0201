@@ -81,8 +81,8 @@ export const turningPoints: TurningPoint[] = [
 export const experiences: ExperienceEntry[] = [
   {
     id: 'exp-btech-cse',
-    year: '2023',
-    endYear: '2027',
+    year: '2024',
+    endYear: '2028',
     title: 'B.Tech in Computer Science & Engineering',
     organization: 'University Engineering Curriculum',
     type: 'education',

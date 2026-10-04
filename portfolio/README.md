@@ -141,7 +141,7 @@ Expected output:
 ## 📬 Author Coordinates
 
 **Priya Ranjan**  
-*Computer Science & Engineering Undergraduate (2023–2027)*  
+*Computer Science & Engineering Undergraduate (2024–2028)*  
 *Email*: [priye0201@gmail.com](mailto:priye0201@gmail.com)  
 *GitHub*: [github.com/Priya-Ranjan-0201](https://github.com/Priya-Ranjan-0201)  
 *LinkedIn*: [linkedin.com/in/priye-ranjan](https://linkedin.com/in/priye-ranjan)  

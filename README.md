@@ -35,9 +35,9 @@
 
 <!-- REAL-TIME STATUS PILL -->
 <p align="center">
-  <img src="https://img.shields.io/badge/SYSTEMS_ACTIVE-OPEN_FOR_ROLES_2026/27-0B1322?style=flat-square&logo=statuspage&logoColor=10B981&color=10B981" alt="Status" />
+  <img src="https://img.shields.io/badge/SYSTEMS_ACTIVE-OPEN_FOR_ROLES_2028-0B1322?style=flat-square&logo=statuspage&logoColor=10B981&color=10B981" alt="Status" />
   &nbsp;
-  <img src="https://img.shields.io/badge/EDUCATION-B.TECH_CSE_(2023--2027)-0B1322?style=flat-square&logo=academia&logoColor=38BDF8&color=38BDF8" alt="Education" />
+  <img src="https://img.shields.io/badge/EDUCATION-B.TECH_CSE_(2024--2028)-0B1322?style=flat-square&logo=academia&logoColor=38BDF8&color=38BDF8" alt="Education" />
   &nbsp;
   <img src="https://img.shields.io/badge/ARCHITECTURE-SYSTEMS_&_NETWORKS-0B1322?style=flat-square&logo=speedtest&logoColor=38BDF8&color=38BDF8" alt="Architecture" />
 </p>
@@ -52,7 +52,7 @@
 priya-ranjan@station:~$ whoami --verbose
 ```
 
-> I am a **Computer Science & Engineering undergraduate (B.Tech 2023–2027)** driven by a passion for understanding computing from first principles. Rather than treating computers as black boxes, I care about what happens in the milliseconds between hardware instructions, operating system scheduling, network socket packets, and user interfaces.
+> I am a **Computer Science & Engineering undergraduate (B.Tech 2024–2028)** driven by a passion for understanding computing from first principles. Rather than treating computers as black boxes, I care about what happens in the milliseconds between hardware instructions, operating system scheduling, network socket packets, and user interfaces.
 
 ### 🎯 Core Engineering Vectors:
 - **Low-Level Systems & OS Kinematics**: Process scheduling, disk arm seek kinematics, memory layout, and Linux POSIX internals.

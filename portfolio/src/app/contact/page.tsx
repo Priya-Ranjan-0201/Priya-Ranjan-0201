@@ -133,7 +133,7 @@ export default function ContactPage() {
                 <span>Open for SWE &amp; DevOps Internships</span>
               </div>
               <p className="text-xs text-[rgb(var(--fg-secondary))] leading-relaxed">
-                Undergraduate B.Tech CSE (2023&ndash;2027). Available for remote, hybrid, or on-site roles where engineering discipline and problem-solving matter.
+                Undergraduate B.Tech CSE (2024&ndash;2028). Available for remote, hybrid, or on-site roles where engineering discipline and problem-solving matter.
               </p>
             </div>
 

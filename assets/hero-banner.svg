@@ -189,7 +189,7 @@
     <g transform="translate(14, 96)">
       <rect x="0" y="0" width="98" height="18" rx="9" fill="#0D1628" stroke="#1E293B" stroke-width="1"/>
       <circle cx="10" cy="9" r="3.5" fill="#10B981" class="cursor-blink"/>
-      <text x="20" y="12.5" class="code-font" font-size="8.5" font-weight="700" fill="#10B981" letter-spacing="0.5px">AVAILABLE 2026</text>
+      <text x="20" y="12.5" class="code-font" font-size="8.5" font-weight="700" fill="#10B981" letter-spacing="0.5px">AVAILABLE 2028</text>
     </g>
   </g>
 
@@ -266,7 +266,7 @@
       <text x="0" y="10" class="code-font" font-size="9" fill="#818CF8">const <tspan fill="#F8FAFC">priya</tspan> = {</text>
       <text x="10" y="26" class="code-font" font-size="9" fill="#94A3B8">role: <tspan fill="#38BDF8">"Engineer"</tspan>,</text>
       <text x="10" y="42" class="code-font" font-size="9" fill="#94A3B8">degree: <tspan fill="#38BDF8">"B.Tech CSE"</tspan>,</text>
-      <text x="10" y="58" class="code-font" font-size="9" fill="#94A3B8">grad: <tspan fill="#10B981">2027</tspan>,</text>
+      <text x="10" y="58" class="code-font" font-size="9" fill="#94A3B8">grad: <tspan fill="#10B981">2028</tspan>,</text>
       <text x="10" y="74" class="code-font" font-size="9" fill="#94A3B8">openToWork: <tspan fill="#10B981">true</tspan></text>
       <text x="0" y="90" class="code-font" font-size="9" fill="#818CF8">};</text>
       <rect x="18" y="83" width="6" height="10" fill="#38BDF8" class="cursor-blink"/>

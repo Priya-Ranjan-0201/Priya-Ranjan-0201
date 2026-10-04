@@ -48,7 +48,7 @@ export default function ExperiencePage() {
         <div className="subpage-header-block">
           <div className="subpage-eyebrow">
             <span className="w-2 h-2 rounded-full bg-[rgb(var(--accent))]" />
-            <span>THE ENGINEERING JOURNEY &bull; 2023 &ndash; PRESENT</span>
+            <span>THE ENGINEERING JOURNEY &bull; 2024 &ndash; PRESENT</span>
           </div>
 
           <h1 className="subpage-headline">
@@ -162,7 +162,7 @@ export default function ExperiencePage() {
 
                 <div className="timeline-scroll-hint">
                   <Compass size={13} className="text-[rgb(var(--accent))]" />
-                  <span>2023 &ndash; 2027 TIMELINE CHRONOLOGY</span>
+                  <span>2024 &ndash; 2028 TIMELINE CHRONOLOGY</span>
                 </div>
               </div>
 

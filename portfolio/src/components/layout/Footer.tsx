@@ -90,7 +90,7 @@ export default function Footer() {
                 <span>Email</span>
               </a>
             </div>
-            <p className="footer-location-note">Based in India · B.Tech CSE (2023&ndash;2027)</p>
+            <p className="footer-location-note">Based in India · B.Tech CSE (2024&ndash;2028)</p>
           </div>
         </div>
 

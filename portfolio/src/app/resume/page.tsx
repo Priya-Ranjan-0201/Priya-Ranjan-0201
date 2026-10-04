@@ -116,7 +116,7 @@ export default function ResumePage() {
                     <strong className="entry-degree">Bachelor of Technology (B.Tech) in Computer Science &amp; Engineering</strong>
                     <span className="entry-sub">Specialization in Artificial Intelligence &amp; Distributed Systems</span>
                   </div>
-                  <span className="entry-date">2023 &ndash; 2027</span>
+                  <span className="entry-date">2024 &ndash; 2028</span>
                 </div>
                 <p className="entry-notes">
                   <strong>Core Coursework:</strong> Data Structures &amp; Algorithms, Operating Systems, Computer Networks, Database Management Systems, Theory of Computation, Discrete Mathematics, Object-Oriented Software Design.

@@ -53,7 +53,7 @@ export default function AboutPage() {
 
           {/* One Subtext Paragraph: 32px bottom margin */}
           <p className="about-subtext-para">
-            They create better questions, and better questions create better systems. I am Priya Ranjan, a Computer Science undergraduate (B.Tech 2023&ndash;2027) building software that respects hardware limits, operational boundaries, and human clarity.
+            They create better questions, and better questions create better systems. I am Priya Ranjan, a Computer Science undergraduate (B.Tech 2024&ndash;2028) building software that respects hardware limits, operational boundaries, and human clarity.
           </p>
 
           {/* Exactly Two CTA Buttons: 16px gap */}

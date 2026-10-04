@@ -215,7 +215,7 @@ export const profile: Profile = {
   roles: ['Computer Science Engineer', 'Builder', 'Problem Solver'],
   statement: "I build thoughtful software experiences at the intersection of technology, problem solving and intelligent systems.",
   bio: [
-    "I'm an undergraduate studying Computer Science & Engineering (B.Tech 2023–2027) in India. My primary interests sit across Artificial Intelligence, Machine Learning, Cybersecurity, Full-Stack Development, Computer Vision, and Software Engineering.",
+    "I'm an undergraduate studying Computer Science & Engineering (B.Tech 2024–2028) in India. My primary interests sit across Artificial Intelligence, Machine Learning, Cybersecurity, Full-Stack Development, Computer Vision, and Software Engineering.",
     "I like understanding how things work under the hood, building reliable systems, and writing software that solves real problems without unnecessary noise. I care about first principles: why a particular architecture fits the problem, how an operating system schedules disk heads, and how to write clean, maintainable software.",
     "When I'm not writing code or experimenting with new algorithms, you'll find me studying computing history, modding mechanical keyboards, or running."
   ],
