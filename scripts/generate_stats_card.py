@@ -526,11 +526,12 @@ def main():
         f.write(svg_content)
     print(f"Generated clean telemetry stats card at: {output_path}")
 
-    # Also keep telemetry-metrics.svg in sync
-    telemetry_path = os.path.join(os.path.dirname(output_path), 'telemetry-metrics.svg')
-    with open(telemetry_path, 'w', encoding='utf-8') as f:
-        f.write(svg_content)
-    print(f"Generated telemetry metrics at: {telemetry_path}")
+    # Also keep telemetry-metrics.svg and telemetry-card.svg in sync
+    for extra in ['telemetry-metrics.svg', 'telemetry-card.svg']:
+        p = os.path.join(os.path.dirname(output_path), extra)
+        with open(p, 'w', encoding='utf-8') as f:
+            f.write(svg_content)
+        print(f"Generated {extra} at: {p}")
 
 if __name__ == '__main__':
     main()

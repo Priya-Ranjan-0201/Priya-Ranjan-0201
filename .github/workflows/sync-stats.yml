@@ -44,7 +44,7 @@ jobs:
 
       - name: 🚀 Commit and Push Updated Stats
         run: |
-          git add assets/github-stats.svg assets/telemetry-metrics.svg
+          git add assets/github-stats.svg assets/telemetry-metrics.svg assets/telemetry-card.svg
           if git diff --staged --quiet; then
             echo "Telemetry stats are already up-to-date with live GitHub data. No commit needed."
             exit 0
