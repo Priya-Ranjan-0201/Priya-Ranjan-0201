@@ -69,7 +69,7 @@ priya-ranjan@station:~$ whoami --verbose
 
 <!-- LIVE ACCURATE TELEMETRY DASHBOARD (SYNCHRONIZED DAILY VIA HOURLY GITHUB_TOKEN) -->
 <a href="https://github.com/Priya-Ranjan-0201">
-  <img src="https://raw.githubusercontent.com/Priya-Ranjan-0201/Priya-Ranjan-0201/main/assets/github-stats.svg?v=telemetry-v3" alt="Priya Ranjan Verified GitHub Telemetry Stats" width="100%" />
+  <img src="https://raw.githubusercontent.com/Priya-Ranjan-0201/Priya-Ranjan-0201/main/assets/github-stats.svg?v=pure-live-v4" alt="Priya Ranjan Verified GitHub Telemetry Stats" width="100%" />
 </a>
 
 <br/><br/>

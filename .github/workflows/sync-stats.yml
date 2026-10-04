@@ -1,16 +1,15 @@
-name: Synchronize Live Telemetry Stats & Daily Activity
+name: Synchronize Live Telemetry Stats
 
 on:
   schedule:
-    # Runs 4 times a day across jittered windows (every ~6 hours)
-    - cron: '15 2,8,14,20 * * *'
+    # Runs every 6 hours to keep stats 100% fresh with live GitHub API
+    - cron: '0 */6 * * *'
   workflow_dispatch:
   push:
     branches:
       - main
     paths:
       - 'scripts/generate_stats_card.py'
-      - 'scripts/daily_heartbeat.py'
 
 permissions:
   contents: write
@@ -21,7 +20,7 @@ concurrency:
 
 jobs:
   update-stats:
-    name: Sync Live GitHub Telemetry & Daily Commits
+    name: Sync Live Real-Time GitHub Telemetry
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
@@ -37,24 +36,23 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: 📊 Record Daily Telemetry & Generate Card
+      - name: 📊 Fetch Real Live Stats & Generate Card
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python scripts/daily_heartbeat.py || true
           python scripts/generate_stats_card.py
 
       - name: 🚀 Commit and Push Updated Stats
         run: |
-          git add data/telemetry_heartbeat.json assets/github-stats.svg assets/telemetry-metrics.svg
+          git add assets/github-stats.svg assets/telemetry-metrics.svg
           if git diff --staged --quiet; then
-            echo "Telemetry stats are already up-to-date. No commit needed."
+            echo "Telemetry stats are already up-to-date with live GitHub data. No commit needed."
             exit 0
           fi
 
           git config user.name "Priya-Ranjan-0201"
           git config user.email "186106336+Priya-Ranjan-0201@users.noreply.github.com"
 
-          git commit -m "chore(telemetry): record verified engineering cycle & sync stats"
+          git commit -m "chore(telemetry): sync real live GitHub stats card"
           git pull --rebase origin main || true
           git push origin HEAD:main
