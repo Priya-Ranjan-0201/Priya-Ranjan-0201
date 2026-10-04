@@ -1,0 +1,269 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 340" width="100%" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="metricBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811"/>
+      <stop offset="50%" stop-color="#091122"/>
+      <stop offset="100%" stop-color="#060A14"/>
+    </linearGradient>
+
+    <!-- Card Base Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1325"/>
+      <stop offset="100%" stop-color="#080D1A"/>
+    </linearGradient>
+
+    <!-- Neon Gradients -->
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="100%" stop-color="#4FACFE"/>
+    </linearGradient>
+
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF87"/>
+      <stop offset="100%" stop-color="#60EFFF"/>
+    </linearGradient>
+
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5E62"/>
+      <stop offset="100%" stop-color="#FFD97D"/>
+    </linearGradient>
+
+    <!-- Glowing Border Gradient -->
+    <linearGradient id="activeBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="50%" stop-color="#7928CA"/>
+      <stop offset="100%" stop-color="#00FF87"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Micro Dot Pattern -->
+    <pattern id="telemetryGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#00F2FE" fill-opacity="0.18"/>
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseGlowRing {
+      0%, 100% { stroke-dashoffset: 0; opacity: 0.8; }
+      50% { stroke-dashoffset: 80; opacity: 1; }
+    }
+    @keyframes rotateElement {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes scanLineRun {
+      0% { transform: translateX(-40px); opacity: 0; }
+      20% { opacity: 0.9; }
+      80% { opacity: 0.9; }
+      100% { transform: translateX(240px); opacity: 0; }
+    }
+    @keyframes pulseHeart {
+      0% { stroke-dashoffset: 180; opacity: 0.2; }
+      50% { opacity: 1; }
+      100% { stroke-dashoffset: 0; opacity: 0.2; }
+    }
+    @keyframes barFillPulse {
+      0%, 100% { opacity: 0.75; }
+      50% { opacity: 1; filter: drop-shadow(0 0 8px #00FF87); }
+    }
+
+    .border-march {
+      stroke-dasharray: 100 240;
+      animation: pulseGlowRing 8s linear infinite;
+    }
+    .spin-dial {
+      animation: rotateElement 7s linear infinite;
+    }
+    .wave-pulse {
+      stroke-dasharray: 40 140;
+      animation: pulseHeart 2.8s linear infinite;
+    }
+    .bar-active {
+      animation: barFillPulse 2.5s ease-in-out infinite;
+    }
+    .metric-value {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+    .metric-label {
+      font-family: "SF Mono", "Segoe UI Mono", Menlo, Consolas, monospace;
+      font-weight: 700;
+      font-size: 10px;
+      letter-spacing: 1.2px;
+      fill: #8B9BB4;
+    }
+    .metric-desc {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 10.5px;
+      fill: #6B7D96;
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="2" y="2" width="936" height="336" rx="16" fill="url(#metricBg)" stroke="#1C2E48" stroke-width="1.5"/>
+  <rect x="2" y="2" width="936" height="336" rx="16" fill="none" stroke="url(#activeBorder)" stroke-width="2" class="border-march" filter="url(#glowFilter)"/>
+  <rect x="4" y="4" width="932" height="332" rx="14" fill="url(#telemetryGrid)"/>
+
+  <!-- Top Title Ribbon Header -->
+  <g transform="translate(24, 20)">
+    <rect x="0" y="0" width="310" height="26" rx="6" fill="#0C172A" stroke="#1F3A60" stroke-width="1.2"/>
+    <circle cx="14" cy="13" r="4" fill="#00FF87" filter="url(#glowFilter)"/>
+    <text x="26" y="17" font-family="'SF Mono', Consolas, monospace" font-size="9.5" font-weight="700" fill="#00FF87" letter-spacing="1px">
+      SYSTEM TELEMETRY // VERIFIED METRICS
+    </text>
+
+    <!-- Right Header Live Clock / Status Indicator -->
+    <g transform="translate(680, 0)">
+      <circle cx="10" cy="13" r="3.5" fill="#00F2FE" filter="url(#glowFilter)"/>
+      <text x="22" y="17" font-family="'SF Mono', Consolas, monospace" font-size="9.5" font-weight="600" fill="#00F2FE" letter-spacing="1px">
+        AUDITED • 100% INVARIANTS PASS
+      </text>
+    </g>
+  </g>
+
+  <!-- ==================== 6 TELEMETRY BENCHMARK CARDS ==================== -->
+
+  <!-- CARD 1: Automated Test Suites (153/153) -->
+  <g transform="translate(24, 60)">
+    <rect x="0" y="0" width="282" height="120" rx="12" fill="url(#cardGrad)" stroke="#1A2D48" stroke-width="1.2"/>
+    <line x1="0" y1="0" x2="282" y2="0" stroke="url(#emeraldGrad)" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Left Radial Gauge -->
+    <g transform="translate(38, 52)">
+      <circle cx="0" cy="0" r="26" stroke="#16253B" stroke-width="5" fill="none"/>
+      <circle cx="0" cy="0" r="26" stroke="#00FF87" stroke-width="5" stroke-dasharray="163 163" stroke-linecap="round" fill="none" filter="url(#glowFilter)" class="bar-active"/>
+      <text x="0" y="4" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="10.5" font-weight="800" fill="#00FF87">100%</text>
+    </g>
+
+    <!-- Text Block -->
+    <g transform="translate(80, 24)">
+      <text x="0" y="12" class="metric-label">TEST VERIFICATION</text>
+      <text x="0" y="38" font-size="22" fill="#00FF87" class="metric-value">153 / 153</text>
+      <text x="0" y="58" class="metric-desc">Automated pytest suites passing</text>
+      <text x="0" y="74" class="metric-desc">across AST &amp; Qdrant endpoints</text>
+    </g>
+  </g>
+
+  <!-- CARD 2: Concurrency & Latency (<15ms) -->
+  <g transform="translate(328, 60)">
+    <rect x="0" y="0" width="282" height="120" rx="12" fill="url(#cardGrad)" stroke="#1A2D48" stroke-width="1.2"/>
+    <line x1="0" y1="0" x2="282" y2="0" stroke="url(#cyanGrad)" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Left Oscilloscope Waveform -->
+    <g transform="translate(20, 32)">
+      <rect x="0" y="0" width="46" height="46" rx="8" fill="#060C17" stroke="#162945" stroke-width="1"/>
+      <path d="M 4 23 L 14 23 L 18 10 L 24 36 L 28 16 L 34 23 L 42 23" stroke="#1E3D6B" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+      <path d="M 4 23 L 14 23 L 18 10 L 24 36 L 28 16 L 34 23 L 42 23" stroke="#00F2FE" stroke-width="2" stroke-linecap="round" fill="none" class="wave-pulse" filter="url(#glowFilter)"/>
+    </g>
+
+    <!-- Text Block -->
+    <g transform="translate(80, 24)">
+      <text x="0" y="12" class="metric-label">CONCURRENT AUDIT</text>
+      <text x="0" y="38" font-size="22" fill="#00F2FE" class="metric-value">&lt; 15 ms</text>
+      <text x="0" y="58" class="metric-desc">AsyncIO multi-vector socket scans</text>
+      <text x="0" y="74" class="metric-desc">with bounded semaphore pools</text>
+    </g>
+  </g>
+
+  <!-- CARD 3: SIH Grand Finalist -->
+  <g transform="translate(632, 60)">
+    <rect x="0" y="0" width="282" height="120" rx="12" fill="url(#cardGrad)" stroke="#1A2D48" stroke-width="1.2"/>
+    <line x1="0" y1="0" x2="282" y2="0" stroke="url(#amberGrad)" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Left Trophy Hologram -->
+    <g transform="translate(20, 32)">
+      <rect x="0" y="0" width="46" height="46" rx="8" fill="#140D0F" stroke="#3D2024" stroke-width="1"/>
+      <circle cx="23" cy="23" r="16" stroke="#FF5E62" stroke-width="1.2" stroke-dasharray="4 8" fill="none" class="spin-dial" style="transform-origin: 23px 23px;"/>
+      <circle cx="23" cy="23" r="5" fill="#FFD97D" filter="url(#glowFilter)"/>
+    </g>
+
+    <!-- Text Block -->
+    <g transform="translate(80, 24)">
+      <text x="0" y="12" class="metric-label" fill="#FF8800">SMART INDIA HACKATHON</text>
+      <text x="0" y="38" font-size="20" fill="#FFD97D" class="metric-value">GRAND FINALIST</text>
+      <text x="0" y="58" class="metric-desc">Digital Public Infrastructure</text>
+      <text x="0" y="74" class="metric-desc">for Smart Tourism &amp; Search Graph</text>
+    </g>
+  </g>
+
+  <!-- CARD 4: OS Storage Kinematics (11 Algorithms) -->
+  <g transform="translate(24, 195)">
+    <rect x="0" y="0" width="282" height="120" rx="12" fill="url(#cardGrad)" stroke="#1A2D48" stroke-width="1.2"/>
+    <line x1="0" y1="0" x2="282" y2="0" stroke="url(#cyanGrad)" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Left Spinning Disk Assembly -->
+    <g transform="translate(20, 32)">
+      <rect x="0" y="0" width="46" height="46" rx="8" fill="#080F1D" stroke="#162E52" stroke-width="1"/>
+      <g class="spin-dial" style="transform-origin: 23px 23px; animation-duration: 5s;">
+        <circle cx="23" cy="23" r="18" stroke="#00F2FE" stroke-width="1.5" stroke-dasharray="6 12" stroke-opacity="0.8" fill="none"/>
+        <circle cx="23" cy="23" r="10" stroke="#4FACFE" stroke-width="1" fill="none"/>
+        <circle cx="23" cy="23" r="4" fill="#00F2FE"/>
+      </g>
+    </g>
+
+    <!-- Text Block -->
+    <g transform="translate(80, 24)">
+      <text x="0" y="12" class="metric-label">STORAGE KINEMATICS</text>
+      <text x="0" y="38" font-size="22" fill="#00F2FE" class="metric-value">11 ALGORITHMS</text>
+      <text x="0" y="58" class="metric-desc">SCAN, SSTF, LOOK benchmarked</text>
+      <text x="0" y="74" class="metric-desc">at 60 FPS HTML5 Canvas kinematics</text>
+    </g>
+  </g>
+
+  <!-- CARD 5: Defensive Security Invariants (SHA-256) -->
+  <g transform="translate(328, 195)">
+    <rect x="0" y="0" width="282" height="120" rx="12" fill="url(#cardGrad)" stroke="#1A2D48" stroke-width="1.2"/>
+    <line x1="0" y1="0" x2="282" y2="0" stroke="url(#purpleGrad)" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Left Cryptographic Hexagon Shield -->
+    <g transform="translate(20, 32)">
+      <rect x="0" y="0" width="46" height="46" rx="8" fill="#130B1C" stroke="#36174D" stroke-width="1"/>
+      <polygon points="23,8 37,16 37,32 23,40 9,32 9,16" stroke="#A855F7" stroke-width="1.5" fill="none" filter="url(#glowFilter)"/>
+      <circle cx="23" cy="24" r="3.5" fill="#EC4899"/>
+    </g>
+
+    <!-- Text Block -->
+    <g transform="translate(80, 24)">
+      <text x="0" y="12" class="metric-label" fill="#D8B4FE">DEFENSIVE ARCHITECTURE</text>
+      <text x="0" y="38" font-size="22" fill="#D8B4FE" class="metric-value">7 INVARIANTS</text>
+      <text x="0" y="58" class="metric-desc">SHA-256 cryptographic audit logs</text>
+      <text x="0" y="74" class="metric-desc">with STIX 2.1 threat modeling</text>
+    </g>
+  </g>
+
+  <!-- CARD 6: Static AST Security (100% Static) -->
+  <g transform="translate(632, 195)">
+    <rect x="0" y="0" width="282" height="120" rx="12" fill="url(#cardGrad)" stroke="#1A2D48" stroke-width="1.2"/>
+    <line x1="0" y1="0" x2="282" y2="0" stroke="url(#emeraldGrad)" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Left AST Node Branch -->
+    <g transform="translate(20, 32)">
+      <rect x="0" y="0" width="46" height="46" rx="8" fill="#081412" stroke="#16382C" stroke-width="1"/>
+      <line x1="23" y1="12" x2="14" y2="28" stroke="#00FF87" stroke-width="1.5"/>
+      <line x1="23" y1="12" x2="32" y2="28" stroke="#00FF87" stroke-width="1.5"/>
+      <circle cx="23" cy="12" r="3.5" fill="#60EFFF" filter="url(#glowFilter)"/>
+      <circle cx="14" cy="28" r="3" fill="#00FF87"/>
+      <circle cx="32" cy="28" r="3" fill="#00FF87"/>
+    </g>
+
+    <!-- Text Block -->
+    <g transform="translate(80, 24)">
+      <text x="0" y="12" class="metric-label">CODE EVALUATION</text>
+      <text x="0" y="38" font-size="22" fill="#00FF87" class="metric-value">100% AST STATIC</text>
+      <text x="0" y="58" class="metric-desc">Zero code execution vulnerability</text>
+      <text x="0" y="74" class="metric-desc">using Python ast.NodeVisitor</text>
+    </g>
+  </g>
+</svg>

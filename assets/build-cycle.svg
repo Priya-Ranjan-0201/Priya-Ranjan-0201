@@ -1,30 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 110" width="100%" height="110" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 120" width="100%" fill="none">
   <defs>
     <linearGradient id="cycleBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#090D12"/>
-      <stop offset="100%" stop-color="#0E131A"/>
+      <stop offset="0%" stop-color="#050811"/>
+      <stop offset="50%" stop-color="#081020"/>
+      <stop offset="100%" stop-color="#060A14"/>
     </linearGradient>
 
-    <linearGradient id="flowLoop" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="neonCyanEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00F2FE"/>
-      <stop offset="50%" stop-color="#4FACFE"/>
-      <stop offset="100%" stop-color="#38EF7D"/>
+      <stop offset="50%" stop-color="#7928CA"/>
+      <stop offset="100%" stop-color="#00FF87"/>
     </linearGradient>
+
+    <filter id="boxGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
   </defs>
 
   <style>
-    @keyframes marchLine {
-      from { stroke-dashoffset: 200; }
+    @keyframes marchDash {
+      from { stroke-dashoffset: 160; }
       to { stroke-dashoffset: 0; }
     }
-    .connector-dash {
+    @keyframes borderPulseCycle {
+      0%, 100% { stroke-dashoffset: 0; }
+      50% { stroke-dashoffset: 300; }
+    }
+    @keyframes nodeBlink {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; filter: drop-shadow(0 0 6px #00FF87); }
+    }
+
+    .connector-stream {
       stroke-dasharray: 6 6;
-      animation: marchLine 5s linear infinite;
+      animation: marchDash 3.5s linear infinite;
+    }
+    .cycle-border-stream {
+      stroke-dasharray: 80 180;
+      animation: borderPulseCycle 9s linear infinite;
     }
     .stage-box {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-weight: 700;
-      font-size: 11px;
+      font-weight: 800;
+      font-size: 11.5px;
       letter-spacing: 2px;
       fill: #F0F6FC;
     }
@@ -32,63 +51,66 @@
       font-family: "SF Mono", "Segoe UI Mono", Menlo, Consolas, monospace;
       font-size: 9px;
       letter-spacing: 1px;
-      fill: #8B949E;
+    }
+    .status-dot-blink {
+      animation: nodeBlink 2s ease-in-out infinite;
     }
   </style>
 
   <!-- Container Box -->
-  <rect x="1" y="1" width="878" height="108" rx="10" fill="url(#cycleBg)" stroke="#21262D" stroke-width="1.2"/>
+  <rect x="2" y="2" width="876" height="116" rx="14" fill="url(#cycleBg)" stroke="#192A40" stroke-width="1.5"/>
+  <rect x="2" y="2" width="876" height="116" rx="14" fill="none" stroke="url(#neonCyanEmerald)" stroke-width="2" class="cycle-border-stream" filter="url(#boxGlow)"/>
 
   <!-- Flow Arrows connecting the 5 stages -->
   <!-- 1 to 2 -->
-  <line x1="165" y1="55" x2="225" y2="55" stroke="#00F2FE" stroke-width="1.5" class="connector-dash"/>
-  <polygon points="228,55 221,51 221,59" fill="#00F2FE"/>
+  <line x1="165" y1="60" x2="225" y2="60" stroke="#00F2FE" stroke-width="2" class="connector-stream"/>
+  <polygon points="228,60 219,55 219,65" fill="#00F2FE" filter="url(#boxGlow)"/>
 
   <!-- 2 to 3 -->
-  <line x1="335" y1="55" x2="395" y2="55" stroke="#4FACFE" stroke-width="1.5" class="connector-dash"/>
-  <polygon points="398,55 391,51 391,59" fill="#4FACFE"/>
+  <line x1="335" y1="60" x2="395" y2="60" stroke="#4FACFE" stroke-width="2" class="connector-stream"/>
+  <polygon points="398,60 389,55 389,65" fill="#4FACFE"/>
 
   <!-- 3 to 4 -->
-  <line x1="505" y1="55" x2="565" y2="55" stroke="#4FACFE" stroke-width="1.5" class="connector-dash"/>
-  <polygon points="568,55 561,51 561,59" fill="#4FACFE"/>
+  <line x1="505" y1="60" x2="565" y2="60" stroke="#FF5E62" stroke-width="2" class="connector-stream"/>
+  <polygon points="568,60 559,55 559,65" fill="#FF5E62"/>
 
   <!-- 4 to 5 -->
-  <line x1="685" y1="55" x2="745" y2="55" stroke="#38EF7D" stroke-width="1.5" class="connector-dash"/>
-  <polygon points="748,55 741,51 741,59" fill="#38EF7D"/>
+  <line x1="685" y1="60" x2="745" y2="60" stroke="#00FF87" stroke-width="2" class="connector-stream"/>
+  <polygon points="748,60 739,55 739,65" fill="#00FF87" filter="url(#boxGlow)"/>
 
   <!-- Stage 1: BUILD -->
-  <g transform="translate(60, 30)">
-    <rect x="0" y="0" width="105" height="50" rx="8" fill="#12171E" stroke="#30363D" stroke-width="1.2"/>
-    <text x="52" y="24" text-anchor="middle" class="stage-box">BUILD</text>
-    <text x="52" y="38" text-anchor="middle" class="cycle-label">01 // INIT</text>
+  <g transform="translate(60, 32)">
+    <rect x="0" y="0" width="105" height="56" rx="10" fill="#0C1527" stroke="#00F2FE" stroke-width="1.5"/>
+    <text x="52" y="26" text-anchor="middle" class="stage-box" fill="#00F2FE">BUILD</text>
+    <text x="52" y="42" text-anchor="middle" class="cycle-label" fill="#00F2FE">01 // INIT</text>
   </g>
 
   <!-- Stage 2: TEST -->
-  <g transform="translate(230, 30)">
-    <rect x="0" y="0" width="105" height="50" rx="8" fill="#12171E" stroke="#30363D" stroke-width="1.2"/>
-    <text x="52" y="24" text-anchor="middle" class="stage-box">TEST</text>
-    <text x="52" y="38" text-anchor="middle" class="cycle-label">02 // VERIFY</text>
+  <g transform="translate(230, 32)">
+    <rect x="0" y="0" width="105" height="56" rx="10" fill="#0C1527" stroke="#4FACFE" stroke-width="1.5"/>
+    <text x="52" y="26" text-anchor="middle" class="stage-box" fill="#4FACFE">TEST</text>
+    <text x="52" y="42" text-anchor="middle" class="cycle-label" fill="#8B9BB4">02 // VERIFY</text>
   </g>
 
   <!-- Stage 3: BREAK -->
-  <g transform="translate(400, 30)">
-    <rect x="0" y="0" width="105" height="50" rx="8" fill="#12171E" stroke="#F85149" stroke-width="1.2" stroke-opacity="0.7"/>
-    <text x="52" y="24" text-anchor="middle" class="stage-box" fill="#FF7B72">BREAK</text>
-    <text x="52" y="38" text-anchor="middle" class="cycle-label" fill="#FF7B72">03 // STRESS</text>
+  <g transform="translate(400, 32)">
+    <rect x="0" y="0" width="105" height="56" rx="10" fill="#1C1014" stroke="#FF5E62" stroke-width="1.5"/>
+    <text x="52" y="26" text-anchor="middle" class="stage-box" fill="#FF5E62">BREAK</text>
+    <text x="52" y="42" text-anchor="middle" class="cycle-label" fill="#FF7B72">03 // STRESS</text>
   </g>
 
-  <!-- Stage 4: UNDERSTAND -->
-  <g transform="translate(570, 30)">
-    <rect x="0" y="0" width="115" height="50" rx="8" fill="#12171E" stroke="#30363D" stroke-width="1.2"/>
-    <text x="57" y="24" text-anchor="middle" class="stage-box" font-size="10">UNDERSTAND</text>
-    <text x="57" y="38" text-anchor="middle" class="cycle-label">04 // DECONSTRUCT</text>
+  <!-- Stage 4: DECONSTRUCT -->
+  <g transform="translate(570, 32)">
+    <rect x="0" y="0" width="115" height="56" rx="10" fill="#120E22" stroke="#A855F7" stroke-width="1.5"/>
+    <text x="57" y="26" text-anchor="middle" class="stage-box" fill="#D8B4FE">UNDERSTAND</text>
+    <text x="57" y="42" text-anchor="middle" class="cycle-label" fill="#A855F7">04 // ANALYZE</text>
   </g>
 
   <!-- Stage 5: REBUILD -->
-  <g transform="translate(750, 30)">
-    <rect x="0" y="0" width="105" height="50" rx="8" fill="#12171E" stroke="#38EF7D" stroke-width="1.4"/>
-    <circle cx="12" cy="12" r="3" fill="#38EF7D"/>
-    <text x="52" y="24" text-anchor="middle" class="stage-box" fill="#38EF7D">REBUILD</text>
-    <text x="52" y="38" text-anchor="middle" class="cycle-label" fill="#38EF7D">05 // RESILIENT</text>
+  <g transform="translate(750, 32)">
+    <rect x="0" y="0" width="105" height="56" rx="10" fill="#08181A" stroke="#00FF87" stroke-width="2"/>
+    <circle cx="14" cy="14" r="3.5" fill="#00FF87" class="status-dot-blink"/>
+    <text x="52" y="26" text-anchor="middle" class="stage-box" fill="#00FF87">REBUILD</text>
+    <text x="52" y="42" text-anchor="middle" class="cycle-label" fill="#00FF87">05 // RESILIENT</text>
   </g>
 </svg>

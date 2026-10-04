@@ -1,185 +1,331 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 220" width="100%" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 270" width="100%" fill="none">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080C14"/>
-      <stop offset="45%" stop-color="#0D131F"/>
-      <stop offset="100%" stop-color="#0A1018"/>
+    <!-- Deep Obsidian Cyber Space Gradient -->
+    <linearGradient id="cyberBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040711"/>
+      <stop offset="30%" stop-color="#081022"/>
+      <stop offset="70%" stop-color="#0E172E"/>
+      <stop offset="100%" stop-color="#050914"/>
     </linearGradient>
 
-    <!-- Cyan Electric Gradient -->
-    <linearGradient id="heroCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Electric Cyan to Vivid Magenta Holographic Gradient -->
+    <linearGradient id="holoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00F2FE"/>
-      <stop offset="100%" stop-color="#4FACFE"/>
+      <stop offset="35%" stop-color="#4FACFE"/>
+      <stop offset="70%" stop-color="#9D4EDD"/>
+      <stop offset="100%" stop-color="#FF007F"/>
     </linearGradient>
 
-    <!-- Emerald Accent Gradient -->
-    <linearGradient id="heroEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38EF7D"/>
-      <stop offset="100%" stop-color="#11998E"/>
+    <!-- Neon Aurora Emerald Gradient -->
+    <linearGradient id="auroraEmerald" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF87"/>
+      <stop offset="50%" stop-color="#00F2FE"/>
+      <stop offset="100%" stop-color="#60EFFF"/>
     </linearGradient>
 
-    <!-- Card Border Gradient -->
-    <linearGradient id="heroBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#303E4D" stop-opacity="0.9"/>
-      <stop offset="50%" stop-color="#00F2FE" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#1F2833" stop-opacity="0.8"/>
+    <!-- Cyber Gold Solar Flare -->
+    <linearGradient id="goldFlare" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#FF8800"/>
+      <stop offset="100%" stop-color="#FF007F"/>
     </linearGradient>
 
-    <!-- Monogram Glow Filter -->
-    <filter id="monogramGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
+    <!-- Moving Laser Border Gradient -->
+    <linearGradient id="laserBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="25%" stop-color="#7928CA"/>
+      <stop offset="50%" stop-color="#FF0080"/>
+      <stop offset="75%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#00FF87"/>
+    </linearGradient>
+
+    <!-- Multi-Stage Intense Glow Filters -->
+    <filter id="ultraGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur1"/>
+      <feGaussianBlur stdDeviation="15" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
 
-    <!-- Refined Background Dot Grid -->
-    <pattern id="heroGrid" width="22" height="22" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1" fill="#202A36" fill-opacity="0.5"/>
+    <!-- High-Tech Micro Dot Cyber Pattern -->
+    <pattern id="cyberGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#00F2FE" fill-opacity="0.22"/>
+      <line x1="0" y1="24" x2="24" y2="24" stroke="#14223A" stroke-width="0.5" stroke-opacity="0.35"/>
+      <line x1="24" y1="0" x2="24" y2="24" stroke="#14223A" stroke-width="0.5" stroke-opacity="0.35"/>
     </pattern>
+
+    <!-- Scanning Laser Beam Gradient -->
+    <linearGradient id="scanBeam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00F2FE" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#00F2FE" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Radar Sweep Gradient -->
+    <linearGradient id="radarSweep" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FF87" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#00F2FE" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#00FF87" stop-opacity="0"/>
+    </linearGradient>
   </defs>
 
   <style>
-    @keyframes pulseBeam {
-      0% { stroke-dashoffset: 400; opacity: 0.15; }
-      50% { opacity: 0.85; }
-      100% { stroke-dashoffset: 0; opacity: 0.15; }
+    @keyframes laserMarch {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: 1000; }
     }
-    @keyframes subtlePulse {
-      0%, 100% { opacity: 0.4; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.08); }
+    @keyframes glowBreathe {
+      0%, 100% { opacity: 0.35; transform: scale(1); }
+      50% { opacity: 0.9; transform: scale(1.06); }
     }
-    @keyframes orbitRotate {
+    @keyframes rotateClockwise {
       from { transform: rotate(0deg); }
       to { transform: rotate(360deg); }
     }
-    .flow-trace {
-      stroke-dasharray: 80 160;
-      animation: pulseBeam 8s linear infinite;
+    @keyframes rotateCounter {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
     }
-    .node-glow-anim {
-      animation: subtlePulse 2.8s ease-in-out infinite;
+    @keyframes laserScanVertical {
+      0% { transform: translateY(-30px); opacity: 0; }
+      20% { opacity: 0.85; }
+      80% { opacity: 0.85; }
+      100% { transform: translateY(290px); opacity: 0; }
     }
-    .orbit-spin {
-      transform-origin: 820px 110px;
-      animation: orbitRotate 12s linear infinite;
+    @keyframes dataPulse {
+      0% { stroke-dashoffset: 600; opacity: 0.2; }
+      50% { opacity: 1; }
+      100% { stroke-dashoffset: 0; opacity: 0.2; }
     }
-    .title-text {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "SF Pro Display", Roboto, Helvetica, Arial, sans-serif;
-      font-weight: 800;
-      letter-spacing: 4.5px;
-      fill: #F0F6FC;
+    @keyframes sonarPing {
+      0% { r: 4px; opacity: 1; stroke-width: 2.5px; }
+      60% { opacity: 0.5; }
+      100% { r: 28px; opacity: 0; stroke-width: 0.5px; }
     }
-    .subtitle-text {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "SF Pro Text", Roboto, Helvetica, Arial, sans-serif;
-      font-weight: 500;
-      letter-spacing: 2px;
-      font-size: 11.5px;
-      fill: #8B949E;
+    @keyframes nameHoloShimmer {
+      0%, 100% { fill: #FFFFFF; filter: drop-shadow(0 0 6px rgba(0,242,254,0.5)) drop-shadow(0 0 16px rgba(79,172,254,0.3)); }
+      50% { fill: #E6FCFF; filter: drop-shadow(0 0 16px rgba(0,242,254,0.9)) drop-shadow(0 0 32px rgba(157,78,221,0.7)); }
     }
-    .mono-chip {
-      font-family: "SF Mono", "Segoe UI Mono", Menlo, Consolas, monospace;
-      font-size: 10px;
-      letter-spacing: 1.2px;
-      fill: #38EF7D;
+
+    .border-active {
+      stroke-dasharray: 140 300;
+      animation: laserMarch 13s linear infinite;
+    }
+    .scanner-beam {
+      animation: laserScanVertical 6s ease-in-out infinite;
+    }
+    .aurora-pulse {
+      transform-origin: 50% 50%;
+      animation: glowBreathe 5s ease-in-out infinite;
+    }
+    .orbit-cw {
+      transform-origin: 840px 135px;
+      animation: rotateClockwise 10s linear infinite;
+    }
+    .orbit-ccw {
+      transform-origin: 840px 135px;
+      animation: rotateCounter 14s linear infinite;
+    }
+    .monogram-orbit-cw {
+      transform-origin: 105px 135px;
+      animation: rotateClockwise 11s linear infinite;
+    }
+    .monogram-orbit-ccw {
+      transform-origin: 105px 135px;
+      animation: rotateCounter 16s linear infinite;
+    }
+    .stream-fast {
+      stroke-dasharray: 100 200;
+      animation: dataPulse 6s linear infinite;
+    }
+    .stream-slow {
+      stroke-dasharray: 70 240;
+      animation: dataPulse 10s linear infinite;
+    }
+    .sonar-wave {
+      animation: sonarPing 2.2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+    .hero-name {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "SF Pro Display", Roboto, Montserrat, sans-serif;
+      font-weight: 900;
+      letter-spacing: 5px;
+      animation: nameHoloShimmer 3.5s ease-in-out infinite;
+    }
+    .hero-sub {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       font-weight: 600;
+      letter-spacing: 2.2px;
+      fill: #8EA4C4;
+    }
+    .badge-pill-text {
+      font-family: "SF Mono", "Segoe UI Mono", Menlo, Consolas, monospace;
+      font-weight: 700;
+      font-size: 9.5px;
+      letter-spacing: 1px;
     }
   </style>
 
-  <!-- Container Box with Rounded Edges -->
-  <rect x="1" y="1" width="938" height="218" rx="14" fill="url(#heroBg)" stroke="url(#heroBorder)" stroke-width="1.5"/>
+  <!-- Base High-Tech Outer Canvas -->
+  <rect x="2" y="2" width="956" height="266" rx="18" fill="url(#cyberBg)" stroke="#162744" stroke-width="1.5"/>
+  <rect x="4" y="4" width="952" height="262" rx="16" fill="url(#cyberGrid)"/>
 
-  <!-- Background Grid -->
-  <rect x="2" y="2" width="936" height="216" rx="13" fill="url(#heroGrid)"/>
+  <!-- Atmospheric Neon Aurora Glow Centers -->
+  <circle cx="110" cy="135" r="110" fill="#00F2FE" fill-opacity="0.09" filter="url(#ultraGlow)" class="aurora-pulse"/>
+  <circle cx="500" cy="80" r="140" fill="#9D4EDD" fill-opacity="0.08" filter="url(#ultraGlow)" class="aurora-pulse" style="animation-delay: 2s;"/>
+  <circle cx="840" cy="135" r="120" fill="#00FF87" fill-opacity="0.09" filter="url(#ultraGlow)" class="aurora-pulse" style="animation-delay: 3.5s;"/>
 
-  <!-- Subtle Ambient Glow Rings -->
-  <circle cx="105" cy="110" r="85" fill="#00F2FE" fill-opacity="0.03"/>
-  <circle cx="820" cy="110" r="95" fill="#38EF7D" fill-opacity="0.025"/>
+  <!-- Animated High-Speed Data Bus Lines -->
+  <path d="M 190 38 L 740 38 L 770 68 L 940 68" stroke="#192A44" stroke-width="1.2" fill="none"/>
+  <path d="M 190 38 L 740 38 L 770 68 L 940 68" stroke="url(#holoGradient)" stroke-width="2.2" stroke-linecap="round" fill="none" class="stream-fast" filter="url(#softGlow)"/>
 
-  <!-- Horizontal Tech Guide Lines -->
-  <path d="M 210 40 L 760 40 L 800 70 L 900 70" stroke="#1F2A38" stroke-width="1" fill="none"/>
-  <path d="M 210 40 L 760 40 L 800 70 L 900 70" stroke="url(#heroCyan)" stroke-width="1.4" fill="none" class="flow-trace"/>
+  <path d="M 210 234 L 710 234 L 740 204 L 940 204" stroke="#192A44" stroke-width="1.2" fill="none"/>
+  <path d="M 210 234 L 710 234 L 740 204 L 940 204" stroke="url(#auroraEmerald)" stroke-width="2.2" stroke-linecap="round" fill="none" class="stream-slow" filter="url(#softGlow)"/>
 
-  <path d="M 230 180 L 720 180 L 750 150 L 900 150" stroke="#1F2A38" stroke-width="1" fill="none"/>
-  <path d="M 230 180 L 720 180 L 750 150 L 900 150" stroke="url(#heroEmerald)" stroke-width="1.4" fill="none" class="flow-trace" style="animation-duration: 11s;"/>
+  <!-- Vertical Sweeping Laser Beam -->
+  <g class="scanner-beam">
+    <rect x="4" y="0" width="952" height="32" fill="url(#scanBeam)"/>
+    <line x1="4" y1="16" x2="956" y2="16" stroke="#00F2FE" stroke-width="1.2" stroke-opacity="0.85" filter="url(#softGlow)"/>
+  </g>
 
-  <!-- Monogram Logo Container (Left) -->
-  <g transform="translate(40, 45)">
-    <!-- Base Rounded Badge -->
-    <rect x="0" y="0" width="130" height="130" rx="18" fill="#101620" stroke="#253243" stroke-width="1.5"/>
-    <rect x="6" y="6" width="118" height="118" rx="14" fill="#0A0E16" stroke="url(#heroCyan)" stroke-width="1" stroke-opacity="0.35"/>
+  <!-- Glowing Laser Border Runner -->
+  <rect x="2" y="2" width="956" height="266" rx="18" fill="none" stroke="url(#laserBorder)" stroke-width="2.5" class="border-active" filter="url(#ultraGlow)"/>
+
+  <!-- ==================== LEFT: ANIMATED CYBER MONOGRAM (PR) ==================== -->
+  <g transform="translate(40, 52)">
+    <!-- Rotating Dashed Orbit Rings Around Monogram -->
+    <circle cx="65" cy="65" r="68" stroke="url(#holoGradient)" stroke-width="1.5" stroke-dasharray="8 18" fill="none" class="monogram-orbit-cw" filter="url(#softGlow)"/>
+    <circle cx="65" cy="65" r="74" stroke="url(#auroraEmerald)" stroke-width="1.2" stroke-dasharray="4 24" fill="none" class="monogram-orbit-ccw"/>
+
+    <!-- Octagonal Frame Badge Base -->
+    <rect x="4" y="4" width="122" height="122" rx="22" fill="#0C1424" stroke="#253C62" stroke-width="1.5"/>
+    <rect x="9" y="9" width="112" height="112" rx="18" fill="#060C18" stroke="url(#holoGradient)" stroke-width="1.8" stroke-opacity="0.9"/>
+
+    <!-- Corner Accents on Monogram Frame -->
+    <path d="M 14 26 L 14 14 L 26 14" stroke="#00F2FE" stroke-width="2.2" fill="none" filter="url(#softGlow)"/>
+    <path d="M 116 26 L 116 14 L 104 14" stroke="#00F2FE" stroke-width="2.2" fill="none" filter="url(#softGlow)"/>
+    <path d="M 14 104 L 14 116 L 26 116" stroke="#00FF87" stroke-width="2.2" fill="none" filter="url(#softGlow)"/>
+    <path d="M 116 104 L 116 116 L 104 116" stroke="#00FF87" stroke-width="2.2" fill="none" filter="url(#softGlow)"/>
 
     <!-- Geometric "PR" Monogram -->
-    <g transform="translate(10, 8)">
+    <g transform="translate(15, 14)">
       <!-- Letter 'P' -->
-      <path d="M 25 30 L 25 84" stroke="#F0F6FC" stroke-width="5" stroke-linecap="round" fill="none"/>
-      <path d="M 25 30 L 44 30 C 54 30 59 36 59 45 C 59 54 54 60 44 60 L 25 60" stroke="#F0F6FC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <path d="M 22 24 L 22 80" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round" fill="none" filter="url(#softGlow)"/>
+      <path d="M 22 24 L 44 24 C 55 24 62 30 62 40 C 62 50 55 56 44 56 L 22 56" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#softGlow)"/>
 
       <!-- Letter 'R' -->
-      <path d="M 64 30 L 64 84" stroke="#F0F6FC" stroke-width="5" stroke-linecap="round" fill="none"/>
-      <path d="M 64 30 L 83 30 C 93 30 98 36 98 45 C 98 54 93 60 83 60 L 64 60" stroke="#F0F6FC" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <path d="M 64 24 L 64 80" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round" fill="none" filter="url(#softGlow)"/>
+      <path d="M 64 24 L 85 24 C 96 24 102 30 102 40 C 102 50 96 56 85 56 L 64 56" stroke="#FFFFFF" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#softGlow)"/>
       
-      <!-- 'R' Dynamic Electric Cyan Leg -->
-      <path d="M 80 60 L 98 84" stroke="url(#heroCyan)" stroke-width="5.2" stroke-linecap="round" fill="none" filter="url(#monogramGlow)"/>
-      <path d="M 80 60 L 98 84" stroke="#00F2FE" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <!-- 'R' Vibrant Electric Cyan / Magenta Dynamic Leg -->
+      <path d="M 82 56 L 103 80" stroke="url(#holoGradient)" stroke-width="7" stroke-linecap="round" fill="none" filter="url(#ultraGlow)"/>
+      <path d="M 82 56 L 103 80" stroke="#00F2FE" stroke-width="6" stroke-linecap="round" fill="none"/>
     </g>
 
-    <!-- Status Indicator Pill in Monogram -->
-    <rect x="8" y="104" width="114" height="18" rx="9" fill="#131B26" stroke="#212F40" stroke-width="1"/>
-    <circle cx="18" cy="113" r="3.5" fill="#38EF7D" class="node-glow-anim"/>
-    <text x="26" y="117" font-family="'SF Mono', Consolas, monospace" font-size="8.5" font-weight="600" fill="#8B949E" letter-spacing="0.5px">AVAILABLE // 2026</text>
+    <!-- Bottom Status Node inside Monogram -->
+    <g transform="translate(18, 100)">
+      <rect x="0" y="0" width="94" height="20" rx="10" fill="#091426" stroke="#1F3D6B" stroke-width="1.2"/>
+      <circle cx="10" cy="10" r="4.5" fill="#00FF87" filter="url(#ultraGlow)"/>
+      <circle cx="10" cy="10" r="4.5" stroke="#00FF87" fill="none" class="sonar-wave"/>
+      <text x="22" y="14" font-family="'SF Mono', Consolas, monospace" font-size="8.5" font-weight="800" fill="#00FF87" letter-spacing="0.5px">SYS // ACTIVE</text>
+    </g>
   </g>
 
-  <!-- Main Headline & Identity (Center-Left) -->
-  <g transform="translate(198, 0)">
-    <!-- Status / Role Chip -->
+  <!-- ==================== CENTER: HERO TYPOGRAPHY & IDENTITY ==================== -->
+  <g transform="translate(216, 0)">
+    <!-- High-Impact Live Status Ribbon -->
     <g transform="translate(0, 42)">
-      <rect x="0" y="0" width="232" height="22" rx="4" fill="#121822" stroke="#263548" stroke-width="1"/>
-      <circle cx="12" cy="11" r="3" fill="#00F2FE" class="node-glow-anim"/>
-      <text x="22" y="15" class="mono-chip" fill="#00F2FE">SOFTWARE ENGINEER &amp; BUILDER</text>
+      <rect x="0" y="0" width="280" height="26" rx="13" fill="#0C182F" stroke="#25467A" stroke-width="1.2"/>
+      <circle cx="14" cy="13" r="4" fill="#00F2FE" filter="url(#ultraGlow)"/>
+      <circle cx="14" cy="13" r="4" stroke="#00F2FE" fill="none" class="sonar-wave"/>
+      <text x="28" y="17" class="badge-pill-text" fill="#00F2FE">SOFTWARE ENGINEER &amp; ARCHITECT</text>
     </g>
 
-    <!-- Primary Name -->
-    <text x="0" y="102" font-size="33" class="title-text">PRIYA RANJAN</text>
+    <!-- Primary Name with Metallic Holographic Shimmer -->
+    <text x="0" y="115" font-size="41" class="hero-name">PRIYA RANJAN</text>
 
-    <!-- Professional Tagline -->
-    <text x="2" y="128" class="subtitle-text">ENGINEER  •  SYSTEMS BUILDER  •  PROBLEM SOLVER</text>
+    <!-- Architectural Role Statement -->
+    <text x="2" y="143" font-size="12.5" class="hero-sub">ENGINEER  •  SYSTEMS BUILDER  •  PROBLEM SOLVER</text>
 
-    <!-- Categorized Competency Pills -->
-    <g transform="translate(2, 150)">
-      <!-- Pill 1 -->
-      <rect x="0" y="0" width="138" height="22" rx="4" fill="#121824" stroke="#202D3E" stroke-width="1"/>
-      <text x="10" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#00F2FE" letter-spacing="0.8px">SYSTEMS &amp; LOW-LEVEL</text>
+    <!-- Core Discipline Badges with Radiant Gradients -->
+    <g transform="translate(2, 168)">
+      <!-- Badge 1: Systems & OS -->
+      <g>
+        <rect x="0" y="0" width="140" height="26" rx="7" fill="#0B1A2C" stroke="#00F2FE" stroke-width="1.4" stroke-opacity="0.9"/>
+        <circle cx="12" cy="13" r="3.5" fill="#00F2FE" filter="url(#softGlow)"/>
+        <text x="23" y="17.5" class="badge-pill-text" fill="#00F2FE">SYSTEMS &amp; OS</text>
+      </g>
 
-      <!-- Pill 2 -->
-      <rect x="146" y="0" width="128" height="22" rx="4" fill="#121824" stroke="#202D3E" stroke-width="1"/>
-      <text x="156" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#38EF7D" letter-spacing="0.8px">AI &amp; DEEP LEARNING</text>
+      <!-- Badge 2: AI / ML -->
+      <g transform="translate(148, 0)">
+        <rect x="0" y="0" width="144" height="26" rx="7" fill="#1C102C" stroke="#9D4EDD" stroke-width="1.4" stroke-opacity="0.9"/>
+        <circle cx="12" cy="13" r="3.5" fill="#C77DFF" filter="url(#softGlow)"/>
+        <text x="23" y="17.5" class="badge-pill-text" fill="#D8B4FE">AI &amp; DEEP LEARNING</text>
+      </g>
 
-      <!-- Pill 3 -->
-      <rect x="282" y="0" width="138" height="22" rx="4" fill="#121824" stroke="#202D3E" stroke-width="1"/>
-      <text x="292" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#C9D1D9" letter-spacing="0.8px">DEFENSIVE SECURITY</text>
+      <!-- Badge 3: Cyber Defense -->
+      <g transform="translate(300, 0)">
+        <rect x="0" y="0" width="148" height="26" rx="7" fill="#0E231C" stroke="#00FF87" stroke-width="1.4" stroke-opacity="0.9"/>
+        <circle cx="12" cy="13" r="3.5" fill="#00FF87" filter="url(#softGlow)"/>
+        <text x="23" y="17.5" class="badge-pill-text" fill="#00FF87">CYBER DEFENSE</text>
+      </g>
 
-      <!-- Pill 4 -->
-      <rect x="428" y="0" width="122" height="22" rx="4" fill="#121824" stroke="#202D3E" stroke-width="1"/>
-      <text x="438" y="15" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="10" font-weight="600" fill="#8B949E" letter-spacing="0.8px">FULL-STACK CLOUD</text>
+      <!-- Badge 4: Distributed Cloud -->
+      <g transform="translate(456, 0)">
+        <rect x="0" y="0" width="122" height="26" rx="7" fill="#241215" stroke="#FF5E62" stroke-width="1.4" stroke-opacity="0.9"/>
+        <circle cx="12" cy="13" r="3.5" fill="#FF5E62" filter="url(#softGlow)"/>
+        <text x="23" y="17.5" class="badge-pill-text" fill="#FFA5A8">FULL-STACK</text>
+      </g>
     </g>
+
+    <!-- Engineering Philosophy Quote -->
+    <text x="3" y="222" font-family="'SF Mono', Consolas, monospace" font-size="11" font-weight="600" fill="#758AA6" letter-spacing="0.5px">
+      <tspan fill="#00FF87">&gt;</tspan> Building systems that solve tangible, real-world problems from first principles.
+    </text>
   </g>
 
-  <!-- Right Systems Telemetry Node Graph (Clean & Elegant) -->
-  <g transform="translate(775, 45)">
-    <!-- Base Card Container -->
-    <rect x="0" y="0" width="125" height="130" rx="12" fill="#0E141E" stroke="#212F40" stroke-width="1"/>
+  <!-- ==================== RIGHT: ANIMATED HOLOGRAPHIC RADAR TELEMETRY ==================== -->
+  <g transform="translate(765, 48)">
+    <!-- Base Hologram Container Box -->
+    <rect x="0" y="0" width="154" height="170" rx="16" fill="#091222" stroke="#1D365C" stroke-width="1.5"/>
+    <rect x="4" y="4" width="146" height="162" rx="13" fill="#050B16" stroke="url(#holoGradient)" stroke-width="1.2" stroke-opacity="0.5"/>
 
-    <!-- Rotating Tech Dial Rings -->
-    <circle cx="62" cy="52" r="34" stroke="#1D2A3B" stroke-width="1.2" fill="none"/>
-    <circle cx="62" cy="52" r="34" stroke="#00F2FE" stroke-width="1.4" stroke-dasharray="6 14" stroke-opacity="0.6" fill="none" class="orbit-spin" style="transform-origin: 837px 97px;"/>
-    <circle cx="62" cy="52" r="22" stroke="#23354B" stroke-width="1" fill="#0A0F17"/>
+    <!-- Concentric Rotating Radar Dials -->
+    <g transform="translate(77, 72)">
+      <!-- Outer Track Dial with Degree Markers -->
+      <circle cx="0" cy="0" r="48" stroke="#162C4C" stroke-width="1.2" fill="none"/>
+      <circle cx="0" cy="0" r="48" stroke="#00F2FE" stroke-width="1.8" stroke-dasharray="6 16" stroke-opacity="0.75" fill="none" class="orbit-cw" style="transform-origin: 0 0;" filter="url(#softGlow)"/>
 
-    <!-- Center Node Pulse -->
-    <circle cx="62" cy="52" r="4.5" fill="#38EF7D" class="node-glow-anim" filter="url(#monogramGlow)"/>
-    <circle cx="62" cy="52" r="2" fill="#FFFFFF"/>
+      <!-- Middle Counter-Rotating Ring -->
+      <circle cx="0" cy="0" r="34" stroke="#9D4EDD" stroke-width="1.5" stroke-dasharray="4 14" stroke-opacity="0.85" fill="none" class="orbit-ccw" style="transform-origin: 0 0;"/>
 
-    <!-- Mini Telemetry Stat 1 -->
-    <text x="62" y="100" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="9" font-weight="700" fill="#F0F6FC" letter-spacing="1px">B.TECH CSE</text>
-    <text x="62" y="114" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="8" font-weight="500" fill="#8B949E" letter-spacing="0.5px">2023 — 2027</text>
+      <!-- Inner Coordinate Ring -->
+      <circle cx="0" cy="0" r="20" stroke="#1D4375" stroke-width="1" fill="#0B172E"/>
+
+      <!-- Sweeping Radar Beam -->
+      <g class="orbit-cw" style="transform-origin: 0 0; animation-duration: 3s;">
+        <path d="M 0 0 L 46 -15 A 48 48 0 0 1 48 0 Z" fill="url(#radarSweep)"/>
+        <line x1="0" y1="0" x2="48" y2="0" stroke="#00FF87" stroke-width="2" stroke-linecap="round" filter="url(#softGlow)"/>
+      </g>
+
+      <!-- Center Pulsing Core Sensor -->
+      <circle cx="0" cy="0" r="5.5" fill="#00F2FE" filter="url(#ultraGlow)"/>
+      <circle cx="0" cy="0" r="2.5" fill="#FFFFFF"/>
+      <circle cx="0" cy="0" r="4.5" stroke="#00F2FE" fill="none" class="sonar-wave"/>
+    </g>
+
+    <!-- Telemetry Badges at Bottom of Card -->
+    <g transform="translate(0, 130)">
+      <line x1="12" y1="0" x2="142" y2="0" stroke="#1C3050" stroke-width="1"/>
+      <text x="77" y="16" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="10.5" font-weight="900" fill="#FFD700" letter-spacing="1.2px">SIH FINALIST</text>
+      <text x="77" y="29" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="9" font-weight="700" fill="#00FF87" letter-spacing="0.5px">B.TECH CSE • 2023-27</text>
+    </g>
   </g>
 </svg>
