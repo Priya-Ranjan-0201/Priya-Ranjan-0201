@@ -104,6 +104,7 @@ def fetch_stats():
         for d in w['contributionDays']:
             days.append((d['date'], d['contributionCount']))
             
+    # Calculate real longest streak from calendar
     longest_streak = 0
     temp_streak = 0
     for date_str, count in days:
@@ -114,21 +115,29 @@ def fetch_stats():
         else:
             temp_streak = 0
             
+    # Calculate real current active streak
+    today_active = days[-1][1] > 0 if days else False
+    yesterday_active = days[-2][1] > 0 if len(days) > 1 else False
+
+    start_idx = len(days) - 1
+    if not today_active:
+        if yesterday_active:
+            start_idx = len(days) - 2
+        else:
+            start_idx = -1
+
     current_streak = 0
-    for date_str, count in reversed(days):
-        if count > 0:
-            current_streak += 1
-        elif current_streak > 0:
-            break
+    if start_idx >= 0:
+        for i in range(start_idx, -1, -1):
+            if days[i][1] > 0:
+                current_streak += 1
+            else:
+                break
             
-    # Count total commits across all repositories with fallback to verified minimum (457+)
+    longest_streak = max(longest_streak, current_streak)
     total_commits = max(total_commits, 457)
     total_stars = max(total_stars, 14)
-    total_contributions = max(cal['totalContributions'], 46)
-
-    # Active streak calculation: The user's active coding streak spans 12 days in the current cycle
-    active_streak = max(current_streak, 12)
-    longest_streak = max(longest_streak, 18)
+    total_contributions = cal['totalContributions']
             
     total_lang_bytes = sum(lang_bytes.values()) or 1
     top_langs = sorted(lang_bytes.items(), key=lambda x: x[1], reverse=True)[:5]
@@ -157,12 +166,26 @@ def fetch_stats():
         'issues': col['totalIssueContributions'],
         'repos': max(len(repos), 18),
         'contributions': total_contributions,
-        'current_streak': active_streak,
+        'current_streak': current_streak,
         'longest_streak': longest_streak,
         'langs': langs_formatted
     }
 
 def generate_svg(stats):
+    cur_streak = stats['current_streak']
+    max_streak = stats['longest_streak']
+    ratio = min(cur_streak / max(max_streak, 1), 1.0)
+    dash_fill = max(int(ratio * 283), 35)
+
+    if cur_streak == 1:
+        sub_streak_label = "1 DAY ACTIVE"
+    elif cur_streak > 1:
+        sub_streak_label = f"{cur_streak} CONSECUTIVE DAYS"
+    else:
+        sub_streak_label = "STREAK READY"
+
+    longest_unit = "Day" if max_streak == 1 else "Days"
+
     # Prepare language progress bar segments
     x_offset = 0
     bar_width = 240
@@ -357,7 +380,7 @@ def generate_svg(stats):
     <g transform="translate(0, 0)">
       <!-- Outer Track -->
       <circle cx="145" cy="114" r="45" stroke="#1E293B" stroke-width="5" fill="#0A0E18"/>
-      <circle cx="145" cy="114" r="45" stroke="#10B981" stroke-width="5" stroke-dasharray="225 283" stroke-linecap="round" fill="none" filter="url(#softGlow)"/>
+      <circle cx="145" cy="114" r="45" stroke="#10B981" stroke-width="5" stroke-dasharray="{dash_fill} 283" stroke-linecap="round" fill="none" filter="url(#softGlow)"/>
 
       <!-- Flame Icon -->
       <g class="flame-anim">
@@ -368,7 +391,7 @@ def generate_svg(stats):
       <!-- Current Streak Count -->
       <text x="145" y="138" text-anchor="middle" font-size="26" font-weight="900" fill="#F8FAFC" class="value-text">{stats['current_streak']}</text>
       <text x="145" y="174" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#10B981" letter-spacing="1.2px">CURRENT STREAK</text>
-      <text x="145" y="188" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="8.5" font-weight="600" fill="#64748B">12 CONSECUTIVE DAYS</text>
+      <text x="145" y="188" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="8.5" font-weight="600" fill="#64748B">{sub_streak_label}</text>
     </g>
 
     <!-- Bottom Streak Stats (Total Contributions & Longest Streak) -->
@@ -381,7 +404,7 @@ def generate_svg(stats):
 
     <g transform="translate(165, 222)">
       <text x="0" y="12" class="label-text">LONGEST STREAK</text>
-      <text x="0" y="34" font-size="20" fill="#38BDF8" class="value-text">{stats['longest_streak']} <tspan font-size="13" fill="#64748B">Days</tspan></text>
+      <text x="0" y="34" font-size="20" fill="#38BDF8" class="value-text">{stats['longest_streak']} <tspan font-size="13" fill="#64748B">{longest_unit}</tspan></text>
     </g>
   </g>
 
