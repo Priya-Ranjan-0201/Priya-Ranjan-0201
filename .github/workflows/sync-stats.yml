@@ -41,11 +41,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Record dynamic daily cycle (2 or 3 commits daily)
-          python scripts/daily_heartbeat.py || exit_code=$?
-          if [ "${exit_code:-0}" -eq 2 ]; then
-            echo "Daily target already met. Regenerating stats card."
-          fi
+          python scripts/daily_heartbeat.py || true
           python scripts/generate_stats_card.py
 
       - name: 🚀 Commit and Push Updated Stats
@@ -56,12 +52,9 @@ jobs:
             exit 0
           fi
 
-          COMMIT_NAME="${{ vars.COMMIT_NAME || 'Priya-Ranjan-0201' }}"
-          COMMIT_EMAIL="${{ vars.COMMIT_EMAIL || '186106336+Priya-Ranjan-0201@users.noreply.github.com' }}"
-
-          git config --local user.name "$COMMIT_NAME"
-          git config --local user.email "$COMMIT_EMAIL"
+          git config user.name "Priya-Ranjan-0201"
+          git config user.email "186106336+Priya-Ranjan-0201@users.noreply.github.com"
 
           git commit -m "chore(telemetry): record verified engineering cycle & sync stats"
           git pull --rebase origin main || true
-          git push origin main
+          git push origin HEAD:main
