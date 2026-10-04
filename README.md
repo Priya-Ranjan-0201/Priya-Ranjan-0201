@@ -1,45 +1,45 @@
 <div align="center">
 
-<!-- HERO HOLOGRAPHIC BANNER -->
+<!-- HERO BANNER -->
 <a href="https://github.com/Priya-Ranjan-0201">
   <img src="assets/hero-header.svg" alt="Priya Ranjan — Software Engineer • Systems Builder • Problem Solver" width="100%" />
 </a>
 
 <br/><br/>
 
-<!-- RESPONSIVE HIGH-SPEED TYPING SVG -->
+<!-- ANIMATED TYPEWRITER SUBTITLE (URL-ENCODED TO PREVENT TRUNCATION) -->
 <a href="https://github.com/Priya-Ranjan-0201">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code,Consolas,monospace&weight=600&size=16&pause=1800&color=00F2FE&center=true&vCenter=true&width=750&height=40&lines=Building+systems+that+solve+tangible%2C+real-world+problems.;Bridging+AI%2C+defensive+cybersecurity%2C+and+low-level+systems.;Smart+India+Hackathon+Grand+Finalist+%E2%80%A2+TravelSathi+DPI.;Exploring+operating+systems+kinematics+%26+process+scheduling.;Architecting+resilient+software+from+first+principles." alt="Priya Ranjan Animated Subtitle" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code,Consolas,monospace&weight=600&size=15&pause=1800&color=38BDF8&center=true&vCenter=true&width=760&height=38&lines=Building+systems+that+solve+tangible%2C+real-world+problems.;Systems+architecture+and+operating+systems+kinematics.;Bridging+AI%2C+AST+code+analysis%2C+and+vector+retrieval.;Smart+India+Hackathon+Grand+Finalist+%E2%80%A2+TravelSathi+DPI.;Autonomous+cloud+automation+powered+by+GitHub+Actions." alt="Priya Ranjan Subtitle" />
 </a>
 
 <br/>
 
-<!-- INTERACTIVE NAVIGATION COMMAND CENTER -->
+<!-- CLEAN MINIMALIST NAVIGATION PILLS -->
 <p align="center">
   <a href="https://github.com/Priya-Ranjan-0201">
-    <img src="https://img.shields.io/badge/GITHUB-Priya--Ranjan--0201-070B14?style=for-the-badge&logo=github&logoColor=00F2FE&labelColor=050811" alt="GitHub Profile" />
+    <img src="https://img.shields.io/badge/GitHub-Priya--Ranjan--0201-0D1117?style=for-the-badge&logo=github&logoColor=white&labelColor=050811" alt="GitHub Profile" />
   </a>
   &nbsp;
   <a href="https://github.com/Priya-Ranjan-0201/Priya-Ranjan-0201/tree/main/portfolio">
-    <img src="https://img.shields.io/badge/PORTFOLIO-EXPLORE_SOURCE-070B14?style=for-the-badge&logo=react&logoColor=60EFFF&labelColor=050811" alt="Portfolio Source Code" />
+    <img src="https://img.shields.io/badge/Portfolio-Interactive_Source-0D1117?style=for-the-badge&logo=react&logoColor=38BDF8&labelColor=050811" alt="Portfolio Source" />
   </a>
   &nbsp;
   <a href="https://linkedin.com/in/priye-ranjan">
-    <img src="https://img.shields.io/badge/LINKEDIN-priye--ranjan-070B14?style=for-the-badge&logo=linkedin&logoColor=00F2FE&labelColor=050811" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-priye--ranjan-0D1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2&labelColor=050811" alt="LinkedIn" />
   </a>
   &nbsp;
   <a href="mailto:priye0201@gmail.com">
-    <img src="https://img.shields.io/badge/EMAIL-priye0201@gmail.com-070B14?style=for-the-badge&logo=gmail&logoColor=00FF87&labelColor=050811" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-priye0201@gmail.com-0D1117?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=050811" alt="Email" />
   </a>
 </p>
 
-<!-- REAL-TIME TELEMETRY STATUS PILL -->
+<!-- REAL-TIME STATUS PILL -->
 <p align="center">
-  <img src="https://img.shields.io/badge/STATUS-SYSTEMS_ACTIVE_%E2%80%A2_OPEN_TO_WORK_2026-060D1A?style=flat-square&logo=statuspage&logoColor=00FF87&color=00FF87" alt="System Status" />
+  <img src="https://img.shields.io/badge/SYSTEMS_ACTIVE-OPEN_FOR_ROLES_2026/27-0B1322?style=flat-square&logo=statuspage&logoColor=10B981&color=10B981" alt="Status" />
   &nbsp;
-  <img src="https://img.shields.io/badge/EDUCATION-B.TECH_CSE_(2023--2027)-060D1A?style=flat-square&logo=academia&logoColor=00F2FE&color=00F2FE" alt="Education" />
+  <img src="https://img.shields.io/badge/EDUCATION-B.TECH_CSE_(2023--2027)-0B1322?style=flat-square&logo=academia&logoColor=38BDF8&color=38BDF8" alt="Education" />
   &nbsp;
-  <img src="https://img.shields.io/badge/ACHIEVEMENT-SIH_GRAND_FINALIST-060D1A?style=flat-square&logo=trophy&logoColor=FFD700&color=FFD700" alt="SIH Grand Finalist" />
+  <img src="https://img.shields.io/badge/HONOR-SIH_GRAND_FINALIST-0B1322?style=flat-square&logo=trophy&logoColor=FFD700&color=FFD700" alt="SIH Finalist" />
 </p>
 
 </div>
@@ -49,16 +49,16 @@
 ## 👨‍💻 About The Architect
 
 ```bash
-priya-ranjan@core-station:~$ sysinfo --verbose
+priya-ranjan@station:~$ whoami --verbose
 ```
 
-> I am a **Computer Science & Engineering undergraduate (B.Tech 2023–2027)** passionate about understanding computing from first principles. Rather than treating computers as black boxes, I care about what happens in the critical milliseconds between hardware instructions, operating system scheduling, network socket packets, and user interfaces.
+> I am a **Computer Science & Engineering undergraduate (B.Tech 2023–2027)** driven by a passion for understanding computing from first principles. Rather than treating computers as black boxes, I care about what happens in the milliseconds between hardware instructions, operating system scheduling, network socket packets, and user interfaces.
 
 ### 🎯 Core Engineering Vectors:
-- **Low-Level Systems & OS Kinematics**: Process scheduling, disk arm seek kinematics, virtual memory layout, and Linux POSIX internals.
-- **Defensive Cybersecurity & Networks**: Asynchronous socket concurrency, port vulnerability inspection, cryptographic logging (SHA-256), and STIX 2.1 threat modeling.
+- **Low-Level Systems & OS Kinematics**: Process scheduling, disk arm seek kinematics, memory layout, and Linux POSIX internals.
+- **Defensive Cybersecurity & Networks**: Asynchronous socket concurrency, port vulnerability inspection, cryptographic audit logging (SHA-256), and STIX 2.1 threat modeling.
 - **Intelligent Applications & AI**: Abstract Syntax Tree (AST) static code analysis, semantic vector retrieval with Qdrant, and explainable AI with TreeSHAP.
-- **Full-Stack Systems Architecture**: Building resilient backends (FastAPI, AsyncIO, Flask) and high-performance clients (React, Next.js, HTML5 Canvas) validated by automated test suites.
+- **Full-Stack Systems Architecture**: Building resilient backends (FastAPI, AsyncIO, Flask) and responsive clients (React, Next.js, HTML5 Canvas) verified by automated test suites.
 - 🏆 **Smart India Hackathon (SIH) Grand Finalist**: Architected India's Digital Public Infrastructure for Smart Tourism (*TECH-ON-TOUR / TravelSathi*), implementing multilingual itinerary generation, anti-overtourism gatekeeping, and geospatial search graphs.
 
 ---
@@ -67,33 +67,14 @@ priya-ranjan@core-station:~$ sysinfo --verbose
 
 <div align="center">
 
-<!-- ACCURATE ANIMATED SVG STATS HUD -->
+<!-- LIVE ACCURATE TELEMETRY DASHBOARD (SYNCHRONIZED DAILY VIA HOURLY GITHUB_TOKEN) -->
 <a href="https://github.com/Priya-Ranjan-0201">
-  <img src="assets/github-stats.svg" alt="Priya Ranjan GitHub Verified Telemetry Stats" width="100%" />
+  <img src="assets/github-stats.svg" alt="Priya Ranjan Verified GitHub Telemetry Stats" width="100%" />
 </a>
 
 <br/><br/>
 
-<!-- DYNAMIC STREAK & TOP LANGUAGES HUD -->
-<table align="center" border="0" cellpadding="0" cellspacing="0">
-  <tr>
-    <td align="center" valign="middle">
-      <a href="https://github.com/Priya-Ranjan-0201">
-        <img src="https://streak-stats.demolab.com/?user=Priya-Ranjan-0201&theme=tokyonight&background=050914&stroke=00F2FE&ring=00F2FE&fire=00FF87&currStreakNum=00FF87&sideNums=00F2FE&currStreakLabel=00FF87&sideLabels=8EA4C4&dates=8EA4C4&hide_border=false" alt="GitHub Streak Stats" height="195" />
-      </a>
-    </td>
-    <td width="20"></td>
-    <td align="center" valign="middle">
-      <a href="https://github.com/Priya-Ranjan-0201">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Priya-Ranjan-0201&layout=compact&theme=tokyonight&bg_color=050914&title_color=00F2FE&text_color=8EA4C4&border_color=192B45&hide_border=false" alt="Top Languages" height="195" />
-      </a>
-    </td>
-  </tr>
-</table>
-
-<br/>
-
-<!-- ANIMATED CONTRIBUTION GRID SNAKE -->
+<!-- CONTRIBUTION ACTIVITY GRID SNAKE -->
 <p align="center">
   <b>🟩 CONTRIBUTION ACTIVITY FEED</b>
 </p>
@@ -108,7 +89,7 @@ priya-ranjan@core-station:~$ sysinfo --verbose
 
 ---
 
-## 🛠️ Technical Arsenal & Tech Stack
+## 🛠️ Technical Arsenal & Core Stack
 
 <div align="center">
 
@@ -129,7 +110,7 @@ priya-ranjan@core-station:~$ sysinfo --verbose
 
 ### 🧠 AI, Vector Engines & Code Analysis
 <p align="center">
-  <img src="https://img.shields.io/badge/AST_Analysis-Python_ast-00F2FE?style=for-the-badge&logo=codeforces&logoColor=black" alt="AST Analysis" />
+  <img src="https://img.shields.io/badge/AST_Analysis-Python_ast-38BDF8?style=for-the-badge&logo=codeforces&logoColor=black" alt="AST Analysis" />
   &nbsp;
   <img src="https://img.shields.io/badge/Qdrant_Vector_DB-DC2626?style=for-the-badge&logo=qdrant&logoColor=white" alt="Qdrant Vector DB" />
   &nbsp;
@@ -308,7 +289,7 @@ Whether you're interested in systems engineering, defensive cybersecurity, full-
   </a>
   &nbsp;
   <a href="https://github.com/Priya-Ranjan-0201/Priya-Ranjan-0201/tree/main/portfolio">
-    <img src="https://img.shields.io/badge/Portfolio-Explore_Code-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="Portfolio" />
+    <img src="https://img.shields.io/badge/Portfolio-Explore_Code-38BDF8?style=for-the-badge&logo=react&logoColor=black" alt="Portfolio" />
   </a>
 </p>
 

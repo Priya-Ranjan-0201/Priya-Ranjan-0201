@@ -1,4 +1,185 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" width="100%" fill="none">
+#!/usr/bin/env python3
+import os
+import subprocess
+import urllib.request
+import json
+import re
+
+def get_github_token():
+    token = os.environ.get('GITHUB_TOKEN')
+    if token:
+        return token
+    try:
+        proc = subprocess.Popen(['git', 'credential', 'fill'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        out, _ = proc.communicate('protocol=https\nhost=github.com\n\n')
+        for line in out.splitlines():
+            if line.startswith('password='):
+                return line.split('=', 1)[1]
+    except Exception:
+        pass
+    return None
+
+def fetch_stats():
+    token = get_github_token()
+    headers = {
+        'Accept': 'application/vnd.github+json',
+        'User-Agent': 'Profile-Stats-Engine/2.0',
+        'Content-Type': 'application/json'
+    }
+    if token:
+        headers['Authorization'] = f'Bearer {token}'
+
+    query = '''
+    query {
+      viewer {
+        login
+        repositories(first: 100, ownerAffiliations: [OWNER, COLLABORATOR, ORGANIZATION_MEMBER]) {
+          nodes {
+            name
+            isFork
+            stargazerCount
+            languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
+              edges {
+                size
+                node {
+                  name
+                  color
+                }
+              }
+            }
+            defaultBranchRef {
+              target {
+                ... on Commit {
+                  history {
+                    totalCount
+                  }
+                }
+              }
+            }
+          }
+        }
+        contributionsCollection {
+          totalCommitContributions
+          totalPullRequestContributions
+          totalIssueContributions
+          totalRepositoryContributions
+          restrictedContributionsCount
+          contributionCalendar {
+            totalContributions
+            weeks {
+              contributionDays {
+                date
+                contributionCount
+              }
+            }
+          }
+        }
+      }
+    }
+    '''
+    req = urllib.request.Request('https://api.github.com/graphql', data=json.dumps({'query': query}).encode('utf-8'), headers=headers)
+    with urllib.request.urlopen(req) as resp:
+        data = json.loads(resp.read().decode('utf-8'))
+        
+    viewer = data['data']['viewer']
+    repos = viewer['repositories']['nodes']
+    
+    total_stars = sum(r['stargazerCount'] for r in repos)
+    total_commits = 0
+    lang_bytes = {}
+    
+    for r in repos:
+        target = (r.get('defaultBranchRef') or {}).get('target') or {}
+        total_commits += (target.get('history') or {}).get('totalCount', 0)
+        for edge in r.get('languages', {}).get('edges', []):
+            name = edge['node']['name']
+            size = edge['size']
+            lang_bytes[name] = lang_bytes.get(name, 0) + size
+            
+    col = viewer['contributionsCollection']
+    cal = col['contributionCalendar']
+    
+    days = []
+    for w in cal['weeks']:
+        for d in w['contributionDays']:
+            days.append((d['date'], d['contributionCount']))
+            
+    longest_streak = 0
+    temp_streak = 0
+    for date_str, count in days:
+        if count > 0:
+            temp_streak += 1
+            if temp_streak > longest_streak:
+                longest_streak = temp_streak
+        else:
+            temp_streak = 0
+            
+    current_streak = 0
+    for date_str, count in reversed(days):
+        if count > 0:
+            current_streak += 1
+        elif current_streak > 0:
+            break
+            
+    total_lang_bytes = sum(lang_bytes.values()) or 1
+    top_langs = sorted(lang_bytes.items(), key=lambda x: x[1], reverse=True)[:5]
+    
+    langs_formatted = []
+    lang_colors = {
+        'TypeScript': '#3178C6',
+        'Python': '#3572A5',
+        'JavaScript': '#F7DF1E',
+        'CSS': '#563D7C',
+        'HTML': '#E34C26',
+        'C': '#555555'
+    }
+    for name, size in top_langs:
+        pct = (size / total_lang_bytes) * 100
+        langs_formatted.append({
+            'name': name,
+            'pct': pct,
+            'color': lang_colors.get(name, '#38BDF8')
+        })
+        
+    return {
+        'stars': total_stars,
+        'commits': total_commits,
+        'prs': col['totalPullRequestContributions'],
+        'issues': col['totalIssueContributions'],
+        'repos': len(repos),
+        'contributions': cal['totalContributions'],
+        'current_streak': current_streak,
+        'longest_streak': longest_streak,
+        'langs': langs_formatted
+    }
+
+def generate_svg(stats):
+    # Prepare language progress bar segments
+    x_offset = 0
+    bar_width = 240
+    lang_rects = []
+    legend_items = []
+    
+    for i, lang in enumerate(stats['langs']):
+        w = (lang['pct'] / 100) * bar_width
+        lang_rects.append(f'<rect x="{x_offset:.1f}" y="0" width="{w:.1f}" height="6" fill="{lang["color"]}"/>')
+        x_offset += w
+        
+        # Legend (2 columns)
+        lx = 0 if i % 2 == 0 else 125
+        ly = (i // 2) * 22
+        legend_items.append(f'''
+        <g transform="translate({lx}, {ly})">
+          <circle cx="5" cy="5" r="4" fill="{lang["color"]}"/>
+          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">{lang["name"]}</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#64748B">{lang["pct"]:.1f}%</text>
+        </g>
+        ''')
+        
+    lang_bars_svg = "\n".join(lang_rects)
+    lang_legend_svg = "\n".join(legend_items)
+
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" width="100%" fill="none">
   <defs>
     <!-- Deep Obsidian Matte Background -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -39,51 +220,51 @@
   </defs>
 
   <style>
-    @keyframes pulseSoft {
-      0%, 100% { opacity: 0.85; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.02); filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.4)); }
-    }
-    @keyframes flameFlicker {
-      0%, 100% { transform: scale(1) translateY(0); opacity: 0.9; }
-      50% { transform: scale(1.05) translateY(-1px); opacity: 1; }
-    }
-    @keyframes subtleBlink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.4; }
-    }
-    @keyframes borderSweep {
-      0% { stroke-dashoffset: 0; }
-      100% { stroke-dashoffset: 600; }
-    }
+    @keyframes pulseSoft {{
+      0%, 100% {{ opacity: 0.85; transform: scale(1); }}
+      50% {{ opacity: 1; transform: scale(1.02); filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.4)); }}
+    }}
+    @keyframes flameFlicker {{
+      0%, 100% {{ transform: scale(1) translateY(0); opacity: 0.9; }}
+      50% {{ transform: scale(1.05) translateY(-1px); opacity: 1; }}
+    }}
+    @keyframes subtleBlink {{
+      0%, 100% {{ opacity: 1; }}
+      50% {{ opacity: 0.4; }}
+    }}
+    @keyframes borderSweep {{
+      0% {{ stroke-dashoffset: 0; }}
+      100% {{ stroke-dashoffset: 600; }}
+    }}
 
-    .pulse-ring {
+    .pulse-ring {{
       transform-origin: 105px 125px;
       animation: pulseSoft 4s ease-in-out infinite;
-    }
-    .flame-anim {
+    }}
+    .flame-anim {{
       transform-origin: 145px 115px;
       animation: flameFlicker 2.5s ease-in-out infinite;
-    }
-    .live-dot {
+    }}
+    .live-dot {{
       animation: subtleBlink 2s ease-in-out infinite;
-    }
-    .border-runner {
+    }}
+    .border-runner {{
       stroke-dasharray: 80 200;
       animation: borderSweep 14s linear infinite;
-    }
-    .label-text {
+    }}
+    .label-text {{
       font-family: "SF Mono", "Segoe UI Mono", Menlo, Consolas, monospace;
       font-size: 10px;
       font-weight: 700;
       letter-spacing: 1.2px;
       fill: #64748B;
-    }
-    .value-text {
+    }}
+    .value-text {{
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       font-weight: 800;
       letter-spacing: 0.5px;
       fill: #F8FAFC;
-    }
+    }}
   </style>
 
   <!-- Outer Canvas Container -->
@@ -129,17 +310,17 @@
       <!-- Stars -->
       <g transform="translate(0, 0)">
         <text x="0" y="12" class="label-text">TOTAL STARS</text>
-        <text x="0" y="34" font-size="20" class="value-text">14</text>
+        <text x="0" y="34" font-size="20" class="value-text">{stats['stars']}</text>
       </g>
       <!-- Total Commits -->
       <g transform="translate(0, 50)">
         <text x="0" y="12" class="label-text">TOTAL COMMITS</text>
-        <text x="0" y="34" font-size="20" fill="#38BDF8" class="value-text">456</text>
+        <text x="0" y="34" font-size="20" fill="#38BDF8" class="value-text">{stats['commits']}</text>
       </g>
       <!-- PRs & Issues -->
       <g transform="translate(0, 100)">
         <text x="0" y="12" class="label-text">PRS &amp; ISSUES</text>
-        <text x="0" y="34" font-size="18" class="value-text">5 PRs <tspan font-size="14" fill="#64748B">/ 4 Iss</tspan></text>
+        <text x="0" y="34" font-size="18" class="value-text">{stats['prs']} PRs <tspan font-size="14" fill="#64748B">/ {stats['issues']} Iss</tspan></text>
       </g>
     </g>
 
@@ -147,7 +328,7 @@
     <line x1="20" y1="205" x2="300" y2="205" stroke="#1E293B" stroke-width="1"/>
     <g transform="translate(20, 222)">
       <text x="0" y="12" class="label-text">CONTRIBUTED TO</text>
-      <text x="0" y="32" font-size="16" class="value-text">18 Repositories</text>
+      <text x="0" y="32" font-size="16" class="value-text">{stats['repos']} Repositories</text>
       <text x="175" y="32" font-family="'SF Mono', Consolas, monospace" font-size="10" fill="#10B981">100% AUDITED</text>
     </g>
   </g>
@@ -176,7 +357,7 @@
       </g>
 
       <!-- Current Streak Count -->
-      <text x="145" y="148" text-anchor="middle" font-size="28" font-weight="900" fill="#F8FAFC" class="value-text">1</text>
+      <text x="145" y="148" text-anchor="middle" font-size="28" font-weight="900" fill="#F8FAFC" class="value-text">{stats['current_streak']}</text>
       <text x="145" y="180" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#10B981" letter-spacing="1px">CURRENT STREAK</text>
     </g>
 
@@ -185,12 +366,12 @@
     
     <g transform="translate(20, 222)">
       <text x="0" y="12" class="label-text">TOTAL CONTRIBUTIONS</text>
-      <text x="0" y="34" font-size="20" class="value-text">42</text>
+      <text x="0" y="34" font-size="20" class="value-text">{stats['contributions']}</text>
     </g>
 
     <g transform="translate(165, 222)">
       <text x="0" y="12" class="label-text">LONGEST STREAK</text>
-      <text x="0" y="34" font-size="20" fill="#38BDF8" class="value-text">6 <tspan font-size="13" fill="#64748B">Days</tspan></text>
+      <text x="0" y="34" font-size="20" fill="#38BDF8" class="value-text">{stats['longest_streak']} <tspan font-size="13" fill="#64748B">Days</tspan></text>
     </g>
   </g>
 
@@ -212,51 +393,13 @@
         <clipPath id="langBarClip">
           <rect x="0" y="0" width="234" height="6" rx="3"/>
         </clipPath>
-        <rect x="0.0" y="0" width="117.5" height="6" fill="#3178C6"/>
-<rect x="117.5" y="0" width="103.7" height="6" fill="#3572A5"/>
-<rect x="221.2" y="0" width="12.4" height="6" fill="#F7DF1E"/>
-<rect x="233.7" y="0" width="4.2" height="6" fill="#563D7C"/>
-<rect x="237.9" y="0" width="1.3" height="6" fill="#E34C26"/>
+        {lang_bars_svg}
       </g>
     </g>
 
     <!-- Language Legend Grid -->
     <g transform="translate(18, 96)">
-      
-        <g transform="translate(0, 0)">
-          <circle cx="5" cy="5" r="4" fill="#3178C6"/>
-          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">TypeScript</text>
-          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#64748B">49.0%</text>
-        </g>
-        
-
-        <g transform="translate(125, 0)">
-          <circle cx="5" cy="5" r="4" fill="#3572A5"/>
-          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">Python</text>
-          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#64748B">43.2%</text>
-        </g>
-        
-
-        <g transform="translate(0, 22)">
-          <circle cx="5" cy="5" r="4" fill="#F7DF1E"/>
-          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">JavaScript</text>
-          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#64748B">5.2%</text>
-        </g>
-        
-
-        <g transform="translate(125, 22)">
-          <circle cx="5" cy="5" r="4" fill="#563D7C"/>
-          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">CSS</text>
-          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#64748B">1.8%</text>
-        </g>
-        
-
-        <g transform="translate(0, 44)">
-          <circle cx="5" cy="5" r="4" fill="#E34C26"/>
-          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">HTML</text>
-          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#64748B">0.5%</text>
-        </g>
-        
+      {lang_legend_svg}
     </g>
 
     <!-- Bottom Architecture Tag -->
@@ -267,4 +410,27 @@
       <text x="155" y="32" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#38BDF8">SYSTEMS &amp; AI</text>
     </g>
   </g>
-</svg>
+</svg>'''
+    return svg
+
+def main():
+    print("Fetching live statistics from GitHub GraphQL API...")
+    stats = fetch_stats()
+    print("Stats fetched successfully:")
+    print(f"  Stars: {stats['stars']}")
+    print(f"  Total Commits: {stats['commits']}")
+    print(f"  PRs: {stats['prs']}")
+    print(f"  Issues: {stats['issues']}")
+    print(f"  Contributions: {stats['contributions']}")
+    print(f"  Current Streak: {stats['current_streak']}")
+    print(f"  Longest Streak: {stats['longest_streak']}")
+    
+    svg_content = generate_svg(stats)
+    output_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'assets', 'github-stats.svg')
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, 'w', encoding='utf-8') as f:
+        f.write(svg_content)
+    print(f"Generated clean telemetry stats card at: {output_path}")
+
+if __name__ == '__main__':
+    main()
