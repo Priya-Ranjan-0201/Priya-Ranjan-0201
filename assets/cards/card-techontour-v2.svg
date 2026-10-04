@@ -50,7 +50,7 @@
   <!-- Left Content Block -->
   <g transform="translate(22, 0)">
     <!-- Category Tag -->
-    <text x="0" y="32" font-family="'SF Mono', 'Segoe UI Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#4FACFE" letter-spacing="1.5px">SMART INDIA HACKATHON</text>
+    <text x="0" y="32" font-family="'SF Mono', 'Segoe UI Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#4FACFE" letter-spacing="1.5px">DIGITAL PUBLIC INFRASTRUCTURE</text>
 
     <!-- Project Title -->
     <text x="0" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="800" fill="#F0F6FC" letter-spacing="2px">TECH-ON-TOUR</text>

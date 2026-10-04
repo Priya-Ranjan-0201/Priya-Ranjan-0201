@@ -177,12 +177,12 @@
     </g>
   </g>
 
-  <!-- CARD 3: SIH Grand Finalist -->
+  <!-- CARD 3: Digital Public Infrastructure & Search Graphs -->
   <g transform="translate(632, 60)">
     <rect x="0" y="0" width="282" height="120" rx="12" fill="url(#cardGrad)" stroke="#1A2D48" stroke-width="1.2"/>
     <line x1="0" y1="0" x2="282" y2="0" stroke="url(#amberGrad)" stroke-width="2.5" stroke-linecap="round"/>
 
-    <!-- Left Trophy Hologram -->
+    <!-- Left Geospatial Beacon Node -->
     <g transform="translate(20, 32)">
       <rect x="0" y="0" width="46" height="46" rx="8" fill="#140D0F" stroke="#3D2024" stroke-width="1"/>
       <circle cx="23" cy="23" r="16" stroke="#FF5E62" stroke-width="1.2" stroke-dasharray="4 8" fill="none" class="spin-dial" style="transform-origin: 23px 23px;"/>
@@ -191,10 +191,10 @@
 
     <!-- Text Block -->
     <g transform="translate(80, 24)">
-      <text x="0" y="12" class="metric-label" fill="#FF8800">SMART INDIA HACKATHON</text>
-      <text x="0" y="38" font-size="20" fill="#FFD97D" class="metric-value">GRAND FINALIST</text>
+      <text x="0" y="12" class="metric-label" fill="#FF8800">GEOSPATIAL INFRA</text>
+      <text x="0" y="38" font-size="20" fill="#FFD97D" class="metric-value">2D-SPHERE GRAPH</text>
       <text x="0" y="58" class="metric-desc">Digital Public Infrastructure</text>
-      <text x="0" y="74" class="metric-desc">for Smart Tourism &amp; Search Graph</text>
+      <text x="0" y="74" class="metric-desc">for Smart Tourism &amp; Gatekeeping</text>
     </g>
   </g>
 

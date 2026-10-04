@@ -9,7 +9,7 @@
 
 <!-- ANIMATED TYPEWRITER SUBTITLE (URL-ENCODED TO PREVENT TRUNCATION) -->
 <a href="https://github.com/Priya-Ranjan-0201">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code,Consolas,monospace&weight=600&size=15&pause=1800&color=38BDF8&center=true&vCenter=true&width=760&height=38&lines=Building+systems+that+solve+tangible%2C+real-world+problems.;Systems+architecture+and+operating+systems+kinematics.;Bridging+AI%2C+AST+code+analysis%2C+and+vector+retrieval.;Smart+India+Hackathon+Grand+Finalist+%E2%80%A2+TravelSathi+DPI.;Autonomous+cloud+automation+powered+by+GitHub+Actions." alt="Priya Ranjan Subtitle" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code,Consolas,monospace&weight=600&size=15&pause=1800&color=38BDF8&center=true&vCenter=true&width=760&height=38&lines=Building+systems+that+solve+tangible%2C+real-world+problems.;Systems+architecture+and+operating+systems+kinematics.;Bridging+AI%2C+AST+code+analysis%2C+and+vector+retrieval.;Digital+Public+Infrastructure+for+Smart+Tourism+%E2%80%A2+TravelSathi.;Autonomous+cloud+automation+powered+by+GitHub+Actions." alt="Priya Ranjan Subtitle" />
 </a>
 
 <br/>
@@ -39,7 +39,7 @@
   &nbsp;
   <img src="https://img.shields.io/badge/EDUCATION-B.TECH_CSE_(2023--2027)-0B1322?style=flat-square&logo=academia&logoColor=38BDF8&color=38BDF8" alt="Education" />
   &nbsp;
-  <img src="https://img.shields.io/badge/HONOR-SIH_GRAND_FINALIST-0B1322?style=flat-square&logo=trophy&logoColor=FFD700&color=FFD700" alt="SIH Finalist" />
+  <img src="https://img.shields.io/badge/ARCHITECTURE-SYSTEMS_&_NETWORKS-0B1322?style=flat-square&logo=speedtest&logoColor=38BDF8&color=38BDF8" alt="Architecture" />
 </p>
 
 </div>
@@ -59,7 +59,7 @@ priya-ranjan@station:~$ whoami --verbose
 - **Defensive Cybersecurity & Networks**: Asynchronous socket concurrency, port vulnerability inspection, cryptographic audit logging (SHA-256), and STIX 2.1 threat modeling.
 - **Intelligent Applications & AI**: Abstract Syntax Tree (AST) static code analysis, semantic vector retrieval with Qdrant, and explainable AI with TreeSHAP.
 - **Full-Stack Systems Architecture**: Building resilient backends (FastAPI, AsyncIO, Flask) and responsive clients (React, Next.js, HTML5 Canvas) verified by automated test suites.
-- 🏆 **Smart India Hackathon (SIH) Grand Finalist**: Architected India's Digital Public Infrastructure for Smart Tourism (*TECH-ON-TOUR / TravelSathi*), implementing multilingual itinerary generation, anti-overtourism gatekeeping, and geospatial search graphs.
+- 🌐 **Digital Public Infrastructure (DPI) & Geospatial Systems**: Architected India's Smart Tourism ecosystem (*TECH-ON-TOUR / TravelSathi*), implementing multilingual itinerary generation, anti-overtourism gatekeeping, and MongoDB 2dsphere geospatial search graphs.
 
 ---
 
@@ -210,8 +210,8 @@ A curated portfolio of open-source repositories, system kinematics simulations, 
 </a>
 
 - **Core Problem:** Popular tourist corridors face unmanaged overcrowding, lack of regional language assistance, and fragmented transit routing.
-- **Architecture & Innovation:** Built for the **Smart India Hackathon Grand Finale**. Combines GeoJSON 2dsphere indexing, anti-overtourism gatekeeping algorithms, and a regional destination search graph.
-- **Engineering Status:** SIH Grand Finale platform with multilingual itinerary generation and map clustering.
+- **Architecture & Innovation:** Architected as India's **Digital Public Infrastructure for Smart Tourism**. Combines GeoJSON 2dsphere spatial indexing, dynamic anti-overtourism gatekeeping algorithms, and a regional destination search graph.
+- **Engineering Status:** Full-featured smart tourism platform with multilingual itinerary generation, dynamic transit clustering, and geospatial load balancing.
 - **Tech Stack:** `FastAPI` • `React` • `Python` • `MongoDB (2dsphere)` • `Leaflet` • `Search Graphs`
 - 🔗 **[Explore Repository →](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR)**
 
@@ -242,7 +242,33 @@ A curated portfolio of open-source repositories, system kinematics simulations, 
 
 <br/>
 
-### 6. [GitHub Green Machine](https://github.com/Priya-Ranjan-0201/github-green-machine) — Autonomous Cloud Maintenance Engine
+### 6. [BrainCheck](https://github.com/Priya-Ranjan-0201/BrainCheck) — Containerized Cognitive Assessment & Quiz Architecture Platform
+<a href="https://github.com/Priya-Ranjan-0201/BrainCheck">
+  <img src="assets/cards/card-braincheck-v2.svg" alt="BrainCheck Project Card" width="100%" />
+</a>
+
+- **Core Problem:** Traditional online testing suites suffer from static question sets, monolithic deployment architectures, and vulnerability to automated tampering during timed tests.
+- **Architecture & Innovation:** Cloud-native assessment platform with dynamic question bank generation, zero-latency countdown timers with automatic submission fallbacks, deterministic question randomization, and an HTML5 Canvas visual analytics engine for historical performance tracking.
+- **Engineering Status:** Packaged in an ultra-lean 2-stage multi-stage Docker build (<180 MB) with non-root security (`appuser`), persistent volumes, and automated GitHub Actions CI/CD workflows.
+- **Tech Stack:** `Python 3.13` • `Flask 3.x` • `Docker Multi-Stage` • `PostgreSQL / SQLite` • `Bootstrap 5.3` • `HTML5 Canvas`
+- 🔗 **[Explore Repository →](https://github.com/Priya-Ranjan-0201/BrainCheck)**
+
+<br/>
+
+### 7. [HRCV-](https://github.com/Priya-Ranjan-0201/HRCV-) — AI-Powered Career Intelligence & ATS Compatibility Engine
+<a href="https://github.com/Priya-Ranjan-0201/HRCV-">
+  <img src="assets/cards/card-hrcv-v2.svg" alt="HRCV Project Card" width="100%" />
+</a>
+
+- **Core Problem:** Job applicants lack transparency into how automated Applicant Tracking Systems (ATS) and enterprise screening algorithms parse and grade their qualifications against job descriptions.
+- **Architecture & Innovation:** Unites Scikit-Learn Machine Learning (Random Forest classifiers) and spaCy/BERT NLP semantic embeddings for 360° talent analysis. Computes multi-dimensional ATS parseability scores, provides an interactive drag-and-drop resume engineering studio with 6 executive templates, and evaluates skill gaps against live market descriptions.
+- **Engineering Status:** Production-ready responsive UI built on React 19, Vite, and Tailwind CSS, backed by high-throughput FastAPI microservices and automated CI validation.
+- **Tech Stack:** `React 19` • `FastAPI` • `Python 3.12+` • `Scikit-Learn` • `spaCy / BERT NLP` • `Tailwind CSS` • `Docker`
+- 🔗 **[Explore Repository →](https://github.com/Priya-Ranjan-0201/HRCV-)**
+
+<br/>
+
+### 8. [GitHub Green Machine](https://github.com/Priya-Ranjan-0201/github-green-machine) — Autonomous Cloud Maintenance Engine
 <a href="https://github.com/Priya-Ranjan-0201/github-green-machine">
   <img src="assets/cards/card-greenmachine-v2.svg" alt="GitHub Green Machine Project Card" width="100%" />
 </a>
