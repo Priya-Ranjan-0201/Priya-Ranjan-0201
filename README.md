@@ -228,7 +228,7 @@ I'm a **Computer Science &amp; Engineering student** passionate about **Artifici
               <b>🚀 VIREONIQ / PLACEIQ</b>
             </a>
             &nbsp;<code>Public</code>
-            <p>AI career roadmap &amp; code analysis engine — Python AST static complexity parsing, Qdrant vector trajectories &amp; 153 tests.</p>
+            <p>AI career roadmap &amp; code analysis engine — Python AST static complexity parsing, Qdrant vector trajectories &amp; automated tests.</p>
             <p>
               <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
               <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
@@ -294,14 +294,14 @@ I'm a **Computer Science &amp; Engineering student** passionate about **Artifici
 <summary><b>📂 Complete Verified Repository Directory (8 Public Repositories)</b></summary>
 <br/>
 
-| Repository | Primary Stack | Architecture & Description | Verified Metrics | Direct Link |
+| Repository | Primary Stack | Architecture & Description | Repository status | Direct Link |
 | :--- | :--- | :--- | :--- | :--- |
-| **[TECH-ON-TOUR](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR)** | `Python` • `FastAPI` • `React` • `Search Graph` | **TravelSathi: Digital Public Infrastructure for Smart Tourism (SIH Finale)**<br/>Multilingual AI travel twin, anti-overtourism dynamic routing, and national heritage search graph. | 1 Star • 2 Forks • 15+ Commits | [📂 Code](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR) |
-| **[TrustShield-X](https://github.com/Priya-Ranjan-0201/TrustShield-X)** | `Python 3.13` • `AsyncIO` • `Cybersecurity` | **High-Speed Network & Protocol Security Engine**<br/>Sub-15ms socket inspection, cryptographically signed audit trails, and STIX 2.1 threat intelligence taxonomy. | 1 Star • 0 Forks • 25+ Commits | [📂 Code](https://github.com/Priya-Ranjan-0201/TrustShield-X) |
-| **[VIREONIQ](https://github.com/Priya-Ranjan-0201/VIREONIQ)** | `Python` • `FastAPI` • `Qdrant` • `Docker` | **Developer Career Roadmap & Code Analysis Engine**<br/>Python AST static complexity analyzer, Qdrant vector trajectories, and 153 automated unit/integration tests. | 1 Star • 0 Forks • 30+ Commits | [📂 Code](https://github.com/Priya-Ranjan-0201/VIREONIQ) |
-| **[Priocardix-AI](https://github.com/Priya-Ranjan-0201/Priocardix-AI)** | `Python` • `Machine Learning` • `Data Science` | **Enterprise Preventive Cardiology AI Platform**<br/>PulseIQ Guardian Engine™, multi-parametric clinical risk scoring, and TreeSHAP explainability curves. | 1 Star • 0 Forks • 20+ Commits | [📂 Code](https://github.com/Priya-Ranjan-0201/Priocardix-AI) |
-| **[BrainCheck](https://github.com/Priya-Ranjan-0201/BrainCheck)** | `Python` • `Flask` • `PostgreSQL` • `Docker` | **Containerized Cognitive Assessment & Quiz Microservices**<br/>Modular Flask Blueprints, relational PostgreSQL schemas, and reproducible Docker Compose orchestration. | 1 Star • 0 Forks • 18+ Commits | [📂 Code](https://github.com/Priya-Ranjan-0201/BrainCheck) |
-| **[Disk_Scheduling_Algorithm](https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm)** | `JavaScript` • `Canvas API` • `Algorithms` | **OS Storage Architecture & Disk Kinematics Simulator**<br/>60 FPS HTML5 Canvas physical head movement visualizer benchmarking 11 disk scheduling algorithms (FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK). | 1 Star • 0 Forks • 12+ Commits | [📂 Code](https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm) |
+| **[TECH-ON-TOUR](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR)** | `Python` • `FastAPI` • `React` • `Search Graph` | **TravelSathi: Digital Public Infrastructure for Smart Tourism (SIH Finale)**<br/>Multilingual AI travel twin, anti-overtourism dynamic routing, and national heritage search graph. | Public repository | [📂 Code](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR) |
+| **[TrustShield-X](https://github.com/Priya-Ranjan-0201/TrustShield-X)** | `Python 3.13` • `AsyncIO` • `Cybersecurity` | **High-Speed Network & Protocol Security Engine**<br/>Sub-15ms socket inspection, cryptographically signed audit trails, and STIX 2.1 threat intelligence taxonomy. | Public repository | [📂 Code](https://github.com/Priya-Ranjan-0201/TrustShield-X) |
+| **[VIREONIQ](https://github.com/Priya-Ranjan-0201/VIREONIQ)** | `Python` • `FastAPI` • `Qdrant` • `Docker` | **Developer Career Roadmap & Code Analysis Engine**<br/>Python AST static complexity analyzer, Qdrant vector trajectories, and 153 automated unit/integration tests. | Public repository | [📂 Code](https://github.com/Priya-Ranjan-0201/VIREONIQ) |
+| **[Priocardix-AI](https://github.com/Priya-Ranjan-0201/Priocardix-AI)** | `Python` • `Machine Learning` • `Data Science` | **Enterprise Preventive Cardiology AI Platform**<br/>PulseIQ Guardian Engine™, multi-parametric clinical risk scoring, and TreeSHAP explainability curves. | Public repository | [📂 Code](https://github.com/Priya-Ranjan-0201/Priocardix-AI) |
+| **[BrainCheck](https://github.com/Priya-Ranjan-0201/BrainCheck)** | `Python` • `Flask` • `PostgreSQL` • `Docker` | **Containerized Cognitive Assessment & Quiz Microservices**<br/>Modular Flask Blueprints, relational PostgreSQL schemas, and reproducible Docker Compose orchestration. | Public repository | [📂 Code](https://github.com/Priya-Ranjan-0201/BrainCheck) |
+| **[Disk_Scheduling_Algorithm](https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm)** | `JavaScript` • `Canvas API` • `Algorithms` | **OS Storage Architecture & Disk Kinematics Simulator**<br/>60 FPS HTML5 Canvas physical head movement visualizer benchmarking 11 disk scheduling algorithms (FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK). | Public repository | [📂 Code](https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm) |
 | **[HRCV-](https://github.com/Priya-Ranjan-0201/HRCV-)** | `Python` • `FastAPI` • `NLP` • `React` | **AI Career Intelligence & ATS Resume Compatibility Engine**<br/>NLP entity extraction, role alignment classifier, and modern React 19 interactive user interface. | 1 Star • 0 Forks • 16+ Commits | [📂 Code](https://github.com/Priya-Ranjan-0201/HRCV-) |
 | **[Priya-Ranjan-0201](https://github.com/Priya-Ranjan-0201/Priya-Ranjan-0201)** | `TypeScript` • `Next.js` • `Three.js` • `Tailwind` | **Master Engineering Portfolio & GitHub Ecosystem**<br/>Full-stack systems manifesto, automated data synchronization pipelines, and interactive 3D visualizations. | 1 Star • 0 Forks • 78+ Commits | [📂 Code](https://github.com/Priya-Ranjan-0201/Priya-Ranjan-0201) |
 
@@ -313,6 +313,10 @@ I'm a **Computer Science &amp; Engineering student** passionate about **Artifici
 <!-- TECH STACK (CLICKABLE ICONS & TOOLS)                     -->
 <!-- ======================================================== -->
 ## 🛠️ &gt; Tech Stack
+
+<div align="center">
+  <img src="assets/tech-stack.png" width="100%" alt="Technology stack" />
+</div>
 
 <table>
   <tr>
@@ -363,7 +367,7 @@ I'm a **Computer Science &amp; Engineering student** passionate about **Artifici
 <div align="center">
 
 <a href="https://github.com/Priya-Ranjan-0201">
-  <img src="assets/analytics-dashboard.png" width="100%" alt="Verified GitHub Analytics Dashboard" />
+  <img src="assets/analytics-dashboard.png" width="100%" alt="GitHub analytics dashboard artwork" />
 </a>
 
 <br/><br/>
@@ -404,8 +408,8 @@ I'm a **Computer Science &amp; Engineering student** passionate about **Artifici
         </li>
         <br/>
         <li>
-          <a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><b>2026</b></a>: <b>Production AI, High-Speed Cyber Defense &amp; Smart India Hackathon</b><br/>
-          Engineered <a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><b>Priocardix-AI</b></a> (PulseIQ cardiovascular risk engine), <a href="https://github.com/Priya-Ranjan-0201/TrustShield-X"><b>TrustShield-X</b></a> (sub-15ms AsyncIO network scanner), <a href="https://github.com/Priya-Ranjan-0201/VIREONIQ"><b>VIREONIQ</b></a> (Python AST code analysis), <a href="https://github.com/Priya-Ranjan-0201/BrainCheck"><b>BrainCheck</b></a> (Flask microservices), and advanced to the <b>Smart India Hackathon National Finale</b> with <a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><b>TECH-ON-TOUR</b></a>.
+          <a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><b>2026</b></a>: <b>Project Development &amp; Applied Engineering</b><br/>
+          Engineered <a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><b>Priocardix-AI</b></a> (PulseIQ cardiovascular risk engine), <a href="https://github.com/Priya-Ranjan-0201/TrustShield-X"><b>TrustShield-X</b></a> (sub-15ms AsyncIO network scanner), <a href="https://github.com/Priya-Ranjan-0201/VIREONIQ"><b>VIREONIQ</b></a> (Python AST code analysis), <a href="https://github.com/Priya-Ranjan-0201/BrainCheck"><b>BrainCheck</b></a> (Flask microservices), and developed <a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><b>TECH-ON-TOUR</b></a>.
         </li>
       </ul>
     </td>
@@ -425,6 +429,10 @@ I'm a **Computer Science &amp; Engineering student** passionate about **Artifici
 <!-- CURRENTLY EXPLORING                                      -->
 <!-- ======================================================== -->
 ## 🧭 &gt; Currently Exploring
+
+<div align="center">
+  <img src="assets/currently-exploring.png" width="100%" alt="Currently exploring" />
+</div>
 
 <table>
   <tr>
@@ -466,16 +474,20 @@ I'm a **Computer Science &amp; Engineering student** passionate about **Artifici
 <!-- ======================================================== -->
 ## 🏆 &gt; Achievements &amp; Highlights
 
+<div align="center">
+  <img src="assets/achievements-highlights.png" width="100%" alt="Achievements and highlights" />
+</div>
+
 <p align="center">
-  <a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/%E2%9A%A1_Flagship_Projects-6_Production-00FF88?style=for-the-badge&labelColor=05080c" /></a>
+  <a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/%E2%9A%A1_Flagship_Projects-Project_Building-00FF88?style=for-the-badge&labelColor=05080c" /></a>
   &nbsp;
-  <a href="https://github.com/Priya-Ranjan-0201"><img src="https://img.shields.io/badge/%F0%9F%91%A5_Total_Commits-214%2B_Verified-00E5FF?style=for-the-badge&labelColor=05080c" /></a>
+  <a href="https://github.com/Priya-Ranjan-0201"><img src="https://img.shields.io/badge/%F0%9F%91%A5_Total_Commits-View_Live_Stats-00E5FF?style=for-the-badge&labelColor=05080c" /></a>
   &nbsp;
-  <a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><img src="https://img.shields.io/badge/%F0%9F%8F%86_Hackathon-SIH_National_Finale-FF0055?style=for-the-badge&labelColor=05080c" /></a>
+  <a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><img src="https://img.shields.io/badge/%F0%9F%8F%86_Focus-Continuous_Learning-FF0055?style=for-the-badge&labelColor=05080c" /></a>
   <br/><br/>
-  <a href="https://github.com/Priya-Ranjan-0201"><img src="https://img.shields.io/badge/%F0%9F%94%A5_Contributions-174_in_1_Year-00FF88?style=for-the-badge&labelColor=05080c" /></a>
+  <a href="https://github.com/Priya-Ranjan-0201"><img src="https://img.shields.io/badge/%F0%9F%94%A5_Focus-Consistency-00FF88?style=for-the-badge&labelColor=05080c" /></a>
   &nbsp;
-  <a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/%F0%9F%8C%90_Code_Volume-17.2_MB_Live-00E5FF?style=for-the-badge&labelColor=05080c" /></a>
+  <a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/%F0%9F%8C%90_Focus-Open_Source-00E5FF?style=for-the-badge&labelColor=05080c" /></a>
   &nbsp;
   <a href="https://github.com/Priya-Ranjan-0201"><img src="https://img.shields.io/badge/%F0%9F%9A%80_Continuous_Learner-Est._Oct_2024-00FF88?style=for-the-badge&labelColor=05080c" /></a>
 </p>
@@ -505,9 +517,7 @@ I'm a **Computer Science &amp; Engineering student** passionate about **Artifici
           <img src="https://img.shields.io/badge/Email-priyaranjan01%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" height="38" />
         </a>
         &nbsp;&nbsp;
-        <a href="portfolio/public/Priya_Ranjan_Resume.pdf">
-          <img src="https://img.shields.io/badge/Resume-View_My_Resume-00FF88?style=for-the-badge&logo=googledocs&logoColor=black" height="38" />
-        </a>
+        
       </p>
     </td>
     <td width="40%" align="center" valign="middle">
