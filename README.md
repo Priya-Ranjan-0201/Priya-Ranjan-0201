@@ -16,7 +16,7 @@
 
 <div align="center">
 
-<img src="assets/avatar.jpg" width="125" alt="Priya Ranjan avatar" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&duration=2200&pause=900&color=00E5FF&center=true&vCenter=true&width=260&height=36&lines=%3E+PRIYA+RANJAN;%3E+BUILDING+IN+PROGRESS" alt="Animated profile signature" />
 
 **PRIYA RANJAN** · [@Priya-Ranjan-0201](https://github.com/Priya-Ranjan-0201) · 🎓 Computer Science & Engineering · Lovely Professional University · India
 
@@ -237,7 +237,7 @@ Continuing to learn defensive engineering, architecture, testing, and practical 
 
 ## <code>06 / CURRENTLY EXPLORING</code>
 
-<img src="assets/currently-exploring.png" width="100%" alt="Currently exploring" />
+<div align="center"><img src="assets/explore-pulse.svg" width="72%" alt="Small animated exploration signal" /></div>
 
 <table>
 <tr>
@@ -251,7 +251,7 @@ Continuing to learn defensive engineering, architecture, testing, and practical 
 
 ## <code>07 / PRINCIPLES & HIGHLIGHTS</code>
 
-<img src="assets/achievements-highlights.png" width="100%" alt="Achievements and highlights" />
+<div align="center"><img src="assets/build-pulse.svg" width="72%" alt="Small animated build signal" /></div>
 
 <div align="center">
 
