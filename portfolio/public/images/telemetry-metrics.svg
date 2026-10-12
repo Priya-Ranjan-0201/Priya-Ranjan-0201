@@ -1,0 +1,271 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" width="100%" fill="none">
+  <defs>
+    <!-- Deep Obsidian Canvas -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070A10"/>
+      <stop offset="50%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#080C14"/>
+    </linearGradient>
+
+    <!-- Card Background -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1322"/>
+      <stop offset="100%" stop-color="#0A0E18"/>
+    </linearGradient>
+
+    <!-- Clean Ice Cyan Accent -->
+    <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+
+    <!-- Emerald Flame Gradient -->
+    <linearGradient id="emeraldFlame" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="50%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+
+    <!-- Soft Glow Filter -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Dot Pattern -->
+    <pattern id="gridDots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#38BDF8" fill-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseSoft {
+      0%, 100% { opacity: 0.85; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.02); filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.4)); }
+    }
+    @keyframes flameFlicker {
+      0%, 100% { transform: scale(1) translateY(0); opacity: 0.9; }
+      50% { transform: scale(1.05) translateY(-1px); opacity: 1; }
+    }
+    @keyframes subtleBlink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    @keyframes borderSweep {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: 600; }
+    }
+
+    .pulse-ring {
+      transform-origin: 68px 72px;
+      animation: pulseSoft 4s ease-in-out infinite;
+    }
+    .flame-anim {
+      transform-origin: 145px 114px;
+      animation: flameFlicker 2.5s ease-in-out infinite;
+    }
+    .live-dot {
+      animation: subtleBlink 2s ease-in-out infinite;
+    }
+    .border-runner {
+      stroke-dasharray: 80 200;
+      animation: borderSweep 14s linear infinite;
+    }
+    .label-text {
+      font-family: "SF Mono", "Segoe UI Mono", Menlo, Consolas, monospace;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      fill: #8B949E;
+    }
+    .value-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      fill: #F8FAFC;
+    }
+  </style>
+
+  <!-- Outer Canvas Container -->
+  <rect x="2" y="2" width="956" height="356" rx="16" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="1.2"/>
+  <rect x="2" y="2" width="956" height="356" rx="16" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.5" class="border-runner"/>
+  <rect x="4" y="4" width="952" height="352" rx="14" fill="url(#gridDots)"/>
+
+  <!-- ==================== TOP TITLE BAR ==================== -->
+  <g transform="translate(24, 20)">
+    <rect x="0" y="0" width="340" height="26" rx="6" fill="#0E1726" stroke="#1E293B" stroke-width="1"/>
+    <circle cx="14" cy="13" r="4" fill="#10B981" class="live-dot" filter="url(#softGlow)"/>
+    <text x="26" y="17" font-family="'SF Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#E2E8F0" letter-spacing="1px">
+      GITHUB TELEMETRY // REAL-TIME METRICS
+    </text>
+
+    <!-- Right-side status -->
+    <g transform="translate(620, 0)">
+      <circle cx="10" cy="13" r="3.5" fill="#38BDF8" class="live-dot"/>
+      <text x="22" y="17" font-family="'SF Mono', Consolas, monospace" font-size="9.5" font-weight="600" fill="#38BDF8" letter-spacing="0.8px">
+        SYNCHRONIZED VIA HOURLY TOKEN
+      </text>
+    </g>
+  </g>
+
+  <!-- ==================== PANEL 1: CORE GITHUB STATS & GRADE ==================== -->
+  <g transform="translate(24, 62)">
+    <rect x="0" y="0" width="320" height="274" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1"/>
+    <line x1="0" y1="0" x2="320" y2="0" stroke="url(#cyanLine)" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Left Grade Crest -->
+    <g transform="translate(0, 0)">
+      <circle cx="68" cy="72" r="38" stroke="#1E293B" stroke-width="4" fill="#0A101D"/>
+      <circle cx="68" cy="72" r="38" stroke="#38BDF8" stroke-width="4" stroke-dasharray="190 240" stroke-linecap="round" fill="none" class="pulse-ring" filter="url(#softGlow)"/>
+      <text x="68" y="79" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="900" fill="#38BDF8">A+</text>
+      
+      <!-- Rank Label -->
+      <rect x="23" y="122" width="90" height="20" rx="5" fill="#0F172A" stroke="#1E293B" stroke-width="0.8"/>
+      <text x="68" y="136" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="8.5" font-weight="700" fill="#38BDF8">S-TIER RANK</text>
+    </g>
+
+    <!-- Core Metrics List -->
+    <g transform="translate(135, 24)">
+      <!-- Stars -->
+      <g transform="translate(0, 0)">
+        <text x="0" y="12" class="label-text">TOTAL STARS</text>
+        <text x="0" y="34" font-size="20" class="value-text">14 <tspan font-size="13" fill="#F59E0B">★</tspan></text>
+      </g>
+      <!-- Total Commits -->
+      <g transform="translate(0, 50)">
+        <text x="0" y="12" class="label-text">TOTAL COMMITS</text>
+        <text x="0" y="34" font-size="20" fill="#38BDF8" class="value-text">519</text>
+      </g>
+      <!-- PRs & Issues -->
+      <g transform="translate(0, 100)">
+        <text x="0" y="12" class="label-text">PRS &amp; ISSUES</text>
+        <text x="0" y="34" font-size="18" class="value-text">5 PRs <tspan font-size="14" fill="#8B949E">/ 4 Iss</tspan></text>
+      </g>
+    </g>
+
+    <!-- Bottom Metric divider -->
+    <line x1="20" y1="205" x2="300" y2="205" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(20, 222)">
+      <text x="0" y="12" class="label-text">CONTRIBUTED TO</text>
+      <text x="0" y="32" font-size="16" class="value-text">18 Repositories</text>
+      <text x="175" y="32" font-family="'SF Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#10B981">100% AUDITED</text>
+    </g>
+  </g>
+
+  <!-- ==================== PANEL 2: STREAK STATS ==================== -->
+  <g transform="translate(360, 62)">
+    <rect x="0" y="0" width="290" height="274" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1"/>
+    <line x1="0" y1="0" x2="290" y2="0" stroke="url(#cyanLine)" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Section Header -->
+    <g transform="translate(20, 20)">
+      <text x="0" y="12" class="label-text">CONTRIBUTION STREAK</text>
+      <text x="0" y="30" font-size="14" font-weight="700" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Daily Activity Tracker</text>
+    </g>
+
+    <!-- Central Flame Radial Meter -->
+    <g transform="translate(0, 0)">
+      <!-- Outer Track -->
+      <circle cx="145" cy="114" r="45" stroke="#1E293B" stroke-width="5" fill="#0A0E18"/>
+      <circle cx="145" cy="114" r="45" stroke="#10B981" stroke-width="5" stroke-dasharray="283 283" stroke-linecap="round" fill="none" filter="url(#softGlow)"/>
+
+      <!-- Flame Icon -->
+      <g class="flame-anim">
+        <path d="M 145 88 C 148 94, 153 98, 153 103 C 153 108, 149 111, 145 111 C 141 111, 137 108, 137 103 C 137 98, 140 95, 145 88 Z" fill="url(#emeraldFlame)" filter="url(#softGlow)"/>
+        <path d="M 145 96 C 147 99, 149 101, 149 104 C 149 107, 147 109, 145 109 C 143 109, 141 107, 141 104 C 141 102, 143 100, 145 96 Z" fill="#F0FDF4"/>
+      </g>
+
+      <!-- Current Streak Count -->
+      <text x="145" y="138" text-anchor="middle" font-size="26" font-weight="900" fill="#F8FAFC" class="value-text">12</text>
+      <text x="145" y="174" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#10B981" letter-spacing="1.2px">CURRENT STREAK</text>
+      <text x="145" y="188" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="8.5" font-weight="600" fill="#8B949E">12 CONSECUTIVE DAYS</text>
+    </g>
+
+    <!-- Bottom Streak Stats (Total Contributions & Longest Streak) -->
+    <line x1="20" y1="205" x2="270" y2="205" stroke="#1E293B" stroke-width="1"/>
+    
+    <g transform="translate(20, 222)">
+      <text x="0" y="12" class="label-text">TOTAL CONTRIBUTIONS</text>
+      <text x="0" y="34" font-size="20" class="value-text">136</text>
+    </g>
+
+    <g transform="translate(165, 222)">
+      <text x="0" y="12" class="label-text">LONGEST STREAK</text>
+      <text x="0" y="34" font-size="20" fill="#38BDF8" class="value-text">12 <tspan font-size="13" fill="#8B949E">Days</tspan></text>
+    </g>
+  </g>
+
+  <!-- ==================== PANEL 3: MOST USED LANGUAGES ==================== -->
+  <g transform="translate(666, 62)">
+    <rect x="0" y="0" width="270" height="274" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1"/>
+    <line x1="0" y1="0" x2="270" y2="0" stroke="url(#cyanLine)" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Section Header -->
+    <g transform="translate(18, 20)">
+      <text x="0" y="12" class="label-text">MOST USED LANGUAGES</text>
+      <text x="0" y="30" font-size="14" font-weight="700" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Codebase Distribution</text>
+    </g>
+
+    <!-- Multi-Color Language Segment Bar -->
+    <g transform="translate(18, 70)">
+      <rect x="0" y="0" width="234" height="6" rx="3" fill="#1E293B"/>
+      <g clip-path="url(#langBarClip)">
+        <clipPath id="langBarClip">
+          <rect x="0" y="0" width="234" height="6" rx="3"/>
+        </clipPath>
+        <rect x="0.0" y="0" width="117.0" height="6" fill="#3572A5"/>
+<rect x="117.0" y="0" width="102.9" height="6" fill="#3178C6"/>
+<rect x="219.9" y="0" width="13.6" height="6" fill="#F7DF1E"/>
+<rect x="233.5" y="0" width="3.7" height="6" fill="#563D7C"/>
+<rect x="237.2" y="0" width="1.6" height="6" fill="#E34C26"/>
+      </g>
+    </g>
+
+    <!-- Language Legend Grid -->
+    <g transform="translate(18, 96)">
+      
+        <g transform="translate(0, 0)">
+          <circle cx="5" cy="5" r="4" fill="#3572A5"/>
+          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">Python</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">48.7%</text>
+        </g>
+        
+
+        <g transform="translate(125, 0)">
+          <circle cx="5" cy="5" r="4" fill="#3178C6"/>
+          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">TypeScript</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">42.9%</text>
+        </g>
+        
+
+        <g transform="translate(0, 22)">
+          <circle cx="5" cy="5" r="4" fill="#F7DF1E"/>
+          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">JavaScript</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">5.7%</text>
+        </g>
+        
+
+        <g transform="translate(125, 22)">
+          <circle cx="5" cy="5" r="4" fill="#563D7C"/>
+          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">CSS</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">1.5%</text>
+        </g>
+        
+
+        <g transform="translate(0, 44)">
+          <circle cx="5" cy="5" r="4" fill="#E34C26"/>
+          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">HTML</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">0.7%</text>
+        </g>
+        
+    </g>
+
+    <!-- Bottom Architecture Tag -->
+    <line x1="18" y1="205" x2="252" y2="205" stroke="#1E293B" stroke-width="1"/>
+    <g transform="translate(18, 218)">
+      <text x="0" y="12" class="label-text">PRIMARY ARCHITECTURE</text>
+      <text x="0" y="30" font-size="13" class="value-text">TypeScript &amp; Python 3</text>
+      <text x="0" y="46" font-family="'SF Mono', Consolas, monospace" font-size="9" font-weight="600" fill="#38BDF8">SYSTEMS &amp; APPLIED AI</text>
+    </g>
+  </g>
+</svg>

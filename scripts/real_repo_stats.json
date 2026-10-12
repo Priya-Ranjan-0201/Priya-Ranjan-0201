@@ -1,0 +1,27 @@
+{
+  "total_commits": 214,
+  "languages_bytes": {
+    "HTML": 211825,
+    "Python": 10274312,
+    "JavaScript": 1238551,
+    "Dockerfile": 8215,
+    "CSS": 305599,
+    "Batchfile": 32701,
+    "Java": 1300,
+    "Procfile": 87,
+    "TypeScript": 5387879,
+    "Mako": 625
+  },
+  "lang_percentages": {
+    "Python": 58.8,
+    "TypeScript": 30.9,
+    "JavaScript": 7.1,
+    "CSS": 1.8,
+    "HTML": 1.2,
+    "Batchfile": 0.2,
+    "Dockerfile": 0.0,
+    "Java": 0.0,
+    "Mako": 0.0,
+    "Procfile": 0.0
+  }
+}

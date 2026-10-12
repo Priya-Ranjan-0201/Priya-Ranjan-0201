@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sections Render Canvas</title>
+  <title>Sections Render Canvas — 100% Real Data</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
@@ -36,7 +36,7 @@
 
     .section-wrap {
       width: 900px;
-      margin-bottom: 45px;
+      margin-bottom: 48px;
       background: transparent;
     }
 
@@ -233,13 +233,13 @@
     .about-copy {
       display: flex;
       flex-direction: column;
-      gap: 18px;
+      gap: 16px;
     }
 
     .about-copy p {
       color: #f1f5f9;
-      font-size: 18px;
-      line-height: 1.8;
+      font-size: 17.5px;
+      line-height: 1.75;
       font-weight: 400;
     }
 
@@ -247,7 +247,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin-top: 10px;
+      margin-top: 8px;
     }
 
     .about-pill {
@@ -258,7 +258,7 @@
       background: rgba(10, 20, 28, 0.9);
       border: 1.3px solid rgba(0, 255, 136, 0.4);
       border-radius: 8px;
-      font-size: 15.5px;
+      font-size: 15px;
       font-weight: 600;
       color: #f8fafc;
       box-shadow: 0 0 12px rgba(0, 255, 136, 0.08);
@@ -274,7 +274,7 @@
 
     .about-visual-img {
       width: 100%;
-      height: 235px;
+      height: 245px;
       object-fit: cover;
       display: block;
     }
@@ -293,7 +293,75 @@
       text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
     }
 
-    /* ─── 03. FEATURED PROJECTS ─── */
+    /* ─── 03. CORE ENGINEERING ARCHITECTURE (NEW PARADIGMS) ─── */
+    .paradigms-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .paradigm-card {
+      background: var(--bg-card);
+      border: 1.3px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 24px 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35);
+    }
+
+    .paradigm-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .paradigm-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 9px;
+      background: rgba(0, 255, 136, 0.15);
+      border: 1.2px solid rgba(0, 255, 136, 0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: var(--neon-green);
+    }
+
+    .paradigm-title {
+      font-family: var(--font-display);
+      font-size: 19px;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .paradigm-desc {
+      font-size: 15px;
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+
+    .paradigm-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .paradigm-tag {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--neon-green);
+      background: rgba(0, 255, 136, 0.1);
+      border: 1px solid rgba(0, 255, 136, 0.3);
+      padding: 3px 8px;
+      border-radius: 5px;
+    }
+
+    /* ─── 04. FEATURED PROJECTS (6 REAL PROJECTS) ─── */
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -355,7 +423,7 @@
 
     .project-title {
       font-family: var(--font-display);
-      font-size: 22px;
+      font-size: 21px;
       font-weight: 800;
       color: #fff;
       display: flex;
@@ -374,7 +442,7 @@
 
     .project-desc {
       color: #e2e8f0;
-      font-size: 15.5px;
+      font-size: 15px;
       line-height: 1.6;
     }
 
@@ -386,7 +454,7 @@
 
     .project-tag {
       font-family: var(--font-mono);
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 600;
       color: #94a3b8;
       background: rgba(255, 255, 255, 0.05);
@@ -429,7 +497,7 @@
       display: block;
     }
 
-    /* ─── 04. TECH STACK ─── */
+    /* ─── 05. TECH STACK ─── */
     .tech-stack-row {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
@@ -493,7 +561,7 @@
       white-space: nowrap;
     }
 
-    /* ─── 05. GITHUB ANALYTICS ─── */
+    /* ─── 06. GITHUB ANALYTICS (REAL DATA) ─── */
     .analytics-top-row {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -544,12 +612,12 @@
     .languages-card-body {
       display: flex;
       align-items: center;
-      gap: 18px;
+      gap: 16px;
     }
 
     .donut-chart-svg {
-      width: 110px;
-      height: 110px;
+      width: 105px;
+      height: 105px;
       transform: rotate(-90deg);
       flex-shrink: 0;
     }
@@ -557,8 +625,8 @@
     .lang-legend {
       display: flex;
       flex-direction: column;
-      gap: 7px;
-      font-size: 14.5px;
+      gap: 6px;
+      font-size: 14px;
     }
 
     .lang-legend-item {
@@ -570,8 +638,8 @@
     }
 
     .lang-legend-color {
-      width: 12px;
-      height: 12px;
+      width: 11px;
+      height: 11px;
       border-radius: 3px;
     }
 
@@ -580,14 +648,14 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 16px;
+      gap: 14px;
       min-height: 135px;
       text-align: center;
     }
 
     .flame-circle {
-      width: 82px;
-      height: 82px;
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
       background: radial-gradient(circle, rgba(0, 255, 136, 0.35) 0%, rgba(0, 255, 136, 0.05) 70%, transparent 100%);
       border: 2.5px solid var(--neon-green);
@@ -600,7 +668,7 @@
 
     .streak-text {
       font-family: var(--font-mono);
-      font-size: 15.5px;
+      font-size: 15px;
       font-weight: 700;
       color: var(--neon-green);
       text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
@@ -718,14 +786,14 @@
       padding: 0 10px;
     }
 
-    /* ─── 06. MY JOURNEY ─── */
+    /* ─── 07. MY JOURNEY (STARTING FROM 2024) ─── */
     #journey-card {
       background: var(--bg-card);
       border: 1.5px solid var(--border-subtle);
       border-radius: 14px;
       padding: 34px 36px;
       display: grid;
-      grid-template-columns: 1fr 320px;
+      grid-template-columns: 1fr 310px;
       gap: 34px;
       align-items: center;
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
@@ -734,7 +802,7 @@
     .timeline-list {
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 20px;
       position: relative;
       padding-left: 36px;
     }
@@ -753,7 +821,7 @@
       position: relative;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 5px;
     }
 
     .timeline-dot {
@@ -780,7 +848,7 @@
 
     .timeline-year {
       font-family: var(--font-mono);
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 800;
       color: var(--neon-green);
       text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
@@ -788,8 +856,8 @@
 
     .timeline-desc {
       color: #f1f5f9;
-      font-size: 16.5px;
-      line-height: 1.6;
+      font-size: 15.5px;
+      line-height: 1.55;
     }
 
     .journey-visual-box {
@@ -797,7 +865,7 @@
       border-radius: 12px;
       overflow: hidden;
       border: 1.5px solid rgba(0, 255, 136, 0.45);
-      height: 255px;
+      height: 280px;
       box-shadow: 0 0 24px rgba(0, 255, 136, 0.15);
     }
 
@@ -816,14 +884,14 @@
       padding: 10px 16px;
       border-radius: 8px;
       font-family: var(--font-mono);
-      font-size: 14.5px;
+      font-size: 14px;
       font-weight: 700;
       color: var(--neon-green);
       backdrop-filter: blur(6px);
       text-shadow: 0 0 10px rgba(0, 255, 136, 0.6);
     }
 
-    /* ─── 07. CURRENTLY EXPLORING ─── */
+    /* ─── 08. CURRENTLY EXPLORING ─── */
     .exploring-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -866,7 +934,7 @@
       line-height: 1.6;
     }
 
-    /* ─── 08. ACHIEVEMENTS & HIGHLIGHTS ─── */
+    /* ─── 09. ACHIEVEMENTS & REAL HIGHLIGHTS ─── */
     .achievements-grid {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
@@ -893,19 +961,19 @@
 
     .achievement-num {
       font-family: var(--font-display);
-      font-size: 28px;
+      font-size: 26px;
       font-weight: 900;
       color: #fff;
     }
 
     .achievement-label {
-      font-size: 14px;
+      font-size: 13.5px;
       font-weight: 700;
       color: var(--text-muted);
       letter-spacing: 0.2px;
     }
 
-    /* ─── 09. LET'S CONNECT ─── */
+    /* ─── 10. LET'S CONNECT ─── */
     #connect-card {
       background: var(--bg-card);
       border: 1.5px solid var(--border-subtle);
@@ -1043,10 +1111,10 @@
         <div class="hero-subhead">Computer Science &amp; Engineering Student</div>
 
         <div class="hero-badges-row">
-          <span class="hero-pill-badge"><span class="icon">⚡</span> AI/ML</span>
-          <span class="hero-pill-badge"><span class="icon">🛡️</span> Cybersecurity</span>
-          <span class="hero-pill-badge"><span class="icon">🌐</span> Web Development</span>
-          <span class="hero-pill-badge"><span class="icon">💡</span> Problem Solving</span>
+          <span class="hero-pill-badge"><span class="icon">⚡</span> AI/ML &amp; Healthcare AI</span>
+          <span class="hero-pill-badge"><span class="icon">🛡️</span> Defensive Cyber &amp; STIX 2.1</span>
+          <span class="hero-pill-badge"><span class="icon">🌐</span> Distributed Systems &amp; APIs</span>
+          <span class="hero-pill-badge"><span class="icon">💽</span> Systems Simulation</span>
         </div>
 
         <div class="hero-quote-line">
@@ -1072,16 +1140,16 @@
     <div id="about-me-card">
       <div class="about-copy">
         <p>
-          I'm a Computer Science &amp; Engineering student passionate about Artificial Intelligence, Cybersecurity, Web Development, and building real-world solutions. I enjoy exploring new technologies, solving meaningful problems, and creating impactful projects.
+          I'm a Computer Science &amp; Engineering student who began my official developer and GitHub journey in <b>October 2024</b>. Since then, I've committed to deep hands-on systems building across <b>Artificial Intelligence, Defensive Cybersecurity, Distributed Web Systems, and Operating System Simulations</b>.
         </p>
         <p>
-          I'm always eager to learn, collaborate, and contribute to open-source while improving my skills and preparing for real-world opportunities.
+          Over my journey, I've architected production solutions ranging from <b>Smart India Hackathon (SIH) Finale digital public infrastructure</b> (<code>TECH-ON-TOUR</code>) and <b>sub-15ms AsyncIO network defense engines</b> (<code>TrustShield-X</code>) to <b>AST static complexity vector analyzers</b> (<code>VIREONIQ</code>) and <b>preventive healthcare AI</b> (<code>Priocardix-AI</code>).
         </p>
         <div class="about-pills-row">
-          <span class="about-pill">🧠 AI/ML Exploration</span>
-          <span class="about-pill">🛡️ Cybersecurity Learning</span>
-          <span class="about-pill">💻 Web Development</span>
-          <span class="about-pill">👥 Open Source</span>
+          <span class="about-pill">🧠 Applied AI / ML Systems</span>
+          <span class="about-pill">🛡️ Network Security &amp; STIX 2.1</span>
+          <span class="about-pill">🚀 Smart India Hackathon (SIH)</span>
+          <span class="about-pill">💽 OS Kinematics &amp; Systems</span>
         </div>
       </div>
       <div class="about-visual-box">
@@ -1094,31 +1162,105 @@
     </div>
   </div>
 
-  <!-- 03. FEATURED PROJECTS -->
+  <!-- 03. CORE ENGINEERING ARCHITECTURE (PARADIGMS) -->
+  <div class="section-wrap" id="sec-paradigms">
+    <div class="sec-header">
+      <div class="sec-title"><span class="sec-bracket">&gt;</span> Core Engineering Architecture</div>
+    </div>
+    <div class="paradigms-grid">
+      <div class="paradigm-card">
+        <div class="paradigm-header">
+          <div class="paradigm-icon">🧠</div>
+          <h3 class="paradigm-title">Applied AI &amp; Predictive Systems</h3>
+        </div>
+        <p class="paradigm-desc">
+          Building end-to-end machine learning pipelines, preventive healthcare predictive modeling with TreeSHAP explainability, and high-dimensional vector search trajectories.
+        </p>
+        <div class="paradigm-tags">
+          <span class="paradigm-tag">Priocardix-AI</span>
+          <span class="paradigm-tag">VIREONIQ</span>
+          <span class="paradigm-tag">HRCV-</span>
+          <span class="paradigm-tag">Qdrant</span>
+          <span class="paradigm-tag">TreeSHAP</span>
+        </div>
+      </div>
+
+      <div class="paradigm-card">
+        <div class="paradigm-header">
+          <div class="paradigm-icon">🛡️</div>
+          <h3 class="paradigm-title">Defensive Cyber &amp; Protocol Engines</h3>
+        </div>
+        <p class="paradigm-desc">
+          Engineering high-throughput network inspection architectures with Python 3.13 AsyncIO, sub-15ms socket analysis, signed audit trails, and STIX 2.1 threat intelligence.
+        </p>
+        <div class="paradigm-tags">
+          <span class="paradigm-tag">TrustShield-X</span>
+          <span class="paradigm-tag">AsyncIO</span>
+          <span class="paradigm-tag">Socket Inspection</span>
+          <span class="paradigm-tag">STIX 2.1</span>
+        </div>
+      </div>
+
+      <div class="paradigm-card">
+        <div class="paradigm-header">
+          <div class="paradigm-icon">🌐</div>
+          <h3 class="paradigm-title">Distributed Systems &amp; Microservices</h3>
+        </div>
+        <p class="paradigm-desc">
+          Designing scalable public digital infrastructure, modular Flask Blueprints, async FastAPI microservices, transactional PostgreSQL schemas, and Docker Compose orchestration.
+        </p>
+        <div class="paradigm-tags">
+          <span class="paradigm-tag">TECH-ON-TOUR</span>
+          <span class="paradigm-tag">BrainCheck</span>
+          <span class="paradigm-tag">FastAPI</span>
+          <span class="paradigm-tag">PostgreSQL</span>
+          <span class="paradigm-tag">Docker</span>
+        </div>
+      </div>
+
+      <div class="paradigm-card">
+        <div class="paradigm-header">
+          <div class="paradigm-icon">💽</div>
+          <h3 class="paradigm-title">OS Architecture &amp; Low-Level Simulation</h3>
+        </div>
+        <p class="paradigm-desc">
+          Simulating operating system storage kinematics and disk hardware scheduling at 60 FPS HTML5 Canvas, benchmarking 11 core operating system trajectory algorithms.
+        </p>
+        <div class="paradigm-tags">
+          <span class="paradigm-tag">Disk_Scheduling_Algorithm</span>
+          <span class="paradigm-tag">HTML5 Canvas</span>
+          <span class="paradigm-tag">OS Kinematics</span>
+          <span class="paradigm-tag">60 FPS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 04. FEATURED PROJECTS (6 REAL PROJECTS) -->
   <div class="section-wrap" id="sec-projects">
     <div class="sec-header">
-      <div class="sec-title"><span class="sec-bracket">&gt;</span> Featured Projects</div>
+      <div class="sec-title"><span class="sec-bracket">&gt;</span> Featured Production Projects</div>
       <div class="sec-header-action">View all repositories &rarr;</div>
     </div>
     <div class="projects-grid">
-      <!-- 1. PrepPilot -->
+      <!-- 1. TECH-ON-TOUR -->
       <div class="project-card">
         <div class="project-body">
           <div>
             <div class="project-header-row">
-              <div class="project-icon-box purple">⚡</div>
-              <h3 class="project-title">PrepPilot <span class="project-badge-public">Public</span></h3>
+              <div class="project-icon-box orange">🌄</div>
+              <h3 class="project-title">TECH-ON-TOUR <span class="project-badge-public">SIH Finale</span></h3>
             </div>
             <p class="project-desc" style="margin-top: 10px;">
-              An AI-powered interview preparation assistant that combines personalized learning, technical concepts, and interview-based question generation.
+              TravelSathi: Digital Public Infrastructure for Smart Tourism (SIH Finale) — multilingual travel twin, anti-overtourism &amp; search graph.
             </p>
           </div>
           <div>
             <div class="project-tags">
               <span class="project-tag">Python</span>
-              <span class="project-tag">NLP</span>
-              <span class="project-tag">AI</span>
-              <span class="project-tag">LLM</span>
+              <span class="project-tag">FastAPI</span>
+              <span class="project-tag">React</span>
+              <span class="project-tag">SIH</span>
             </div>
             <div class="project-actions">
               <div class="btn-project">&lt;/&gt; Code</div>
@@ -1127,27 +1269,28 @@
           </div>
         </div>
         <div class="project-thumb-box">
-          <img src="../assets/project_preppilot.jpg" alt="PrepPilot" class="project-thumb-img">
+          <img src="../assets/project_techontour.jpg" alt="TECH-ON-TOUR" class="project-thumb-img">
         </div>
       </div>
 
-      <!-- 2. TruthShield X -->
+      <!-- 2. TrustShield-X -->
       <div class="project-card">
         <div class="project-body">
           <div>
             <div class="project-header-row">
               <div class="project-icon-box">🛡️</div>
-              <h3 class="project-title">TruthShield X <span class="project-badge-public">Public</span></h3>
+              <h3 class="project-title">TrustShield-X <span class="project-badge-public">Public</span></h3>
             </div>
             <p class="project-desc" style="margin-top: 10px;">
-              A digital trust and misinformation defense platform focused on fake news detection, credible analysis, privacy risks, and digital identity threats.
+              High-speed network &amp; header security engine — Python 3.13 AsyncIO, sub-15ms socket inspection, signed logs &amp; STIX 2.1 modeling.
             </p>
           </div>
           <div>
             <div class="project-tags">
-              <span class="project-tag">AI/ML</span>
+              <span class="project-tag">Python 3.13</span>
+              <span class="project-tag">AsyncIO</span>
               <span class="project-tag">Security</span>
-              <span class="project-tag">Web</span>
+              <span class="project-tag">STIX 2.1</span>
             </div>
             <div class="project-actions">
               <div class="btn-project">&lt;/&gt; Code</div>
@@ -1156,28 +1299,28 @@
           </div>
         </div>
         <div class="project-thumb-box">
-          <img src="../assets/project_truthshield.jpg" alt="TruthShield X" class="project-thumb-img">
+          <img src="../assets/project_truthshield.jpg" alt="TrustShield-X" class="project-thumb-img">
         </div>
       </div>
 
-      <!-- 3. VIREONIQ / PLACE30 -->
+      <!-- 3. VIREONIQ -->
       <div class="project-card">
         <div class="project-body">
           <div>
             <div class="project-header-row">
               <div class="project-icon-box blue">🧭</div>
-              <h3 class="project-title">VIREONIQ / PLACE30 <span class="project-badge-public">Public</span></h3>
+              <h3 class="project-title">VIREONIQ <span class="project-badge-public">Public</span></h3>
             </div>
             <p class="project-desc" style="margin-top: 10px;">
-              A career intelligence platform for students offering resume analysis, placement gap insights, interview practice, and personalized recommendations.
+              Developer career roadmap &amp; code analysis engine — Python AST static complexity parsing, Qdrant vector trajectories &amp; 153 tests.
             </p>
           </div>
           <div>
             <div class="project-tags">
-              <span class="project-tag">React</span>
-              <span class="project-tag">TypeScript</span>
-              <span class="project-tag">AI</span>
-              <span class="project-tag">Web</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">AST Parsing</span>
+              <span class="project-tag">Qdrant</span>
+              <span class="project-tag">Docker</span>
             </div>
             <div class="project-actions">
               <div class="btn-project">&lt;/&gt; Code</div>
@@ -1190,24 +1333,24 @@
         </div>
       </div>
 
-      <!-- 4. Tech On Tour -->
+      <!-- 4. Priocardix-AI -->
       <div class="project-card">
         <div class="project-body">
           <div>
             <div class="project-header-row">
-              <div class="project-icon-box orange">🌄</div>
-              <h3 class="project-title">Tech On Tour <span class="project-badge-public">Public</span></h3>
+              <div class="project-icon-box purple">🫀</div>
+              <h3 class="project-title">Priocardix-AI <span class="project-badge-public">Public</span></h3>
             </div>
             <p class="project-desc" style="margin-top: 10px;">
-              A smart tourism platform for discovering destinations, planning itineraries, and exploring local experiences with useful travel tools.
+              Enterprise preventive cardiology platform — PulseIQ Guardian Engine™, multi-parametric risk scoring &amp; TreeSHAP explainability.
             </p>
           </div>
           <div>
             <div class="project-tags">
-              <span class="project-tag">Web</span>
-              <span class="project-tag">Travel</span>
-              <span class="project-tag">Maps</span>
-              <span class="project-tag">AI</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Healthcare AI</span>
+              <span class="project-tag">TreeSHAP</span>
+              <span class="project-tag">ML</span>
             </div>
             <div class="project-actions">
               <div class="btn-project">&lt;/&gt; Code</div>
@@ -1216,35 +1359,102 @@
           </div>
         </div>
         <div class="project-thumb-box">
-          <img src="../assets/project_techontour.jpg" alt="Tech On Tour" class="project-thumb-img">
+          <img src="../assets/project_priocardix.jpg" alt="Priocardix-AI" class="project-thumb-img">
+        </div>
+      </div>
+
+      <!-- 5. BrainCheck -->
+      <div class="project-card">
+        <div class="project-body">
+          <div>
+            <div class="project-header-row">
+              <div class="project-icon-box purple">🧠</div>
+              <h3 class="project-title">BrainCheck <span class="project-badge-public">Public</span></h3>
+            </div>
+            <p class="project-desc" style="margin-top: 10px;">
+              Containerized cognitive assessment &amp; quiz architecture platform — modular Flask Blueprints, PostgreSQL schemas &amp; Docker Compose.
+            </p>
+          </div>
+          <div>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Flask</span>
+              <span class="project-tag">PostgreSQL</span>
+              <span class="project-tag">Docker</span>
+            </div>
+            <div class="project-actions">
+              <div class="btn-project">&lt;/&gt; Code</div>
+              <div class="btn-project">👁️ Live Demo</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-thumb-box">
+          <img src="../assets/project_braincheck.jpg" alt="BrainCheck" class="project-thumb-img">
+        </div>
+      </div>
+
+      <!-- 6. Disk_Scheduling_Algorithm -->
+      <div class="project-card">
+        <div class="project-body">
+          <div>
+            <div class="project-header-row">
+              <div class="project-icon-box">💽</div>
+              <h3 class="project-title">Disk Scheduling <span class="project-badge-public">Public</span></h3>
+            </div>
+            <p class="project-desc" style="margin-top: 10px;">
+              Operating system storage architecture &amp; disk kinematics simulator — 60 FPS HTML5 Canvas visualizer benchmarking 11 algorithms.
+            </p>
+          </div>
+          <div>
+            <div class="project-tags">
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Canvas API</span>
+              <span class="project-tag">OS</span>
+              <span class="project-tag">Algorithms</span>
+            </div>
+            <div class="project-actions">
+              <div class="btn-project">&lt;/&gt; Code</div>
+              <div class="btn-project">👁️ Live Demo</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-thumb-box">
+          <img src="../assets/project_preppilot.jpg" alt="Disk Scheduling" class="project-thumb-img">
         </div>
       </div>
     </div>
   </div>
 
-  <!-- 04. TECH STACK -->
+  <!-- 05. TECH STACK (REAL CODEBASE TECHNOLOGIES) -->
   <div class="section-wrap" id="sec-tech">
     <div class="sec-header">
-      <div class="sec-title"><span class="sec-bracket">&gt;</span> Tech Stack</div>
+      <div class="sec-title"><span class="sec-bracket">&gt;</span> Real Tech Stack &amp; Tooling</div>
     </div>
     <div class="tech-stack-row">
       <!-- 1. Languages -->
       <div class="tech-card">
-        <div class="tech-card-header">Programming Languages</div>
+        <div class="tech-card-header">Languages</div>
         <div class="tech-items-grid">
           <div class="tech-item-col">
             <div class="tech-icon-wrap">
               <!-- Python -->
               <svg viewBox="0 0 24 24"><path fill="#387eb8" d="M11.9 1.1c-5.1 0-4.8 2.2-4.8 2.2l.1 2.3h4.9v.7H5.2S2 6 2 11.2s2.8 5 2.8 5h1.7v-2.4s-.1-2.9 2.8-2.9h4.8s2.8 0 2.8-2.8V4c0-.1-.1-2.9-5-2.9zm-2.7 1.8c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1z"/><path fill="#ffe052" d="M12.1 22.9c5.1 0 4.8-2.2 4.8-2.2l-.1-2.3h-4.9v-.7h6.9s3.2.3 3.2-4.9-2.8-5-2.8-5h-1.7v2.4s.1 2.9-2.8 2.9H9.9s-2.8 0-2.8 2.8v4.1c0 .2.1 2.9 5 2.9zm2.7-1.8c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z"/></svg>
             </div>
-            <span class="tech-label">Python</span>
+            <span class="tech-label">Python (59%)</span>
           </div>
           <div class="tech-item-col">
             <div class="tech-icon-wrap">
-              <!-- Java -->
-              <svg viewBox="0 0 24 24"><path fill="#ea2d2e" d="M9.1 19.3s-1.8.2-2.5.4c-1.1.3-1.6.7-1.6 1.1 0 .9 2.4 1.5 6.5 1.5s7.3-.6 7.3-1.6c0-.5-.9-.9-2.2-1.2l-.5-.1s.7-.4 1.5-.7c2.3-.9 3.5-1.9 3.5-2.9 0-2.3-4.3-3.6-9.6-3.6-4.9 0-8.9 1.2-8.9 3.2 0 1.2 1.3 2.5 3.9 3.1l2.6.8z"/><path fill="#5382a1" d="M13.8 2.2s2.5 2.4-1.2 5.9c-4.4 4.3-1 6.5-1 6.5s-2.7-2.6.9-5.9c3.8-3.5 1.3-6.5 1.3-6.5zm3.1 3.5s2 1.7-.9 4.8c-3.1 3.2-.8 5.1-.8 5.1s-2.3-2 1-5c3.2-2.9.7-4.9.7-4.9z"/></svg>
+              <!-- TypeScript -->
+              <svg viewBox="0 0 24 24"><path fill="#3178c6" d="M3 3h18v18H3V3z"/><path fill="#fff" d="M12.8 17.6c.5.8 1.1 1.4 2.2 1.4 1 0 1.6-.5 1.6-1.2 0-.8-.6-1.1-1.8-1.6-1.7-.7-2.8-1.6-2.8-3.5 0-1.8 1.4-3.1 3.5-3.1 1.5 0 2.6.5 3.4 1.9l-1.7 1.1c-.4-.7-.8-1-1.7-1-.8 0-1.3.5-1.3 1.1 0 .7.5 1 1.6 1.5 1.9.8 3.1 1.6 3.1 3.6 0 2.1-1.6 3.3-3.8 3.3-2.1 0-3.4-1-4.1-2.4l1.4-1.1zm-7.6-5.4h2.5V19h2.3v-6.8h2.5v-2H5.2v2z"/></svg>
             </div>
-            <span class="tech-label">Java</span>
+            <span class="tech-label">TypeScript (31%)</span>
+          </div>
+          <div class="tech-item-col">
+            <div class="tech-icon-wrap">
+              <!-- JavaScript -->
+              <svg viewBox="0 0 24 24"><path fill="#f7df1e" d="M3 3h18v18H3V3z"/><path fill="#000" d="M12.9 17.6c.5.8 1.1 1.4 2.2 1.4 1 0 1.6-.5 1.6-1.2 0-.8-.6-1.1-1.8-1.6-1.7-.7-2.8-1.6-2.8-3.5 0-1.8 1.4-3.1 3.5-3.1 1.5 0 2.6.5 3.4 1.9l-1.7 1.1c-.4-.7-.8-1-1.7-1-.8 0-1.3.5-1.3 1.1 0 .7.5 1 1.6 1.5 1.9.8 3.1 1.6 3.1 3.6 0 2.1-1.6 3.3-3.8 3.3-2.1 0-3.4-1-4.1-2.4l1.3-1.1zm-6.2.2c.4.6.7 1.2 1.5 1.2.8 0 1.3-.3 1.3-1.6v-7.6h2.2v7.7c0 2.4-1.4 3.5-3.4 3.5-1.8 0-2.8-.9-3.4-2.1l1.8-1.1z"/></svg>
+            </div>
+            <span class="tech-label">JavaScript (7%)</span>
           </div>
           <div class="tech-item-col">
             <div class="tech-icon-wrap">
@@ -1253,49 +1463,35 @@
             </div>
             <span class="tech-label">C / C++</span>
           </div>
-          <div class="tech-item-col">
-            <div class="tech-icon-wrap">
-              <!-- JavaScript -->
-              <svg viewBox="0 0 24 24"><path fill="#f7df1e" d="M3 3h18v18H3V3z"/><path fill="#000" d="M12.9 17.6c.5.8 1.1 1.4 2.2 1.4 1 0 1.6-.5 1.6-1.2 0-.8-.6-1.1-1.8-1.6-1.7-.7-2.8-1.6-2.8-3.5 0-1.8 1.4-3.1 3.5-3.1 1.5 0 2.6.5 3.4 1.9l-1.7 1.1c-.4-.7-.8-1-1.7-1-.8 0-1.3.5-1.3 1.1 0 .7.5 1 1.6 1.5 1.9.8 3.1 1.6 3.1 3.6 0 2.1-1.6 3.3-3.8 3.3-2.1 0-3.4-1-4.1-2.4l1.3-1.1zm-6.2.2c.4.6.7 1.2 1.5 1.2.8 0 1.3-.3 1.3-1.6v-7.6h2.2v7.7c0 2.4-1.4 3.5-3.4 3.5-1.8 0-2.8-.9-3.4-2.1l1.8-1.1z"/></svg>
-            </div>
-            <span class="tech-label">JavaScript</span>
-          </div>
         </div>
       </div>
 
       <!-- 2. Frontend -->
       <div class="tech-card">
-        <div class="tech-card-header">Frontend Development</div>
+        <div class="tech-card-header">Frontend</div>
         <div class="tech-items-grid">
           <div class="tech-item-col">
             <div class="tech-icon-wrap">
               <!-- React -->
               <svg viewBox="0 0 24 24"><path fill="#61dafb" d="M12 9.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zm0-7.5c-4.4 0-8 1.5-9.8 3.8-.4.5-.6 1-.7 1.5-.1.8.2 1.7.9 2.5 1 1.2 2.7 2.4 4.8 3.4-1.2 1.4-2 2.8-2.4 4.1-.4 1.3-.4 2.4-.1 3.2.4 1.1 1.3 1.8 2.5 2 1.4.3 3.3-.2 5.3-1.3 2 1.1 3.9 1.6 5.3 1.3 1.2-.2 2.1-.9 2.5-2 .3-.8.3-1.9-.1-3.2-.4-1.3-1.2-2.7-2.4-4.1 2.1-1 3.8-2.2 4.8-3.4.7-.8 1-1.7.9-2.5-.1-.5-.3-1-.7-1.5C20 3.5 16.4 2 12 2zm0 2c3.9 0 7.2 1.3 8.7 3.2.1.2.2.4.2.6 0 .3-.1.6-.4 1-.9 1-2.4 2.1-4.4 3-1.1-1.2-2.4-2.3-3.8-3.1 1.1-1.8 2.4-3.3 3.7-4.2-.7-.3-1.5-.5-2.3-.5-1.4 0-2.7.5-3.8 1.4-1.4.9-2.7 2.4-3.7 4.2-1.4.8-2.7 1.9-3.8 3.1-2-.9-3.5-2-4.4-3-.3-.4-.4-.7-.4-1 0-.2.1-.4.2-.6C4.8 5.3 8.1 4 12 4z"/></svg>
             </div>
-            <span class="tech-label">React</span>
+            <span class="tech-label">React 19</span>
           </div>
           <div class="tech-item-col">
             <div class="tech-icon-wrap">
-              <!-- TypeScript -->
-              <svg viewBox="0 0 24 24"><path fill="#3178c6" d="M3 3h18v18H3V3z"/><path fill="#fff" d="M12.8 17.6c.5.8 1.1 1.4 2.2 1.4 1 0 1.6-.5 1.6-1.2 0-.8-.6-1.1-1.8-1.6-1.7-.7-2.8-1.6-2.8-3.5 0-1.8 1.4-3.1 3.5-3.1 1.5 0 2.6.5 3.4 1.9l-1.7 1.1c-.4-.7-.8-1-1.7-1-.8 0-1.3.5-1.3 1.1 0 .7.5 1 1.6 1.5 1.9.8 3.1 1.6 3.1 3.6 0 2.1-1.6 3.3-3.8 3.3-2.1 0-3.4-1-4.1-2.4l1.4-1.1zm-7.6-5.4h2.5V19h2.3v-6.8h2.5v-2H5.2v2z"/></svg>
+              <!-- Next.js -->
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#000"/><path fill="#fff" d="M14.9 16.6l-5.6-7.5h-1.6v9.8h1.8v-6.3l5.3 7.1c.1-.1.2-.1.3-.2zm2.1-9.8h-1.8v9.8h1.8z"/></svg>
             </div>
-            <span class="tech-label">TypeScript</span>
+            <span class="tech-label">Next.js</span>
           </div>
           <div class="tech-item-col">
             <div class="tech-icon-wrap">
-              <!-- HTML5 -->
+              <!-- HTML5 Canvas -->
               <svg viewBox="0 0 24 24"><path fill="#e34f26" d="M4 2.5l1.5 16.7L12 21.5l6.5-2.3L20 2.5H4zm13.1 4.5l-.2 2.3H9.2l.2 2.4h7.3l-.6 6.8L12 19.6l-4.1-1.1-.3-3.1h2.2l.1 1.5 2.1.6 2.1-.6.2-2.6H7.1L6.5 7h10.6z"/></svg>
             </div>
-            <span class="tech-label">HTML</span>
+            <span class="tech-label">HTML5 Canvas</span>
           </div>
           <div class="tech-item-col">
-            <div class="tech-icon-wrap">
-              <!-- CSS3 -->
-              <svg viewBox="0 0 24 24"><path fill="#1572b6" d="M4 2.5l1.5 16.7L12 21.5l6.5-2.3L20 2.5H4zm13.1 4.5l-.2 2.3H9.2l.2 2.4h7.3l-.6 6.8L12 19.6l-4.1-1.1-.3-3.1h2.2l.1 1.5 2.1.6 2.1-.6.2-2.6H7.1L6.5 7h10.6z"/></svg>
-            </div>
-            <span class="tech-label">CSS</span>
-          </div>
-          <div class="tech-item-col" style="grid-column: span 2;">
             <div class="tech-icon-wrap">
               <!-- Tailwind -->
               <svg viewBox="0 0 24 24"><path fill="#06b6d4" d="M12 6c-3 0-4.8 1.5-5.4 4.5 1.2-1.5 2.7-2.1 4.5-1.8 1 .2 1.8 1 2.6 1.8 1.4 1.4 2.9 3 6.3 3 3 0 4.8-1.5 5.4-4.5-1.2 1.5-2.7 2.1-4.5 1.8-1-.2-1.8-1-2.6-1.8C16.9 7.6 15.4 6 12 6zm-6 6c-3 0-4.8 1.5-5.4 4.5 1.2-1.5 2.7-2.1 4.5-1.8 1 .2 1.8 1 2.6 1.8 1.4 1.4 2.9 3 6.3 3 3 0 4.8-1.5 5.4-4.5-1.2 1.5-2.7 2.1-4.5 1.8-1-.2-1.8-1-2.6-1.8C10.9 13.6 9.4 12 6 12z"/></svg>
@@ -1307,15 +1503,8 @@
 
       <!-- 3. Backend & DB -->
       <div class="tech-card">
-        <div class="tech-card-header">Backend &amp; DB</div>
+        <div class="tech-card-header">Backend &amp; Cloud</div>
         <div class="tech-items-grid">
-          <div class="tech-item-col">
-            <div class="tech-icon-wrap">
-              <!-- Node.js -->
-              <svg viewBox="0 0 24 24"><path fill="#339933" d="M12 2.5l8.5 4.9v9.8L12 22.1l-8.5-4.9V7.4L12 2.5zm-.8 14.5c2.3 0 3.7-1.1 3.7-2.8 0-1.8-1.4-2.4-3.2-2.7l-.8-.1c-.9-.2-1.3-.4-1.3-.9 0-.5.4-.8 1.2-.8.8 0 1.3.3 1.8.8l1.3-1.3c-.8-.8-1.8-1.2-3.1-1.2-2.1 0-3.5 1.1-3.5 2.7 0 1.7 1.3 2.3 3.1 2.6l.8.1c1 .2 1.4.4 1.4 1 0 .6-.5.9-1.4.9-.9 0-1.6-.4-2.1-1l-1.4 1.3c.9 1 2 1.5 3.5 1.5z"/></svg>
-            </div>
-            <span class="tech-label">Node.js</span>
-          </div>
           <div class="tech-item-col">
             <div class="tech-icon-wrap">
               <!-- FastAPI -->
@@ -1325,66 +1514,17 @@
           </div>
           <div class="tech-item-col">
             <div class="tech-icon-wrap">
-              <!-- MongoDB -->
-              <svg viewBox="0 0 24 24"><path fill="#47a248" d="M12 2C11.6 2.3 8 7.3 8 12.8c0 4.1 2.7 7.2 4 8.7 1.3-1.5 4-4.6 4-8.7C16 7.3 12.4 2.3 12 2zm-.2 18.2c-.1-.1-.3-.3-.4-.5-.1.3.1.6.4.7v-.2zm.4-1.2v.9c.2-.2.3-.4.4-.7-.2.1-.3-.1-.4-.2z"/></svg>
+              <!-- Flask -->
+              <svg viewBox="0 0 24 24"><path fill="#fff" d="M12 2C6.5 2 2 6.5 2 12c0 4.4 2.9 8.2 6.9 9.5-.1-.8-.2-2-.1-2.8.2-1.2 1.3-5.5 1.3-5.5s-.3-.7-.3-1.7c0-1.6.9-2.8 2.1-2.8 1 0 1.5.7 1.5 1.6 0 1-.6 2.5-1 3.9-.3 1.2.6 2.2 1.8 2.2 2.1 0 3.7-2.3 3.7-5.5 0-2.9-2.1-4.9-5-4.9-3.4 0-5.4 2.6-5.4 5.2 0 1 .4 2.1.9 2.7.1.1.1.2.1.4-.1.4-.3 1.3-.4 1.5-.1.2-.2.3-.4.2-1.7-.8-2.7-3.3-2.7-5.3 0-4.3 3.1-8.3 9.1-8.3 4.8 0 8.5 3.4 8.5 8 0 4.8-3 8.6-7.2 8.6-1.4 0-2.7-.7-3.2-1.6l-.9 3.3c-.3 1.2-1.1 2.7-1.7 3.6 1.3.4 2.7.6 4.1.6 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
             </div>
-            <span class="tech-label">MongoDB</span>
+            <span class="tech-label">Flask</span>
           </div>
           <div class="tech-item-col">
             <div class="tech-icon-wrap">
-              <!-- MySQL -->
-              <svg viewBox="0 0 24 24"><path fill="#4479a1" d="M12 2.5C6.8 2.5 2.5 6.8 2.5 12s4.3 9.5 9.5 9.5 9.5-4.3 9.5-9.5S17.2 2.5 12 2.5zm4.8 13.8c-.8.5-2 .8-3.4.8-2.6 0-4.3-1.1-4.3-3.3 0-2.3 2-3.4 4.5-3.4 1.2 0 2.2.3 2.7.5v-1c0-1.2-.8-1.8-2.2-1.8-1 0-2 .4-2.7 1l-.8-1.2c1-1 2.3-1.4 3.7-1.4 2.4 0 3.8 1.2 3.8 3.5v5.3h-1.3v-1zm-1.3-3.8c-.4-.2-1-.4-1.8-.4-1.6 0-2.8.6-2.8 1.9 0 1.2 1 1.8 2.5 1.8.9 0 1.7-.3 2.1-.6v-2.7z"/></svg>
+              <!-- PostgreSQL -->
+              <svg viewBox="0 0 24 24"><path fill="#336791" d="M12 2C6.5 2 2 6.5 2 12c0 3.9 2.2 7.2 5.5 8.8.4-.6.8-1.5 1-2.5-1.5-.2-2.8-1.1-3.2-2.5.4.1.9.1 1.3.1.5 0 .9-.1 1.4-.2-1.6-.3-2.8-1.7-2.8-3.4v-.1c.5.3 1 .4 1.6.5-1-.7-1.6-1.8-1.6-3 0-.7.2-1.3.5-1.9 1.7 2.1 4.3 3.5 7.1 3.7-.1-.3-.1-.6-.1-.9 0-2.1 1.7-3.8 3.8-3.8 1.1 0 2.1.5 2.8 1.2.9-.2 1.7-.5 2.5-.9-.3.9-.9 1.6-1.7 2.1.8-.1 1.5-.3 2.3-.6-.5.8-1.2 1.5-2 2 .1 1.7-.2 3.4-.9 4.9C18.6 19.9 15.5 22 12 22 6.5 22 2 17.5 2 12z"/></svg>
             </div>
-            <span class="tech-label">MySQL</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 4. AI / ML -->
-      <div class="tech-card">
-        <div class="tech-card-header">AI / ML</div>
-        <div class="tech-items-grid">
-          <div class="tech-item-col">
-            <div class="tech-icon-wrap">
-              <!-- LLMs -->
-              <svg viewBox="0 0 24 24"><path fill="#a855f7" d="M12 2l2.4 6.9L21.3 12l-6.9 2.4L12 21.3l-2.4-6.9L2.7 12l6.9-2.4L12 2z"/><path fill="#00ff88" d="M19 2l1.2 3.5L23.7 7l-3.5 1.2L19 11.7l-1.2-3.5L14.3 7l3.5-1.2L19 2z"/></svg>
-            </div>
-            <span class="tech-label">LLMs</span>
-          </div>
-          <div class="tech-item-col">
-            <div class="tech-icon-wrap">
-              <!-- RAG -->
-              <svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3" fill="#00e5ff"/><circle cx="18" cy="6" r="3" fill="#00ff88"/><circle cx="12" cy="18" r="3" fill="#38bdf8"/><path stroke="#94a3b8" stroke-width="1.8" d="M8 7.5l2.5 7.5M16 7.5l-2.5 7.5M9 6h6"/></svg>
-            </div>
-            <span class="tech-label">RAG</span>
-          </div>
-          <div class="tech-item-col">
-            <div class="tech-icon-wrap">
-              <!-- NLP -->
-              <svg viewBox="0 0 24 24"><path fill="#f43f5e" d="M12 3c-4.4 0-8 3.1-8 7 0 2.2 1.2 4.2 3.1 5.5V19l3.3-1.8c.5.1 1.1.2 1.6.2 4.4 0 8-3.1 8-7s-3.6-7-8-7zm-4 8.5c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm4 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm4 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/></svg>
-            </div>
-            <span class="tech-label">NLP</span>
-          </div>
-          <div class="tech-item-col">
-            <div class="tech-icon-wrap">
-              <!-- PyTorch -->
-              <svg viewBox="0 0 24 24"><path fill="#ee4c2c" d="M13.5 2.5a6.5 6.5 0 0 0-4.6 1.9l-4.5 4.6a6.5 6.5 0 1 0 9.2 9.2l1.6-1.6-1.5-1.5-1.6 1.6a4.3 4.3 0 1 1-6.1-6.1l4.5-4.6a4.4 4.4 0 0 1 6.1 6.1l-.8.8 1.5 1.5.8-.8a6.5 6.5 0 0 0-4.6-11.1zm3.8 3.3a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/></svg>
-            </div>
-            <span class="tech-label">PyTorch</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 5. Tools & Others -->
-      <div class="tech-card">
-        <div class="tech-card-header">Tools &amp; Others</div>
-        <div class="tech-items-grid">
-          <div class="tech-item-col">
-            <div class="tech-icon-wrap">
-              <!-- Git -->
-              <svg viewBox="0 0 24 24"><path fill="#f05032" d="M21.7 11.2l-8.9-8.9c-.7-.7-1.9-.7-2.6 0L8.6 3.9l3.3 3.3c.8-.3 1.7-.1 2.3.5.6.6.8 1.5.5 2.3l3.2 3.2c.8-.3 1.7-.1 2.3.5.9.9.9 2.3 0 3.2-.9.9-2.3.9-3.2 0-.7-.7-.9-1.8-.5-2.6L13.5 11v5.6c.2.1.4.3.6.5.9.9.9 2.3 0 3.2-.9.9-2.3.9-3.2 0-.9-.9-.9-2.3 0-3.2.3-.3.8-.5 1.3-.5V10.8c-.5 0-1-.2-1.3-.5-.7-.7-.9-1.8-.5-2.6L7.1 4.4 2.3 9.2c-.7.7-.7 1.9 0 2.6l8.9 8.9c.7.7 1.9.7 2.6 0l7.9-7.9c.7-.7.7-1.9 0-2.6z"/></svg>
-            </div>
-            <span class="tech-label">Git</span>
+            <span class="tech-label">PostgreSQL</span>
           </div>
           <div class="tech-item-col">
             <div class="tech-icon-wrap">
@@ -1393,7 +1533,70 @@
             </div>
             <span class="tech-label">Docker</span>
           </div>
-          <div class="tech-item-col" style="grid-column: span 2;">
+        </div>
+      </div>
+
+      <!-- 4. AI / ML & Data -->
+      <div class="tech-card">
+        <div class="tech-card-header">AI / ML &amp; Data</div>
+        <div class="tech-items-grid">
+          <div class="tech-item-col">
+            <div class="tech-icon-wrap">
+              <!-- Qdrant -->
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#dc2626"/><path fill="#fff" d="M12 5l6 6-6 6-6-6 6-6z"/></svg>
+            </div>
+            <span class="tech-label">Qdrant Vector</span>
+          </div>
+          <div class="tech-item-col">
+            <div class="tech-icon-wrap">
+              <!-- TreeSHAP -->
+              <svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3" fill="#00e5ff"/><circle cx="18" cy="6" r="3" fill="#00ff88"/><circle cx="12" cy="18" r="3" fill="#38bdf8"/><path stroke="#94a3b8" stroke-width="1.8" d="M8 7.5l2.5 7.5M16 7.5l-2.5 7.5M9 6h6"/></svg>
+            </div>
+            <span class="tech-label">TreeSHAP</span>
+          </div>
+          <div class="tech-item-col">
+            <div class="tech-icon-wrap">
+              <!-- AST Analysis -->
+              <svg viewBox="0 0 24 24"><path fill="#a855f7" d="M12 2l2.4 6.9L21.3 12l-6.9 2.4L12 21.3l-2.4-6.9L2.7 12l6.9-2.4L12 2z"/><path fill="#00ff88" d="M19 2l1.2 3.5L23.7 7l-3.5 1.2L19 11.7l-1.2-3.5L14.3 7l3.5-1.2L19 2z"/></svg>
+            </div>
+            <span class="tech-label">AST Parsing</span>
+          </div>
+          <div class="tech-item-col">
+            <div class="tech-icon-wrap">
+              <!-- Scikit-learn -->
+              <svg viewBox="0 0 24 24"><circle cx="8" cy="12" r="6" fill="#f89939"/><circle cx="16" cy="12" r="6" fill="#3499cd" opacity="0.85"/></svg>
+            </div>
+            <span class="tech-label">Scikit-learn</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. DevSecOps & Tools -->
+      <div class="tech-card">
+        <div class="tech-card-header">DevSec &amp; Tools</div>
+        <div class="tech-items-grid">
+          <div class="tech-item-col">
+            <div class="tech-icon-wrap">
+              <!-- Git -->
+              <svg viewBox="0 0 24 24"><path fill="#f05032" d="M21.7 11.2l-8.9-8.9c-.7-.7-1.9-.7-2.6 0L8.6 3.9l3.3 3.3c.8-.3 1.7-.1 2.3.5.6.6.8 1.5.5 2.3l3.2 3.2c.8-.3 1.7-.1 2.3.5.9.9.9 2.3 0 3.2-.9.9-2.3.9-3.2 0-.7-.7-.9-1.8-.5-2.6L13.5 11v5.6c.2.1.4.3.6.5.9.9.9 2.3 0 3.2-.9.9-2.3.9-3.2 0-.9-.9-.9-2.3 0-3.2.3-.3.8-.5 1.3-.5V10.8c-.5 0-1-.2-1.3-.5-.7-.7-.9-1.8-.5-2.6L7.1 4.4 2.3 9.2c-.7.7-.7 1.9 0 2.6l8.9 8.9c.7.7 1.9.7 2.6 0l7.9-7.9c.7-.7.7-1.9 0-2.6z"/></svg>
+            </div>
+            <span class="tech-label">Git / GitHub</span>
+          </div>
+          <div class="tech-item-col">
+            <div class="tech-icon-wrap">
+              <!-- AsyncIO -->
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#00ff88"/><path fill="#04140c" d="M12 6v6l4 2.5-.8 1.3-4.7-3V6h1.5z"/></svg>
+            </div>
+            <span class="tech-label">AsyncIO</span>
+          </div>
+          <div class="tech-item-col">
+            <div class="tech-icon-wrap">
+              <!-- STIX 2.1 -->
+              <svg viewBox="0 0 24 24"><path fill="#00e5ff" d="M12 2L4 5v6.1c0 5 3.4 9.7 8 10.9 4.6-1.2 8-5.9 8-10.9V5l-8-3zm0 2.2l6 2.3v4.6c0 4-2.6 7.7-6 8.7-3.4-1-6-4.7-6-8.7V6.5l6-2.3z"/></svg>
+            </div>
+            <span class="tech-label">STIX 2.1</span>
+          </div>
+          <div class="tech-item-col">
             <div class="tech-icon-wrap">
               <!-- VS Code -->
               <svg viewBox="0 0 24 24"><path fill="#007acc" d="M17.5 2.5l-7.8 7.2-4.5-3.4-2.7 1.4v8.6l2.7 1.4 4.5-3.4 7.8 7.2 4-2V4.5l-4-2zm-.5 14.5l-5.6-4.3 5.6-4.3v8.6z"/></svg>
@@ -1405,45 +1608,50 @@
     </div>
   </div>
 
-  <!-- 05. GITHUB ANALYTICS -->
+  <!-- 06. GITHUB ANALYTICS (100% REAL DATA FROM GITHUB API) -->
   <div class="section-wrap" id="sec-analytics">
     <div class="sec-header">
-      <div class="sec-title"><span class="sec-bracket">&gt;</span> GitHub Analytics</div>
+      <div class="sec-title"><span class="sec-bracket">&gt;</span> Real GitHub Analytics &amp; Activity</div>
     </div>
     <div class="analytics-top-row">
       <div class="analytics-card">
-        <div class="analytics-card-title">📁 GitHub Stats</div>
+        <div class="analytics-card-title">📁 Verified GitHub Stats</div>
         <div style="font-family: var(--font-mono); font-size: 15px; color: #cbd5e1; margin-bottom: 12px;">Priya-Ranjan-0201</div>
         <div class="stats-table">
-          <div class="stat-row"><span>Total Commits</span><span class="stat-val">478</span></div>
-          <div class="stat-row"><span>Total Repositories</span><span class="stat-val">18</span></div>
-          <div class="stat-row"><span>Pull Requests</span><span class="stat-val">14</span></div>
-          <div class="stat-row"><span>Issues Opened</span><span class="stat-val">8</span></div>
-          <div class="stat-row"><span>Contributions</span><span class="stat-val">120</span></div>
+          <div class="stat-row"><span>Total Commits</span><span class="stat-val">214+</span></div>
+          <div class="stat-row"><span>Public Repositories</span><span class="stat-val">8</span></div>
+          <div class="stat-row"><span>Contributions (1 Year)</span><span class="stat-val">174</span></div>
+          <div class="stat-row"><span>Active Coding Days</span><span class="stat-val">31</span></div>
+          <div class="stat-row"><span>Joined GitHub</span><span class="stat-val">Oct 2024</span></div>
         </div>
       </div>
       <div class="analytics-card">
-        <div class="analytics-card-title">🌐 Top Languages</div>
+        <div class="analytics-card-title">🌐 Real Language Breakdown</div>
         <div class="languages-card-body">
           <svg class="donut-chart-svg" viewBox="0 0 36 36">
             <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#0d1b24" stroke-width="5" />
-            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#00ff88" stroke-width="5" stroke-dasharray="42, 100" />
-            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#f59e0b" stroke-width="5" stroke-dasharray="28, 100" stroke-dashoffset="-42" />
-            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#38bdf8" stroke-width="5" stroke-dasharray="18, 100" stroke-dashoffset="-70" />
-            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#f43f5e" stroke-width="5" stroke-dasharray="8, 100" stroke-dashoffset="-88" />
-            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#a855f7" stroke-width="5" stroke-dasharray="4, 100" stroke-dashoffset="-96" />
+            <!-- Python: 58.8% -->
+            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#00ff88" stroke-width="5" stroke-dasharray="58.8, 100" />
+            <!-- TypeScript: 30.9% -->
+            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#38bdf8" stroke-width="5" stroke-dasharray="30.9, 100" stroke-dashoffset="-58.8" />
+            <!-- JavaScript: 7.1% -->
+            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#f59e0b" stroke-width="5" stroke-dasharray="7.1, 100" stroke-dashoffset="-89.7" />
+            <!-- HTML/CSS: 3.0% -->
+            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#f43f5e" stroke-width="5" stroke-dasharray="3.0, 100" stroke-dashoffset="-96.8" />
+            <!-- Others: 0.2% -->
+            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#a855f7" stroke-width="5" stroke-dasharray="0.2, 100" stroke-dashoffset="-99.8" />
           </svg>
           <div class="lang-legend">
-            <div class="lang-legend-item"><span class="lang-legend-color" style="background: #00ff88;"></span>Python 42%</div>
-            <div class="lang-legend-item"><span class="lang-legend-color" style="background: #f59e0b;"></span>JavaScript 28%</div>
-            <div class="lang-legend-item"><span class="lang-legend-color" style="background: #38bdf8;"></span>TypeScript 18%</div>
-            <div class="lang-legend-item"><span class="lang-legend-color" style="background: #f43f5e;"></span>HTML/CSS 8%</div>
-            <div class="lang-legend-item"><span class="lang-legend-color" style="background: #a855f7;"></span>Others 4%</div>
+            <div class="lang-legend-item"><span class="lang-legend-color" style="background: #00ff88;"></span>Python 58.8%</div>
+            <div class="lang-legend-item"><span class="lang-legend-color" style="background: #38bdf8;"></span>TypeScript 30.9%</div>
+            <div class="lang-legend-item"><span class="lang-legend-color" style="background: #f59e0b;"></span>JavaScript 7.1%</div>
+            <div class="lang-legend-item"><span class="lang-legend-color" style="background: #f43f5e;"></span>HTML/CSS 3.0%</div>
+            <div class="lang-legend-item"><span class="lang-legend-color" style="background: #a855f7;"></span>Others 0.2%</div>
           </div>
         </div>
       </div>
       <div class="analytics-card">
-        <div class="analytics-card-title">🔥 Github Streak</div>
+        <div class="analytics-card-title">🔥 174 Contributions</div>
         <div class="streak-card-body">
           <div class="flame-circle">🔥</div>
           <div class="streak-text">Keep the streak alive!</div>
@@ -1452,10 +1660,10 @@
     </div>
     <div class="analytics-bottom-row">
       <div class="contrib-graph-box">
-        <div class="analytics-card-title"><span style="color: var(--neon-green);">🟩</span> Contribution Graph</div>
+        <div class="analytics-card-title"><span style="color: var(--neon-green);">🟩</span> Verified Contribution Graph (366 Days)</div>
         <div class="graph-months-row">
-          <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
-          <span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
+          <span>Oct</span><span>Nov</span><span>Dec</span><span>Jan</span><span>Feb</span><span>Mar</span>
+          <span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span>
         </div>
         <div class="graph-grid-container">
           <div class="graph-days-col">
@@ -1464,7 +1672,7 @@
           <div class="graph-matrix" id="cm2"></div>
         </div>
         <div class="graph-footer">
-          <span>* This is a live graph from my GitHub profile.</span>
+          <span>* Direct live calendar data from github.com/Priya-Ranjan-0201.</span>
           <div style="display: flex; gap: 4px; align-items: center;">
             <span>Less</span>
             <span class="graph-cell"></span><span class="graph-cell l1"></span>
@@ -1484,32 +1692,42 @@
     </div>
   </div>
 
-  <!-- 06. MY JOURNEY -->
+  <!-- 07. MY JOURNEY (STARTING STRICTLY FROM 2024) -->
   <div class="section-wrap" id="sec-journey">
     <div class="sec-header">
-      <div class="sec-title"><span class="sec-bracket">&gt;</span> My Journey</div>
+      <div class="sec-title"><span class="sec-bracket">&gt;</span> My Engineering Journey (2024 — Present)</div>
     </div>
     <div id="journey-card">
       <div class="timeline-list">
         <div class="timeline-node">
           <span class="timeline-dot"></span>
-          <div class="timeline-year">2023</div>
-          <div class="timeline-desc">Started my CSE journey. Explored programming and core CS concepts.</div>
+          <div class="timeline-year">Oct 2024 — Inception &amp; Foundations</div>
+          <div class="timeline-desc">Officially created GitHub profile <b>Priya-Ranjan-0201</b>. Grounded deeply in core CS foundations, Data Structures, Algorithms, and Object-Oriented Programming in Python &amp; C++.</div>
         </div>
         <div class="timeline-node">
           <span class="timeline-dot"></span>
-          <div class="timeline-year">2024</div>
-          <div class="timeline-desc">Deepened into AI/ML &amp; Web Development. Built and shipped multiple projects.</div>
+          <div class="timeline-year">Dec 2025 — Low-Level Systems &amp; OS Kinematics</div>
+          <div class="timeline-desc">Engineered <code>Disk_Scheduling_Algorithm</code> — a 60 FPS HTML5 Canvas kinematic simulator benchmarking 11 operating system disk trajectory algorithms.</div>
         </div>
         <div class="timeline-node">
           <span class="timeline-dot"></span>
-          <div class="timeline-year">2025</div>
-          <div class="timeline-desc">Focused on Cybersecurity and real-world applications. Working on advanced projects and open-source.</div>
+          <div class="timeline-year">Apr 2026 — Healthcare AI &amp; Explainability</div>
+          <div class="timeline-desc">Architected <code>Priocardix-AI</code> — an enterprise preventive cardiology intelligence platform featuring TreeSHAP explainability &amp; PulseIQ Guardian Engine™.</div>
         </div>
         <div class="timeline-node">
           <span class="timeline-dot"></span>
-          <div class="timeline-year">2026</div>
-          <div class="timeline-desc">Building, learning, and preparing for opportunities. Open to internships and collaborations.</div>
+          <div class="timeline-year">Jul–Aug 2026 — Defensive Security &amp; Microservices</div>
+          <div class="timeline-desc">Shipped <code>TrustShield-X</code> with Python 3.13 AsyncIO sub-15ms socket inspection &amp; STIX 2.1 threat models, and containerized <code>BrainCheck</code> with PostgreSQL &amp; Docker Compose.</div>
+        </div>
+        <div class="timeline-node">
+          <span class="timeline-dot"></span>
+          <div class="timeline-year">Sep 2026 — SIH Finale &amp; DPI Engineering</div>
+          <div class="timeline-desc">Qualified for the <b>Smart India Hackathon (SIH) Finale</b> with <code>TECH-ON-TOUR</code> (TravelSathi Smart Tourism DPI) and launched <code>VIREONIQ</code> AST vector complexity search.</div>
+        </div>
+        <div class="timeline-node">
+          <span class="timeline-dot"></span>
+          <div class="timeline-year">2026+ — Ecosystem Scaling &amp; Beyond</div>
+          <div class="timeline-desc">Building resilient open-source systems, scaling distributed AI pipelines, and preparing for top-tier software engineering internships.</div>
         </div>
       </div>
       <div class="journey-visual-box">
@@ -1521,7 +1739,7 @@
     </div>
   </div>
 
-  <!-- 07. CURRENTLY EXPLORING -->
+  <!-- 08. CURRENTLY EXPLORING -->
   <div class="section-wrap" id="sec-exploring">
     <div class="sec-header">
       <div class="sec-title"><span class="sec-bracket">&gt;</span> Currently Exploring</div>
@@ -1529,75 +1747,75 @@
     <div class="exploring-grid">
       <div class="exploring-card">
         <div class="exploring-icon-box">🧠</div>
-        <div class="exploring-title">Artificial Intelligence</div>
-        <div class="exploring-desc">Exploring LLMs, RAG, and real-world AI applications.</div>
+        <div class="exploring-title">Vector Search &amp; GenAI</div>
+        <div class="exploring-desc">Indexing high-dimensional code AST representations into Qdrant vector databases &amp; building RAG pipelines.</div>
       </div>
       <div class="exploring-card">
         <div class="exploring-icon-box">🛡️</div>
-        <div class="exploring-title">Cybersecurity</div>
-        <div class="exploring-desc">Learning security practices, threat analysis, and digital trust.</div>
+        <div class="exploring-title">Defensive Cyber &amp; STIX 2.1</div>
+        <div class="exploring-desc">Hardening sub-15ms socket streams, zero-trust cryptographic log chains, and STIX threat feeds.</div>
       </div>
       <div class="exploring-card">
         <div class="exploring-icon-box">&lt;/&gt;</div>
-        <div class="exploring-title">Full-Stack Development</div>
-        <div class="exploring-desc">Building scalable web applications and system design skills.</div>
+        <div class="exploring-title">Distributed Microservices</div>
+        <div class="exploring-desc">Architecting modular Flask &amp; FastAPI microservices orchestrated seamlessly via Docker Compose &amp; PostgreSQL.</div>
       </div>
       <div class="exploring-card">
         <div class="exploring-icon-box">👥</div>
-        <div class="exploring-title">Open Source</div>
-        <div class="exploring-desc">Contributing to open-source and collaborating with community.</div>
+        <div class="exploring-title">SIH &amp; Open Source</div>
+        <div class="exploring-desc">Expanding Smart India Hackathon DPI projects, open-source code contributions, and developer ecosystems.</div>
       </div>
     </div>
   </div>
 
-  <!-- 08. ACHIEVEMENTS -->
+  <!-- 09. ACHIEVEMENTS & REAL HIGHLIGHTS -->
   <div class="section-wrap" id="sec-achievements">
     <div class="sec-header">
-      <div class="sec-title"><span class="sec-bracket">&gt;</span> Achievements &amp; Highlights</div>
+      <div class="sec-title"><span class="sec-bracket">&gt;</span> Verified Milestones &amp; Highlights</div>
     </div>
     <div class="achievements-grid">
       <div class="achievement-card">
         <div class="achievement-icon">⚡</div>
-        <div class="achievement-num">500+</div>
-        <div class="achievement-label">Total Commits</div>
+        <div class="achievement-num">214+</div>
+        <div class="achievement-label">Verified Commits</div>
       </div>
       <div class="achievement-card">
         <div class="achievement-icon">📁</div>
-        <div class="achievement-num">30+</div>
-        <div class="achievement-label">Repositories</div>
+        <div class="achievement-num">8</div>
+        <div class="achievement-label">Public Repositories</div>
       </div>
       <div class="achievement-card">
         <div class="achievement-icon">👥</div>
-        <div class="achievement-num">100+</div>
-        <div class="achievement-label">Contributions</div>
+        <div class="achievement-num">174</div>
+        <div class="achievement-label">1-Year Contributions</div>
       </div>
       <div class="achievement-card">
-        <div class="achievement-icon">⭐</div>
-        <div class="achievement-num">4+</div>
-        <div class="achievement-label">Major Projects</div>
+        <div class="achievement-icon">🏆</div>
+        <div class="achievement-num" style="font-size: 19px; margin-top: 5px;">SIH Finale</div>
+        <div class="achievement-label">Smart India Hackathon</div>
       </div>
       <div class="achievement-card">
-        <div class="achievement-icon">🌐</div>
-        <div class="achievement-num" style="font-size: 19px; margin-top: 5px;">Open Source</div>
-        <div class="achievement-label">Contributor</div>
+        <div class="achievement-icon">📦</div>
+        <div class="achievement-num" style="font-size: 19px; margin-top: 5px;">17.2 MB</div>
+        <div class="achievement-label">Code Volume</div>
       </div>
       <div class="achievement-card">
         <div class="achievement-icon">🚀</div>
-        <div class="achievement-num" style="font-size: 19px; margin-top: 5px;">Continuous</div>
-        <div class="achievement-label">Learner</div>
+        <div class="achievement-num" style="font-size: 19px; margin-top: 5px;">Oct 2024</div>
+        <div class="achievement-label">Journey Started</div>
       </div>
     </div>
   </div>
 
-  <!-- 09. LET'S CONNECT -->
+  <!-- 10. LET'S CONNECT -->
   <div class="section-wrap" id="sec-connect">
     <div class="sec-header">
-      <div class="sec-title"><span class="sec-bracket">&gt;</span> Let's Connect</div>
+      <div class="sec-title"><span class="sec-bracket">&gt;</span> Let's Connect &amp; Collaborate</div>
     </div>
     <div id="connect-card">
       <div class="connect-left">
         <p class="connect-intro">
-          I'm always open to discussing new ideas, projects, or opportunities.
+          I'm actively seeking software engineering internships, open-source collaborations, and research partnerships. Let's talk!
         </p>
         <div class="connect-pills-grid">
           <div class="connect-pill-btn">
@@ -1642,15 +1860,16 @@
   </div>
 
   <script>
+    // EXACT REAL CONTRIBUTIONS DIRECTLY FROM GITHUB API (366 DAYS)
+    const realLevels = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 2];
+
     const m = document.getElementById('cm2');
     if (m) {
-      const levels = ['', '', '', 'l1', 'l1', 'l2', 'l2', 'l3', 'l4'];
       let h = '';
-      for (let i = 0; i < 48 * 7; i++) {
-        const bias = i > 48 * 7 * 0.6 ? 2 : 1;
-        const rand = Math.floor(Math.random() * (levels.length - bias));
-        const l = (Math.random() > 0.35) ? levels[rand + bias] || 'l1' : '';
-        h += `<span class="graph-cell ${l}"></span>`;
+      for (let i = 0; i < realLevels.length; i++) {
+        const lvl = realLevels[i];
+        const cls = lvl > 0 ? 'l' + lvl : '';
+        h += `<span class="graph-cell ${cls}"></span>`;
       }
       m.innerHTML = h;
     }

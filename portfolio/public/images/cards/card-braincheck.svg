@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 110" width="100%" height="110" fill="none">
+  <defs>
+    <linearGradient id="brainBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070B10"/>
+      <stop offset="50%" stop-color="#0E0A17"/>
+      <stop offset="100%" stop-color="#140D22"/>
+    </linearGradient>
+    <linearGradient id="brainAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D2A8FF"/>
+      <stop offset="100%" stop-color="#A371F7"/>
+    </linearGradient>
+    <filter id="synapseGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes synapsePulse {
+      0%, 100% { r: 3px; opacity: 0.5; }
+      50% { r: 5.5px; opacity: 1; filter: drop-shadow(0 0 6px #D2A8FF); }
+    }
+    @keyframes axonFlow {
+      0% { stroke-dashoffset: 80; opacity: 0.2; }
+      50% { opacity: 1; }
+      100% { stroke-dashoffset: 0; opacity: 0.2; }
+    }
+    .node-1 { animation: synapsePulse 2.4s ease-in-out infinite 0s; }
+    .node-2 { animation: synapsePulse 2.4s ease-in-out infinite 0.5s; }
+    .node-3 { animation: synapsePulse 2.4s ease-in-out infinite 1.0s; }
+    .node-4 { animation: synapsePulse 2.4s ease-in-out infinite 1.5s; }
+    .node-5 { animation: synapsePulse 2.4s ease-in-out infinite 2.0s; }
+
+    .axon-flow {
+      stroke-dasharray: 12 28;
+      animation: axonFlow 3.5s linear infinite;
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="418" height="108" rx="10" fill="url(#brainBg)" stroke="#21262D" stroke-width="1.2"/>
+  <line x1="1" y1="1" x2="419" y2="1" stroke="url(#brainAccent)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Left Content Block -->
+  <g transform="translate(22, 0)">
+    <!-- Category Tag -->
+    <text x="0" y="32" font-family="'SF Mono', 'Segoe UI Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#D2A8FF" letter-spacing="1.5px">FULL-STACK &amp; DOCKER</text>
+
+    <!-- Project Title -->
+    <text x="0" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="800" fill="#F0F6FC" letter-spacing="2px">BrainCheck</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#8B949E" letter-spacing="0.2px">Cognitive Assessment Architecture</text>
+
+    <!-- Tags -->
+    <g transform="translate(0, 92)">
+      <text font-family="'SF Mono', Consolas, monospace" font-size="9" font-weight="600" fill="#D2A8FF">FLASK</text>
+      <text x="42" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
+      <text x="54" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">POSTGRESQL</text>
+      <text x="134" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
+      <text x="146" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">DOCKER</text>
+    </g>
+  </g>
+
+  <!-- Right Animated Neural Synaptic Web -->
+  <g>
+    <!-- Background Halo -->
+    <circle cx="350" cy="55" r="40" fill="#A371F7" fill-opacity="0.03"/>
+
+    <!-- Synaptic Axon Baseline Paths -->
+    <line x1="324" y1="42" x2="348" y2="30" stroke="#251A38" stroke-width="1.5"/>
+    <line x1="348" y1="30" x2="376" y2="44" stroke="#251A38" stroke-width="1.5"/>
+    <line x1="376" y1="44" x2="368" y2="74" stroke="#251A38" stroke-width="1.5"/>
+    <line x1="368" y1="74" x2="336" y2="76" stroke="#251A38" stroke-width="1.5"/>
+    <line x1="336" y1="76" x2="324" y2="42" stroke="#251A38" stroke-width="1.5"/>
+    <line x1="348" y1="30" x2="352" y2="56" stroke="#251A38" stroke-width="1.5"/>
+    <line x1="352" y1="56" x2="368" y2="74" stroke="#251A38" stroke-width="1.5"/>
+
+    <!-- Animated Firing Axon Pulses -->
+    <line x1="324" y1="42" x2="348" y2="30" stroke="#D2A8FF" stroke-width="1.8" class="axon-flow"/>
+    <line x1="348" y1="30" x2="376" y2="44" stroke="#A371F7" stroke-width="1.8" class="axon-flow"/>
+    <line x1="376" y1="44" x2="368" y2="74" stroke="#D2A8FF" stroke-width="1.8" class="axon-flow"/>
+    <line x1="368" y1="74" x2="336" y2="76" stroke="#A371F7" stroke-width="1.8" class="axon-flow"/>
+    <line x1="336" y1="76" x2="324" y2="42" stroke="#D2A8FF" stroke-width="1.8" class="axon-flow"/>
+
+    <!-- Interconnected Synaptic Neuron Nodes with Sequential Firing -->
+    <!-- Node 1 -->
+    <circle cx="324" cy="42" r="3.5" fill="#D2A8FF" class="node-1" filter="url(#synapseGlow)"/>
+    <!-- Node 2 -->
+    <circle cx="348" cy="30" r="4" fill="#A371F7" class="node-2" filter="url(#synapseGlow)"/>
+    <!-- Node 3 -->
+    <circle cx="376" cy="44" r="4.5" fill="#D2A8FF" class="node-3" filter="url(#synapseGlow)"/>
+    <!-- Node 4 -->
+    <circle cx="368" cy="74" r="4" fill="#A371F7" class="node-4" filter="url(#synapseGlow)"/>
+    <!-- Node 5 -->
+    <circle cx="336" cy="76" r="3.5" fill="#D2A8FF" class="node-5" filter="url(#synapseGlow)"/>
+    <!-- Central Interneuron Core -->
+    <circle cx="352" cy="56" r="3" fill="#FFFFFF"/>
+  </g>
+</svg>

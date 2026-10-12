@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 
 options = Options()
 options.add_argument('--headless=new')
-options.add_argument('--window-size=1040,6000')
+options.add_argument('--window-size=1040,7500')
 options.add_argument('--force-device-scale-factor=2')
 options.add_argument('--hide-scrollbars')
 
@@ -19,6 +19,7 @@ time.sleep(3)
 sections = [
     ('hero-banner', 'assets/hero-banner.png'),
     ('sec-about', 'assets/about-me.png'),
+    ('sec-paradigms', 'assets/engineering-paradigms.png'),
     ('sec-projects', 'assets/featured-projects.png'),
     ('sec-tech', 'assets/tech-stack.png'),
     ('sec-analytics', 'assets/analytics-dashboard.png'),

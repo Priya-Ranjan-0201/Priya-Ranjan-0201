@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 110" width="100%" height="110" fill="none">
+  <defs>
+    <linearGradient id="diskBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070B10"/>
+      <stop offset="50%" stop-color="#0A121A"/>
+      <stop offset="100%" stop-color="#0C1724"/>
+    </linearGradient>
+    <linearGradient id="diskAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#79C0FF"/>
+      <stop offset="100%" stop-color="#58A6FF"/>
+    </linearGradient>
+    <filter id="diskGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes spinPlatter {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes seekArmMotion {
+      0% { transform: rotate(-18deg); }
+      35% { transform: rotate(18deg); }
+      65% { transform: rotate(-5deg); }
+      85% { transform: rotate(12deg); }
+      100% { transform: rotate(-18deg); }
+    }
+    @keyframes headReadBlink {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; filter: drop-shadow(0 0 4px #00F2FE); }
+    }
+    .platter-disk {
+      transform-origin: 350px 55px;
+      animation: spinPlatter 7s linear infinite;
+    }
+    .actuator-arm {
+      transform-origin: 322px 28px;
+      animation: seekArmMotion 4.5s ease-in-out infinite;
+    }
+    .head-sensor {
+      animation: headReadBlink 1.2s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="418" height="108" rx="10" fill="url(#diskBg)" stroke="#21262D" stroke-width="1.2"/>
+  <line x1="1" y1="1" x2="419" y2="1" stroke="url(#diskAccent)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Left Content Block -->
+  <g transform="translate(22, 0)">
+    <!-- Category Tag -->
+    <text x="0" y="32" font-family="'SF Mono', 'Segoe UI Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#79C0FF" letter-spacing="1.5px">SYSTEMS &amp; OS</text>
+
+    <!-- Project Title -->
+    <text x="0" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#F0F6FC" letter-spacing="1.5px">Disk Scheduling</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#8B949E" letter-spacing="0.2px">OS Storage Arm Seek Simulator</text>
+
+    <!-- Tags -->
+    <g transform="translate(0, 92)">
+      <text font-family="'SF Mono', Consolas, monospace" font-size="9" font-weight="600" fill="#79C0FF">OS ALGORITHMS</text>
+      <text x="86" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
+      <text x="98" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">CANVAS</text>
+      <text x="146" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
+      <text x="158" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">C / JS</text>
+    </g>
+  </g>
+
+  <!-- Right Animated Hard Disk Platter & Actuator Arm -->
+  <g>
+    <!-- Background Halo -->
+    <circle cx="350" cy="55" r="40" fill="#79C0FF" fill-opacity="0.03"/>
+
+    <!-- Rotating Concentric Magnetic Platter Tracks -->
+    <g class="platter-disk">
+      <!-- Outer Track Rim -->
+      <circle cx="350" cy="55" r="35" stroke="#1D2A3B" stroke-width="1.5" fill="#0A121B"/>
+      <!-- Sector Track Lines -->
+      <circle cx="350" cy="55" r="35" stroke="#58A6FF" stroke-width="1.2" stroke-dasharray="8 18" stroke-opacity="0.4" fill="none"/>
+      <circle cx="350" cy="55" r="26" stroke="#2A3D54" stroke-width="1" stroke-dasharray="6 12" fill="none"/>
+      <circle cx="350" cy="55" r="17" stroke="#1D2A3B" stroke-width="1" fill="none"/>
+      <!-- Spindle Hub -->
+      <circle cx="350" cy="55" r="8" fill="#162231" stroke="#79C0FF" stroke-width="1.5"/>
+      <circle cx="350" cy="55" r="3" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Actuator Arm Assembly with Seeking Motion -->
+    <g class="actuator-arm">
+      <!-- Actuator Base Pivot -->
+      <circle cx="322" cy="28" r="6.5" fill="#1B2838" stroke="#58A6FF" stroke-width="1.5"/>
+      <circle cx="322" cy="28" r="2.5" fill="#FFFFFF"/>
+      <!-- Metallic Head Arm -->
+      <polygon points="322,26 348,48 351,52 324,30" fill="#58A6FF" opacity="0.85"/>
+      <!-- Read/Write Head Sensor (Glowing Blinking LED) -->
+      <circle cx="350" cy="50" r="3" fill="#00F2FE" class="head-sensor" filter="url(#diskGlow)"/>
+    </g>
+  </g>
+</svg>

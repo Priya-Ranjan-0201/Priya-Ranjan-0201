@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 110" width="100%" height="110" fill="none">
+  <defs>
+    <linearGradient id="prioBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070B10"/>
+      <stop offset="50%" stop-color="#120B0F"/>
+      <stop offset="100%" stop-color="#1A0D14"/>
+    </linearGradient>
+    <linearGradient id="prioAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5E62"/>
+      <stop offset="100%" stop-color="#FF9966"/>
+    </linearGradient>
+    <filter id="ecgGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes ecgPulseRun {
+      0% { stroke-dashoffset: 260; opacity: 0.2; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { stroke-dashoffset: 0; opacity: 0.2; }
+    }
+    @keyframes heartPump {
+      0%, 100% { transform: scale(1); opacity: 0.7; }
+      15% { transform: scale(1.4); opacity: 1; filter: drop-shadow(0 0 6px #FF5E62); }
+      30% { transform: scale(1.0); }
+      45% { transform: scale(1.25); opacity: 0.95; filter: drop-shadow(0 0 4px #FF5E62); }
+      60% { transform: scale(1); }
+    }
+    .ecg-flow-line {
+      stroke-dasharray: 60 200;
+      animation: ecgPulseRun 3s linear infinite;
+    }
+    .heart-node {
+      transform-origin: 352px 36px;
+      animation: heartPump 1.8s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="418" height="108" rx="10" fill="url(#prioBg)" stroke="#21262D" stroke-width="1.2"/>
+  <line x1="1" y1="1" x2="419" y2="1" stroke="url(#prioAccent)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Left Content Block -->
+  <g transform="translate(22, 0)">
+    <!-- Category Tag -->
+    <text x="0" y="32" font-family="'SF Mono', 'Segoe UI Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#FF7B72" letter-spacing="1.5px">HEALTHCARE &amp; AI</text>
+
+    <!-- Project Title -->
+    <text x="0" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="800" fill="#F0F6FC" letter-spacing="2px">Priocardix-AI</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#8B949E" letter-spacing="0.2px">Cardiovascular Predictive ML Platform</text>
+
+    <!-- Tags -->
+    <g transform="translate(0, 92)">
+      <text font-family="'SF Mono', Consolas, monospace" font-size="9" font-weight="600" fill="#FF7B72">TREESHAP</text>
+      <text x="64" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
+      <text x="76" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">PREDICTIVE ML</text>
+      <text x="164" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
+      <text x="176" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">REACT</text>
+    </g>
+  </g>
+
+  <!-- Right Animated ECG Heartbeat Waveform -->
+  <g>
+    <!-- Background Halo -->
+    <circle cx="350" cy="55" r="40" fill="#FF5E62" fill-opacity="0.03"/>
+
+    <!-- Subtle ECG Grid lines -->
+    <rect x="312" y="25" width="76" height="60" rx="6" stroke="#2B181E" stroke-width="1" fill="#0E070A"/>
+    <line x1="312" y1="55" x2="388" y2="55" stroke="#1D1115" stroke-width="1" stroke-dasharray="2 4"/>
+    <line x1="350" y1="25" x2="350" y2="85" stroke="#1D1115" stroke-width="1" stroke-dasharray="2 4"/>
+
+    <!-- Static ECG Baseline Waveform -->
+    <path d="M 314 55 L 334 55 L 340 45 L 346 65 L 352 36 L 358 68 L 364 52 L 368 55 L 386 55" 
+          stroke="#381E25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <!-- Animated Flowing ECG Waveform Pulse Packet -->
+    <path d="M 314 55 L 334 55 L 340 45 L 346 65 L 352 36 L 358 68 L 364 52 L 368 55 L 386 55" 
+          stroke="url(#prioAccent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" class="ecg-flow-line" filter="url(#ecgGlow)"/>
+
+    <!-- Dual-Pulsing Cardiac Heartbeat Node -->
+    <circle cx="352" cy="36" r="4" fill="#FF5E62" class="heart-node"/>
+    <circle cx="352" cy="36" r="2" fill="#FFFFFF"/>
+  </g>
+</svg>

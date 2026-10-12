@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 110" width="100%" height="110" fill="none">
+  <defs>
+    <linearGradient id="cvBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070B10"/>
+      <stop offset="50%" stop-color="#091217"/>
+      <stop offset="100%" stop-color="#0B1A1E"/>
+    </linearGradient>
+    <linearGradient id="cvAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="100%" stop-color="#38EF7D"/>
+    </linearGradient>
+    <linearGradient id="cvLaser" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00F2FE" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#38EF7D" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="cvGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes reticleLock {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(0.91); }
+    }
+    @keyframes cvScan {
+      0% { transform: translateY(-16px); opacity: 0; }
+      20% { opacity: 0.9; }
+      80% { opacity: 0.9; }
+      100% { transform: translateY(46px); opacity: 0; }
+    }
+    @keyframes ringCalibrate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(-360deg); }
+    }
+    .bracket-group {
+      transform-origin: 350px 55px;
+      animation: reticleLock 3s ease-in-out infinite;
+    }
+    .laser-scanline {
+      animation: cvScan 2.4s linear infinite;
+    }
+    .calib-ring {
+      transform-origin: 350px 55px;
+      animation: ringCalibrate 9s linear infinite;
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="418" height="108" rx="10" fill="url(#cvBg)" stroke="#21262D" stroke-width="1.2"/>
+  <line x1="1" y1="1" x2="419" y2="1" stroke="url(#cvAccent)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Left Content Block -->
+  <g transform="translate(22, 0)">
+    <!-- Category Tag -->
+    <text x="0" y="32" font-family="'SF Mono', 'Segoe UI Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#00F2FE" letter-spacing="1.5px">COMPUTER VISION</text>
+
+    <!-- Project Title -->
+    <text x="0" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="800" fill="#F0F6FC" letter-spacing="2px">HRCV-</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#8B949E" letter-spacing="0.2px">Human Feature Detection Pipeline</text>
+
+    <!-- Tags -->
+    <g transform="translate(0, 92)">
+      <text font-family="'SF Mono', Consolas, monospace" font-size="9" font-weight="600" fill="#00F2FE">OPENCV</text>
+      <text x="52" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
+      <text x="64" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">NUMPY</text>
+      <text x="110" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
+      <text x="122" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">PYTHON</text>
+    </g>
+  </g>
+
+  <!-- Right Animated Computer Vision Bounding Box & Target Lock -->
+  <g>
+    <!-- Background Halo -->
+    <circle cx="350" cy="55" r="40" fill="#00F2FE" fill-opacity="0.03"/>
+
+    <!-- Rotating Calibration Ring -->
+    <circle cx="350" cy="55" r="32" stroke="#162930" stroke-width="1.2" fill="none"/>
+    <circle cx="350" cy="55" r="32" stroke="#00F2FE" stroke-width="1.2" stroke-dasharray="6 14" stroke-opacity="0.5" fill="none" class="calib-ring"/>
+
+    <!-- Sweeping Laser Scanline -->
+    <line x1="322" y1="55" x2="378" y2="55" stroke="url(#cvLaser)" stroke-width="1.8" class="laser-scanline"/>
+
+    <!-- Animated Bounding Box Brackets (Lock-on effect) -->
+    <g class="bracket-group">
+      <!-- Top-Left Bracket -->
+      <path d="M 324 43 L 324 33 L 334 33" stroke="#00F2FE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#cvGlow)"/>
+      <!-- Top-Right Bracket -->
+      <path d="M 366 33 L 376 33 L 376 43" stroke="#00F2FE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#cvGlow)"/>
+      <!-- Bottom-Left Bracket -->
+      <path d="M 324 67 L 324 77 L 334 77" stroke="#00F2FE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#cvGlow)"/>
+      <!-- Bottom-Right Bracket -->
+      <path d="M 366 77 L 376 77 L 376 67" stroke="#00F2FE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#cvGlow)"/>
+    </g>
+
+    <!-- Center Tracking Dot & Crosshairs -->
+    <line x1="344" y1="55" x2="356" y2="55" stroke="#38EF7D" stroke-width="1.2"/>
+    <line x1="350" y1="49" x2="350" y2="61" stroke="#38EF7D" stroke-width="1.2"/>
+    <circle cx="350" cy="55" r="2.5" fill="#38EF7D" filter="url(#cvGlow)"/>
+  </g>
+</svg>

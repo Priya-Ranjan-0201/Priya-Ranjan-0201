@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 110" width="100%" height="110" fill="none">
+  <defs>
+    <!-- Background & Borders -->
+    <linearGradient id="vireoniqBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070B10"/>
+      <stop offset="50%" stop-color="#0A1017"/>
+      <stop offset="100%" stop-color="#0D1622"/>
+    </linearGradient>
+    <linearGradient id="vireoniqAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="100%" stop-color="#4FACFE"/>
+    </linearGradient>
+    <linearGradient id="radarSweep" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#4FACFE" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#00F2FE" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="vireoniqGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes radarSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes pingWave {
+      0% { r: 6px; opacity: 0.9; stroke-width: 2px; }
+      70% { opacity: 0.4; }
+      100% { r: 35px; opacity: 0; stroke-width: 0.5px; }
+    }
+    @keyframes corePulse {
+      0%, 100% { r: 3.5px; opacity: 0.8; filter: drop-shadow(0 0 2px #00F2FE); }
+      50% { r: 5px; opacity: 1; filter: drop-shadow(0 0 6px #00F2FE); }
+    }
+    .radar-orbit {
+      transform-origin: 350px 55px;
+      animation: radarSpin 8s linear infinite;
+    }
+    .radar-sweep-beam {
+      transform-origin: 350px 55px;
+      animation: radarSpin 3.5s linear infinite;
+    }
+    .ping-circle {
+      animation: pingWave 3.5s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+    .core-node {
+      animation: corePulse 2s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="418" height="108" rx="10" fill="url(#vireoniqBg)" stroke="#21262D" stroke-width="1.2"/>
+  <line x1="1" y1="1" x2="419" y2="1" stroke="url(#vireoniqAccent)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Left Content Block -->
+  <g transform="translate(22, 0)">
+    <!-- Category Tag -->
+    <text x="0" y="32" font-family="'SF Mono', 'Segoe UI Mono', Consolas, monospace" font-size="11" font-weight="700" fill="#00F2FE" letter-spacing="1.5px">AI &amp; DEVTOOLS</text>
+
+    <!-- Project Title -->
+    <text x="0" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="800" fill="#F0F6FC" letter-spacing="2.5px">VIREONIQ</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#8B949E" letter-spacing="0.2px">AST Code Analysis &amp; Career Roadmaps</text>
+
+    <!-- Tags -->
+    <g transform="translate(0, 92)">
+      <text font-family="'SF Mono', Consolas, monospace" font-size="9" font-weight="600" fill="#00F2FE">PYTHON</text>
+      <text x="48" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
+      <text x="60" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">FASTAPI</text>
+      <text x="114" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
+      <text x="126" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">AST</text>
+      <text x="156" font-family="sans-serif" font-size="9" fill="#484F58">•</text>
+      <text x="168" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#8B949E">QDRANT</text>
+    </g>
+  </g>
+
+  <!-- Right Animated AI Radar & Reticle -->
+  <g>
+    <!-- Background Glow Halo -->
+    <circle cx="350" cy="55" r="40" fill="#00F2FE" fill-opacity="0.03"/>
+    
+    <!-- Outer Track Dial -->
+    <circle cx="350" cy="55" r="36" stroke="#1F2633" stroke-width="1.2" fill="none"/>
+    
+    <!-- Rotating Dashed Orbit -->
+    <circle cx="350" cy="55" r="36" stroke="#00F2FE" stroke-width="1.5" stroke-dasharray="8 20" stroke-opacity="0.6" fill="none" class="radar-orbit"/>
+    
+    <!-- Middle Inner Range Ring -->
+    <circle cx="350" cy="55" r="22" stroke="#253041" stroke-width="1" fill="none"/>
+    
+    <!-- Static Crosshair Grid -->
+    <line x1="312" y1="55" x2="388" y2="55" stroke="#212A38" stroke-width="1"/>
+    <line x1="350" y1="17" x2="350" y2="93" stroke="#212A38" stroke-width="1"/>
+
+    <!-- Rotating Radar Scan Sweep Beam -->
+    <g class="radar-sweep-beam">
+      <path d="M 350 55 L 384 40 A 36 36 0 0 1 386 55 Z" fill="url(#radarSweep)"/>
+      <line x1="350" y1="55" x2="386" y2="55" stroke="#00F2FE" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Expanding Dynamic Radar Ping Wave -->
+    <circle cx="350" cy="55" r="6" stroke="#00F2FE" fill="none" class="ping-circle"/>
+
+    <!-- Center Blinking Core Sensor -->
+    <circle cx="350" cy="55" r="4" fill="#00F2FE" class="core-node"/>
+  </g>
+</svg>
