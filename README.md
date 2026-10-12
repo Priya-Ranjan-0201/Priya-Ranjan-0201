@@ -6,13 +6,13 @@
 
 <a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><sub><b>▰ GREEN NOVA / CYBER DEVELOPER PROFILE</b></sub></a>
 
-<sub><b>BLUE NOVA / DEVELOPER PROFILE</b> &nbsp; · &nbsp; BUILD SMALL. THINK IN SYSTEMS. KEEP LEARNING.</sub>
+<sub><b>GREEN NOVA / CYBER DEVELOPER PROFILE</b> &nbsp; · &nbsp; BUILD SMALL. THINK IN SYSTEMS. KEEP LEARNING.</sub>
 
 <br/><br/>
 
-<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/◈_EXPLORE-PROJECTS-#06120A?style=for-the-badge&logo=github&logoColor=#39FF14" alt="Explore projects" /></a>
-<a href="https://www.linkedin.com/in/priyaranjan01"><img src="https://img.shields.io/badge/↗_CONNECT-LINKEDIN-#06120A?style=for-the-badge&logo=linkedin&logoColor=#39FF14" alt="Connect on LinkedIn" /></a>
-<a href="mailto:priyaranjan01@gmail.com"><img src="https://img.shields.io/badge/✉_SAY_HELLO-EMAIL-#06120A?style=for-the-badge&logo=gmail&logoColor=#39FF14" alt="Send email" /></a>
+<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/◈_EXPLORE-PROJECTS-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="Explore projects" /></a>
+<a href="https://www.linkedin.com/in/priyaranjan01"><img src="https://img.shields.io/badge/↗_CONNECT-LINKEDIN-06120A?style=for-the-badge&logo=linkedin&logoColor=39FF14" alt="Connect on LinkedIn" /></a>
+<a href="mailto:priyaranjan01@gmail.com"><img src="https://img.shields.io/badge/✉_SAY_HELLO-EMAIL-06120A?style=for-the-badge&logo=gmail&logoColor=39FF14" alt="Send email" /></a>
 
 <br/><br/>
 
@@ -27,11 +27,11 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&duration=2200&pause=900&color=#39FF14&center=true&vCenter=true&width=260&height=36&lines=%3E+PRIYA+RANJAN;%3E+BUILDING+IN+PROGRESS" alt="Animated profile signature" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&duration=2200&pause=900&color=39FF14&center=true&vCenter=true&width=260&height=36&lines=%3E+PRIYA+RANJAN;%3E+BUILDING+IN+PROGRESS" alt="Animated profile signature" />
 
 **PRIYA RANJAN** · [@Priya-Ranjan-0201](https://github.com/Priya-Ranjan-0201) · 🎓 Computer Science & Engineering · Lovely Professional University · India
 
-<img src="https://img.shields.io/github/followers/Priya-Ranjan-0201?style=flat-square&label=Followers&color=#39FF14&labelColor=#06120A" alt="GitHub followers" />
+<img src="https://img.shields.io/github/followers/Priya-Ranjan-0201?style=flat-square&label=Followers&color=39FF14&labelColor=#06120A" alt="GitHub followers" />
 
 </div>
 
@@ -66,8 +66,8 @@ Career intelligence and developer-focused tooling combining web application deve
 
 **React · TypeScript · Python · FastAPI**
 
-<a href="https://github.com/Priya-Ranjan-0201/VIREONIQ"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/VIREONIQ?style=flat-square&color=#39FF14&label=Stars" alt="VIREONIQ stars" /></a>
-<a href="https://github.com/Priya-Ranjan-0201/VIREONIQ"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-#06120A?style=flat-square&logo=github&logoColor=#39FF14" alt="Open repository" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/VIREONIQ"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/VIREONIQ?style=flat-square&color=39FF14&label=Stars" alt="VIREONIQ stars" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/VIREONIQ"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-06120A?style=flat-square&logo=github&logoColor=39FF14" alt="Open repository" /></a>
 
 </td>
 <td width="50%" valign="top">
@@ -80,8 +80,8 @@ Cybersecurity-focused project exploring network and protocol inspection, defensi
 
 **Python · AsyncIO · Networking · Security**
 
-<a href="https://github.com/Priya-Ranjan-0201/TrustShield-X"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/TrustShield-X?style=flat-square&color=#39FF14&label=Stars" alt="TrustShield-X stars" /></a>
-<a href="https://github.com/Priya-Ranjan-0201/TrustShield-X"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-#06120A?style=flat-square&logo=github&logoColor=#39FF14" alt="Open repository" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/TrustShield-X"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/TrustShield-X?style=flat-square&color=39FF14&label=Stars" alt="TrustShield-X stars" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/TrustShield-X"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-06120A?style=flat-square&logo=github&logoColor=39FF14" alt="Open repository" /></a>
 
 </td>
 </tr>
@@ -96,8 +96,8 @@ Smart tourism concept focused on helping travelers discover places and plan more
 
 **React · Python · APIs · Travel Technology**
 
-<a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/TECH-ON-TOUR?style=flat-square&color=#39FF14&label=Stars" alt="Tech On Tour stars" /></a>
-<a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-#06120A?style=flat-square&logo=github&logoColor=#39FF14" alt="Open repository" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/TECH-ON-TOUR?style=flat-square&color=39FF14&label=Stars" alt="Tech On Tour stars" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-06120A?style=flat-square&logo=github&logoColor=39FF14" alt="Open repository" /></a>
 
 </td>
 <td width="50%" valign="top">
@@ -110,8 +110,8 @@ AI and data-science project exploring preventive cardiology concepts and explain
 
 **Python · Machine Learning · Data Science**
 
-<a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/Priocardix-AI?style=flat-square&color=#39FF14&label=Stars" alt="Priocardix-AI stars" /></a>
-<a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-#06120A?style=flat-square&logo=github&logoColor=#39FF14" alt="Open repository" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/Priocardix-AI?style=flat-square&color=39FF14&label=Stars" alt="Priocardix-AI stars" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-06120A?style=flat-square&logo=github&logoColor=39FF14" alt="Open repository" /></a>
 
 </td>
 </tr>
@@ -126,8 +126,8 @@ Cognitive assessment and quiz application project, emphasizing web services and 
 
 **Python · Flask · PostgreSQL · Docker**
 
-<a href="https://github.com/Priya-Ranjan-0201/BrainCheck"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/BrainCheck?style=flat-square&color=#39FF14&label=Stars" alt="BrainCheck stars" /></a>
-<a href="https://github.com/Priya-Ranjan-0201/BrainCheck"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-#06120A?style=flat-square&logo=github&logoColor=#39FF14" alt="Open repository" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/BrainCheck"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/BrainCheck?style=flat-square&color=39FF14&label=Stars" alt="BrainCheck stars" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/BrainCheck"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-06120A?style=flat-square&logo=github&logoColor=39FF14" alt="Open repository" /></a>
 
 </td>
 <td width="50%" valign="top">
@@ -140,8 +140,8 @@ Interactive visual exploration of operating-system disk scheduling algorithms an
 
 **JavaScript · HTML · Canvas · Operating Systems**
 
-<a href="https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/Disk_Scheduling_Algorithm?style=flat-square&color=#39FF14&label=Stars" alt="Disk Scheduling stars" /></a>
-<a href="https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-#06120A?style=flat-square&logo=github&logoColor=#39FF14" alt="Open repository" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/Disk_Scheduling_Algorithm?style=flat-square&color=39FF14&label=Stars" alt="Disk Scheduling stars" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-06120A?style=flat-square&logo=github&logoColor=39FF14" alt="Open repository" /></a>
 
 </td>
 </tr>
@@ -186,7 +186,7 @@ Interactive visual exploration of operating-system disk scheduling algorithms an
 <br/><br/>
 
 <a href="https://github.com/Priya-Ranjan-0201#contributions">
-  <img src="https://img.shields.io/badge/VIEW-LIVE_GITHUB_CONTRIBUTIONS-#06120A?style=for-the-badge&logo=github&logoColor=#39FF14" alt="View GitHub contribution calendar" />
+  <img src="https://img.shields.io/badge/VIEW-LIVE_GITHUB_CONTRIBUTIONS-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="View GitHub contribution calendar" />
 </a>
 
 <sub>Stats and language cards are regenerated automatically by GitHub Actions every 6 hours (and can be refreshed manually from Actions). The streak card is provided by an external service and may be delayed by its cache. For the canonical contribution calendar, use the link above. Language percentages reflect repository code; contribution counts follow GitHub's contribution rules.</sub>
@@ -267,11 +267,11 @@ I'm open to connecting about software projects, internships, collaborative learn
 
 <br/>
 
-<a href="https://www.linkedin.com/in/priyaranjan01"><img src="https://img.shields.io/badge/LINKEDIN-Connect-#06120A?style=for-the-badge&logo=linkedin&logoColor=#39FF14" alt="LinkedIn" /></a>
+<a href="https://www.linkedin.com/in/priyaranjan01"><img src="https://img.shields.io/badge/LINKEDIN-Connect-06120A?style=for-the-badge&logo=linkedin&logoColor=39FF14" alt="LinkedIn" /></a>
 
-<a href="mailto:priyaranjan01@gmail.com"><img src="https://img.shields.io/badge/EMAIL-Say_Hello-#06120A?style=for-the-badge&logo=gmail&logoColor=#39FF14" alt="Email" /></a>
+<a href="mailto:priyaranjan01@gmail.com"><img src="https://img.shields.io/badge/EMAIL-Say_Hello-06120A?style=for-the-badge&logo=gmail&logoColor=39FF14" alt="Email" /></a>
 
-<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/GITHUB-Explore_Code-#06120A?style=for-the-badge&logo=github&logoColor=#39FF14" alt="GitHub repositories" /></a>
+<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/GITHUB-Explore_Code-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="GitHub repositories" /></a>
 
 </td>
 <td width="42%" valign="middle" align="center">
