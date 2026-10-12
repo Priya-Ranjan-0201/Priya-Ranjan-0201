@@ -174,9 +174,8 @@ I'm a **Computer Science &amp; Engineering student** passionate about **Artifici
               <img src="https://img.shields.io/badge/TreeSHAP-00E5FF?style=flat-square" />
             </p>
             <p>
-              <a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI">⭐ 250+</a> &nbsp;
-              <a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI">🍴 45</a> &nbsp;
-              <a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><img src="https://img.shields.io/badge/Live_Demo-00E5FF?style=flat-square&logo=googlechrome&logoColor=black" /></a>
+              <a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/Priocardix-AI?style=flat-square&color=00E5FF&label=Stars" alt="Priocardix-AI stars" /></a> &nbsp; <a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><img src="https://img.shields.io/github/forks/Priya-Ranjan-0201/Priocardix-AI?style=flat-square&color=00FF88&label=Forks" alt="Priocardix-AI forks" /></a>
+              
             </p>
           </td>
           <td width="115" align="center" valign="middle">
@@ -204,9 +203,8 @@ I'm a **Computer Science &amp; Engineering student** passionate about **Artifici
               <img src="https://img.shields.io/badge/Cybersecurity-FF0055?style=flat-square" />
             </p>
             <p>
-              <a href="https://github.com/Priya-Ranjan-0201/TrustShield-X">⭐ 180+</a> &nbsp;
-              <a href="https://github.com/Priya-Ranjan-0201/TrustShield-X">🍴 32</a> &nbsp;
-              <a href="https://github.com/Priya-Ranjan-0201/TrustShield-X"><img src="https://img.shields.io/badge/Live_Demo-00E5FF?style=flat-square&logo=googlechrome&logoColor=black" /></a>
+              <a href="https://github.com/Priya-Ranjan-0201/TrustShield-X"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/TrustShield-X?style=flat-square&color=00E5FF&label=Stars" alt="TrustShield-X stars" /></a> &nbsp; <a href="https://github.com/Priya-Ranjan-0201/TrustShield-X"><img src="https://img.shields.io/github/forks/Priya-Ranjan-0201/TrustShield-X?style=flat-square&color=00FF88&label=Forks" alt="TrustShield-X forks" /></a>
+              
             </p>
           </td>
           <td width="115" align="center" valign="middle">
@@ -235,9 +233,8 @@ I'm a **Computer Science &amp; Engineering student** passionate about **Artifici
               <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
             </p>
             <p>
-              <a href="https://github.com/Priya-Ranjan-0201/VIREONIQ">⭐ 320+</a> &nbsp;
-              <a href="https://github.com/Priya-Ranjan-0201/VIREONIQ">🍴 61</a> &nbsp;
-              <a href="https://github.com/Priya-Ranjan-0201/VIREONIQ"><img src="https://img.shields.io/badge/Live_Demo-00E5FF?style=flat-square&logo=googlechrome&logoColor=black" /></a>
+              <a href="https://github.com/Priya-Ranjan-0201/VIREONIQ"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/VIREONIQ?style=flat-square&color=00E5FF&label=Stars" alt="VIREONIQ stars" /></a> &nbsp; <a href="https://github.com/Priya-Ranjan-0201/VIREONIQ"><img src="https://img.shields.io/github/forks/Priya-Ranjan-0201/VIREONIQ?style=flat-square&color=00FF88&label=Forks" alt="VIREONIQ forks" /></a>
+              
             </p>
           </td>
           <td width="115" align="center" valign="middle">
@@ -265,9 +262,8 @@ I'm a **Computer Science &amp; Engineering student** passionate about **Artifici
               <img src="https://img.shields.io/badge/Maps_API-4285F4?style=flat-square&logo=googlemaps&logoColor=white" />
             </p>
             <p>
-              <a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR">⭐ 210+</a> &nbsp;
-              <a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR">🍴 38</a> &nbsp;
-              <a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><img src="https://img.shields.io/badge/Live_Demo-00E5FF?style=flat-square&logo=googlechrome&logoColor=black" /></a>
+              <a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/TECH-ON-TOUR?style=flat-square&color=00E5FF&label=Stars" alt="TECH-ON-TOUR stars" /></a> &nbsp; <a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><img src="https://img.shields.io/github/forks/Priya-Ranjan-0201/TECH-ON-TOUR?style=flat-square&color=00FF88&label=Forks" alt="TECH-ON-TOUR forks" /></a>
+              
             </p>
           </td>
           <td width="115" align="center" valign="middle">
@@ -291,7 +287,7 @@ I'm a **Computer Science &amp; Engineering student** passionate about **Artifici
 <!-- INTERACTIVE DIRECTORY TABLE (ALL 8 REPOSITORIES)         -->
 <!-- ======================================================== -->
 <details open>
-<summary><b>📂 Complete Verified Repository Directory (8 Public Repositories)</b></summary>
+<summary><b>📂 Repository Directory (8 Public Repositories)</b></summary>
 <br/>
 
 | Repository | Primary Stack | Architecture & Description | Repository status | Direct Link |
