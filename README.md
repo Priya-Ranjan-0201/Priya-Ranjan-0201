@@ -159,22 +159,30 @@ I like understanding how systems work under the hood—from algorithms and APIs 
 
 <div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated neon-green circuit divider" /></div>
 
-## <code>▰ 04 / GITHUB ANALYTICS</code>
+## <code>▰ 04 / GITHUB ACTIVITY</code>
 
 <div align="center">
 
-<a href="https://github.com/Priya-Ranjan-0201"><img width="49%" src="./profile/stats.svg" alt="GitHub statistics for Priya Ranjan" /></a>
-<a href="https://github.com/Priya-Ranjan-0201"><img width="49%" src="./profile/top-langs.svg" alt="Languages detected in public GitHub repositories" /></a>
+<a href="https://github.com/Priya-Ranjan-0201"><img src="https://img.shields.io/github/followers/Priya-Ranjan-0201?style=for-the-badge&label=FOLLOWERS&color=39FF14&labelColor=06120A" alt="Live GitHub follower count" /></a>
+<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/REPOSITORIES-OPEN_PROFILE-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="Open live GitHub repository list" /></a>
 
 <br/><br/>
 
-<a href="https://github.com/Priya-Ranjan-0201"><img width="95%" src="https://github-readme-streak-stats.herokuapp.com/?user=Priya-Ranjan-0201&hide_border=true&background=06120A&ring=39FF14&fire=39FF14&currStreakLabel=39FF14&currStreakNum=FFFFFF&sideLabels=D8E7F0&sideNums=FFFFFF&dates=9BB0BF&stroke=1C5A2A" alt="GitHub contribution streak" /></a>
+**FEATURED REPOSITORY STARS**
+
+<a href="https://github.com/Priya-Ranjan-0201/VIREONIQ"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/VIREONIQ?style=flat-square&label=VIREONIQ&color=39FF14&labelColor=06120A" alt="Live VIREONIQ star count" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/TrustShield-X"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/TrustShield-X?style=flat-square&label=TrustShield-X&color=39FF14&labelColor=06120A" alt="Live TrustShield-X star count" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/TECH-ON-TOUR?style=flat-square&label=Tech%20On%20Tour&color=39FF14&labelColor=06120A" alt="Live Tech On Tour star count" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/Priocardix-AI?style=flat-square&label=Priocardix-AI&color=39FF14&labelColor=06120A" alt="Live Priocardix-AI star count" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/BrainCheck"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/BrainCheck?style=flat-square&label=BrainCheck&color=39FF14&labelColor=06120A" alt="Live BrainCheck star count" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/Disk_Scheduling_Algorithm?style=flat-square&label=Disk%20Scheduling&color=39FF14&labelColor=06120A" alt="Live Disk Scheduling star count" /></a>
 
 <br/><br/>
 
-<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE-REPOSITORY_ACTIVITY-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="Explore repository activity" /></a>
+<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/LANGUAGES-SEE_REAL_REPOSITORY_BREAKDOWN-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="See real language breakdown in GitHub repositories" /></a>
+<a href="https://github.com/Priya-Ranjan-0201?tab=overview&from=2026-01-01&to=2026-12-31"><img src="https://img.shields.io/badge/CONTRIBUTIONS-OPEN_GITHUB_PROFILE-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="Open GitHub profile contribution activity" /></a>
 
-<sub>Stats and language cards are stored in this repository and refreshed by the scheduled GitHub Actions workflow. Their freshness depends on successful workflow runs. Contribution history is best checked on the native GitHub profile.</sub>
+<sub>These badges query GitHub/Shields dynamically. Language proportions and contribution history are best checked on each repository's Languages panel and the native GitHub profile. I have intentionally avoided hard-coded statistics and invented language percentages.</sub>
 
 </div>
 
