@@ -47,8 +47,8 @@ def parse_existing_svg():
             'current_streak': int(streak_count_m.group(1)) if streak_count_m else 2,
             'longest_streak': int(long_streak_m.group(1)) if long_streak_m else 6,
             'langs': [
-                {'name': 'TypeScript', 'pct': 48.9, 'color': '#3178C6'},
-                {'name': 'Python', 'pct': 43.3, 'color': '#3572A5'},
+                {'name': 'TypeScript', 'pct': 48.9, 'color': '#39FF14'},
+                {'name': 'Python', 'pct': 43.3, 'color': '#247A35'},
                 {'name': 'JavaScript', 'pct': 5.2, 'color': '#F7DF1E'},
                 {'name': 'CSS', 'pct': 1.8, 'color': '#563D7C'},
                 {'name': 'HTML', 'pct': 0.5, 'color': '#E34C26'}
@@ -192,8 +192,8 @@ def fetch_stats():
     top_langs = sorted(lang_bytes.items(), key=lambda x: x[1], reverse=True)[:5]
     
     lang_colors = {
-        'Python': '#3572A5',
-        'TypeScript': '#3178C6',
+        'Python': '#247A35',
+        'TypeScript': '#39FF14',
         'JavaScript': '#F7DF1E',
         'CSS': '#563D7C',
         'HTML': '#E34C26'
@@ -205,7 +205,7 @@ def fetch_stats():
         langs_formatted.append({
             'name': name,
             'pct': pct,
-            'color': lang_colors.get(name, '#38BDF8')
+            'color': lang_colors.get(name, '#39FF14')
         })
 
     return {
@@ -275,10 +275,10 @@ def generate_svg(stats):
       <stop offset="100%" stop-color="#0A0E18"/>
     </linearGradient>
 
-    <!-- Clean Ice Cyan Accent -->
-    <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="100%" stop-color="#0284C7"/>
+    <!-- Green Nova Accent -->
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39FF14"/>
+      <stop offset="100%" stop-color="#247A35"/>
     </linearGradient>
 
     <!-- Emerald Flame Gradient -->
@@ -296,7 +296,7 @@ def generate_svg(stats):
 
     <!-- Dot Pattern -->
     <pattern id="gridDots" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1" fill="#38BDF8" fill-opacity="0.12"/>
+      <circle cx="2" cy="2" r="1" fill="#39FF14" fill-opacity="0.12"/>
     </pattern>
   </defs>
 
@@ -350,7 +350,7 @@ def generate_svg(stats):
 
   <!-- Outer Canvas Container -->
   <rect x="2" y="2" width="956" height="356" rx="16" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="1.2"/>
-  <rect x="2" y="2" width="956" height="356" rx="16" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.5" class="border-runner"/>
+  <rect x="2" y="2" width="956" height="356" rx="16" fill="none" stroke="#39FF14" stroke-width="1.5" stroke-opacity="0.5" class="border-runner"/>
   <rect x="4" y="4" width="952" height="352" rx="14" fill="url(#gridDots)"/>
 
   <!-- ==================== TOP TITLE BAR ==================== -->
@@ -363,8 +363,8 @@ def generate_svg(stats):
 
     <!-- Right-side status -->
     <g transform="translate(620, 0)">
-      <circle cx="10" cy="13" r="3.5" fill="#38BDF8" class="live-dot"/>
-      <text x="22" y="17" font-family="'SF Mono', Consolas, monospace" font-size="9.5" font-weight="600" fill="#38BDF8" letter-spacing="0.8px">
+      <circle cx="10" cy="13" r="3.5" fill="#39FF14" class="live-dot"/>
+      <text x="22" y="17" font-family="'SF Mono', Consolas, monospace" font-size="9.5" font-weight="600" fill="#39FF14" letter-spacing="0.8px">
         SYNCHRONIZED VIA HOURLY TOKEN
       </text>
     </g>
@@ -373,17 +373,17 @@ def generate_svg(stats):
   <!-- ==================== PANEL 1: CORE GITHUB STATS & GRADE ==================== -->
   <g transform="translate(24, 62)">
     <rect x="0" y="0" width="320" height="274" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1"/>
-    <line x1="0" y1="0" x2="320" y2="0" stroke="url(#cyanLine)" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="320" y2="0" stroke="url(#greenLine)" stroke-width="2.5" stroke-linecap="round"/>
 
     <!-- Left Grade Crest -->
     <g transform="translate(0, 0)">
       <circle cx="68" cy="72" r="38" stroke="#1E293B" stroke-width="4" fill="#0A101D"/>
-      <circle cx="68" cy="72" r="38" stroke="#38BDF8" stroke-width="4" stroke-dasharray="190 240" stroke-linecap="round" fill="none" class="pulse-ring" filter="url(#softGlow)"/>
-      <text x="68" y="79" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="900" fill="#38BDF8">A+</text>
+      <circle cx="68" cy="72" r="38" stroke="#39FF14" stroke-width="4" stroke-dasharray="190 240" stroke-linecap="round" fill="none" class="pulse-ring" filter="url(#softGlow)"/>
+      <text x="68" y="79" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="900" fill="#39FF14">A+</text>
       
       <!-- Rank Label -->
       <rect x="23" y="122" width="90" height="20" rx="5" fill="#0F172A" stroke="#1E293B" stroke-width="0.8"/>
-      <text x="68" y="136" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="8.5" font-weight="700" fill="#38BDF8">S-TIER RANK</text>
+      <text x="68" y="136" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="8.5" font-weight="700" fill="#39FF14">S-TIER RANK</text>
     </g>
 
     <!-- Core Metrics List -->
@@ -396,7 +396,7 @@ def generate_svg(stats):
       <!-- Total Commits -->
       <g transform="translate(0, 50)">
         <text x="0" y="12" class="label-text">TOTAL COMMITS</text>
-        <text x="0" y="34" font-size="20" fill="#38BDF8" class="value-text">{stats['commits']}</text>
+        <text x="0" y="34" font-size="20" fill="#39FF14" class="value-text">{stats['commits']}</text>
       </g>
       <!-- PRs & Issues -->
       <g transform="translate(0, 100)">
@@ -417,7 +417,7 @@ def generate_svg(stats):
   <!-- ==================== PANEL 2: STREAK STATS ==================== -->
   <g transform="translate(360, 62)">
     <rect x="0" y="0" width="290" height="274" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1"/>
-    <line x1="0" y1="0" x2="290" y2="0" stroke="url(#cyanLine)" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="290" y2="0" stroke="url(#greenLine)" stroke-width="2.5" stroke-linecap="round"/>
 
     <!-- Section Header -->
     <g transform="translate(20, 20)">
@@ -453,14 +453,14 @@ def generate_svg(stats):
 
     <g transform="translate(165, 222)">
       <text x="0" y="12" class="label-text">LONGEST STREAK</text>
-      <text x="0" y="34" font-size="20" fill="#38BDF8" class="value-text">{stats['longest_streak']} <tspan font-size="13" fill="#8B949E">{longest_unit}</tspan></text>
+      <text x="0" y="34" font-size="20" fill="#39FF14" class="value-text">{stats['longest_streak']} <tspan font-size="13" fill="#8B949E">{longest_unit}</tspan></text>
     </g>
   </g>
 
   <!-- ==================== PANEL 3: MOST USED LANGUAGES ==================== -->
   <g transform="translate(666, 62)">
     <rect x="0" y="0" width="270" height="274" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1"/>
-    <line x1="0" y1="0" x2="270" y2="0" stroke="url(#cyanLine)" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="270" y2="0" stroke="url(#greenLine)" stroke-width="2.5" stroke-linecap="round"/>
 
     <!-- Section Header -->
     <g transform="translate(18, 20)">
@@ -489,7 +489,7 @@ def generate_svg(stats):
     <g transform="translate(18, 218)">
       <text x="0" y="12" class="label-text">PRIMARY ARCHITECTURE</text>
       <text x="0" y="30" font-size="13" class="value-text">TypeScript &amp; Python 3</text>
-      <text x="0" y="46" font-family="'SF Mono', Consolas, monospace" font-size="9" font-weight="600" fill="#38BDF8">SYSTEMS &amp; APPLIED AI</text>
+      <text x="0" y="46" font-family="'SF Mono', Consolas, monospace" font-size="9" font-weight="600" fill="#39FF14">SYSTEMS &amp; APPLIED AI</text>
     </g>
   </g>
 </svg>'''
