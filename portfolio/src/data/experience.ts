@@ -17,7 +17,7 @@ export interface TurningPoint {
 export const turningPoints: TurningPoint[] = [
   {
     id: 'tp-1',
-    year: '2023',
+    year: '2024',
     period: 'The First Awakening',
     title: 'From "Writing Code" to Understanding the Machine',
     turningPointHeadline: 'Realizing that programming is not about memorizing syntax, but managing hardware resources.',
@@ -96,8 +96,8 @@ export const experiences: ExperienceEntry[] = [
     label: 'FOUNDATION',
   },
   {
-    id: 'exp-2023-systems',
-    year: '2023',
+    id: 'exp-2025-systems',
+    year: '2025',
     title: 'Low-Level Storage Kinematics & Algorithms',
     organization: 'Independent Systems Research',
     type: 'milestone',

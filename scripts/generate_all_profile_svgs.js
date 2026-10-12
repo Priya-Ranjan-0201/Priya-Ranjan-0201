@@ -608,40 +608,40 @@ const myJourneySvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 
     <!-- Vertical Line -->
     <line x1="8" y1="12" x2="8" y2="216" stroke="#00ff88" stroke-width="2" stroke-opacity="0.6"/>
 
-    <!-- 2023 -->
+    <!-- 2024 (Oct) -->
     <g transform="translate(0, 0)">
       <circle cx="8" cy="12" r="8" fill="#05080c" stroke="#00ff88" stroke-width="2"/>
       <circle cx="8" cy="12" r="3.5" fill="#00ff88"/>
-      <text class="mono-txt" font-size="15" font-weight="700" fill="#00ff88" x="32" y="16">2023</text>
-      <text class="sans-txt" font-size="14" font-weight="600" fill="#ffffff" x="84" y="16">Started my CSE journey</text>
-      <text class="sans-txt" font-size="13" fill="#94a3b8" x="84" y="36">Explored programming and core CS concepts</text>
-    </g>
-
-    <!-- 2024 -->
-    <g transform="translate(0, 68)">
-      <circle cx="8" cy="12" r="8" fill="#05080c" stroke="#00ff88" stroke-width="2"/>
-      <circle cx="8" cy="12" r="3.5" fill="#00ff88"/>
       <text class="mono-txt" font-size="15" font-weight="700" fill="#00ff88" x="32" y="16">2024</text>
-      <text class="sans-txt" font-size="14" font-weight="600" fill="#ffffff" x="84" y="16">Deepened into AI/ML &amp; Web Development</text>
-      <text class="sans-txt" font-size="13" fill="#94a3b8" x="84" y="36">Built and shipped multiple projects</text>
+      <text class="sans-txt" font-size="14" font-weight="600" fill="#ffffff" x="84" y="16">Established GitHub &amp; CS Core</text>
+      <text class="sans-txt" font-size="13" fill="#94a3b8" x="84" y="36">Joined Oct 23, 2024. C/Python algorithms &amp; systems</text>
     </g>
 
     <!-- 2025 -->
-    <g transform="translate(0, 136)">
+    <g transform="translate(0, 68)">
       <circle cx="8" cy="12" r="8" fill="#05080c" stroke="#00ff88" stroke-width="2"/>
       <circle cx="8" cy="12" r="3.5" fill="#00ff88"/>
       <text class="mono-txt" font-size="15" font-weight="700" fill="#00ff88" x="32" y="16">2025</text>
-      <text class="sans-txt" font-size="14" font-weight="600" fill="#ffffff" x="84" y="16">Focused on Cybersecurity and real-world applications</text>
-      <text class="sans-txt" font-size="13" fill="#94a3b8" x="84" y="36">Working on advanced projects and open-source</text>
+      <text class="sans-txt" font-size="14" font-weight="600" fill="#ffffff" x="84" y="16">OS Storage Kinematics Simulator</text>
+      <text class="sans-txt" font-size="13" fill="#94a3b8" x="84" y="36">Released 60 FPS Canvas Disk Scheduling Simulator</text>
     </g>
 
     <!-- 2026 -->
-    <g transform="translate(0, 204)">
+    <g transform="translate(0, 136)">
       <circle cx="8" cy="12" r="8" fill="#05080c" stroke="#00ff88" stroke-width="2"/>
       <circle cx="8" cy="12" r="3.5" fill="#00ff88"/>
       <text class="mono-txt" font-size="15" font-weight="700" fill="#00ff88" x="32" y="16">2026</text>
-      <text class="sans-txt" font-size="14" font-weight="600" fill="#ffffff" x="84" y="16">Building, learning, and preparing for opportunities</text>
-      <text class="sans-txt" font-size="13" fill="#94a3b8" x="84" y="36">Open to internships and collaborations</text>
+      <text class="sans-txt" font-size="14" font-weight="600" fill="#ffffff" x="84" y="16">Production AI &amp; Cyber Defense</text>
+      <text class="sans-txt" font-size="13" fill="#94a3b8" x="84" y="36">Priocardix-AI, VIREONIQ, BrainCheck &amp; TrustShield-X</text>
+    </g>
+
+    <!-- 2026 SIH -->
+    <g transform="translate(0, 204)">
+      <circle cx="8" cy="12" r="8" fill="#05080c" stroke="#00ff88" stroke-width="2"/>
+      <circle cx="8" cy="12" r="3.5" fill="#00ff88"/>
+      <text class="mono-txt" font-size="15" font-weight="700" fill="#00ff88" x="32" y="16">SIH</text>
+      <text class="sans-txt" font-size="14" font-weight="600" fill="#ffffff" x="84" y="16">Smart India Hackathon Finale</text>
+      <text class="sans-txt" font-size="13" fill="#94a3b8" x="84" y="36">TECH-ON-TOUR: Smart Tourism Digital Public Infrastructure</text>
     </g>
   </g>
 

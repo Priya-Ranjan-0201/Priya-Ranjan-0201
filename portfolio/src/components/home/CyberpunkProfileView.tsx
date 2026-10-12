@@ -377,7 +377,7 @@ export default function CyberpunkProfileView() {
               <h2 className="cb-section-title"><span className="cmd-prompt">&gt;</span> GitHub Analytics</h2>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-              <img src="/images/analytics-dashboard.svg" alt="GitHub Analytics Dashboard" style={{ width: '100%', borderRadius: 12 }} />
+              <img src="/images/analytics-dashboard.png" alt="GitHub Analytics Dashboard" style={{ width: '100%', borderRadius: 12 }} />
             </div>
           </section>
 
@@ -390,23 +390,18 @@ export default function CyberpunkProfileView() {
               <div className="cb-timeline-list">
                 <div className="cb-timeline-node">
                   <span className="cb-timeline-dot" />
-                  <div style={{ fontFamily: 'var(--cb-font-mono)', fontSize: 13.5, fontWeight: 700, color: 'var(--cb-neon-green)' }}>2023</div>
-                  <div style={{ color: '#cbd5e1', fontSize: 13 }}>Started my CSE journey. Explored programming and core CS concepts.</div>
-                </div>
-                <div className="cb-timeline-node">
-                  <span className="cb-timeline-dot" />
-                  <div style={{ fontFamily: 'var(--cb-font-mono)', fontSize: 13.5, fontWeight: 700, color: 'var(--cb-neon-green)' }}>2024</div>
-                  <div style={{ color: '#cbd5e1', fontSize: 13 }}>Deepened into AI/ML &amp; Web Development. Built and shipped multiple projects.</div>
+                  <div style={{ fontFamily: 'var(--cb-font-mono)', fontSize: 13.5, fontWeight: 700, color: 'var(--cb-neon-green)' }}>2024 (Oct)</div>
+                  <div style={{ color: '#cbd5e1', fontSize: 13 }}>Established GitHub profile (Oct 23, 2024). Explored C/Python algorithms, data structures, and Unix systems.</div>
                 </div>
                 <div className="cb-timeline-node">
                   <span className="cb-timeline-dot" />
                   <div style={{ fontFamily: 'var(--cb-font-mono)', fontSize: 13.5, fontWeight: 700, color: 'var(--cb-neon-green)' }}>2025</div>
-                  <div style={{ color: '#cbd5e1', fontSize: 13 }}>Focused on Cybersecurity and real-world applications. Working on advanced projects and open-source.</div>
+                  <div style={{ color: '#cbd5e1', fontSize: 13 }}>Storage Kinematics &amp; OS Simulator. Built 60 FPS Canvas visualizer benchmarking 11 disk scheduling algorithms.</div>
                 </div>
                 <div className="cb-timeline-node">
                   <span className="cb-timeline-dot" />
                   <div style={{ fontFamily: 'var(--cb-font-mono)', fontSize: 13.5, fontWeight: 700, color: 'var(--cb-neon-green)' }}>2026</div>
-                  <div style={{ color: '#cbd5e1', fontSize: 13 }}>Building, learning, and preparing for opportunities. Open to internships and collaborations.</div>
+                  <div style={{ color: '#cbd5e1', fontSize: 13 }}>Production AI, High-Speed Cyber Defense &amp; SIH Finale. Engineered Priocardix-AI, VIREONIQ, BrainCheck, TrustShield-X, and TECH-ON-TOUR.</div>
                 </div>
               </div>
               <div className="cb-journey-visual-box">

@@ -105,20 +105,20 @@ export default function AboutPage() {
           </div>
 
           <div className="relative pl-6 sm:pl-10 space-y-12 sm:space-y-16 before:content-[''] before:absolute before:left-2 sm:before:left-3 before:top-3 before:bottom-3 before:w-px before:bg-[rgb(var(--border))]">
-            {/* 2023 */}
+            {/* 2024 */}
             <div className="relative group">
               <div className="absolute -left-[27px] sm:-left-[39px] top-1.5 w-3 h-3 rounded-full bg-[rgb(var(--bg-secondary))] border-2 border-[rgb(var(--fg-muted))] group-hover:border-[rgb(var(--accent))] transition-colors" />
               <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6 mb-2">
-                <span className="text-xl font-mono font-bold text-[rgb(var(--fg-primary))]">2023</span>
+                <span className="text-xl font-mono font-bold text-[rgb(var(--fg-primary))]">2024</span>
                 <span className="text-xs font-mono uppercase tracking-wider px-2.5 py-0.5 rounded bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border))] text-[rgb(var(--accent))] font-semibold">
-                  Learning &bull; Fundamentals
+                  Inception &bull; Foundations
                 </span>
               </div>
               <h3 className="text-lg font-semibold text-[rgb(var(--fg-primary))] mb-2">
-                Computer Science Foundations &amp; Systems Logic
+                Computer Science Foundations &amp; GitHub Inception
               </h3>
               <p className="text-sm text-[rgb(var(--fg-muted))] leading-relaxed max-w-3xl">
-                Began formal B.Tech in Computer Science. Studied computer architecture, data structures, algorithms, and low-level C programming. Focused on memory allocation, pointers, and understanding how software maps to hardware limits.
+                Officially established GitHub engineering presence (October 23, 2024). Studied computer architecture, data structures, algorithms, and low-level C programming. Focused on memory allocation, pointers, and understanding how software maps to hardware limits.
               </p>
             </div>
 
