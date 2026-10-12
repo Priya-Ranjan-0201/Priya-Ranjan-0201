@@ -94,9 +94,9 @@ Open `README.md` in your editor and perform a search & replace for the following
 
 | Search For | Replace With | Example |
 | :--- | :--- | :--- |
-| `REPLACE_THIS_WITH_PORTFOLIO_URL` | Your live portfolio URL | `https://priyaranjan.dev` |
-| `REPLACE_THIS_WITH_LINKEDIN_URL` | Your LinkedIn profile URL | `https://linkedin.com/in/priyaranjan` |
-| `REPLACE_THIS_WITH_EMAIL` | Your direct contact email | `priyaranjan.cs@gmail.com` |
+| `your verified portfolio URL` | Your live portfolio URL | `https://priyaranjan.dev` |
+| `your verified LinkedIn URL` | Your LinkedIn profile URL | `https://linkedin.com/in/priyaranjan` |
+| `priye0201@gmail.com` | Your direct contact email | `priye0201@gmail.com` |
 
 Both the top action badges and the bottom **"10 // LET'S CONNECT"** section will automatically update.
 
@@ -161,7 +161,7 @@ Once pushed, open [https://github.com/Priya-Ranjan-0201](https://github.com/Priy
 - [ ] **Action Badges:** All 4 badges are vertically aligned and clickable.
 - [ ] **Pipeline & Build Cycle:** SVGs expand responsively across desktop and mobile screens.
 - [ ] **Project Cards:** 2-column layout renders cleanly with high-contrast text.
-- [ ] **Stats & Streak:** Cards show live numbers with `#00F2FE` cyan accents matching the custom theme.
+- [ ] **Stats & Streak:** Cards show live numbers with `#39FF14` neon-green accents matching the Green Nova theme.
 - [ ] **Light Mode Check:** Toggle GitHub to light mode (Settings → Appearance → Light Default). Verify that all dark-slate cards function as intentional visual modules with clear borders, ensuring full legibility.
 
 ---
