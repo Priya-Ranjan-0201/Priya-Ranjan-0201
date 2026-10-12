@@ -39,7 +39,7 @@ I like understanding how systems work under the hood—from algorithms and APIs 
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/Priya-Ranjan-0201/VIREONIQ"><img src="assets/project_vireoniq.svg" width="100%" alt="VIREONIQ animated project artwork — career intelligence and code analysis" /></a>
+<div align="center"><a href="https://github.com/Priya-Ranjan-0201/VIREONIQ"><img src="assets/project_vireoniq.svg" width="86%" alt="VIREONIQ animation: career-path orbit and code-analysis interface" /></a></div>
 
 ### [VIREONIQ ↗](https://github.com/Priya-Ranjan-0201/VIREONIQ)
 
@@ -53,7 +53,7 @@ I like understanding how systems work under the hood—from algorithms and APIs 
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/Priya-Ranjan-0201/TrustShield-X"><img src="assets/project_truthshield.svg" width="100%" alt="TrustShield-X animated project artwork — network defense and threat signals" /></a>
+<div align="center"><a href="https://github.com/Priya-Ranjan-0201/TrustShield-X"><img src="assets/project_truthshield.svg" width="86%" alt="TrustShield-X animation: network threat nodes and rotating security radar" /></a></div>
 
 ### [TrustShield-X ↗](https://github.com/Priya-Ranjan-0201/TrustShield-X)
 
@@ -69,7 +69,7 @@ I like understanding how systems work under the hood—from algorithms and APIs 
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><img src="assets/project_techontour.svg" width="100%" alt="Tech On Tour animated project artwork — smart tourism and travel discovery" /></a>
+<div align="center"><a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><img src="assets/project_techontour.svg" width="86%" alt="Tech On Tour animation: globe, destination markers, and moving travel route" /></a></div>
 
 ### [Tech On Tour / TravelSathi ↗](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR)
 
@@ -83,7 +83,7 @@ I like understanding how systems work under the hood—from algorithms and APIs 
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><img src="assets/project_priocardix.svg" width="100%" alt="Priocardix-AI animated project artwork — ECG signals and preventive cardiology" /></a>
+<div align="center"><a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><img src="assets/project_priocardix.svg" width="86%" alt="Priocardix-AI animation: cardiac waveform, ECG signal point, and scan line" /></a></div>
 
 ### [Priocardix-AI ↗](https://github.com/Priya-Ranjan-0201/Priocardix-AI)
 
@@ -99,7 +99,7 @@ I like understanding how systems work under the hood—from algorithms and APIs 
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/Priya-Ranjan-0201/BrainCheck"><img src="assets/project_braincheck.svg" width="100%" alt="BrainCheck animated project artwork — cognitive assessment and quiz platform" /></a>
+<div align="center"><a href="https://github.com/Priya-Ranjan-0201/BrainCheck"><img src="assets/project_braincheck.svg" width="86%" alt="BrainCheck animation: neural connections and cognitive assessment progress meter" /></a></div>
 
 ### [BrainCheck ↗](https://github.com/Priya-Ranjan-0201/BrainCheck)
 
@@ -113,7 +113,7 @@ I like understanding how systems work under the hood—from algorithms and APIs 
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm"><img src="assets/disk-scheduling.svg" width="100%" alt="Animated Green Nova disk scheduling simulator showing the head traversing cylinder requests" /></a>
+<div align="center"><a href="https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm"><img src="assets/disk-scheduling.svg" width="86%" alt="Disk Scheduling animation: disk head moving between cylinder requests across scheduling algorithms" /></a></div>
 
 ### [Disk Scheduling Visualizer ↗](https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm)
 
