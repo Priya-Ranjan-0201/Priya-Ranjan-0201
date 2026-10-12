@@ -180,7 +180,7 @@ I like understanding how systems work under the hood—from algorithms and APIs 
 <br/><br/>
 
 <a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/LANGUAGES-SEE_REAL_REPOSITORY_BREAKDOWN-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="See real language breakdown in GitHub repositories" /></a>
-<a href="https://github.com/Priya-Ranjan-0201?tab=overview&from=2026-01-01&to=2026-12-31"><img src="https://img.shields.io/badge/CONTRIBUTIONS-OPEN_GITHUB_PROFILE-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="Open GitHub profile contribution activity" /></a>
+<a href="https://github.com/Priya-Ranjan-0201#contributions"><img src="https://img.shields.io/badge/CONTRIBUTIONS-OPEN_GITHUB_PROFILE-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="Open GitHub profile contribution activity" /></a>
 
 <sub>These badges query GitHub/Shields dynamically. Language proportions and contribution history are best checked on each repository's Languages panel and the native GitHub profile. I have intentionally avoided hard-coded statistics and invented language percentages.</sub>
 
