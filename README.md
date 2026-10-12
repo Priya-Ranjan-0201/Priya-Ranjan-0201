@@ -19,7 +19,6 @@
 
 <div align="center">
 
-<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="assets/hero-build-log.svg" width="76%" alt="Animated Green Nova developer build log — click to explore projects" /></a>
 
 <a href="https://github.com/Priya-Ranjan-0201"><img src="https://img.shields.io/github/followers/Priya-Ranjan-0201?style=flat-square&label=GitHub%20followers&color=39FF14&labelColor=06120A" alt="GitHub followers" /></a>
 <a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/FOCUS-AI%2FML%20%7C%20SECURITY%20%7C%20WEB-06120A?style=flat-square&labelColor=06120A&color=39FF14" alt="Current focus areas" /></a>
