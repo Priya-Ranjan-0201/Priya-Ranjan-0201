@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 160" width="100%" height="auto">
+  
+  <defs>
+    <filter id="cardGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="neonTextGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c1622" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#060b12" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="pillBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#091816" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#050e12" stop-opacity="0.9"/>
+    </linearGradient>
+    <style>
+      .mono-txt { font-family: 'Fira Code', 'Consolas', 'Courier New', monospace; }
+      .sans-txt { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif; }
+      .display-txt { font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    </style>
+  </defs>
+
+  
+  <!-- 4 Cards -->
+  <!-- Card 1 -->
+  <g transform="translate(0, 0)">
+    <rect x="2" y="2" width="288" height="156" rx="10" fill="url(#cardBg)" stroke="#1e3a46" stroke-width="1.2"/>
+    <g transform="translate(20, 20)">
+      <rect x="0" y="0" width="34" height="34" rx="7" fill="#00ff88" fill-opacity="0.12" stroke="#00ff88" stroke-width="1"/>
+      <text font-size="16" x="8" y="24">🧠</text>
+      <text class="sans-txt" font-size="14" font-weight="700" fill="#ffffff" x="44" y="22">Artificial Intelligence</text>
+      <text class="sans-txt" font-size="13" fill="#cbd5e1" x="0" y="60">Exploring LLMs, RAG, and</text>
+      <text class="sans-txt" font-size="13" fill="#cbd5e1" x="0" y="82">real-world AI applications.</text>
+    </g>
+  </g>
+
+  <!-- Card 2 -->
+  <g transform="translate(304, 0)">
+    <rect x="2" y="2" width="288" height="156" rx="10" fill="url(#cardBg)" stroke="#1e3a46" stroke-width="1.2"/>
+    <g transform="translate(20, 20)">
+      <rect x="0" y="0" width="34" height="34" rx="7" fill="#00ff88" fill-opacity="0.12" stroke="#00ff88" stroke-width="1"/>
+      <text font-size="16" x="8" y="24">🛡️</text>
+      <text class="sans-txt" font-size="14" font-weight="700" fill="#ffffff" x="44" y="22">Cybersecurity</text>
+      <text class="sans-txt" font-size="13" fill="#cbd5e1" x="0" y="60">Learning security practices,</text>
+      <text class="sans-txt" font-size="13" fill="#cbd5e1" x="0" y="82">threat analysis, &amp; digital trust.</text>
+    </g>
+  </g>
+
+  <!-- Card 3 -->
+  <g transform="translate(608, 0)">
+    <rect x="2" y="2" width="288" height="156" rx="10" fill="url(#cardBg)" stroke="#1e3a46" stroke-width="1.2"/>
+    <g transform="translate(20, 20)">
+      <rect x="0" y="0" width="34" height="34" rx="7" fill="#00ff88" fill-opacity="0.12" stroke="#00ff88" stroke-width="1"/>
+      <text class="sans-txt" font-size="14" font-weight="700" fill="#00ff88" x="8" y="23">&lt;/&gt;</text>
+      <text class="sans-txt" font-size="14" font-weight="700" fill="#ffffff" x="44" y="22">Full-Stack Development</text>
+      <text class="sans-txt" font-size="13" fill="#cbd5e1" x="0" y="60">Building scalable web applications</text>
+      <text class="sans-txt" font-size="13" fill="#cbd5e1" x="0" y="82">and system design skills.</text>
+    </g>
+  </g>
+
+  <!-- Card 4 -->
+  <g transform="translate(912, 0)">
+    <rect x="2" y="2" width="286" height="156" rx="10" fill="url(#cardBg)" stroke="#1e3a46" stroke-width="1.2"/>
+    <g transform="translate(20, 20)">
+      <rect x="0" y="0" width="34" height="34" rx="7" fill="#00ff88" fill-opacity="0.12" stroke="#00ff88" stroke-width="1"/>
+      <text font-size="16" x="8" y="24">👥</text>
+      <text class="sans-txt" font-size="14" font-weight="700" fill="#ffffff" x="44" y="22">Open Source</text>
+      <text class="sans-txt" font-size="13" fill="#cbd5e1" x="0" y="60">Contributing to open-source and</text>
+      <text class="sans-txt" font-size="13" fill="#cbd5e1" x="0" y="82">collaborating with community.</text>
+    </g>
+  </g>
+</svg>
