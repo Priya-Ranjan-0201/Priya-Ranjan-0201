@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://github.com/Priya-Ranjan-0201"><img src="assets/hero-banner.svg" width="100%" alt="Blue Nova — Priya Ranjan | Ideas to Systems to Code to Impact" /></a>
+<a href="https://github.com/Priya-Ranjan-0201"><img src="assets/hero-banner.png" width="100%" alt="Blue Nova — Priya Ranjan | Ideas to Systems to Code to Impact" /></a>
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=700&color=00E5FF&center=true&vCenter=true&width=700&lines=PRIYA+RANJAN;Computer+Science+%26+Engineering;AI%2FML+%C2%B7+Cybersecurity+%C2%B7+Web+Development;IDEAS+%E2%86%92+SYSTEMS+%E2%86%92+CODE+%E2%86%92+IMPACT" alt="Animated introduction" />
 
@@ -269,7 +269,7 @@ Continuing to learn defensive engineering, architecture, testing, and practical 
 
 ## <code>06 / CURRENTLY EXPLORING</code>
 
-<img src="assets/currently-exploring.svg" width="100%" alt="Currently exploring" />
+<img src="assets/currently-exploring.png" width="100%" alt="Currently exploring" />
 
 <table>
 <tr>
@@ -283,7 +283,7 @@ Continuing to learn defensive engineering, architecture, testing, and practical 
 
 ## <code>07 / PRINCIPLES & HIGHLIGHTS</code>
 
-<img src="assets/achievements-highlights.svg" width="100%" alt="Achievements and highlights" />
+<img src="assets/achievements-highlights.png" width="100%" alt="Achievements and highlights" />
 
 <div align="center">
 
