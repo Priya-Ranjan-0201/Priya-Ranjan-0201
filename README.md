@@ -19,7 +19,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=17&duration=2400&pause=900&color=39FF14&center=true&vCenter=true&width=460&height=36&lines=%3E+BUILDING+USEFUL+SYSTEMS;%3E+LEARNING+AI+%26+CYBERSECURITY;%3E+ITERATE.+TEST.+IMPROVE." alt="Animated developer tagline" />
+<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="assets/hero-build-log.svg" width="76%" alt="Animated Green Nova developer build log — click to explore projects" /></a>
 
 <a href="https://github.com/Priya-Ranjan-0201"><img src="https://img.shields.io/github/followers/Priya-Ranjan-0201?style=flat-square&label=GitHub%20followers&color=39FF14&labelColor=06120A" alt="GitHub followers" /></a>
 <a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/FOCUS-AI%2FML%20%7C%20SECURITY%20%7C%20WEB-06120A?style=flat-square&labelColor=06120A&color=39FF14" alt="Current focus areas" /></a>
