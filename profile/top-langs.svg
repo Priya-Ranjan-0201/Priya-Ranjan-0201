@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="495" height="190" viewBox="0 0 495 190" role="img" aria-labelledby="t d">
 <title id="t">Top programming languages card</title><desc id="d">Blue Nova language analytics placeholder describing the language mix detected across public repositories. It does not invent language percentages.</desc>
-<defs><linearGradient id="b" x2="0" y2="1"><stop stop-color="#0d202c"/><stop offset="1" stop-color="#07131c"/></linearGradient><linearGradient id="c"><stop stop-color="#00e5ff"/><stop offset="1" stop-color="#438cff"/></linearGradient></defs>
-<rect x=".5" y=".5" width="494" height="189" rx="12" fill="url(#b)" stroke="#1b4555"/><path d="M18 1H477" stroke="url(#c)" stroke-width="2"/>
-<text x="22" y="29" fill="#00e5ff" font-family="monospace" font-size="12" letter-spacing="1.4">GITHUB / LANGUAGE MIX</text>
+<defs><linearGradient id="b" x2="0" y2="1"><stop stop-color="#0d202c"/><stop offset="1" stop-color="#06120A"/></linearGradient><linearGradient id="c"><stop stop-color="#39FF14"/><stop offset="1" stop-color="#00C853"/></linearGradient></defs>
+<rect x=".5" y=".5" width="494" height="189" rx="12" fill="url(#b)" stroke="#1C5A2A"/><path d="M18 1H477" stroke="url(#c)" stroke-width="2"/>
+<text x="22" y="29" fill="#39FF14" font-family="monospace" font-size="12" letter-spacing="1.4">GITHUB / LANGUAGE MIX</text>
 <text x="22" y="51" fill="#d8e7f0" font-family="Arial,sans-serif" font-size="11">Detected from source code in public repositories</text>
 <g font-family="Arial,sans-serif" font-size="11" fill="#d8e7f0">
- <text x="22" y="78">Python</text><rect x="112" y="68" width="340" height="10" rx="5" fill="#102c3a"/><rect x="112" y="68" width="230" height="10" rx="5" fill="#00e5ff" opacity=".9"/>
- <text x="22" y="101">JavaScript</text><rect x="112" y="91" width="340" height="10" rx="5" fill="#102c3a"/><rect x="112" y="91" width="170" height="10" rx="5" fill="#438cff" opacity=".9"/>
+ <text x="22" y="78">Python</text><rect x="112" y="68" width="340" height="10" rx="5" fill="#102c3a"/><rect x="112" y="68" width="230" height="10" rx="5" fill="#39FF14" opacity=".9"/>
+ <text x="22" y="101">JavaScript</text><rect x="112" y="91" width="340" height="10" rx="5" fill="#102c3a"/><rect x="112" y="91" width="170" height="10" rx="5" fill="#00C853" opacity=".9"/>
  <text x="22" y="124">TypeScript</text><rect x="112" y="114" width="340" height="10" rx="5" fill="#102c3a"/><rect x="112" y="114" width="125" height="10" rx="5" fill="#00d7a3" opacity=".9"/>
  <text x="22" y="147">HTML · CSS</text><rect x="112" y="137" width="340" height="10" rx="5" fill="#102c3a"/><rect x="112" y="137" width="88" height="10" rx="5" fill="#8b9dff" opacity=".9"/>
 </g>
