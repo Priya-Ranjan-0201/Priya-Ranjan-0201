@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://github.com/Priya-Ranjan-0201"><img src="assets/hero-banner.png" width="100%" alt="Priya Ranjan — Ideas to Systems to Code to Impact" /></a>
+<a href="https://github.com/Priya-Ranjan-0201"><img src="assets/hero-banner.svg" width="100%" alt="Blue Nova — Priya Ranjan | Ideas to Systems to Code to Impact" /></a>
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=700&color=00E5FF&center=true&vCenter=true&width=700&lines=PRIYA+RANJAN;Computer+Science+%26+Engineering;AI%2FML+%C2%B7+Cybersecurity+%C2%B7+Web+Development;IDEAS+%E2%86%92+SYSTEMS+%E2%86%92+CODE+%E2%86%92+IMPACT" alt="Animated introduction" />
 
@@ -8,7 +8,7 @@
 <a href="https://www.linkedin.com/in/priyaranjan01"><img src="https://img.shields.io/badge/CONNECT-LINKEDIN-07131C?style=for-the-badge&logo=linkedin&logoColor=00E5FF" alt="LinkedIn" /></a>
 <a href="mailto:priyaranjan01@gmail.com"><img src="https://img.shields.io/badge/SAY_HELLO-EMAIL-07131C?style=for-the-badge&logo=gmail&logoColor=00E5FF" alt="Email" /></a>
 
-**ENGINEER IN PROGRESS** · Curious by design. Building with intent.
+**COMPUTER SCIENCE & ENGINEERING** · AI/ML · CYBERSECURITY · SOFTWARE ENGINEERING<br/>Curious by design. Building with intent.
 
 </div>
 
@@ -19,7 +19,7 @@
 <td width="28%" valign="top">
 
 <div align="center">
-<img src="assets/profile-avatar.png" width="155" alt="Priya Ranjan avatar" />
+<img src="assets/avatar.jpg" width="155" alt="Priya Ranjan avatar" />
 
 ### PRIYA RANJAN
 @Priya-Ranjan-0201
@@ -54,8 +54,6 @@ I'm a Computer Science & Engineering student interested in building practical so
 
 My focus is on strengthening software engineering fundamentals while building projects that demonstrate applied learning—not just collecting technologies.
 
-<img src="assets/about-panel.png" width="100%" alt="Cyberpunk coding artwork" />
-
 ### WHAT I CARE ABOUT
 
 <table>
@@ -76,8 +74,6 @@ My focus is on strengthening software engineering fundamentals while building pr
 ---
 
 ## <code>02 / SELECTED WORK</code>
-
-<img src="assets/featured-projects.png" width="100%" alt="Featured projects" />
 
 <table>
 <tr>
@@ -157,7 +153,7 @@ Cognitive assessment and quiz application project, emphasizing web services and 
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm"><img src="assets/engineering-paradigms.png" width="100%" alt="Algorithms and engineering artwork" /></a>
+<div align="center"><sub>OPERATING SYSTEMS · ALGORITHM VISUALIZATION</sub></div>
 
 ### [Disk Scheduling Visualizer ↗](https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm)
 
@@ -181,7 +177,7 @@ Interactive visual exploration of operating-system disk scheduling algorithms an
 
 ## <code>03 / TECHNOLOGY STACK</code>
 
-<img src="assets/tech-stack.png" width="100%" alt="Technology stack" />
+<img src="assets/tech-stack.svg" width="100%" alt="Technology stack" />
 
 <table>
 <tr>
@@ -260,9 +256,10 @@ Continuing to learn defensive engineering, architecture, testing, and practical 
 </td>
 <td width="35%" valign="middle" align="center">
 
-<img src="assets/my-journey.png" width="100%" alt="My engineering journey" />
-
-<sub><b>Progress over perfection.</b></sub>
+<div align="center">
+<code>FOUNDATIONS</code><br/>↓<br/><code>VISUAL SYSTEMS</code><br/>↓<br/><code>FULL-STACK + AI</code><br/>↓<br/><code>SECURE ENGINEERING</code>
+<br/><br/><sub><b>Progress over perfection.</b></sub>
+</div>
 
 </td>
 </tr>
@@ -272,7 +269,7 @@ Continuing to learn defensive engineering, architecture, testing, and practical 
 
 ## <code>06 / CURRENTLY EXPLORING</code>
 
-<img src="assets/currently-exploring.png" width="100%" alt="Currently exploring" />
+<img src="assets/currently-exploring.svg" width="100%" alt="Currently exploring" />
 
 <table>
 <tr>
@@ -286,7 +283,7 @@ Continuing to learn defensive engineering, architecture, testing, and practical 
 
 ## <code>07 / PRINCIPLES & HIGHLIGHTS</code>
 
-<img src="assets/achievements-highlights.png" width="100%" alt="Achievements and highlights" />
+<img src="assets/achievements-highlights.svg" width="100%" alt="Achievements and highlights" />
 
 <div align="center">
 
@@ -319,7 +316,9 @@ I'm open to connecting about software projects, internships, collaborative learn
 </td>
 <td width="42%" valign="middle" align="center">
 
-<a href="mailto:priyaranjan01@gmail.com"><img src="assets/connect-banner.png" width="100%" alt="Let's connect" /></a>
+<div align="center">
+<code>OPEN TO INTERNSHIPS</code><br/><br/><sub>AI/ML · Cybersecurity · Software Engineering</sub>
+</div>
 
 </td>
 </tr>
