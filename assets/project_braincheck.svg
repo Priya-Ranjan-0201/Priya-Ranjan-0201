@@ -2,40 +2,40 @@
   <defs>
     <!-- Background & Depth -->
     <linearGradient id="b-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#020904"/>
-      <stop offset="40%" stop-color="#061C0D"/>
-      <stop offset="100%" stop-color="#010602"/>
+      <stop offset="0%" stop-color="#031207"/>
+      <stop offset="45%" stop-color="#082A14"/>
+      <stop offset="100%" stop-color="#020E05"/>
     </linearGradient>
 
-    <!-- Super Vivid Neon Gradients -->
+    <!-- Super Vivid Light Green Gradients -->
     <linearGradient id="b-neon" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00FFAA"/>
-      <stop offset="50%" stop-color="#39FF14"/>
-      <stop offset="100%" stop-color="#95FF00"/>
+      <stop offset="45%" stop-color="#39FF14"/>
+      <stop offset="100%" stop-color="#86EFAC"/>
     </linearGradient>
 
     <linearGradient id="b-cortex-left" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#95FF00"/>
-      <stop offset="50%" stop-color="#39FF14"/>
-      <stop offset="100%" stop-color="#0A3E17"/>
+      <stop offset="0%" stop-color="#A7F3D0"/>
+      <stop offset="45%" stop-color="#39FF14"/>
+      <stop offset="100%" stop-color="#15803D"/>
     </linearGradient>
 
     <linearGradient id="b-cortex-right" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#00FFAA"/>
-      <stop offset="50%" stop-color="#39FF14"/>
-      <stop offset="100%" stop-color="#0D4F1E"/>
+      <stop offset="45%" stop-color="#4ADE80"/>
+      <stop offset="100%" stop-color="#166534"/>
     </linearGradient>
 
     <radialGradient id="b-bloom" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#39FF14" stop-opacity="0.65"/>
-      <stop offset="40%" stop-color="#00FF88" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#020904" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0.6"/>
+      <stop offset="45%" stop-color="#4ADE80" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#031207" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Synaptic Grid Pattern -->
+    <!-- Synaptic Light Green Grid Pattern -->
     <pattern id="b-grid" width="26" height="26" patternUnits="userSpaceOnUse">
-      <path d="M26 0H0V26" fill="none" stroke="#13431D" stroke-width="0.75" opacity="0.65"/>
-      <circle cx="26" cy="26" r="1" fill="#39FF14" opacity="0.4"/>
+      <path d="M26 0H0V26" fill="none" stroke="#16A34A" stroke-width="0.7" opacity="0.45"/>
+      <circle cx="26" cy="26" r="1.2" fill="#4ADE80" opacity="0.5"/>
     </pattern>
 
     <!-- Glow Filters -->
@@ -61,10 +61,10 @@
   <!-- Base Plate & Grid -->
   <rect width="760" height="360" rx="16" fill="url(#b-bg)"/>
   <rect width="760" height="360" rx="16" fill="url(#b-grid)"/>
-  <rect width="756" height="356" x="2" y="2" rx="15" fill="none" stroke="#1D602D" stroke-width="1.8"/>
+  <rect width="756" height="356" x="2" y="2" rx="15" fill="none" stroke="#22C55E" stroke-width="1.8"/>
 
   <!-- High-Tech Corner Brackets -->
-  <path d="M12 38V12H38M748 38V12H722M12 322V348H38M748 322V348H722" fill="none" stroke="#39FF14" stroke-width="2.6" opacity="0.95"/>
+  <path d="M12 38V12H38M748 38V12H722M12 322V348H38M748 322V348H722" fill="none" stroke="#4ADE80" stroke-width="2.6" opacity="0.95"/>
   <circle cx="12" cy="12" r="3.5" fill="#39FF14" filter="url(#b-glow-mid)"/>
   <circle cx="748" cy="12" r="3.5" fill="#39FF14" filter="url(#b-glow-mid)"/>
   <circle cx="12" cy="348" r="3.5" fill="#39FF14" filter="url(#b-glow-mid)"/>
@@ -76,72 +76,72 @@
       <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite"/>
     </rect>
     <text x="44" y="24" fill="#39FF14" font-weight="800" letter-spacing="3">BRAINCHECK // COGNITIVE ASSESSMENT PLATFORM</text>
-    <text x="530" y="24" fill="#B9FFB0" letter-spacing="1.5">DOCKER · POSTGRES · FLASK</text>
+    <text x="530" y="24" fill="#A7F3D0" letter-spacing="1.5">DOCKER · POSTGRES · FLASK</text>
     <circle cx="724" cy="20" r="4.5" fill="#39FF14">
       <animate attributeName="r" values="3;6;3" dur="1.3s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.6;1;0.6" dur="1.3s" repeatCount="indefinite"/>
     </circle>
   </g>
-  <line x1="28" y1="36" x2="732" y2="36" stroke="#1D602D" stroke-width="1.2"/>
+  <line x1="28" y1="36" x2="732" y2="36" stroke="#22C55E" stroke-width="1.2"/>
 
   <!-- Core Radiant Glow -->
   <circle cx="380" cy="144" r="160" fill="url(#b-bloom)"/>
 
   <!-- Left Telemetry: Cognitive Benchmarks -->
   <g transform="translate(38, 80)" font-family="'SF Mono', 'Fira Code', monospace">
-    <text x="0" y="0" fill="#8DBF91" font-size="9.5" font-weight="700" letter-spacing="2">COGNITIVE INDEX</text>
+    <text x="0" y="0" fill="#86EFAC" font-size="9.5" font-weight="700" letter-spacing="2">COGNITIVE INDEX</text>
     
     <g transform="translate(0, 16)">
-      <rect x="0" y="0" width="98" height="22" rx="4" fill="#082211" stroke="#1D602D"/>
-      <text x="10" y="15" fill="#39FF14" font-size="9.5" font-weight="700">MEMORY: 99.2%</text>
+      <rect x="0" y="0" width="98" height="22" rx="4" fill="#0A2C16" stroke="#22C55E"/>
+      <text x="10" y="15" fill="#86EFAC" font-size="9.5" font-weight="700">MEMORY: 99.2%</text>
       
-      <rect x="0" y="28" width="98" height="22" rx="4" fill="#082211" stroke="#1D602D"/>
-      <text x="10" y="43" fill="#39FF14" font-size="9.5" font-weight="700">SPEED: 180 MS</text>
+      <rect x="0" y="28" width="98" height="22" rx="4" fill="#0A2C16" stroke="#22C55E"/>
+      <text x="10" y="43" fill="#86EFAC" font-size="9.5" font-weight="700">SPEED: 180 MS</text>
       
-      <rect x="0" y="56" width="98" height="22" rx="4" fill="#082211" stroke="#1D602D"/>
-      <text x="10" y="71" fill="#39FF14" font-size="9.5" font-weight="700">FOCUS: LVL 9</text>
+      <rect x="0" y="56" width="98" height="22" rx="4" fill="#0A2C16" stroke="#22C55E"/>
+      <text x="10" y="71" fill="#86EFAC" font-size="9.5" font-weight="700">FOCUS: LVL 9</text>
     </g>
 
     <text x="0" y="98" fill="#FFFFFF" font-size="13" font-weight="900" letter-spacing="1">SYNAPSE ACTIVE</text>
-    <text x="0" y="112" fill="#8DBF91" font-size="8.5" letter-spacing="1">128 NEURAL NODES</text>
+    <text x="0" y="112" fill="#A7F3D0" font-size="8.5" letter-spacing="1">128 NEURAL NODES</text>
   </g>
 
   <!-- Right Telemetry: System Architecture Cluster -->
   <g transform="translate(620, 80)" font-family="'SF Mono', 'Fira Code', monospace">
-    <text x="0" y="0" fill="#8DBF91" font-size="9.5" font-weight="700" letter-spacing="2">ARCHITECTURE</text>
+    <text x="0" y="0" fill="#86EFAC" font-size="9.5" font-weight="700" letter-spacing="2">ARCHITECTURE</text>
     
     <!-- Rotating Cluster Ring -->
     <g transform="translate(30, 36)">
-      <circle r="26" fill="#071E0F" stroke="#1D602D" stroke-width="1.8"/>
-      <circle r="20" fill="none" stroke="#247A35" stroke-dasharray="2 4"/>
+      <circle r="26" fill="#092814" stroke="#22C55E" stroke-width="1.8"/>
+      <circle r="20" fill="none" stroke="#16A34A" stroke-dasharray="2 4"/>
       <!-- Rotating Cluster Nodes -->
       <g>
         <circle cx="0" cy="-15" r="3.5" fill="#39FF14"/>
         <circle cx="13" cy="8" r="3.5" fill="#00FFAA"/>
-        <circle cx="-13" cy="8" r="3.5" fill="#95FF00"/>
-        <line x1="0" y1="-15" x2="13" y2="8" stroke="#247A35"/>
-        <line x1="13" y1="8" x2="-13" y2="8" stroke="#247A35"/>
-        <line x1="-13" y1="8" x2="0" y2="-15" stroke="#247A35"/>
+        <circle cx="-13" cy="8" r="3.5" fill="#86EFAC"/>
+        <line x1="0" y1="-15" x2="13" y2="8" stroke="#16A34A"/>
+        <line x1="13" y1="8" x2="-13" y2="8" stroke="#16A34A"/>
+        <line x1="-13" y1="8" x2="0" y2="-15" stroke="#16A34A"/>
         <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
       </g>
     </g>
 
     <text x="0" y="82" fill="#FFFFFF" font-size="13" font-weight="900" letter-spacing="1">DOCKER COMPOSE</text>
-    <text x="0" y="96" fill="#8DBF91" font-size="8.5" letter-spacing="1">POSTGRES + FLASK</text>
+    <text x="0" y="96" fill="#A7F3D0" font-size="8.5" letter-spacing="1">POSTGRES + FLASK</text>
 
     <!-- Modular Blueprints Badge -->
-    <rect x="0" y="108" width="98" height="24" rx="5" fill="#082211" stroke="#247A35" stroke-width="1.2"/>
-    <text x="10" y="124" fill="#39FF14" font-size="9.5" font-weight="700" letter-spacing="1.2">BLUEPRINTS: OK</text>
+    <rect x="0" y="108" width="98" height="24" rx="5" fill="#0A2C16" stroke="#22C55E" stroke-width="1.2"/>
+    <text x="10" y="124" fill="#86EFAC" font-size="9.5" font-weight="700" letter-spacing="1.2">BLUEPRINTS: OK</text>
   </g>
 
   <!-- ==================== CENTRAL BILATERAL CYBER-BRAIN ==================== -->
   <g transform="translate(380, 138)">
     <!-- Base Plate Housing -->
-    <circle r="102" fill="#05190B" stroke="#1D602D" stroke-width="1.5"/>
-    <circle r="92" fill="none" stroke="#247A35" stroke-width="1.2" stroke-dasharray="3 7" opacity="0.6"/>
+    <circle r="102" fill="#082613" stroke="#22C55E" stroke-width="1.5"/>
+    <circle r="92" fill="none" stroke="#4ADE80" stroke-width="1.2" stroke-dasharray="3 7" opacity="0.75"/>
 
     <!-- Rotating Synaptic Track (Clockwise, 12s) -->
-    <circle r="82" fill="none" stroke="#39FF14" stroke-width="1.8" stroke-dasharray="6 14" opacity="0.85" filter="url(#b-glow-mid)">
+    <circle r="82" fill="none" stroke="#4ADE80" stroke-width="1.8" stroke-dasharray="6 14" opacity="0.9" filter="url(#b-glow-mid)">
       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
     </circle>
 
@@ -207,25 +207,25 @@
     </g>
 
     <!-- Cardinal Crosshair Ticks -->
-    <path d="M-72 0H-56M56 0H72M0 -72V-56M0 56V72" stroke="#39FF14" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M-72 0H-56M56 0H72M0 -72V-56M0 56V72" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round"/>
   </g>
 
   <!-- ==================== LOGO HEADLINE & READOUT ==================== -->
   <g text-anchor="middle" font-family="'SF Mono', 'Fira Code', 'Consolas', monospace">
     <text x="380" y="246" fill="#FFFFFF" font-size="23" font-weight="900" letter-spacing="7" filter="url(#b-glow-mid)">BRAINCHECK</text>
-    <text x="380" y="266" fill="#B9FFB0" font-size="11" font-weight="700" letter-spacing="3.2">COGNITIVE ASSESSMENT · DOCKERIZED COMPOSE PLATFORM</text>
+    <text x="380" y="266" fill="#A7F3D0" font-size="11" font-weight="700" letter-spacing="3.2">COGNITIVE ASSESSMENT · DOCKERIZED COMPOSE PLATFORM</text>
   </g>
 
   <!-- Bottom Telemetry Bar -->
   <g transform="translate(95, 284)">
-    <rect width="570" height="38" rx="9" fill="#061B0E" stroke="#1D602D" stroke-width="1.5"/>
+    <rect width="570" height="38" rx="9" fill="#082512" stroke="#22C55E" stroke-width="1.5"/>
     
     <text x="18" y="24" fill="#39FF14" font-family="'SF Mono', monospace" font-size="14">🧠</text>
     
     <text x="48" y="24" fill="#FFFFFF" font-family="'SF Mono', monospace" font-size="10.5" font-weight="700" letter-spacing="1.2">SYNAPTIC NETWORK: 100%</text>
     
     <!-- Dynamic Progress Bar -->
-    <rect x="235" y="15" width="140" height="8" rx="4" fill="#0D2E16"/>
+    <rect x="235" y="15" width="140" height="8" rx="4" fill="#14532D"/>
     <rect x="235" y="15" width="115" height="8" rx="4" fill="url(#b-neon)" filter="url(#b-glow-mid)">
       <animate attributeName="width" values="75;135;115" dur="3.5s" repeatCount="indefinite"/>
     </rect>
@@ -236,8 +236,8 @@
     </circle>
 
     <!-- Postgres Tag -->
-    <rect x="390" y="10" width="86" height="18" rx="4" fill="#0A2A14" stroke="#247A35"/>
-    <text x="400" y="23" fill="#39FF14" font-family="'SF Mono', monospace" font-size="9.5" font-weight="700">POSTGRES</text>
+    <rect x="390" y="10" width="86" height="18" rx="4" fill="#0F381B" stroke="#4ADE80"/>
+    <text x="400" y="23" fill="#86EFAC" font-family="'SF Mono', monospace" font-size="9.5" font-weight="700">POSTGRES</text>
 
     <!-- Status Score -->
     <text x="495" y="24" fill="#FFFFFF" font-family="'SF Mono', monospace" font-size="11" font-weight="800">ACCURACY: 99.4%</text>
@@ -245,7 +245,7 @@
 
   <!-- Bottom Status Footer -->
   <g font-family="'SF Mono', 'Fira Code', monospace" font-size="10">
-    <text x="28" y="344" fill="#39FF14" font-weight="700" letter-spacing="2">● NEURAL CORRESPONDENCE ONLINE</text>
-    <text x="732" y="344" text-anchor="end" fill="#8DBF91" letter-spacing="1.5">PYTHON · FLASK BLUEPRINTS · POSTGRESQL · DOCKER COMPOSE</text>
+    <text x="28" y="344" fill="#4ADE80" font-weight="700" letter-spacing="2">● NEURAL CORRESPONDENCE ONLINE</text>
+    <text x="732" y="344" text-anchor="end" fill="#A7F3D0" letter-spacing="1.5">PYTHON · FLASK BLUEPRINTS · POSTGRESQL · DOCKER COMPOSE</text>
   </g>
 </svg>

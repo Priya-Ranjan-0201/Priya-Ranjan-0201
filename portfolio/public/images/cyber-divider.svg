@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="28" viewBox="0 0 1200 28" role="img" aria-label="Green Nova Animated Cyber Circuit Divider">
+  <defs>
+    <!-- Traveling Energy Beam Gradient -->
+    <linearGradient id="div-pulse" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#39FF14" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#00FFAA" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="div-core" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#86EFAC"/>
+      <stop offset="50%" stop-color="#39FF14"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+
+    <filter id="div-glow" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base Circuit Traces -->
+  <path d="M0 14 H440 L458 6 H520 L538 14 H662 L680 22 H742 L760 14 H1200" 
+        fill="none" stroke="#16A34A" stroke-width="1.4" opacity="0.65"/>
+  
+  <path d="M40 14 H430 L448 6 H510 L528 14 H672 L690 22 H752 L770 14 H1160" 
+        fill="none" stroke="#22C55E" stroke-width="0.8" stroke-dasharray="4 8" opacity="0.75"/>
+
+  <!-- Left & Right Hex Nodes -->
+  <polygon points="436,14 440,11 448,11 452,14 448,17 440,17" fill="#061F0E" stroke="#39FF14" stroke-width="1.2"/>
+  <polygon points="764,14 768,11 776,11 780,14 776,17 768,17" fill="#061F0E" stroke="#39FF14" stroke-width="1.2"/>
+
+  <!-- Animated High-Speed Traveling Photon Energy Pulse -->
+  <path d="M0 14 H440 L458 6 H520 L538 14 H662 L680 22 H742 L760 14 H1200" 
+        fill="none" stroke="url(#div-pulse)" stroke-width="2.5" stroke-linecap="round"
+        stroke-dasharray="80 1200" filter="url(#div-glow)">
+    <animate attributeName="stroke-dashoffset" values="1280;0" dur="4.2s" repeatCount="indefinite"/>
+  </path>
+
+  <path d="M1200 14 H760 L742 22 H680 L662 14 H538 L520 6 H458 L440 14 H0" 
+        fill="none" stroke="url(#div-pulse)" stroke-width="2" stroke-linecap="round"
+        stroke-dasharray="60 1200" opacity="0.75">
+    <animate attributeName="stroke-dashoffset" values="0;1260" dur="5.5s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- ==================== CENTRAL QUANTUM DIAMOND CORE ==================== -->
+  <g transform="translate(600, 14)">
+    <!-- Outer Reticle Ring -->
+    <circle r="11" fill="#061F0E" stroke="#22C55E" stroke-width="1.2"/>
+    <circle r="9" fill="none" stroke="#39FF14" stroke-width="1" stroke-dasharray="2 4">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Diamond Core Crest -->
+    <polygon points="0,-7 7,0 0,7 -7,0" fill="url(#div-core)" stroke="#FFFFFF" stroke-width="1" filter="url(#div-glow)">
+      <animate attributeName="transform" type="scale" values="1;1.25;1" dur="1.8s" repeatCount="indefinite"/>
+    </polygon>
+
+    <!-- Glowing Center Beacon Point -->
+    <circle cx="0" cy="0" r="2.5" fill="#FFFFFF">
+      <animate attributeName="r" values="1.8;3.5;1.8" dur="1.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

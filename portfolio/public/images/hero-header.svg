@@ -125,7 +125,7 @@
     <!-- Button 1: View My Projects -> -->
     <g transform="translate(60, 342)">
       <rect x="0" y="0" width="175" height="42" rx="7" fill="#00ff88" filter="url(#neonGlow)"/>
-      <text x="18" y="26" class="sans-txt" font-size="13.5" font-weight="700" fill="#04120c">View My Projects &rarr;</text>
+      <text x="18" y="26" class="sans-txt" font-size="13.5" font-weight="700" fill="#04120c">View My Projects →</text>
     </g>
 
     <!-- Button 2: Github -->

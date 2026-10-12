@@ -4,15 +4,15 @@
   <defs>
     <!-- Background Gradients -->
     <linearGradient id="hero-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#030C06"/>
-      <stop offset="45%" stop-color="#061A0C"/>
-      <stop offset="100%" stop-color="#020804"/>
+      <stop offset="0%" stop-color="#031207"/>
+      <stop offset="45%" stop-color="#082A14"/>
+      <stop offset="100%" stop-color="#020E05"/>
     </linearGradient>
 
     <linearGradient id="hero-neon" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00FF88"/>
+      <stop offset="0%" stop-color="#00FFAA"/>
       <stop offset="50%" stop-color="#39FF14"/>
-      <stop offset="100%" stop-color="#70FF00"/>
+      <stop offset="100%" stop-color="#86EFAC"/>
     </linearGradient>
 
     <linearGradient id="hero-laser" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -23,14 +23,14 @@
 
     <radialGradient id="hero-core-glow" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#39FF14" stop-opacity="0.32"/>
-      <stop offset="50%" stop-color="#00FF88" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#030C06" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#4ADE80" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#031207" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Sci-Fi Grid Pattern -->
+    <!-- Sci-Fi Light Green Grid Pattern -->
     <pattern id="hero-grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0H0V28" fill="none" stroke="#123B1C" stroke-width="0.65" opacity="0.6"/>
-      <circle cx="28" cy="28" r="0.8" fill="#39FF14" opacity="0.3"/>
+      <path d="M28 0H0V28" fill="none" stroke="#16A34A" stroke-width="0.65" opacity="0.45"/>
+      <circle cx="28" cy="28" r="1" fill="#4ADE80" opacity="0.4"/>
     </pattern>
 
     <!-- Glow Filters -->
@@ -66,7 +66,7 @@
     <circle cx="790" cy="150" r="220" fill="url(#hero-core-glow)"/>
 
     <!-- Outer Tech Corner Accents -->
-    <path d="M16 36V16H36M984 36V16H964M16 264V284H36M984 264V284H964" fill="none" stroke="#39FF14" stroke-width="2" opacity="0.85"/>
+    <path d="M16 36V16H36M984 36V16H964M16 264V284H36M984 264V284H964" fill="none" stroke="#4ADE80" stroke-width="2" opacity="0.95"/>
     <circle cx="16" cy="16" r="2.5" fill="#39FF14"/>
     <circle cx="984" cy="16" r="2.5" fill="#39FF14"/>
     <circle cx="16" cy="284" r="2.5" fill="#39FF14"/>
@@ -88,7 +88,7 @@
           <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
         </rect>
         <text x="16" y="8" fill="#39FF14" font-size="11" font-weight="700" letter-spacing="2.8">PORTFOLIO SYSTEM // ONLINE</text>
-        <line x1="0" y1="20" x2="420" y2="20" stroke="#174A24" stroke-width="1.2"/>
+        <line x1="0" y1="20" x2="420" y2="20" stroke="#22C55E" stroke-width="1.2"/>
       </g>
 
       <!-- Main Developer Headline Name -->
@@ -99,17 +99,17 @@
 
       <!-- Subtitle & Identity -->
       <text x="2" y="116" fill="url(#hero-neon)" font-size="16" font-weight="700" letter-spacing="2.5">DEVELOPER · SYSTEMS THINKER</text>
-      <text x="2" y="146" fill="#8DBF91" font-size="12.5" letter-spacing="1.2">
+      <text x="2" y="146" fill="#A7F3D0" font-size="12.5" letter-spacing="1.2">
         AI / ML <tspan fill="#39FF14">✦</tspan> CYBERSECURITY <tspan fill="#39FF14">✦</tspan> SOFTWARE ENGINEERING
       </text>
 
       <!-- Interactive Status Badge & Mini Equalizer -->
       <g transform="translate(0, 172)">
-        <rect x="0" y="0" width="260" height="32" rx="7" fill="#071E0F" stroke="#174A24" stroke-width="1.2"/>
+        <rect x="0" y="0" width="260" height="32" rx="7" fill="#092814" stroke="#22C55E" stroke-width="1.2"/>
         <circle cx="16" cy="16" r="4" fill="#39FF14">
           <animate attributeName="r" values="3;5;3" dur="1.5s" repeatCount="indefinite"/>
         </circle>
-        <text x="28" y="20" fill="#E8F7E8" font-size="10.5" font-weight="700" letter-spacing="1.5">BUILDING IN PROGRESS</text>
+        <text x="28" y="20" fill="#FFFFFF" font-size="10.5" font-weight="700" letter-spacing="1.5">BUILDING IN PROGRESS</text>
         
         <!-- Live Micro-Equalizer Bars Inside Pill -->
         <g transform="translate(205, 16)">
@@ -117,11 +117,11 @@
             <animate attributeName="height" values="6;18;8;14;6" dur="1.2s" repeatCount="indefinite"/>
             <animate attributeName="y" values="-3;-9;-4;-7;-3" dur="1.2s" repeatCount="indefinite"/>
           </rect>
-          <rect x="6" y="-8" width="3" height="16" rx="1.5" fill="#00FF88">
+          <rect x="6" y="-8" width="3" height="16" rx="1.5" fill="#00FFAA">
             <animate attributeName="height" values="16;6;18;8;16" dur="1.4s" repeatCount="indefinite"/>
             <animate attributeName="y" values="-8;-3;-9;-4;-8" dur="1.4s" repeatCount="indefinite"/>
           </rect>
-          <rect x="12" y="-8" width="3" height="16" rx="1.5" fill="#70FF00">
+          <rect x="12" y="-8" width="3" height="16" rx="1.5" fill="#86EFAC">
             <animate attributeName="height" values="10;18;6;16;10" dur="1.1s" repeatCount="indefinite"/>
             <animate attributeName="y" values="-5;-9;-3;-8;-5" dur="1.1s" repeatCount="indefinite"/>
           </rect>
@@ -136,11 +136,11 @@
     <!-- ==================== RIGHT 3D QUANTUM GYROSCOPE & CORE ==================== -->
     <g transform="translate(790, 148)">
       <!-- Outer Base Ring -->
-      <circle r="110" fill="none" stroke="#174A24" stroke-width="1.2"/>
-      <circle r="96" fill="none" stroke="#247A35" stroke-width="1" stroke-dasharray="3 7" opacity="0.6"/>
+      <circle r="110" fill="none" stroke="#22C55E" stroke-width="1.2" opacity="0.75"/>
+      <circle r="96" fill="none" stroke="#4ADE80" stroke-width="1" stroke-dasharray="3 7" opacity="0.75"/>
 
       <!-- 1. Outer Compass Ring Rotating Clockwise -->
-      <circle r="86" fill="none" stroke="#39FF14" stroke-width="1.8" stroke-dasharray="8 14" opacity="0.8">
+      <circle r="86" fill="none" stroke="#4ADE80" stroke-width="1.8" stroke-dasharray="8 14" opacity="0.9">
         <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
       </circle>
 
@@ -150,12 +150,12 @@
       </ellipse>
 
       <!-- 3. Inner Elliptical Gyroscope Ring (Tilted +45°) -->
-      <ellipse rx="124" ry="48" fill="none" stroke="#00FF88" stroke-width="1.4" opacity="0.75">
+      <ellipse rx="124" ry="48" fill="none" stroke="#00FFAA" stroke-width="1.4" opacity="0.75">
         <animateTransform attributeName="transform" type="rotate" from="45" to="-315" dur="22s" repeatCount="indefinite"/>
       </ellipse>
 
       <!-- Pulsing Energy Core Ring -->
-      <circle r="48" fill="#072010" stroke="#247A35" stroke-width="1.5"/>
+      <circle r="48" fill="#0A2E16" stroke="#22C55E" stroke-width="1.5"/>
       <circle r="34" fill="none" stroke="url(#hero-neon)" stroke-width="2.2">
         <animate attributeName="r" values="30;38;30" dur="3s" repeatCount="indefinite"/>
       </circle>
@@ -186,12 +186,12 @@
       </g>
 
       <g transform="rotate(110)">
-        <circle cx="124" cy="0" r="3" fill="#B9FFB0"/>
+        <circle cx="124" cy="0" r="3" fill="#86EFAC"/>
         <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="18s" repeatCount="indefinite"/>
       </g>
     </g>
 
     <!-- Outer Structural Border -->
-    <rect x="1" y="1" width="998" height="298" rx="16" fill="none" stroke="#1C5A2A" stroke-width="1.5"/>
+    <rect x="1" y="1" width="998" height="298" rx="16" fill="none" stroke="#22C55E" stroke-width="1.5"/>
   </g>
 </svg>

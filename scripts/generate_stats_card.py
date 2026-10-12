@@ -48,7 +48,7 @@ def parse_existing_svg():
             'longest_streak': int(long_streak_m.group(1)) if long_streak_m else 6,
             'langs': [
                 {'name': 'TypeScript', 'pct': 48.9, 'color': '#39FF14'},
-                {'name': 'Python', 'pct': 43.3, 'color': '#247A35'},
+                {'name': 'Python', 'pct': 43.3, 'color': '#22C55E'},
                 {'name': 'JavaScript', 'pct': 5.2, 'color': '#F7DF1E'},
                 {'name': 'CSS', 'pct': 1.8, 'color': '#563D7C'},
                 {'name': 'HTML', 'pct': 0.5, 'color': '#E34C26'}
@@ -192,7 +192,7 @@ def fetch_stats():
     top_langs = sorted(lang_bytes.items(), key=lambda x: x[1], reverse=True)[:5]
     
     lang_colors = {
-        'Python': '#247A35',
+        'Python': '#22C55E',
         'TypeScript': '#39FF14',
         'JavaScript': '#F7DF1E',
         'CSS': '#563D7C',
@@ -278,7 +278,7 @@ def generate_svg(stats):
     <!-- Green Nova Accent -->
     <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#39FF14"/>
-      <stop offset="100%" stop-color="#247A35"/>
+      <stop offset="100%" stop-color="#22C55E"/>
     </linearGradient>
 
     <!-- Emerald Flame Gradient -->

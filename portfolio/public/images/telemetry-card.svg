@@ -13,10 +13,10 @@
       <stop offset="100%" stop-color="#0A0E18"/>
     </linearGradient>
 
-    <!-- Clean Ice Cyan Accent -->
-    <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="100%" stop-color="#0284C7"/>
+    <!-- Green Nova Accent -->
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39FF14"/>
+      <stop offset="100%" stop-color="#22C55E"/>
     </linearGradient>
 
     <!-- Emerald Flame Gradient -->
@@ -34,7 +34,7 @@
 
     <!-- Dot Pattern -->
     <pattern id="gridDots" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1" fill="#38BDF8" fill-opacity="0.12"/>
+      <circle cx="2" cy="2" r="1" fill="#39FF14" fill-opacity="0.12"/>
     </pattern>
   </defs>
 
@@ -88,7 +88,7 @@
 
   <!-- Outer Canvas Container -->
   <rect x="2" y="2" width="956" height="356" rx="16" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="1.2"/>
-  <rect x="2" y="2" width="956" height="356" rx="16" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.5" class="border-runner"/>
+  <rect x="2" y="2" width="956" height="356" rx="16" fill="none" stroke="#39FF14" stroke-width="1.5" stroke-opacity="0.5" class="border-runner"/>
   <rect x="4" y="4" width="952" height="352" rx="14" fill="url(#gridDots)"/>
 
   <!-- ==================== TOP TITLE BAR ==================== -->
@@ -101,8 +101,8 @@
 
     <!-- Right-side status -->
     <g transform="translate(620, 0)">
-      <circle cx="10" cy="13" r="3.5" fill="#38BDF8" class="live-dot"/>
-      <text x="22" y="17" font-family="'SF Mono', Consolas, monospace" font-size="9.5" font-weight="600" fill="#38BDF8" letter-spacing="0.8px">
+      <circle cx="10" cy="13" r="3.5" fill="#39FF14" class="live-dot"/>
+      <text x="22" y="17" font-family="'SF Mono', Consolas, monospace" font-size="9.5" font-weight="600" fill="#39FF14" letter-spacing="0.8px">
         SYNCHRONIZED VIA HOURLY TOKEN
       </text>
     </g>
@@ -111,17 +111,17 @@
   <!-- ==================== PANEL 1: CORE GITHUB STATS & GRADE ==================== -->
   <g transform="translate(24, 62)">
     <rect x="0" y="0" width="320" height="274" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1"/>
-    <line x1="0" y1="0" x2="320" y2="0" stroke="url(#cyanLine)" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="320" y2="0" stroke="url(#greenLine)" stroke-width="2.5" stroke-linecap="round"/>
 
     <!-- Left Grade Crest -->
     <g transform="translate(0, 0)">
       <circle cx="68" cy="72" r="38" stroke="#1E293B" stroke-width="4" fill="#0A101D"/>
-      <circle cx="68" cy="72" r="38" stroke="#38BDF8" stroke-width="4" stroke-dasharray="190 240" stroke-linecap="round" fill="none" class="pulse-ring" filter="url(#softGlow)"/>
-      <text x="68" y="79" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="900" fill="#38BDF8">A+</text>
+      <circle cx="68" cy="72" r="38" stroke="#39FF14" stroke-width="4" stroke-dasharray="190 240" stroke-linecap="round" fill="none" class="pulse-ring" filter="url(#softGlow)"/>
+      <text x="68" y="79" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="900" fill="#39FF14">A+</text>
       
       <!-- Rank Label -->
       <rect x="23" y="122" width="90" height="20" rx="5" fill="#0F172A" stroke="#1E293B" stroke-width="0.8"/>
-      <text x="68" y="136" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="8.5" font-weight="700" fill="#38BDF8">S-TIER RANK</text>
+      <text x="68" y="136" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="8.5" font-weight="700" fill="#39FF14">S-TIER RANK</text>
     </g>
 
     <!-- Core Metrics List -->
@@ -134,7 +134,7 @@
       <!-- Total Commits -->
       <g transform="translate(0, 50)">
         <text x="0" y="12" class="label-text">TOTAL COMMITS</text>
-        <text x="0" y="34" font-size="20" fill="#38BDF8" class="value-text">519</text>
+        <text x="0" y="34" font-size="20" fill="#39FF14" class="value-text">688</text>
       </g>
       <!-- PRs & Issues -->
       <g transform="translate(0, 100)">
@@ -155,7 +155,7 @@
   <!-- ==================== PANEL 2: STREAK STATS ==================== -->
   <g transform="translate(360, 62)">
     <rect x="0" y="0" width="290" height="274" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1"/>
-    <line x1="0" y1="0" x2="290" y2="0" stroke="url(#cyanLine)" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="290" y2="0" stroke="url(#greenLine)" stroke-width="2.5" stroke-linecap="round"/>
 
     <!-- Section Header -->
     <g transform="translate(20, 20)">
@@ -186,19 +186,19 @@
     
     <g transform="translate(20, 222)">
       <text x="0" y="12" class="label-text">TOTAL CONTRIBUTIONS</text>
-      <text x="0" y="34" font-size="20" class="value-text">136</text>
+      <text x="0" y="34" font-size="20" class="value-text">137</text>
     </g>
 
     <g transform="translate(165, 222)">
       <text x="0" y="12" class="label-text">LONGEST STREAK</text>
-      <text x="0" y="34" font-size="20" fill="#38BDF8" class="value-text">12 <tspan font-size="13" fill="#8B949E">Days</tspan></text>
+      <text x="0" y="34" font-size="20" fill="#39FF14" class="value-text">12 <tspan font-size="13" fill="#8B949E">Days</tspan></text>
     </g>
   </g>
 
   <!-- ==================== PANEL 3: MOST USED LANGUAGES ==================== -->
   <g transform="translate(666, 62)">
     <rect x="0" y="0" width="270" height="274" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1"/>
-    <line x1="0" y1="0" x2="270" y2="0" stroke="url(#cyanLine)" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="270" y2="0" stroke="url(#greenLine)" stroke-width="2.5" stroke-linecap="round"/>
 
     <!-- Section Header -->
     <g transform="translate(18, 20)">
@@ -213,11 +213,11 @@
         <clipPath id="langBarClip">
           <rect x="0" y="0" width="234" height="6" rx="3"/>
         </clipPath>
-        <rect x="0.0" y="0" width="117.0" height="6" fill="#3572A5"/>
-<rect x="117.0" y="0" width="102.9" height="6" fill="#3178C6"/>
-<rect x="219.9" y="0" width="13.6" height="6" fill="#F7DF1E"/>
-<rect x="233.5" y="0" width="3.7" height="6" fill="#563D7C"/>
-<rect x="237.2" y="0" width="1.6" height="6" fill="#E34C26"/>
+        <rect x="0.0" y="0" width="116.4" height="6" fill="#39FF14"/>
+<rect x="116.4" y="0" width="103.3" height="6" fill="#22C55E"/>
+<rect x="219.7" y="0" width="12.9" height="6" fill="#F7DF1E"/>
+<rect x="232.6" y="0" width="4.4" height="6" fill="#563D7C"/>
+<rect x="236.9" y="0" width="2.2" height="6" fill="#E34C26"/>
       </g>
     </g>
 
@@ -225,37 +225,37 @@
     <g transform="translate(18, 96)">
       
         <g transform="translate(0, 0)">
-          <circle cx="5" cy="5" r="4" fill="#3572A5"/>
-          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">Python</text>
-          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">48.7%</text>
+          <circle cx="5" cy="5" r="4" fill="#39FF14"/>
+          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">TypeScript</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">48.5%</text>
         </g>
         
 
         <g transform="translate(125, 0)">
-          <circle cx="5" cy="5" r="4" fill="#3178C6"/>
-          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">TypeScript</text>
-          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">42.9%</text>
+          <circle cx="5" cy="5" r="4" fill="#22C55E"/>
+          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">Python</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">43.0%</text>
         </g>
         
 
         <g transform="translate(0, 22)">
           <circle cx="5" cy="5" r="4" fill="#F7DF1E"/>
           <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">JavaScript</text>
-          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">5.7%</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">5.4%</text>
         </g>
         
 
         <g transform="translate(125, 22)">
           <circle cx="5" cy="5" r="4" fill="#563D7C"/>
           <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">CSS</text>
-          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">1.5%</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">1.8%</text>
         </g>
         
 
         <g transform="translate(0, 44)">
           <circle cx="5" cy="5" r="4" fill="#E34C26"/>
           <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">HTML</text>
-          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">0.7%</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">0.9%</text>
         </g>
         
     </g>
@@ -265,7 +265,7 @@
     <g transform="translate(18, 218)">
       <text x="0" y="12" class="label-text">PRIMARY ARCHITECTURE</text>
       <text x="0" y="30" font-size="13" class="value-text">TypeScript &amp; Python 3</text>
-      <text x="0" y="46" font-family="'SF Mono', Consolas, monospace" font-size="9" font-weight="600" fill="#38BDF8">SYSTEMS &amp; APPLIED AI</text>
+      <text x="0" y="46" font-family="'SF Mono', Consolas, monospace" font-size="9" font-weight="600" fill="#39FF14">SYSTEMS &amp; APPLIED AI</text>
     </g>
   </g>
 </svg>

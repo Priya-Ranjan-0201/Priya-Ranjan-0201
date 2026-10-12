@@ -2,34 +2,34 @@
   <defs>
     <!-- Background & Depth -->
     <linearGradient id="g-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#020904"/>
-      <stop offset="40%" stop-color="#061C0D"/>
-      <stop offset="100%" stop-color="#010602"/>
+      <stop offset="0%" stop-color="#031207"/>
+      <stop offset="45%" stop-color="#082A14"/>
+      <stop offset="100%" stop-color="#020E05"/>
     </linearGradient>
 
-    <!-- Super Vivid Neon Gradients -->
+    <!-- Super Vivid Light Green Gradients -->
     <linearGradient id="g-neon" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00FFAA"/>
-      <stop offset="50%" stop-color="#39FF14"/>
-      <stop offset="100%" stop-color="#95FF00"/>
+      <stop offset="45%" stop-color="#39FF14"/>
+      <stop offset="100%" stop-color="#86EFAC"/>
     </linearGradient>
 
     <linearGradient id="g-pin" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#95FF00"/>
-      <stop offset="50%" stop-color="#39FF14"/>
-      <stop offset="100%" stop-color="#0E4B1E"/>
+      <stop offset="0%" stop-color="#A7F3D0"/>
+      <stop offset="45%" stop-color="#39FF14"/>
+      <stop offset="100%" stop-color="#15803D"/>
     </linearGradient>
 
     <radialGradient id="g-bloom" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#39FF14" stop-opacity="0.65"/>
-      <stop offset="40%" stop-color="#00FF88" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#020904" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0.6"/>
+      <stop offset="45%" stop-color="#4ADE80" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#031207" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Navigation Grid Pattern -->
+    <!-- Navigation Light Green Grid Pattern -->
     <pattern id="g-grid" width="26" height="26" patternUnits="userSpaceOnUse">
-      <path d="M26 0H0V26" fill="none" stroke="#13431D" stroke-width="0.75" opacity="0.65"/>
-      <circle cx="26" cy="26" r="1" fill="#39FF14" opacity="0.4"/>
+      <path d="M26 0H0V26" fill="none" stroke="#16A34A" stroke-width="0.7" opacity="0.45"/>
+      <circle cx="26" cy="26" r="1.2" fill="#4ADE80" opacity="0.5"/>
     </pattern>
 
     <!-- Glow Filters -->
@@ -55,10 +55,10 @@
   <!-- Base Plate & Grid -->
   <rect width="760" height="360" rx="16" fill="url(#g-bg)"/>
   <rect width="760" height="360" rx="16" fill="url(#g-grid)"/>
-  <rect width="756" height="356" x="2" y="2" rx="15" fill="none" stroke="#1D602D" stroke-width="1.8"/>
+  <rect width="756" height="356" x="2" y="2" rx="15" fill="none" stroke="#22C55E" stroke-width="1.8"/>
 
   <!-- High-Tech Corner Brackets -->
-  <path d="M12 38V12H38M748 38V12H722M12 322V348H38M748 322V348H722" fill="none" stroke="#39FF14" stroke-width="2.6" opacity="0.95"/>
+  <path d="M12 38V12H38M748 38V12H722M12 322V348H38M748 322V348H722" fill="none" stroke="#4ADE80" stroke-width="2.6" opacity="0.95"/>
   <circle cx="12" cy="12" r="3.5" fill="#39FF14" filter="url(#g-glow-mid)"/>
   <circle cx="748" cy="12" r="3.5" fill="#39FF14" filter="url(#g-glow-mid)"/>
   <circle cx="12" cy="348" r="3.5" fill="#39FF14" filter="url(#g-glow-mid)"/>
@@ -70,84 +70,84 @@
       <animate attributeName="opacity" values="1;0.2;1" dur="1.1s" repeatCount="indefinite"/>
     </rect>
     <text x="44" y="24" fill="#39FF14" font-weight="800" letter-spacing="3">TECH ON TOUR // TRAVELSATHI</text>
-    <text x="530" y="24" fill="#B9FFB0" letter-spacing="1.5">SMART INDIA HACKATHON · FINALE</text>
+    <text x="530" y="24" fill="#A7F3D0" letter-spacing="1.5">SMART INDIA HACKATHON · FINALE</text>
     <circle cx="724" cy="20" r="4.5" fill="#39FF14">
       <animate attributeName="r" values="3;6;3" dur="1.4s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.6;1;0.6" dur="1.4s" repeatCount="indefinite"/>
     </circle>
   </g>
-  <line x1="28" y1="36" x2="732" y2="36" stroke="#1D602D" stroke-width="1.2"/>
+  <line x1="28" y1="36" x2="732" y2="36" stroke="#22C55E" stroke-width="1.2"/>
 
   <!-- Core Radiant Glow -->
   <circle cx="380" cy="144" r="160" fill="url(#g-bloom)"/>
 
   <!-- Left Telemetry: Geo Navigation GPS -->
   <g transform="translate(38, 80)" font-family="'SF Mono', 'Fira Code', monospace">
-    <text x="0" y="0" fill="#8DBF91" font-size="9.5" font-weight="700" letter-spacing="2">GEO TELEMETRY</text>
+    <text x="0" y="0" fill="#86EFAC" font-size="9.5" font-weight="700" letter-spacing="2">GEO TELEMETRY</text>
     
     <g transform="translate(0, 16)">
-      <rect x="0" y="0" width="98" height="22" rx="4" fill="#082211" stroke="#1D602D"/>
-      <text x="10" y="15" fill="#39FF14" font-size="9.5" font-weight="700">LAT: 31.254° N</text>
+      <rect x="0" y="0" width="98" height="22" rx="4" fill="#0A2C16" stroke="#22C55E"/>
+      <text x="10" y="15" fill="#86EFAC" font-size="9.5" font-weight="700">LAT: 31.254° N</text>
       
-      <rect x="0" y="28" width="98" height="22" rx="4" fill="#082211" stroke="#1D602D"/>
-      <text x="10" y="43" fill="#39FF14" font-size="9.5" font-weight="700">LON: 75.705° E</text>
+      <rect x="0" y="28" width="98" height="22" rx="4" fill="#0A2C16" stroke="#22C55E"/>
+      <text x="10" y="43" fill="#86EFAC" font-size="9.5" font-weight="700">LON: 75.705° E</text>
       
-      <rect x="0" y="56" width="98" height="22" rx="4" fill="#082211" stroke="#1D602D"/>
-      <text x="10" y="71" fill="#39FF14" font-size="9.5" font-weight="700">ALT: 228 M</text>
+      <rect x="0" y="56" width="98" height="22" rx="4" fill="#0A2C16" stroke="#22C55E"/>
+      <text x="10" y="71" fill="#86EFAC" font-size="9.5" font-weight="700">ALT: 228 M</text>
     </g>
 
     <text x="0" y="98" fill="#FFFFFF" font-size="13" font-weight="900" letter-spacing="1">14 DESTINATIONS</text>
-    <text x="0" y="112" fill="#8DBF91" font-size="8.5" letter-spacing="1">GEO-FENCE READY</text>
+    <text x="0" y="112" fill="#A7F3D0" font-size="8.5" letter-spacing="1">GEO-FENCE READY</text>
   </g>
 
   <!-- Right Telemetry: Multilingual Travel Twin -->
   <g transform="translate(620, 80)" font-family="'SF Mono', 'Fira Code', monospace">
-    <text x="0" y="0" fill="#8DBF91" font-size="9.5" font-weight="700" letter-spacing="2">AI TRAVEL TWIN</text>
+    <text x="0" y="0" fill="#86EFAC" font-size="9.5" font-weight="700" letter-spacing="2">AI TRAVEL TWIN</text>
     
     <!-- Rotating Compass Dial -->
     <g transform="translate(30, 36)">
-      <circle r="26" fill="#071E0F" stroke="#1D602D" stroke-width="1.8"/>
-      <circle r="20" fill="none" stroke="#247A35" stroke-dasharray="2 4"/>
+      <circle r="26" fill="#092814" stroke="#22C55E" stroke-width="1.8"/>
+      <circle r="20" fill="none" stroke="#16A34A" stroke-dasharray="2 4"/>
       <!-- Compass Rose Needle -->
       <g>
         <polygon points="0,-18 5,0 0,6 -5,0" fill="#39FF14"/>
-        <polygon points="0,18 5,0 0,-6 -5,0" fill="#174A24"/>
+        <polygon points="0,18 5,0 0,-6 -5,0" fill="#15803D"/>
         <circle cx="0" cy="0" r="3" fill="#FFFFFF"/>
         <animateTransform attributeName="transform" type="rotate" values="0;50;-35;0" dur="4.5s" repeatCount="indefinite"/>
       </g>
     </g>
 
     <text x="0" y="82" fill="#FFFFFF" font-size="13" font-weight="900" letter-spacing="1">MULTILINGUAL</text>
-    <text x="0" y="96" fill="#8DBF91" font-size="8.5" letter-spacing="1">HINDI · ENG · REGIONAL</text>
+    <text x="0" y="96" fill="#A7F3D0" font-size="8.5" letter-spacing="1">HINDI · ENG · REGIONAL</text>
 
     <!-- SIH Badge -->
-    <rect x="0" y="108" width="98" height="24" rx="5" fill="#082211" stroke="#247A35" stroke-width="1.2"/>
-    <text x="10" y="124" fill="#39FF14" font-size="9.5" font-weight="700" letter-spacing="1.2">SIH TOP TIER</text>
+    <rect x="0" y="108" width="98" height="24" rx="5" fill="#0A2C16" stroke="#22C55E" stroke-width="1.2"/>
+    <text x="10" y="124" fill="#86EFAC" font-size="9.5" font-weight="700" letter-spacing="1.2">SIH TOP TIER</text>
   </g>
 
   <!-- ==================== HOLOGRAPHIC 3D GLOBE & COMPASS PIN ==================== -->
   <g transform="translate(380, 142)">
     <!-- Base Plate Housing -->
-    <circle r="102" fill="#05190B" stroke="#1D602D" stroke-width="1.5"/>
-    <circle r="92" fill="none" stroke="#247A35" stroke-width="1.2" stroke-dasharray="3 7" opacity="0.6"/>
+    <circle r="102" fill="#082613" stroke="#22C55E" stroke-width="1.5"/>
+    <circle r="92" fill="none" stroke="#4ADE80" stroke-width="1.2" stroke-dasharray="3 7" opacity="0.75"/>
 
     <!-- Outer Rotating Bearing Compass Ring (Clockwise, 12s) -->
-    <circle r="82" fill="none" stroke="#39FF14" stroke-width="1.8" stroke-dasharray="6 14" opacity="0.85" filter="url(#g-glow-mid)">
+    <circle r="82" fill="none" stroke="#4ADE80" stroke-width="1.8" stroke-dasharray="6 14" opacity="0.9" filter="url(#g-glow-mid)">
       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
     </circle>
 
     <!-- 3D Holographic Wireframe Globe (Tilted 23.5°) -->
     <g transform="rotate(-23.5)">
       <!-- Outer Globe Horizon -->
-      <circle r="74" fill="#072210" stroke="#39FF14" stroke-width="2.2" filter="url(#g-glow-mid)"/>
+      <circle r="74" fill="#092A15" stroke="#39FF14" stroke-width="2.2" filter="url(#g-glow-mid)"/>
       <!-- Latitude Rings -->
-      <ellipse rx="74" ry="26" fill="none" stroke="#247A35" stroke-width="1.4"/>
-      <ellipse rx="74" ry="50" fill="none" stroke="#247A35" stroke-width="1.4"/>
+      <ellipse rx="74" ry="26" fill="none" stroke="#4ADE80" stroke-width="1.4"/>
+      <ellipse rx="74" ry="50" fill="none" stroke="#4ADE80" stroke-width="1.4"/>
       <!-- Longitude Rings -->
-      <ellipse rx="28" ry="74" fill="none" stroke="#247A35" stroke-width="1.4"/>
-      <ellipse rx="56" ry="74" fill="none" stroke="#247A35" stroke-width="1.4"/>
-      <line x1="-74" y1="0" x2="74" y2="0" stroke="#39FF14" stroke-width="1.4" stroke-dasharray="3 4"/>
-      <line x1="0" y1="-74" x2="0" y2="74" stroke="#39FF14" stroke-width="1.4" stroke-dasharray="3 4"/>
+      <ellipse rx="28" ry="74" fill="none" stroke="#4ADE80" stroke-width="1.4"/>
+      <ellipse rx="56" ry="74" fill="none" stroke="#4ADE80" stroke-width="1.4"/>
+      <line x1="-74" y1="0" x2="74" y2="0" stroke="#86EFAC" stroke-width="1.4" stroke-dasharray="3 4"/>
+      <line x1="0" y1="-74" x2="0" y2="74" stroke="#86EFAC" stroke-width="1.4" stroke-dasharray="3 4"/>
       
       <!-- Coordinate Landmass Blips -->
       <g fill="#FFFFFF">
@@ -168,7 +168,7 @@
     <!-- Waypoint 1: Origin with Large Sonar Pulse -->
     <g transform="translate(-56, 36)">
       <circle r="5" fill="#FFFFFF"/>
-      <circle r="5" fill="none" stroke="#39FF14" stroke-width="2">
+      <circle r="5" fill="none" stroke="#4ADE80" stroke-width="2">
         <animate attributeName="r" values="4;22;4" dur="1.8s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="1;0;1" dur="1.8s" repeatCount="indefinite"/>
       </circle>
@@ -193,7 +193,7 @@
             fill="url(#g-pin)" stroke="#FFFFFF" stroke-width="2"/>
       
       <!-- Center Eye Beacon -->
-      <circle cx="0" cy="0" r="9" fill="#030E05" stroke="#39FF14" stroke-width="2.5"/>
+      <circle cx="0" cy="0" r="9" fill="#061E0E" stroke="#39FF14" stroke-width="2.5"/>
       <circle cx="0" cy="0" r="4.5" fill="#FFFFFF">
         <animate attributeName="r" values="3.5;6;3.5" dur="1.1s" repeatCount="indefinite"/>
       </circle>
@@ -206,25 +206,25 @@
     </g>
 
     <!-- Cardinal Crosshair Ticks -->
-    <path d="M-72 0H-56M56 0H72M0 -72V-56M0 56V72" stroke="#39FF14" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M-72 0H-56M56 0H72M0 -72V-56M0 56V72" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round"/>
   </g>
 
   <!-- ==================== LOGO HEADLINE & READOUT ==================== -->
   <g text-anchor="middle" font-family="'SF Mono', 'Fira Code', 'Consolas', monospace">
     <text x="380" y="246" fill="#FFFFFF" font-size="23" font-weight="900" letter-spacing="7" filter="url(#g-glow-mid)">TECH ON TOUR</text>
-    <text x="380" y="266" fill="#B9FFB0" font-size="11" font-weight="700" letter-spacing="3.2">SMART TOURISM TWIN · MULTILINGUAL ROUTE EXPLORER</text>
+    <text x="380" y="266" fill="#A7F3D0" font-size="11" font-weight="700" letter-spacing="3.2">SMART TOURISM TWIN · MULTILINGUAL ROUTE EXPLORER</text>
   </g>
 
   <!-- Bottom Telemetry Bar -->
   <g transform="translate(95, 284)">
-    <rect width="570" height="38" rx="9" fill="#061B0E" stroke="#1D602D" stroke-width="1.5"/>
+    <rect width="570" height="38" rx="9" fill="#082512" stroke="#22C55E" stroke-width="1.5"/>
     
     <text x="18" y="24" fill="#39FF14" font-family="'SF Mono', monospace" font-size="14">🧭</text>
     
     <text x="48" y="24" fill="#FFFFFF" font-family="'SF Mono', monospace" font-size="10.5" font-weight="700" letter-spacing="1.2">ITINERARY TWIN: ACTIVE</text>
     
     <!-- Dynamic Progress Bar -->
-    <rect x="235" y="15" width="140" height="8" rx="4" fill="#0D2E16"/>
+    <rect x="235" y="15" width="140" height="8" rx="4" fill="#14532D"/>
     <rect x="235" y="15" width="105" height="8" rx="4" fill="url(#g-neon)" filter="url(#g-glow-mid)">
       <animate attributeName="width" values="65;135;105" dur="3.8s" repeatCount="indefinite"/>
     </rect>
@@ -235,8 +235,8 @@
     </circle>
 
     <!-- GIS Tag -->
-    <rect x="390" y="10" width="86" height="18" rx="4" fill="#0A2A14" stroke="#247A35"/>
-    <text x="404" y="23" fill="#39FF14" font-family="'SF Mono', monospace" font-size="9.5" font-weight="700">GIS API</text>
+    <rect x="390" y="10" width="86" height="18" rx="4" fill="#0F381B" stroke="#4ADE80"/>
+    <text x="404" y="23" fill="#86EFAC" font-family="'SF Mono', monospace" font-size="9.5" font-weight="700">GIS API</text>
 
     <!-- Status Score -->
     <text x="495" y="24" fill="#FFFFFF" font-family="'SF Mono', monospace" font-size="11" font-weight="800">EXPLORATION: 100%</text>
@@ -244,7 +244,7 @@
 
   <!-- Bottom Status Footer -->
   <g font-family="'SF Mono', 'Fira Code', monospace" font-size="10">
-    <text x="28" y="344" fill="#39FF14" font-weight="700" letter-spacing="2">● SMART TOURISM FINALE</text>
-    <text x="732" y="344" text-anchor="end" fill="#8DBF91" letter-spacing="1.5">PYTHON · MULTILINGUAL UX · SUSTAINABLE DISCOVERY</text>
+    <text x="28" y="344" fill="#4ADE80" font-weight="700" letter-spacing="2">● SMART TOURISM FINALE</text>
+    <text x="732" y="344" text-anchor="end" fill="#A7F3D0" letter-spacing="1.5">PYTHON · MULTILINGUAL UX · SUSTAINABLE DISCOVERY</text>
   </g>
 </svg>

@@ -2,46 +2,46 @@
   <defs>
     <!-- Background & Depth -->
     <linearGradient id="v-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#020904"/>
-      <stop offset="40%" stop-color="#061C0D"/>
-      <stop offset="100%" stop-color="#010602"/>
+      <stop offset="0%" stop-color="#031207"/>
+      <stop offset="45%" stop-color="#082A14"/>
+      <stop offset="100%" stop-color="#020E05"/>
     </linearGradient>
 
-    <!-- Super Vivid Neon Gradients -->
+    <!-- Fresh Luminous Light Green Gradients -->
     <linearGradient id="v-neon" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00FFAA"/>
-      <stop offset="50%" stop-color="#39FF14"/>
-      <stop offset="100%" stop-color="#95FF00"/>
+      <stop offset="45%" stop-color="#39FF14"/>
+      <stop offset="100%" stop-color="#86EFAC"/>
     </linearGradient>
 
     <linearGradient id="v-crest-left" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#95FF00"/>
-      <stop offset="50%" stop-color="#39FF14"/>
-      <stop offset="100%" stop-color="#083D16"/>
+      <stop offset="0%" stop-color="#A7F3D0"/>
+      <stop offset="40%" stop-color="#39FF14"/>
+      <stop offset="100%" stop-color="#15803D"/>
     </linearGradient>
 
     <linearGradient id="v-crest-right" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#00FFAA"/>
-      <stop offset="50%" stop-color="#39FF14"/>
-      <stop offset="100%" stop-color="#0D5520"/>
+      <stop offset="45%" stop-color="#4ADE80"/>
+      <stop offset="100%" stop-color="#166534"/>
     </linearGradient>
 
     <linearGradient id="v-laser" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#39FF14" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#4ADE80" stop-opacity="0"/>
       <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.95"/>
-      <stop offset="100%" stop-color="#39FF14" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#4ADE80" stop-opacity="0"/>
     </linearGradient>
 
     <radialGradient id="v-bloom" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#39FF14" stop-opacity="0.65"/>
-      <stop offset="40%" stop-color="#00FF88" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#020904" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0.6"/>
+      <stop offset="45%" stop-color="#4ADE80" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#031207" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Tech Grid Pattern -->
+    <!-- Vibrant Light Green Grid Pattern -->
     <pattern id="v-grid" width="26" height="26" patternUnits="userSpaceOnUse">
-      <path d="M26 0H0V26" fill="none" stroke="#13431D" stroke-width="0.75" opacity="0.65"/>
-      <circle cx="26" cy="26" r="1" fill="#39FF14" opacity="0.4"/>
+      <path d="M26 0H0V26" fill="none" stroke="#16A34A" stroke-width="0.7" opacity="0.45"/>
+      <circle cx="26" cy="26" r="1.2" fill="#4ADE80" opacity="0.5"/>
     </pattern>
 
     <!-- Intense Bloom Filters -->
@@ -67,10 +67,10 @@
   <!-- Base Plate & Ambient Cyber Background -->
   <rect width="760" height="360" rx="16" fill="url(#v-bg)"/>
   <rect width="760" height="360" rx="16" fill="url(#v-grid)"/>
-  <rect width="756" height="356" x="2" y="2" rx="15" fill="none" stroke="#1D602D" stroke-width="1.8"/>
+  <rect width="756" height="356" x="2" y="2" rx="15" fill="none" stroke="#22C55E" stroke-width="1.8"/>
 
-  <!-- High-Tech Corner Brackets -->
-  <path d="M12 38V12H38M748 38V12H722M12 322V348H38M748 322V348H722" fill="none" stroke="#39FF14" stroke-width="2.6" opacity="0.95"/>
+  <!-- High-Tech Corner Brackets in Light Green -->
+  <path d="M12 38V12H38M748 38V12H722M12 322V348H38M748 322V348H722" fill="none" stroke="#4ADE80" stroke-width="2.6" opacity="0.95"/>
   <circle cx="12" cy="12" r="3.5" fill="#39FF14" filter="url(#v-glow-mid)"/>
   <circle cx="748" cy="12" r="3.5" fill="#39FF14" filter="url(#v-glow-mid)"/>
   <circle cx="12" cy="348" r="3.5" fill="#39FF14" filter="url(#v-glow-mid)"/>
@@ -82,20 +82,20 @@
       <animate attributeName="opacity" values="1;0.2;1" dur="0.9s" repeatCount="indefinite"/>
     </rect>
     <text x="44" y="24" fill="#39FF14" font-weight="800" letter-spacing="3">VIREONIQ // AI CAREER INTELLIGENCE</text>
-    <text x="530" y="24" fill="#B9FFB0" letter-spacing="1.5">AST PARSER · VECTOR ORBIT</text>
-    <circle cx="724" cy="20" r="4.5" fill="#39FF14">
+    <text x="530" y="24" fill="#A7F3D0" letter-spacing="1.5">AST PARSER · VECTOR ORBIT</text>
+    <circle cx="724" cy="20" r="4.5" fill="#4ADE80">
       <animate attributeName="r" values="3;6;3" dur="1.4s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.6;1;0.6" dur="1.4s" repeatCount="indefinite"/>
     </circle>
   </g>
-  <line x1="28" y1="36" x2="732" y2="36" stroke="#1D602D" stroke-width="1.2"/>
+  <line x1="28" y1="36" x2="732" y2="36" stroke="#22C55E" stroke-width="1.2"/>
 
   <!-- Radiant Core Backdrop Bloom -->
   <circle cx="380" cy="144" r="160" fill="url(#v-bloom)"/>
 
   <!-- Left Telemetry: Animated Frequency Equalizer & Vector Metrics -->
   <g transform="translate(38, 80)" font-family="'SF Mono', 'Fira Code', monospace">
-    <text x="0" y="0" fill="#8DBF91" font-size="9.5" font-weight="700" letter-spacing="2">AST SPECTRUM</text>
+    <text x="0" y="0" fill="#86EFAC" font-size="9.5" font-weight="700" letter-spacing="2">AST SPECTRUM</text>
     
     <!-- Dancing Equalizer Bars with High Amplitude -->
     <g transform="translate(0, 16)">
@@ -107,11 +107,11 @@
         <animate attributeName="height" values="36;12;46;22;36" dur="1.3s" repeatCount="indefinite"/>
         <animate attributeName="y" values="8;32;-2;22;8" dur="1.3s" repeatCount="indefinite"/>
       </rect>
-      <rect x="20" y="0" width="5" height="28" rx="2.5" fill="#95FF00">
+      <rect x="20" y="0" width="5" height="28" rx="2.5" fill="#86EFAC">
         <animate attributeName="height" values="20;46;10;34;20" dur="1.0s" repeatCount="indefinite"/>
         <animate attributeName="y" values="24;-2;34;10;24" dur="1.0s" repeatCount="indefinite"/>
       </rect>
-      <rect x="30" y="0" width="5" height="44" rx="2.5" fill="#39FF14">
+      <rect x="30" y="0" width="5" height="44" rx="2.5" fill="#4ADE80">
         <animate attributeName="height" values="40;18;34;48;40" dur="1.4s" repeatCount="indefinite"/>
         <animate attributeName="y" values="4;26;10;-4;4" dur="1.4s" repeatCount="indefinite"/>
       </rect>
@@ -119,29 +119,29 @@
         <animate attributeName="height" values="10;38;24;14;10" dur="1.2s" repeatCount="indefinite"/>
         <animate attributeName="y" values="34;6;20;30;34" dur="1.2s" repeatCount="indefinite"/>
       </rect>
-      <rect x="50" y="0" width="5" height="36" rx="2.5" fill="#95FF00">
+      <rect x="50" y="0" width="5" height="36" rx="2.5" fill="#39FF14">
         <animate attributeName="height" values="28;46;16;38;28" dur="1.5s" repeatCount="indefinite"/>
         <animate attributeName="y" values="16;-2;28;6;16" dur="1.5s" repeatCount="indefinite"/>
       </rect>
     </g>
 
     <text x="0" y="82" fill="#FFFFFF" font-size="13" font-weight="900" letter-spacing="1">98.7%</text>
-    <text x="0" y="96" fill="#8DBF91" font-size="8.5" letter-spacing="1">SIMILARITY MATCH</text>
+    <text x="0" y="96" fill="#A7F3D0" font-size="8.5" letter-spacing="1">SIMILARITY MATCH</text>
 
     <!-- Code Block Badge -->
-    <rect x="0" y="108" width="96" height="24" rx="5" fill="#082211" stroke="#247A35" stroke-width="1.2"/>
-    <text x="10" y="124" fill="#39FF14" font-size="9.5" font-weight="700" letter-spacing="1.2">&lt;AST:NODE /&gt;</text>
+    <rect x="0" y="108" width="96" height="24" rx="5" fill="#0A2C16" stroke="#22C55E" stroke-width="1.2"/>
+    <text x="10" y="124" fill="#86EFAC" font-size="9.5" font-weight="700" letter-spacing="1.2">&lt;AST:NODE /&gt;</text>
   </g>
 
   <!-- Right Telemetry: Hexagonal Vector Radar -->
   <g transform="translate(620, 80)" font-family="'SF Mono', 'Fira Code', monospace">
-    <text x="0" y="0" fill="#8DBF91" font-size="9.5" font-weight="700" letter-spacing="2">CAREER RADAR</text>
+    <text x="0" y="0" fill="#86EFAC" font-size="9.5" font-weight="700" letter-spacing="2">CAREER RADAR</text>
     <g transform="translate(30, 36)">
       <!-- Hexagonal Base Grid -->
-      <polygon points="0,-28 24,-14 24,14 0,28 -24,14 -24,-14" fill="#071E0F" stroke="#1D602D" stroke-width="1.5"/>
-      <polygon points="0,-18 16,-9 16,9 0,18 -16,9 -16,-9" fill="none" stroke="#247A35" stroke-dasharray="2 4"/>
+      <polygon points="0,-28 24,-14 24,14 0,28 -24,14 -24,-14" fill="#092814" stroke="#22C55E" stroke-width="1.5"/>
+      <polygon points="0,-18 16,-9 16,9 0,18 -16,9 -16,-9" fill="none" stroke="#4ADE80" stroke-dasharray="2 4"/>
       <!-- Morphing Animated Vector Polygon -->
-      <polygon points="0,-22 18,-6 12,16 -4,18 -18,6" fill="#39FF14" fill-opacity="0.35" stroke="#39FF14" stroke-width="2" filter="url(#v-glow-mid)">
+      <polygon points="0,-22 18,-6 12,16 -4,18 -18,6" fill="#39FF14" fill-opacity="0.38" stroke="#39FF14" stroke-width="2" filter="url(#v-glow-mid)">
         <animate attributeName="points" 
           values="0,-22 18,-6 12,16 -4,18 -18,6; 0,-14 22,2 10,20 -8,14 -14,-6; 0,-26 14,-8 18,12 0,20 -22,8; 0,-22 18,-6 12,16 -4,18 -18,6" 
           dur="3.8s" repeatCount="indefinite"/>
@@ -149,18 +149,18 @@
       <circle cx="0" cy="0" r="3" fill="#FFFFFF"/>
     </g>
     <text x="0" y="82" fill="#FFFFFF" font-size="13" font-weight="900" letter-spacing="1">LVL 5 · PEAK</text>
-    <text x="0" y="96" fill="#8DBF91" font-size="8.5" letter-spacing="1">READINESS INDEX</text>
+    <text x="0" y="96" fill="#A7F3D0" font-size="8.5" letter-spacing="1">READINESS INDEX</text>
 
     <!-- Qdrant Vector Badge -->
-    <rect x="0" y="108" width="98" height="24" rx="5" fill="#082211" stroke="#247A35" stroke-width="1.2"/>
-    <text x="10" y="124" fill="#39FF14" font-size="9.5" font-weight="700" letter-spacing="1.2">QDRANT: SYNC</text>
+    <rect x="0" y="108" width="98" height="24" rx="5" fill="#0A2C16" stroke="#22C55E" stroke-width="1.2"/>
+    <text x="10" y="124" fill="#86EFAC" font-size="9.5" font-weight="700" letter-spacing="1.2">QDRANT: SYNC</text>
   </g>
 
   <!-- ==================== CENTRAL ICONIC LOGO & ORBIT SYSTEM ==================== -->
   <g transform="translate(380, 142)">
-    <!-- Concentric Reticle Rings -->
-    <circle r="102" fill="#05190B" stroke="#1D602D" stroke-width="1.5"/>
-    <circle r="92" fill="none" stroke="#247A35" stroke-width="1.2" stroke-dasharray="4 8" opacity="0.7"/>
+    <!-- Concentric Reticle Rings in Fresh Light Green -->
+    <circle r="102" fill="#082613" stroke="#22C55E" stroke-width="1.5"/>
+    <circle r="92" fill="none" stroke="#4ADE80" stroke-width="1.2" stroke-dasharray="4 8" opacity="0.75"/>
     
     <!-- Outer Fast Rotating Gear / Compass Track (Clockwise, 10s) -->
     <circle r="82" fill="none" stroke="#39FF14" stroke-width="2" stroke-dasharray="8 16" opacity="0.9" filter="url(#v-glow-mid)">
@@ -168,13 +168,13 @@
     </circle>
     
     <!-- Inner Counter-Rotating Orbit (Counter-Clockwise, 14s) -->
-    <circle r="68" fill="none" stroke="#00FFAA" stroke-width="1.5" stroke-dasharray="3 9" opacity="0.75">
+    <circle r="68" fill="none" stroke="#00FFAA" stroke-width="1.6" stroke-dasharray="3 9" opacity="0.85">
       <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="14s" repeatCount="indefinite"/>
     </circle>
 
     <!-- 3D Tilted Elliptical Orbit Track with Traveling Vector Satellite -->
     <g transform="rotate(-26)">
-      <ellipse rx="112" ry="46" fill="none" stroke="#39FF14" stroke-width="1.6" opacity="0.65" stroke-dasharray="6 8"/>
+      <ellipse rx="112" ry="46" fill="none" stroke="#4ADE80" stroke-width="1.6" opacity="0.75" stroke-dasharray="6 8"/>
       <!-- Traveling Quantum Satellite along Orbit -->
       <g>
         <circle cx="112" cy="0" r="5" fill="#FFFFFF" filter="url(#v-glow-heavy)">
@@ -186,10 +186,10 @@
 
     <!-- Second Inverse Tilted Orbit (Tilted +38°, 8s) -->
     <g transform="rotate(38)">
-      <ellipse rx="112" ry="46" fill="none" stroke="#00FFAA" stroke-width="1.4" opacity="0.55"/>
+      <ellipse rx="112" ry="46" fill="none" stroke="#A7F3D0" stroke-width="1.5" opacity="0.65"/>
       <g>
-        <circle cx="112" cy="0" r="4" fill="#39FF14">
-          <animate attributeName="r" values="3;6;3" dur="1.6s" repeatCount="indefinite"/>
+        <circle cx="112" cy="0" r="4.5" fill="#39FF14">
+          <animate attributeName="r" values="3.5;6.5;3.5" dur="1.6s" repeatCount="indefinite"/>
         </circle>
         <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="8s" repeatCount="indefinite"/>
       </g>
@@ -203,7 +203,7 @@
     </g>
 
     <!-- Backplate Shield Hexagon -->
-    <polygon points="0,-58 52,-29 52,29 0,58 -52,29 -52,-29" fill="#041408" stroke="#39FF14" stroke-width="2" opacity="0.85"/>
+    <polygon points="0,-58 52,-29 52,29 0,58 -52,29 -52,-29" fill="#061E0E" stroke="#4ADE80" stroke-width="2.2" opacity="0.9"/>
 
     <!-- ==================== FACETED 3D CYBERNETIC 'V' CREST ==================== -->
     <g filter="url(#v-glow-heavy)">
@@ -213,7 +213,7 @@
       <polygon points="44,-38 20,-38 0,22 14,32" fill="url(#v-crest-right)"/>
       
       <!-- Center Inverted Bevel Cutout -->
-      <polygon points="0,10 -16,-26 -8,-26 0,-8 8,-26 16,-26" fill="#020904"/>
+      <polygon points="0,10 -16,-26 -8,-26 0,-8 8,-26 16,-26" fill="#041207"/>
       
       <!-- Pure White Neon Glowing Center Spine -->
       <line x1="0" y1="-32" x2="0" y2="24" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round">
@@ -227,18 +227,18 @@
     </polygon>
 
     <!-- Crosshair Cardinal Marks -->
-    <path d="M-72 0H-56M56 0H72M0 -72V-56M0 56V72" stroke="#39FF14" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M-72 0H-56M56 0H72M0 -72V-56M0 56V72" stroke="#4ADE80" stroke-width="2.4" stroke-linecap="round"/>
   </g>
 
   <!-- ==================== LOGO HEADLINE & READOUT ==================== -->
   <g text-anchor="middle" font-family="'SF Mono', 'Fira Code', 'Consolas', monospace">
     <text x="380" y="246" fill="#FFFFFF" font-size="23" font-weight="900" letter-spacing="7" filter="url(#v-glow-mid)">VIREONIQ</text>
-    <text x="380" y="266" fill="#B9FFB0" font-size="11" font-weight="700" letter-spacing="3.2">AI CAREER INTELLIGENCE · AST COMPLEXITY ENGINE</text>
+    <text x="380" y="266" fill="#A7F3D0" font-size="11" font-weight="700" letter-spacing="3.2">AI CAREER INTELLIGENCE · AST COMPLEXITY ENGINE</text>
   </g>
 
   <!-- Bottom High-Tech Telemetry Bar -->
   <g transform="translate(95, 284)">
-    <rect width="570" height="38" rx="9" fill="#061B0E" stroke="#1D602D" stroke-width="1.5"/>
+    <rect width="570" height="38" rx="9" fill="#082512" stroke="#22C55E" stroke-width="1.5"/>
     
     <!-- Code Bracket Badge -->
     <text x="18" y="24" fill="#39FF14" font-family="'SF Mono', monospace" font-size="14" font-weight="900">&lt; / &gt;</text>
@@ -246,7 +246,7 @@
     <text x="52" y="24" fill="#FFFFFF" font-family="'SF Mono', monospace" font-size="10.5" font-weight="700" letter-spacing="1.2">AST PARSER: 100%</text>
     
     <!-- Dynamic Progress Bar -->
-    <rect x="195" y="15" width="160" height="8" rx="4" fill="#0D2E16"/>
+    <rect x="195" y="15" width="160" height="8" rx="4" fill="#14532D"/>
     <rect x="195" y="15" width="128" height="8" rx="4" fill="url(#v-neon)" filter="url(#v-glow-mid)">
       <animate attributeName="width" values="90;158;128" dur="3.5s" repeatCount="indefinite"/>
     </rect>
@@ -257,8 +257,8 @@
     </circle>
 
     <!-- Qdrant Metric -->
-    <rect x="375" y="10" width="88" height="18" rx="4" fill="#0A2A14" stroke="#247A35"/>
-    <text x="387" y="23" fill="#39FF14" font-family="'SF Mono', monospace" font-size="9.5" font-weight="700">QDRANT: OK</text>
+    <rect x="375" y="10" width="88" height="18" rx="4" fill="#0F381B" stroke="#4ADE80"/>
+    <text x="387" y="23" fill="#86EFAC" font-family="'SF Mono', monospace" font-size="9.5" font-weight="700">QDRANT: OK</text>
 
     <!-- Trajectory Score -->
     <text x="480" y="24" fill="#FFFFFF" font-family="'SF Mono', monospace" font-size="11" font-weight="800">MATCH: 98.7%</text>
@@ -266,7 +266,7 @@
 
   <!-- Bottom Status Footer -->
   <g font-family="'SF Mono', 'Fira Code', monospace" font-size="10">
-    <text x="28" y="344" fill="#39FF14" font-weight="700" letter-spacing="2">● REPOSITORY ENGINE ONLINE</text>
-    <text x="732" y="344" text-anchor="end" fill="#8DBF91" letter-spacing="1.5">PYTHON 3.13 · REACT · FASTAPI · QDRANT</text>
+    <text x="28" y="344" fill="#4ADE80" font-weight="700" letter-spacing="2">● REPOSITORY ENGINE ONLINE</text>
+    <text x="732" y="344" text-anchor="end" fill="#A7F3D0" letter-spacing="1.5">PYTHON 3.13 · REACT · FASTAPI · QDRANT</text>
   </g>
 </svg>
