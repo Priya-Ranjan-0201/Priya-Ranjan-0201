@@ -411,7 +411,7 @@ I'm a **Computer Science &amp; Engineering student** passionate about **Artifici
     </td>
     <td width="34%" align="center" valign="middle">
       <a href="https://github.com/Priya-Ranjan-0201">
-        <img src="assets/journey-landscape.png" width="280" style="border-radius: 12px; border: 1.5px solid #00ff88;" alt="A Better Version Everyday" />
+        <img src="assets/my-journey.png" width="280" style="border-radius: 12px; border: 1.5px solid #00ff88;" alt="A Better Version Everyday" />
       </a>
       <br/>
       <sub>⚡ <b>A Better Version Everyday.</b> ⚡</sub>
