@@ -1,14 +1,12 @@
 <div align="center">
 
-<img src="assets/hero-banner.svg" width="100%" alt="Animated Blue Nova hero banner for Priya Ranjan" />
+<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="assets/hero-banner.svg" width="100%" alt="Open Priya Ranjan's GitHub projects" /></a>
 
-<div align="center"><code>╭─ BLUE NOVA / DEVELOPER PROFILE ─╮</code><br/><sub>BUILDING SMALL · THINKING SYSTEMS · LEARNING EVERY DAY</sub></div>
+<a href="https://github.com/Priya-Ranjan-0201"><code>╭─ BLUE NOVA / DEVELOPER PROFILE ─╮</code><br/><sub>BUILDING SMALL · THINKING SYSTEMS · LEARNING EVERY DAY</sub></a>
 
-<img src="assets/hero-status.svg" width="76%" alt="Animated Blue Nova status bar" />
+<br/><br/>
 
-<sub>◉ CURRENT FOCUS: AI/ML &nbsp; · &nbsp; CYBERSECURITY &nbsp; · &nbsp; SOFTWARE ENGINEERING</sub>
-
-<img src="assets/hero-build-log.svg" width="76%" alt="Animated Blue Nova developer build log" />
+<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><sub>◉ EXPLORE MY WORK: AI/ML &nbsp; · &nbsp; CYBERSECURITY &nbsp; · &nbsp; SOFTWARE ENGINEERING</sub></a>
 
 <a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE-PROJECTS-07131C?style=for-the-badge&logo=github&logoColor=00E5FF" alt="Explore projects" /></a>
 <a href="https://www.linkedin.com/in/priyaranjan01"><img src="https://img.shields.io/badge/CONNECT-LINKEDIN-07131C?style=for-the-badge&logo=linkedin&logoColor=00E5FF" alt="LinkedIn" /></a>
