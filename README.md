@@ -5,28 +5,20 @@
 <!-- ======================================================== -->
 <img src="assets/hero-banner.png" alt="Priya Ranjan — Computer Science & Engineering Student" width="100%" />
 
-</div>
-
-<br/>
+<br/><br/>
 
 <!-- ======================================================== -->
 <!-- 02. ABOUT ME                                             -->
 <!-- ======================================================== -->
-## > About Me
+<img src="assets/about-me.png" alt="About Priya Ranjan" width="100%" />
 
-<div align="center">
-  <img src="assets/about-me.png" alt="About Priya Ranjan" width="100%" />
-</div>
-
-<br/>
+<br/><br/>
 
 <!-- ======================================================== -->
 <!-- 03. FEATURED PROJECTS                                    -->
 <!-- ======================================================== -->
-## > Featured Projects
+<img src="assets/featured-projects.png" alt="Featured Projects: PrepPilot, TruthShield X, VIREONIQ / PLACE30, Tech On Tour" width="100%" />
 
-<div align="center">
-  <img src="assets/featured-projects.png" alt="Featured Projects: PrepPilot, TruthShield X, VIREONIQ / PLACE30, Tech On Tour" width="100%" />
 </div>
 
 <br/>
@@ -46,73 +38,50 @@
 
 <br/>
 
+<div align="center">
+
 <!-- ======================================================== -->
 <!-- 04. TECH STACK                                           -->
 <!-- ======================================================== -->
-## > Tech Stack
+<img src="assets/tech-stack.png" alt="Tech Stack" width="100%" />
 
-<div align="center">
-  <img src="assets/tech-stack.png" alt="Tech Stack" width="100%" />
-</div>
-
-<br/>
+<br/><br/>
 
 <!-- ======================================================== -->
 <!-- 05. GITHUB ANALYTICS                                     -->
 <!-- ======================================================== -->
-## > GitHub Analytics
+<img src="assets/analytics-dashboard.png" alt="GitHub Analytics" width="100%" />
 
-<div align="center">
-  <img src="assets/analytics-dashboard.png" alt="GitHub Analytics" width="100%" />
-</div>
-
-<br/>
+<br/><br/>
 
 <!-- ======================================================== -->
 <!-- 06. MY JOURNEY                                           -->
 <!-- ======================================================== -->
-## > My Journey
+<img src="assets/my-journey.png" alt="My Journey" width="100%" />
 
-<div align="center">
-  <img src="assets/my-journey.png" alt="My Journey" width="100%" />
-</div>
-
-<br/>
+<br/><br/>
 
 <!-- ======================================================== -->
 <!-- 07. CURRENTLY EXPLORING                                  -->
 <!-- ======================================================== -->
-## > Currently Exploring
+<img src="assets/currently-exploring.png" alt="Currently Exploring" width="100%" />
 
-<div align="center">
-  <img src="assets/currently-exploring.png" alt="Currently Exploring" width="100%" />
-</div>
-
-<br/>
+<br/><br/>
 
 <!-- ======================================================== -->
 <!-- 08. ACHIEVEMENTS & HIGHLIGHTS                            -->
 <!-- ======================================================== -->
-## > Achievements &amp; Highlights
+<img src="assets/achievements-highlights.png" alt="Achievements & Highlights" width="100%" />
 
-<div align="center">
-  <img src="assets/achievements-highlights.png" alt="Achievements & Highlights" width="100%" />
-</div>
-
-<br/>
+<br/><br/>
 
 <!-- ======================================================== -->
 <!-- 09. LET'S CONNECT                                        -->
 <!-- ======================================================== -->
-## > Let's Connect
+<img src="assets/lets-connect.png" alt="Let's Connect" width="100%" />
 
-<div align="center">
-  <img src="assets/lets-connect.png" alt="Let's Connect" width="100%" />
-</div>
+<br/><br/>
 
-<br/>
-
-<div align="center">
   <p>
     <a href="https://github.com/Priya-Ranjan-0201"><b>🐙 GitHub</b></a>
     &nbsp;&nbsp;•&nbsp;&nbsp;
