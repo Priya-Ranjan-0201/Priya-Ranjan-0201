@@ -14,39 +14,15 @@
 
 ---
 
-<table>
-<tr>
-<td width="28%" valign="top">
-
 <div align="center">
-<img src="assets/avatar.jpg" width="155" alt="Priya Ranjan avatar" />
 
-### PRIYA RANJAN
-@Priya-Ranjan-0201
+<img src="assets/avatar.jpg" width="125" alt="Priya Ranjan avatar" />
+
+**PRIYA RANJAN** · [@Priya-Ranjan-0201](https://github.com/Priya-Ranjan-0201) · 🎓 Computer Science & Engineering · Lovely Professional University · India
 
 <img src="https://img.shields.io/github/followers/Priya-Ranjan-0201?style=flat-square&label=Followers&color=00E5FF&labelColor=07131C" alt="GitHub followers" />
+
 </div>
-
-**PROFILE / 01**
-
-- 🎓 Computer Science & Engineering
-- 🏫 Lovely Professional University
-- 📍 India
-- 🧠 AI/ML and applied problem-solving
-- 🛡️ Cybersecurity
-- 🌐 Web development
-
----
-
-**WORKING PRINCIPLES**
-
-- Learn the fundamentals
-- Build useful things
-- Keep code understandable
-- Iterate with feedback
-
-</td>
-<td width="72%" valign="top">
 
 ## <code>01 / ABOUT ME</code>
 
@@ -54,24 +30,16 @@ I'm a Computer Science & Engineering student interested in building practical so
 
 My focus is on strengthening software engineering fundamentals while building projects that demonstrate applied learning—not just collecting technologies.
 
-### WHAT I CARE ABOUT
+**WHAT I CARE ABOUT**
 
-<table>
-<tr>
-<td width="50%" valign="top"><b>▸ Applied AI</b><br/>Useful AI-enabled tools, retrieval, language models, and data-driven workflows.</td>
-<td width="50%" valign="top"><b>▸ Digital Security</b><br/>Secure engineering, threat analysis, and defensive tools.</td>
-</tr>
-<tr>
-<td width="50%" valign="top"><b>▸ Product Engineering</b><br/>Connecting frontend experiences, APIs, data, and backend services.</td>
-<td width="50%" valign="top"><b>▸ Engineering Discipline</b><br/>Readable code, clear architecture, testing, and continuous improvement.</td>
-</tr>
-</table>
+- **Applied AI** — Useful AI-enabled tools, retrieval, language models, and data-driven workflows.
+- **Digital Security** — Secure engineering, threat analysis, and defensive tools.
+- **Product Engineering** — Connecting frontend experiences, APIs, data, and backend services.
+- **Engineering Discipline** — Readable code, clear architecture, testing, and continuous improvement.
 
-</td>
-</tr>
-</table>
+**WORKING PRINCIPLES** · Learn the fundamentals · Build useful things · Keep code understandable · Iterate with feedback
 
----
+
 
 ## <code>02 / SELECTED WORK</code>
 
@@ -79,7 +47,7 @@ My focus is on strengthening software engineering fundamentals while building pr
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/Priya-Ranjan-0201/VIREONIQ"><img src="assets/project_vireoniq.jpg" width="100%" alt="VIREONIQ project" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/VIREONIQ"><img src="assets/project_vireoniq.svg" width="100%" alt="VIREONIQ project" /></a>
 
 ### [VIREONIQ / PLACEIQ ↗](https://github.com/Priya-Ranjan-0201/VIREONIQ)
 
@@ -93,7 +61,7 @@ Career intelligence and developer-focused tooling combining web application deve
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/Priya-Ranjan-0201/TrustShield-X"><img src="assets/project_truthshield.jpg" width="100%" alt="TrustShield-X project" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/TrustShield-X"><img src="assets/project_truthshield.svg" width="100%" alt="TrustShield-X project" /></a>
 
 ### [TrustShield-X ↗](https://github.com/Priya-Ranjan-0201/TrustShield-X)
 
@@ -109,7 +77,7 @@ Cybersecurity-focused project exploring network and protocol inspection, defensi
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><img src="assets/project_techontour.jpg" width="100%" alt="Tech On Tour project" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><img src="assets/project_techontour.svg" width="100%" alt="Tech On Tour project" /></a>
 
 ### [Tech On Tour ↗](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR)
 
@@ -123,7 +91,7 @@ Smart tourism concept focused on helping travelers discover places and plan more
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><img src="assets/project_priocardix.jpg" width="100%" alt="Priocardix-AI project" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><img src="assets/project_priocardix.svg" width="100%" alt="Priocardix-AI project" /></a>
 
 ### [Priocardix-AI ↗](https://github.com/Priya-Ranjan-0201/Priocardix-AI)
 
@@ -139,7 +107,7 @@ AI and data-science project exploring preventive cardiology concepts and explain
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/Priya-Ranjan-0201/BrainCheck"><img src="assets/project_braincheck.jpg" width="100%" alt="BrainCheck project" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/BrainCheck"><img src="assets/project_braincheck.svg" width="100%" alt="BrainCheck project" /></a>
 
 ### [BrainCheck ↗](https://github.com/Priya-Ranjan-0201/BrainCheck)
 
