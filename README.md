@@ -178,11 +178,11 @@ Interactive visual exploration of operating-system disk scheduling algorithms an
 
 <br/><br/>
 
-<a href="https://github.com/Priya-Ranjan-0201">
-  <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Priya-Ranjan-0201&bg_color=07131C&color=D8E7F0&line=00E5FF&point=FFFFFF&area=true&hide_border=true&custom_title=Contribution%20Activity&radius=8" alt="GitHub contribution activity graph" />
+<a href="https://github.com/Priya-Ranjan-0201#contributions">
+  <img src="https://img.shields.io/badge/VIEW-LIVE_GITHUB_CONTRIBUTIONS-07131C?style=for-the-badge&logo=github&logoColor=00E5FF" alt="View GitHub contribution calendar" />
 </a>
 
-<sub>Stats and language cards are regenerated automatically by GitHub Actions every 6 hours (and can be refreshed manually from Actions). Streak and activity-graph cards are served by external providers and may have their own cache delays. Language percentages reflect repository code; contribution counts follow GitHub's contribution rules.</sub>
+<sub>Stats and language cards are regenerated automatically by GitHub Actions every 6 hours (and can be refreshed manually from Actions). The streak card is provided by an external service and may be delayed by its cache. For the canonical contribution calendar, use the link above. Language percentages reflect repository code; contribution counts follow GitHub's contribution rules.</sub>
 
 </div>
 
