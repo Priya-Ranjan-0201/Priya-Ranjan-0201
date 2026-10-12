@@ -1,1 +1,250 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img" aria-labelledby="title desc"><title id="title">TrustShield-X — defensive security</title><desc id="desc">A custom shield and checkmark logo with a controlled radar sweep and linked security nodes.</desc><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#06120A"/><stop offset="1" stop-color="#08170B"/></linearGradient><linearGradient id="neon green"><stop stop-color="#39FF14"/><stop offset="1" stop-color="#00C853"/></linearGradient><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#174A24" stroke-width=".7"/></pattern></defs><rect width="760" height="360" fill="url(#bg)"/><rect width="760" height="360" fill="url(#grid)" opacity=".7"/><text x="28" y="29" fill="#39FF14" font-family="monospace" font-size="11" letter-spacing="2">GREEN NOVA / DEFENSIVE SECURITY</text><circle cx="718" cy="26" r="4" fill="#39FF14"><animate attributeName="opacity" values=".3;1;.3" dur="2.2s" repeatCount="indefinite"/></circle><g stroke="#247A35" stroke-width="1.5" opacity=".8"><path d="M174 112L260 82L328 125L430 85L520 126L588 98M174 112L240 202L328 125L360 214L520 126L548 208L360 214L240 202M260 82L360 214M430 85L548 208"/></g><g fill="#39FF14"><circle cx="174" cy="112" r="4"/><circle cx="260" cy="82" r="4"/><circle cx="328" cy="125" r="4"/><circle cx="430" cy="85" r="4"/><circle cx="520" cy="126" r="4"/><circle cx="588" cy="98" r="4"/><circle cx="240" cy="202" r="4"/><circle cx="360" cy="214" r="4"/><circle cx="548" cy="208" r="4"/></g><g transform="translate(380 150)"><circle r="77" fill="#081923" stroke="#1C5A2A"/><circle r="64" fill="none" stroke="#39FF14" stroke-dasharray="4 9" opacity=".55"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="30s" repeatCount="indefinite"/></circle><path d="M0 -43L34 -29V2C34 27 15 42 0 50C-15 42 -34 27 -34 2V-29Z" fill="#0b2c3a" stroke="url(#neon green)" stroke-width="3"/><path d="M-17 0L-4 14L21 -15" fill="none" stroke="#B9FFB0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="60" stroke-dashoffset="60"><animate attributeName="stroke-dashoffset" values="60;0;0" dur="3.5s" repeatCount="indefinite"/></path><circle r="88" fill="none" stroke="#39FF14" opacity=".2"><animate attributeName="r" values="78;95;78" dur="4s" repeatCount="indefinite"/></circle></g><text x="380" y="260" text-anchor="middle" fill="#e8f7ff" font-family="monospace" font-size="17" font-weight="700" letter-spacing="3">TRUSTSHIELD-X</text><text x="380" y="280" text-anchor="middle" fill="#6fa7b9" font-family="monospace" font-size="10" letter-spacing="2">THREAT SIGNALS / DEFENSE MODE</text><rect x="180" y="302" width="400" height="4" rx="2" fill="#174A24"/><rect x="180" y="302" width="100" height="4" rx="2" fill="#39FF14"><animate attributeName="width" values="80;300;140;80" dur="6s" repeatCount="indefinite"/></rect><text x="28" y="342" fill="#B9FFB0" font-family="monospace" font-size="12" letter-spacing="1.4">TRUSTSHIELD-X / THREAT SIGNALS</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="100%" height="100%" role="img" aria-label="TrustShield-X Defensive Cybersecurity &amp; Asynchronous Network Radar">
+  <defs>
+    <!-- Background & Depth -->
+    <linearGradient id="t-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020904"/>
+      <stop offset="40%" stop-color="#061C0D"/>
+      <stop offset="100%" stop-color="#010602"/>
+    </linearGradient>
+
+    <!-- Super Vivid Neon Gradients -->
+    <linearGradient id="t-neon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FFAA"/>
+      <stop offset="50%" stop-color="#39FF14"/>
+      <stop offset="100%" stop-color="#95FF00"/>
+    </linearGradient>
+
+    <linearGradient id="t-armor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#124822"/>
+      <stop offset="50%" stop-color="#082A12"/>
+      <stop offset="100%" stop-color="#021105"/>
+    </linearGradient>
+
+    <linearGradient id="t-sweep" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0.85"/>
+      <stop offset="40%" stop-color="#00FF88" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#39FF14" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="t-bloom" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0.65"/>
+      <stop offset="40%" stop-color="#00FF88" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#020904" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Tactical Grid Pattern -->
+    <pattern id="t-grid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M26 0H0V26" fill="none" stroke="#13431D" stroke-width="0.75" opacity="0.65"/>
+      <circle cx="26" cy="26" r="1" fill="#39FF14" opacity="0.4"/>
+    </pattern>
+
+    <!-- Glow Filters -->
+    <filter id="t-glow-heavy" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="b1"/>
+      <feGaussianBlur stdDeviation="14" result="b2"/>
+      <feMerge>
+        <feMergeNode in="b2"/>
+        <feMergeNode in="b1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="t-glow-mid" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base Plate & Grid -->
+  <rect width="760" height="360" rx="16" fill="url(#t-bg)"/>
+  <rect width="760" height="360" rx="16" fill="url(#t-grid)"/>
+  <rect width="756" height="356" x="2" y="2" rx="15" fill="none" stroke="#1D602D" stroke-width="1.8"/>
+
+  <!-- High-Tech Corner Brackets -->
+  <path d="M12 38V12H38M748 38V12H722M12 322V348H38M748 322V348H722" fill="none" stroke="#39FF14" stroke-width="2.6" opacity="0.95"/>
+  <circle cx="12" cy="12" r="3.5" fill="#39FF14" filter="url(#t-glow-mid)"/>
+  <circle cx="748" cy="12" r="3.5" fill="#39FF14" filter="url(#t-glow-mid)"/>
+  <circle cx="12" cy="348" r="3.5" fill="#39FF14" filter="url(#t-glow-mid)"/>
+  <circle cx="748" cy="348" r="3.5" fill="#39FF14" filter="url(#t-glow-mid)"/>
+
+  <!-- Top System Header Banner -->
+  <g font-family="'SF Mono', 'Fira Code', 'Consolas', monospace" font-size="11">
+    <rect x="28" y="16" width="8" height="8" fill="#39FF14">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+    <text x="44" y="24" fill="#39FF14" font-weight="800" letter-spacing="3">TRUSTSHIELD-X // DEFENSIVE CYBERSECURITY</text>
+    <text x="530" y="24" fill="#B9FFB0" letter-spacing="1.5">ASYNCIO · STIX 2.1 RADAR</text>
+    <circle cx="724" cy="20" r="4.5" fill="#39FF14">
+      <animate attributeName="r" values="3;6;3" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <line x1="28" y1="36" x2="732" y2="36" stroke="#1D602D" stroke-width="1.2"/>
+
+  <!-- Core Radiant Glow -->
+  <circle cx="380" cy="144" r="160" fill="url(#t-bloom)"/>
+
+  <!-- Left Telemetry: Live Network Ingestion -->
+  <g transform="translate(38, 80)" font-family="'SF Mono', 'Fira Code', monospace">
+    <text x="0" y="0" fill="#8DBF91" font-size="9.5" font-weight="700" letter-spacing="2">NETWORK RADAR</text>
+    
+    <g transform="translate(0, 16)">
+      <rect x="0" y="0" width="96" height="22" rx="4" fill="#082211" stroke="#1D602D"/>
+      <text x="10" y="15" fill="#39FF14" font-size="9.5" font-weight="700">PORT 443: OK</text>
+      
+      <rect x="0" y="28" width="96" height="22" rx="4" fill="#082211" stroke="#1D602D"/>
+      <text x="10" y="43" fill="#39FF14" font-size="9.5" font-weight="700">STIX 2.1: LIVE</text>
+      
+      <rect x="0" y="56" width="96" height="22" rx="4" fill="#082211" stroke="#1D602D"/>
+      <text x="10" y="71" fill="#39FF14" font-size="9.5" font-weight="700">TLS 1.3: ARMED</text>
+    </g>
+
+    <text x="0" y="98" fill="#FFFFFF" font-size="13" font-weight="900" letter-spacing="1">142k PKTS/s</text>
+    <text x="0" y="112" fill="#8DBF91" font-size="8.5" letter-spacing="1">ASYNC INGESTION</text>
+  </g>
+
+  <!-- Right Telemetry: Threat Status & Zero-Trust Verification -->
+  <g transform="translate(620, 80)" font-family="'SF Mono', 'Fira Code', monospace">
+    <text x="0" y="0" fill="#8DBF91" font-size="9.5" font-weight="700" letter-spacing="2">THREAT MATRIX</text>
+    
+    <!-- Shield Health Ring -->
+    <g transform="translate(30, 36)">
+      <circle r="26" fill="#071E0F" stroke="#1D602D" stroke-width="1.8"/>
+      <circle r="21" fill="none" stroke="#247A35" stroke-width="3" stroke-dasharray="130" stroke-dashoffset="130"/>
+      <circle r="21" fill="none" stroke="#39FF14" stroke-width="3.5" stroke-dasharray="130" stroke-dashoffset="15" filter="url(#t-glow-mid)">
+        <animate attributeName="stroke-dashoffset" values="35;10;25" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <text x="0" y="5" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="900">100%</text>
+    </g>
+
+    <text x="0" y="82" fill="#FFFFFF" font-size="13" font-weight="900" letter-spacing="1">DEFENSE ACTIVE</text>
+    <text x="0" y="96" fill="#8DBF91" font-size="8.5" letter-spacing="1">ZERO VULNERABILITIES</text>
+
+    <!-- Signed Log Badge -->
+    <rect x="0" y="108" width="98" height="24" rx="5" fill="#082211" stroke="#247A35" stroke-width="1.2"/>
+    <text x="10" y="124" fill="#39FF14" font-size="9.5" font-weight="700" letter-spacing="1.2">HASH: SIGNED</text>
+  </g>
+
+  <!-- Interconnected Tactical Defense Grid Across Canvas -->
+  <g stroke="#174A24" stroke-width="1.4" opacity="0.8">
+    <line x1="160" y1="105" x2="250" y2="75"/>
+    <line x1="250" y1="75" x2="310" y2="120"/>
+    <line x1="160" y1="105" x2="220" y2="210"/>
+    <line x1="220" y1="210" x2="310" y2="120"/>
+    <line x1="450" y1="120" x2="510" y2="75"/>
+    <line x1="510" y1="75" x2="600" y2="105"/>
+    <line x1="450" y1="120" x2="540" y2="210"/>
+    <line x1="540" y1="210" x2="600" y2="105"/>
+  </g>
+  <!-- Node Blips with Sonar Pulse -->
+  <g fill="#39FF14">
+    <circle cx="160" cy="105" r="4"/>
+    <circle cx="250" cy="75" r="4"/>
+    <circle cx="220" cy="210" r="4"/>
+    <circle cx="510" cy="75" r="4"/>
+    <circle cx="600" cy="105" r="4"/>
+    <circle cx="540" cy="210" r="4"/>
+    <!-- Sonar Ripple Rings -->
+    <circle cx="250" cy="75" r="5" fill="none" stroke="#39FF14" stroke-width="2">
+      <animate attributeName="r" values="4;22;4" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="540" cy="210" r="5" fill="none" stroke="#00FFAA" stroke-width="2">
+      <animate attributeName="r" values="4;22;4" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ==================== CENTRAL AEGIS SHIELD & HIGH-SPEED RADAR ==================== -->
+  <g transform="translate(380, 142)">
+    <!-- Base Reticle Housing Plate -->
+    <circle r="102" fill="#05190B" stroke="#1D602D" stroke-width="1.5"/>
+    <circle r="92" fill="none" stroke="#247A35" stroke-width="1.2" stroke-dasharray="3 7" opacity="0.6"/>
+
+    <!-- High-Speed Tactical 360° Radar Beam (Fast 2.8s Sweep!) -->
+    <g>
+      <path d="M0 0 L82 0 A82 82 0 0 1 58 58 Z" fill="url(#t-sweep)"/>
+      <line x1="0" y1="0" x2="82" y2="0" stroke="#FFFFFF" stroke-width="2.5" filter="url(#t-glow-heavy)"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="2.8s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Radar Expanding Sonar Wave -->
+    <circle r="30" fill="none" stroke="#39FF14" stroke-width="2.2" opacity="0.85">
+      <animate attributeName="r" values="24;94;24" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;0;0.9" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Outer Reticle Ring Spinning Counter-Clockwise -->
+    <circle r="82" fill="none" stroke="#39FF14" stroke-width="1.8" stroke-dasharray="8 14" opacity="0.85">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="18s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- ==================== PROMINENT SEGMENTED AEGIS SHIELD ==================== -->
+    <g filter="url(#t-glow-heavy)">
+      <!-- Outer Heavy Hull -->
+      <path d="M0 -58 L48 -38 V4 C48 36 20 56 0 68 C-20 56 -48 36 -48 4 V-38 Z" 
+            fill="url(#t-armor)" stroke="url(#t-neon)" stroke-width="3" stroke-linejoin="round"/>
+      
+      <!-- Inner Armor Inset Plate -->
+      <path d="M0 -46 L36 -30 V2 C36 28 16 44 0 54 C-16 44 -36 28 -36 2 V-30 Z" 
+            fill="#031106" stroke="#247A35" stroke-width="1.8"/>
+
+      <!-- Center Ultra-Vivid Security Checkmark Blade -->
+      <path d="M-20 4 L-6 18 L25 -16" fill="none" stroke="#FFFFFF" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M-20 4 L-6 18 L25 -16" fill="none" stroke="#39FF14" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"
+            stroke-dasharray="70" stroke-dashoffset="70">
+        <animate attributeName="stroke-dashoffset" values="70;0;0" dur="2.2s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <!-- Shield Core Quantum Energy Light -->
+    <circle cx="0" cy="22" r="4.5" fill="#FFFFFF" filter="url(#t-glow-heavy)">
+      <animate attributeName="r" values="3.5;6;3.5" dur="1.2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Cardinal Crosshair Ticks -->
+    <path d="M-72 0H-56M56 0H72M0 -72V-56M0 56V72" stroke="#39FF14" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+
+  <!-- ==================== LOGO HEADLINE & READOUT ==================== -->
+  <g text-anchor="middle" font-family="'SF Mono', 'Fira Code', 'Consolas', monospace">
+    <text x="380" y="246" fill="#FFFFFF" font-size="23" font-weight="900" letter-spacing="7" filter="url(#t-glow-mid)">TRUSTSHIELD-X</text>
+    <text x="380" y="266" fill="#B9FFB0" font-size="11" font-weight="700" letter-spacing="3.2">DEFENSIVE NETWORK RADAR · ZERO-TRUST ENGINE</text>
+  </g>
+
+  <!-- Bottom Telemetry Bar -->
+  <g transform="translate(95, 284)">
+    <rect width="570" height="38" rx="9" fill="#061B0E" stroke="#1D602D" stroke-width="1.5"/>
+    
+    <text x="18" y="24" fill="#39FF14" font-family="'SF Mono', monospace" font-size="14">🛡️</text>
+    
+    <text x="48" y="24" fill="#FFFFFF" font-family="'SF Mono', monospace" font-size="10.5" font-weight="700" letter-spacing="1.2">DEFENSE RADAR: ACTIVE</text>
+    
+    <!-- Dynamic Sweep Bar -->
+    <rect x="235" y="15" width="140" height="8" rx="4" fill="#0D2E16"/>
+    <rect x="235" y="15" width="105" height="8" rx="4" fill="url(#t-neon)" filter="url(#t-glow-mid)">
+      <animate attributeName="width" values="65;135;105" dur="3.2s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Sparkle Pulse -->
+    <circle cx="340" cy="19" r="4.5" fill="#FFFFFF" filter="url(#t-glow-mid)">
+      <animate attributeName="cx" values="300;370;340" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Async Tag -->
+    <rect x="390" y="10" width="86" height="18" rx="4" fill="#0A2A14" stroke="#247A35"/>
+    <text x="402" y="23" fill="#39FF14" font-family="'SF Mono', monospace" font-size="9.5" font-weight="700">ASYNCIO</text>
+
+    <!-- Status Score -->
+    <text x="495" y="24" fill="#FFFFFF" font-family="'SF Mono', monospace" font-size="11" font-weight="800">INTEGRITY: 100%</text>
+  </g>
+
+  <!-- Bottom Status Footer -->
+  <g font-family="'SF Mono', 'Fira Code', monospace" font-size="10">
+    <text x="28" y="344" fill="#39FF14" font-weight="700" letter-spacing="2">● THREAT SIGNALS ARMED</text>
+    <text x="732" y="344" text-anchor="end" fill="#8DBF91" letter-spacing="1.5">PYTHON 3.13 · ASYNCIO · STIX 2.1 · ZERO-TRUST LOGS</text>
+  </g>
+</svg>

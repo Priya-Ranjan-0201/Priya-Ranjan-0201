@@ -1,40 +1,197 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-labelledby="title desc">
-<title id="title">Green Nova animated developer hero for Priya Ranjan</title>
-<desc id="desc">A near-black forest-green and neon-green hero banner with animated orbital rings, glowing nodes, scan lines, and a developer identity headline.</desc>
-<defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06120A"/><stop offset=".55" stop-color="#08170B"/><stop offset="1" stop-color="#06120A"/></linearGradient>
-  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#39FF14"/><stop offset=".5" stop-color="#39FF14"/><stop offset="1" stop-color="#39FF14"/></linearGradient>
-  <radialGradient id="glow"><stop offset="0" stop-color="#39FF14" stop-opacity=".22"/><stop offset="1" stop-color="#39FF14" stop-opacity="0"/></radialGradient>
-  <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#174A24" stroke-width=".65" opacity=".5"/></pattern>
-  <filter id="blur"><feGaussianBlur stdDeviation="7"/></filter>
-  <clipPath id="clip"><rect x="1" y="1" width="998" height="298" rx="18"/></clipPath>
-</defs>
-<g clip-path="url(#clip)">
-  <rect width="1000" height="300" fill="url(#bg)"/><rect width="1000" height="300" fill="url(#grid)" opacity=".65"/>
-  <ellipse cx="790" cy="144" rx="245" ry="190" fill="url(#glow)"/>
-  <path d="M0 242H1000" stroke="url(#neon)" stroke-width="1" opacity=".35"><animate attributeName="opacity" values=".12;.55;.12" dur="4s" repeatCount="indefinite"/></path>
-  <g transform="translate(790 142)">
-    <circle r="105" fill="none" stroke="#174A24" stroke-width="1"/>
-    <circle r="81" fill="none" stroke="#39FF14" stroke-width="1.5" stroke-dasharray="8 12" opacity=".8"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/></circle>
-    <ellipse rx="120" ry="47" fill="none" stroke="#39FF14" stroke-width="1.4"><animateTransform attributeName="transform" type="rotate" from="-28" to="332" dur="18s" repeatCount="indefinite"/></ellipse>
-    <ellipse rx="120" ry="47" fill="none" stroke="#39FF14" stroke-width="1" opacity=".7"><animateTransform attributeName="transform" type="rotate" from="42" to="-318" dur="27s" repeatCount="indefinite"/></ellipse>
-    <circle r="48" fill="#39FF14" opacity=".09"/><circle r="32" fill="none" stroke="url(#neon)" stroke-width="2"><animate attributeName="r" values="29;35;29" dur="3.2s" repeatCount="indefinite"/></circle>
-    <path d="M-14 -11L-2 0L-14 11M4 12L16 -12" fill="none" stroke="#B9FFB0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="120" cy="0" r="4" fill="#39FF14"><animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/></circle>
-    <circle cx="-85" cy="-58" r="3" fill="#39FF14"><animate attributeName="r" values="2;5;2" dur="2.4s" repeatCount="indefinite"/></circle>
-    <circle cx="24" cy="-103" r="3" fill="#B9FFB0"><animate attributeName="opacity" values=".2;1;.2" dur="2s" repeatCount="indefinite"/></circle>
+  <title id="title">Green Nova developer hero for Priya Ranjan</title>
+  <desc id="desc">High-tech animated cyberpunk hero banner with 3D quantum orbital rings, developer HUD, live telemetry, and glowing developer monogram.</desc>
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="hero-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030C06"/>
+      <stop offset="45%" stop-color="#061A0C"/>
+      <stop offset="100%" stop-color="#020804"/>
+    </linearGradient>
+
+    <linearGradient id="hero-neon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF88"/>
+      <stop offset="50%" stop-color="#39FF14"/>
+      <stop offset="100%" stop-color="#70FF00"/>
+    </linearGradient>
+
+    <linearGradient id="hero-laser" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#39FF14" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#39FF14" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="hero-core-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#39FF14" stop-opacity="0.32"/>
+      <stop offset="50%" stop-color="#00FF88" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#030C06" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Sci-Fi Grid Pattern -->
+    <pattern id="hero-grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#123B1C" stroke-width="0.65" opacity="0.6"/>
+      <circle cx="28" cy="28" r="0.8" fill="#39FF14" opacity="0.3"/>
+    </pattern>
+
+    <!-- Glow Filters -->
+    <filter id="hero-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur1"/>
+      <feGaussianBlur stdDeviation="9" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="hero-soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="hero-clip">
+      <rect x="1" y="1" width="998" height="298" rx="16"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#hero-clip)">
+    <!-- Base Canvas Plates -->
+    <rect width="1000" height="300" fill="url(#hero-bg)"/>
+    <rect width="1000" height="300" fill="url(#hero-grid)"/>
+
+    <!-- Ambient Orbital Core Glow -->
+    <circle cx="790" cy="150" r="220" fill="url(#hero-core-glow)"/>
+
+    <!-- Outer Tech Corner Accents -->
+    <path d="M16 36V16H36M984 36V16H964M16 264V284H36M984 264V284H964" fill="none" stroke="#39FF14" stroke-width="2" opacity="0.85"/>
+    <circle cx="16" cy="16" r="2.5" fill="#39FF14"/>
+    <circle cx="984" cy="16" r="2.5" fill="#39FF14"/>
+    <circle cx="16" cy="284" r="2.5" fill="#39FF14"/>
+    <circle cx="984" cy="284" r="2.5" fill="#39FF14"/>
+
+    <!-- Top & Bottom Laser Travel Beams -->
+    <path d="M0 3H1000" stroke="url(#hero-laser)" stroke-width="3" opacity="0.8">
+      <animate attributeName="stroke-dashoffset" values="1000;-1000" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0 297H1000" stroke="url(#hero-laser)" stroke-width="2" opacity="0.7">
+      <animate attributeName="stroke-dashoffset" values="-1000;1000" dur="5s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- ==================== LEFT DEVELOPER IDENTITY HUD ==================== -->
+    <g transform="translate(54, 46)" font-family="'SF Mono', 'Fira Code', 'Consolas', monospace">
+      <!-- Status Protocol Line -->
+      <g>
+        <rect x="0" y="0" width="8" height="8" fill="#39FF14">
+          <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
+        </rect>
+        <text x="16" y="8" fill="#39FF14" font-size="11" font-weight="700" letter-spacing="2.8">PORTFOLIO SYSTEM // ONLINE</text>
+        <line x1="0" y1="20" x2="420" y2="20" stroke="#174A24" stroke-width="1.2"/>
+      </g>
+
+      <!-- Main Developer Headline Name -->
+      <g transform="translate(0, 78)">
+        <text x="0" y="0" fill="#39FF14" font-size="52" font-weight="900" letter-spacing="-1.5" filter="url(#hero-glow)" opacity="0.4">PRIYA RANJAN</text>
+        <text x="0" y="0" fill="#FFFFFF" font-size="52" font-weight="900" letter-spacing="-1.5">PRIYA RANJAN</text>
+      </g>
+
+      <!-- Subtitle & Identity -->
+      <text x="2" y="116" fill="url(#hero-neon)" font-size="16" font-weight="700" letter-spacing="2.5">DEVELOPER · SYSTEMS THINKER</text>
+      <text x="2" y="146" fill="#8DBF91" font-size="12.5" letter-spacing="1.2">
+        AI / ML <tspan fill="#39FF14">✦</tspan> CYBERSECURITY <tspan fill="#39FF14">✦</tspan> SOFTWARE ENGINEERING
+      </text>
+
+      <!-- Interactive Status Badge & Mini Equalizer -->
+      <g transform="translate(0, 172)">
+        <rect x="0" y="0" width="260" height="32" rx="7" fill="#071E0F" stroke="#174A24" stroke-width="1.2"/>
+        <circle cx="16" cy="16" r="4" fill="#39FF14">
+          <animate attributeName="r" values="3;5;3" dur="1.5s" repeatCount="indefinite"/>
+        </circle>
+        <text x="28" y="20" fill="#E8F7E8" font-size="10.5" font-weight="700" letter-spacing="1.5">BUILDING IN PROGRESS</text>
+        
+        <!-- Live Micro-Equalizer Bars Inside Pill -->
+        <g transform="translate(205, 16)">
+          <rect x="0" y="-8" width="3" height="16" rx="1.5" fill="#39FF14">
+            <animate attributeName="height" values="6;18;8;14;6" dur="1.2s" repeatCount="indefinite"/>
+            <animate attributeName="y" values="-3;-9;-4;-7;-3" dur="1.2s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="6" y="-8" width="3" height="16" rx="1.5" fill="#00FF88">
+            <animate attributeName="height" values="16;6;18;8;16" dur="1.4s" repeatCount="indefinite"/>
+            <animate attributeName="y" values="-8;-3;-9;-4;-8" dur="1.4s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="12" y="-8" width="3" height="16" rx="1.5" fill="#70FF00">
+            <animate attributeName="height" values="10;18;6;16;10" dur="1.1s" repeatCount="indefinite"/>
+            <animate attributeName="y" values="-5;-9;-3;-8;-5" dur="1.1s" repeatCount="indefinite"/>
+          </rect>
+          <rect x="18" y="-8" width="3" height="16" rx="1.5" fill="#39FF14">
+            <animate attributeName="height" values="18;8;14;6;18" dur="1.5s" repeatCount="indefinite"/>
+            <animate attributeName="y" values="-9;-4;-7;-3;-9" dur="1.5s" repeatCount="indefinite"/>
+          </rect>
+        </g>
+      </g>
+    </g>
+
+    <!-- ==================== RIGHT 3D QUANTUM GYROSCOPE & CORE ==================== -->
+    <g transform="translate(790, 148)">
+      <!-- Outer Base Ring -->
+      <circle r="110" fill="none" stroke="#174A24" stroke-width="1.2"/>
+      <circle r="96" fill="none" stroke="#247A35" stroke-width="1" stroke-dasharray="3 7" opacity="0.6"/>
+
+      <!-- 1. Outer Compass Ring Rotating Clockwise -->
+      <circle r="86" fill="none" stroke="#39FF14" stroke-width="1.8" stroke-dasharray="8 14" opacity="0.8">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- 2. Middle Elliptical Gyroscope Ring (Tilted -28°) -->
+      <ellipse rx="124" ry="48" fill="none" stroke="url(#hero-neon)" stroke-width="1.6" opacity="0.85">
+        <animateTransform attributeName="transform" type="rotate" from="-28" to="332" dur="16s" repeatCount="indefinite"/>
+      </ellipse>
+
+      <!-- 3. Inner Elliptical Gyroscope Ring (Tilted +45°) -->
+      <ellipse rx="124" ry="48" fill="none" stroke="#00FF88" stroke-width="1.4" opacity="0.75">
+        <animateTransform attributeName="transform" type="rotate" from="45" to="-315" dur="22s" repeatCount="indefinite"/>
+      </ellipse>
+
+      <!-- Pulsing Energy Core Ring -->
+      <circle r="48" fill="#072010" stroke="#247A35" stroke-width="1.5"/>
+      <circle r="34" fill="none" stroke="url(#hero-neon)" stroke-width="2.2">
+        <animate attributeName="r" values="30;38;30" dur="3s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- ==================== CENTRAL DEVELOPER CREST < / > ==================== -->
+      <g filter="url(#hero-glow)">
+        <!-- Stylized Monogram Left Chevron -->
+        <path d="M-15 -12 L-3 0 L-15 12" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Slash -->
+        <path d="M4 14 L16 -14" fill="none" stroke="#39FF14" stroke-width="3.5" stroke-linecap="round"/>
+        <!-- Right Chevron -->
+        <path d="M22 -12 L34 0 L22 12" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+
+      <!-- Orbiting Quantum Satellite Beacons -->
+      <g transform="rotate(25)">
+        <circle cx="124" cy="0" r="4.5" fill="#FFFFFF" filter="url(#hero-soft-glow)">
+          <animate attributeName="r" values="3.5;5.5;3.5" dur="1.5s" repeatCount="indefinite"/>
+        </circle>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+      </g>
+
+      <g transform="rotate(-65)">
+        <circle cx="86" cy="0" r="3.5" fill="#39FF14">
+          <animate attributeName="r" values="2.5;4.5;2.5" dur="1.8s" repeatCount="indefinite"/>
+        </circle>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="12s" repeatCount="indefinite"/>
+      </g>
+
+      <g transform="rotate(110)">
+        <circle cx="124" cy="0" r="3" fill="#B9FFB0"/>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="18s" repeatCount="indefinite"/>
+      </g>
+    </g>
+
+    <!-- Outer Structural Border -->
+    <rect x="1" y="1" width="998" height="298" rx="16" fill="none" stroke="#1C5A2A" stroke-width="1.5"/>
   </g>
-  <g font-family="monospace">
-    <text x="54" y="49" fill="#39FF14" font-size="11" letter-spacing="3">PORTFOLIO SYSTEM // ONLINE</text><path d="M54 62H430" stroke="#1C5A2A"/>
-    <text x="51" y="121" fill="#39FF14" opacity=".28" font-size="52" font-weight="700" filter="url(#blur)">PRIYA RANJAN</text>
-    <text x="48" y="117" fill="#e8f7ff" font-size="52" font-weight="700" letter-spacing="-2">PRIYA RANJAN</text>
-    <text x="52" y="153" fill="url(#neon)" font-size="18" letter-spacing="2">DEVELOPER · SYSTEMS THINKER</text>
-    <text x="54" y="184" fill="#a8c2d0" font-size="13">AI / ML <tspan fill="#39FF14">•</tspan> CYBERSECURITY <tspan fill="#39FF14">•</tspan> SOFTWARE ENGINEERING</text>
-    <rect x="54" y="207" width="205" height="27" rx="5" fill="#0b2633" stroke="#1C5A2A"/>
-    <circle cx="68" cy="220" r="3.5" fill="#39FF14"><animate attributeName="opacity" values="1;.25;1" dur="1.2s" repeatCount="indefinite"/></circle>
-    <text x="80" y="224" fill="#d8faff" font-size="10" letter-spacing="1.2">BUILDING IN PROGRESS</text>
-  </g>
-  <g opacity=".45" stroke="#39FF14" fill="none"><path d="M480 38h40v-12h35"/><path d="M430 258h56v-15h24"/><circle cx="555" cy="26" r="2" fill="#39FF14"/><circle cx="510" cy="243" r="2" fill="#39FF14"/></g>
-  <rect x="1" y="1" width="998" height="298" rx="18" fill="none" stroke="#1C5A2A" stroke-width="1.5"/>
-  <rect x="1" y="1" width="998" height="3" rx="1.5" fill="url(#neon)" opacity=".8"><animate attributeName="opacity" values=".35;1;.35" dur="3.5s" repeatCount="indefinite"/></rect>
-</g></svg>
+</svg>
