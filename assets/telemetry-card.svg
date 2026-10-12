@@ -134,7 +134,7 @@
       <!-- Total Commits -->
       <g transform="translate(0, 50)">
         <text x="0" y="12" class="label-text">TOTAL COMMITS</text>
-        <text x="0" y="34" font-size="20" fill="#39FF14" class="value-text">688</text>
+        <text x="0" y="34" font-size="20" fill="#39FF14" class="value-text">647</text>
       </g>
       <!-- PRs & Issues -->
       <g transform="translate(0, 100)">
@@ -213,11 +213,11 @@
         <clipPath id="langBarClip">
           <rect x="0" y="0" width="234" height="6" rx="3"/>
         </clipPath>
-        <rect x="0.0" y="0" width="116.4" height="6" fill="#39FF14"/>
-<rect x="116.4" y="0" width="103.3" height="6" fill="#22C55E"/>
-<rect x="219.7" y="0" width="12.9" height="6" fill="#F7DF1E"/>
-<rect x="232.6" y="0" width="4.4" height="6" fill="#563D7C"/>
-<rect x="236.9" y="0" width="2.2" height="6" fill="#E34C26"/>
+        <rect x="0.0" y="0" width="116.0" height="6" fill="#22C55E"/>
+<rect x="116.0" y="0" width="102.1" height="6" fill="#39FF14"/>
+<rect x="218.1" y="0" width="14.1" height="6" fill="#F7DF1E"/>
+<rect x="232.2" y="0" width="3.9" height="6" fill="#563D7C"/>
+<rect x="236.1" y="0" width="2.7" height="6" fill="#E34C26"/>
       </g>
     </g>
 
@@ -225,37 +225,37 @@
     <g transform="translate(18, 96)">
       
         <g transform="translate(0, 0)">
-          <circle cx="5" cy="5" r="4" fill="#39FF14"/>
-          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">TypeScript</text>
-          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">48.5%</text>
+          <circle cx="5" cy="5" r="4" fill="#22C55E"/>
+          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">Python</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">48.3%</text>
         </g>
         
 
         <g transform="translate(125, 0)">
-          <circle cx="5" cy="5" r="4" fill="#22C55E"/>
-          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">Python</text>
-          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">43.0%</text>
+          <circle cx="5" cy="5" r="4" fill="#39FF14"/>
+          <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">TypeScript</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">42.5%</text>
         </g>
         
 
         <g transform="translate(0, 22)">
           <circle cx="5" cy="5" r="4" fill="#F7DF1E"/>
           <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">JavaScript</text>
-          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">5.4%</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">5.9%</text>
         </g>
         
 
         <g transform="translate(125, 22)">
           <circle cx="5" cy="5" r="4" fill="#563D7C"/>
           <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">CSS</text>
-          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">1.8%</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">1.6%</text>
         </g>
         
 
         <g transform="translate(0, 44)">
           <circle cx="5" cy="5" r="4" fill="#E34C26"/>
           <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">HTML</text>
-          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">0.9%</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">1.1%</text>
         </g>
         
     </g>
