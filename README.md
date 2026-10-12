@@ -6,7 +6,7 @@
 
 <a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><sub><b>▰ GREEN NOVA / CYBER DEVELOPER PROFILE</b></sub></a>
 
-<sub><b>GREEN NOVA / CYBER DEVELOPER PROFILE</b> &nbsp; · &nbsp; BUILD SMALL. THINK IN SYSTEMS. KEEP LEARNING.</sub>
+<sub><b>GREEN NOVA / DEVELOPER PROFILE</b> &nbsp; · &nbsp; BUILD SMALL. THINK IN SYSTEMS. KEEP LEARNING.</sub>
 
 <br/><br/>
 
@@ -23,7 +23,7 @@
 
 </div>
 
----
+<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated Green Nova circuit divider" /></div>
 
 <div align="center">
 
@@ -152,7 +152,7 @@ Interactive visual exploration of operating-system disk scheduling algorithms an
 <a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><b>Explore all repositories ↗</b></a>
 </div>
 
----
+<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated Green Nova circuit divider" /></div>
 
 ## <code>🟩 03 / TECHNOLOGY STACK</code>
 
@@ -164,7 +164,7 @@ Interactive visual exploration of operating-system disk scheduling algorithms an
 
 </div>
 
----
+<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated Green Nova circuit divider" /></div>
 
 ## <code>🟩 04 / GITHUB ANALYTICS</code>
 
@@ -193,7 +193,7 @@ Interactive visual exploration of operating-system disk scheduling algorithms an
 
 </div>
 
----
+<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated Green Nova circuit divider" /></div>
 
 ## <code>🟩 05 / THE JOURNEY</code>
 
@@ -225,7 +225,7 @@ Continuing to learn defensive engineering, architecture, testing, and practical 
 </tr>
 </table>
 
----
+<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated Green Nova circuit divider" /></div>
 
 ## <code>🟩 06 / CURRENTLY EXPLORING</code>
 
@@ -239,7 +239,7 @@ Continuing to learn defensive engineering, architecture, testing, and practical 
 </tr>
 </table>
 
----
+<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated Green Nova circuit divider" /></div>
 
 ## <code>🟩 07 / PRINCIPLES & HIGHLIGHTS</code>
 
@@ -255,7 +255,7 @@ Continuing to learn defensive engineering, architecture, testing, and practical 
 
 I value demonstrable work, honest progress, and clear engineering decisions. Project status and repository activity are linked directly to GitHub rather than represented with static or unverified numbers.
 
----
+<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated Green Nova circuit divider" /></div>
 
 ## <code>🟩 08 / LET'S CONNECT</code>
 
