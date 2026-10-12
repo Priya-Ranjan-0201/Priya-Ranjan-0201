@@ -164,10 +164,10 @@ Interactive visual exploration of operating-system disk scheduling algorithms an
 <div align="center">
 
 <a href="https://github.com/Priya-Ranjan-0201">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Priya-Ranjan-0201&show_icons=true&include_all_commits=true&hide_border=true&bg_color=07131C&title_color=00E5FF&icon_color=00E5FF&text_color=D8E7F0&rank_icon=github&cache_seconds=1800" alt="GitHub stats for Priya Ranjan" />
+  <img width="49%" src="./profile/stats.svg" alt="GitHub stats for Priya Ranjan" />
 </a>
 <a href="https://github.com/Priya-Ranjan-0201">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Priya-Ranjan-0201&layout=compact&langs_count=8&hide_border=true&bg_color=07131C&title_color=00E5FF&text_color=D8E7F0&cache_seconds=1800" alt="Languages detected in public GitHub repositories" />
+  <img width="49%" src="./profile/top-langs.svg" alt="Languages detected in public GitHub repositories" />
 </a>
 
 <br/><br/>
@@ -182,7 +182,7 @@ Interactive visual exploration of operating-system disk scheduling algorithms an
   <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Priya-Ranjan-0201&bg_color=07131C&color=D8E7F0&line=00E5FF&point=FFFFFF&area=true&hide_border=true&custom_title=Contribution%20Activity&radius=8" alt="GitHub contribution activity graph" />
 </a>
 
-<sub>Stats are fetched by external GitHub-data services and may be cached briefly. Language percentages reflect repository code, while contribution counts follow GitHub's contribution rules.</sub>
+<sub>Stats and language cards are regenerated automatically by GitHub Actions every 6 hours (and can be refreshed manually from Actions). Streak and activity-graph cards are served by external providers and may have their own cache delays. Language percentages reflect repository code; contribution counts follow GitHub's contribution rules.</sub>
 
 </div>
 
