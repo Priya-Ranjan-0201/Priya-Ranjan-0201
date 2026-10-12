@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/hero-banner.svg" width="100%" alt="Animated Blue Nova hero banner for Priya Ranjan" />
+
 <div align="center"><code>╭─ BLUE NOVA / DEVELOPER PROFILE ─╮</code><br/><sub>BUILDING SMALL · THINKING SYSTEMS · LEARNING EVERY DAY</sub></div>
 
 <img src="assets/hero-status.svg" width="76%" alt="Animated Blue Nova status bar" />
