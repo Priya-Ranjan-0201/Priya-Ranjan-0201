@@ -145,42 +145,13 @@ Interactive visual exploration of operating-system disk scheduling algorithms an
 
 ## <code>03 / TECHNOLOGY STACK</code>
 
-<img src="assets/tech-stack.svg" width="100%" alt="Technology stack" />
+<div align="center">
 
-<table>
-<tr>
-<td width="50%" valign="top">
+<img src="assets/tech-stack.svg" width="100%" alt="Animated Blue Nova technology stack cards" />
 
-**LANGUAGES**
+<sub>CORE LANGUAGES · PRODUCT ENGINEERING · AI/ML · CYBERSECURITY · DEVELOPER TOOLING</sub>
 
-<img src="https://skillicons.dev/icons?i=python,java,cpp,c,js,ts,html,css&theme=dark" alt="Python, Java, C++, C, JavaScript, TypeScript, HTML, CSS" />
-
-</td>
-<td width="50%" valign="top">
-
-**FRAMEWORKS & DATA**
-
-<img src="https://skillicons.dev/icons?i=react,tailwind,django,flask,fastapi,postgres,mysql,docker&theme=dark" alt="React, Tailwind, Django, Flask, FastAPI, PostgreSQL, MySQL, Docker" />
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-**TOOLS & WORKFLOW**
-
-<img src="https://skillicons.dev/icons?i=git,github,linux,vscode,postman&theme=dark" alt="Git, GitHub, Linux, VS Code, Postman" />
-
-</td>
-<td width="50%" valign="top">
-
-**AREAS OF FOCUS**
-
-AI/ML · NLP · Cybersecurity · REST APIs · Full-stack development · Software design
-
-</td>
-</tr>
-</table>
+</div>
 
 ---
 
