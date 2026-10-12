@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-labelledby="title desc">
 <title id="title">Green Nova animated developer hero for Priya Ranjan</title>
-<desc id="desc">A futuristic navy and neon green hero banner with animated orbital rings, glowing nodes, scan lines, and a developer identity headline.</desc>
+<desc id="desc">A near-black forest-green and neon-green hero banner with animated orbital rings, glowing nodes, scan lines, and a developer identity headline.</desc>
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06111a"/><stop offset=".55" stop-color="#091b29"/><stop offset="1" stop-color="#06120A"/></linearGradient>
-  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#39FF14"/><stop offset=".5" stop-color="#66f5ff"/><stop offset="1" stop-color="#4b8dff"/></linearGradient>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#39FF14"/><stop offset=".5" stop-color="#39FF14"/><stop offset="1" stop-color="#39FF14"/></linearGradient>
   <radialGradient id="glow"><stop offset="0" stop-color="#39FF14" stop-opacity=".22"/><stop offset="1" stop-color="#39FF14" stop-opacity="0"/></radialGradient>
   <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#174052" stroke-width=".65" opacity=".5"/></pattern>
   <filter id="blur"><feGaussianBlur stdDeviation="7"/></filter>
@@ -14,14 +14,14 @@
   <ellipse cx="790" cy="144" rx="245" ry="190" fill="url(#glow)"/>
   <path d="M0 242H1000" stroke="url(#neon)" stroke-width="1" opacity=".35"><animate attributeName="opacity" values=".12;.55;.12" dur="4s" repeatCount="indefinite"/></path>
   <g transform="translate(790 142)">
-    <circle r="105" fill="none" stroke="#123c4b" stroke-width="1"/>
+    <circle r="105" fill="none" stroke="#174A24" stroke-width="1"/>
     <circle r="81" fill="none" stroke="#39FF14" stroke-width="1.5" stroke-dasharray="8 12" opacity=".8"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/></circle>
-    <ellipse rx="120" ry="47" fill="none" stroke="#3d8fff" stroke-width="1.4"><animateTransform attributeName="transform" type="rotate" from="-28" to="332" dur="18s" repeatCount="indefinite"/></ellipse>
+    <ellipse rx="120" ry="47" fill="none" stroke="#39FF14" stroke-width="1.4"><animateTransform attributeName="transform" type="rotate" from="-28" to="332" dur="18s" repeatCount="indefinite"/></ellipse>
     <ellipse rx="120" ry="47" fill="none" stroke="#39FF14" stroke-width="1" opacity=".7"><animateTransform attributeName="transform" type="rotate" from="42" to="-318" dur="27s" repeatCount="indefinite"/></ellipse>
     <circle r="48" fill="#39FF14" opacity=".09"/><circle r="32" fill="none" stroke="url(#neon)" stroke-width="2"><animate attributeName="r" values="29;35;29" dur="3.2s" repeatCount="indefinite"/></circle>
     <path d="M-14 -11L-2 0L-14 11M4 12L16 -12" fill="none" stroke="#B9FFB0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
     <circle cx="120" cy="0" r="4" fill="#39FF14"><animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/></circle>
-    <circle cx="-85" cy="-58" r="3" fill="#4b8dff"><animate attributeName="r" values="2;5;2" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="-85" cy="-58" r="3" fill="#39FF14"><animate attributeName="r" values="2;5;2" dur="2.4s" repeatCount="indefinite"/></circle>
     <circle cx="24" cy="-103" r="3" fill="#B9FFB0"><animate attributeName="opacity" values=".2;1;.2" dur="2s" repeatCount="indefinite"/></circle>
   </g>
   <g font-family="monospace">
