@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="495" height="190" viewBox="0 0 495 190" role="img" aria-labelledby="t d">
-<title id="t">GitHub profile stats card</title><desc id="d">Blue Nova dashboard card explaining that GitHub stats include public repository activity, stars, commits, and pull requests.</desc>
+<title id="t">GitHub profile stats card</title><desc id="d">Green Nova dashboard card explaining that GitHub stats include public repository activity, stars, commits, and pull requests.</desc>
 <defs><linearGradient id="b" x2="0" y2="1"><stop stop-color="#0d202c"/><stop offset="1" stop-color="#06120A"/></linearGradient><linearGradient id="c"><stop stop-color="#39FF14"/><stop offset="1" stop-color="#00C853"/></linearGradient></defs>
 <rect x=".5" y=".5" width="494" height="189" rx="12" fill="url(#b)" stroke="#1C5A2A"/>
 <path d="M18 1H477" stroke="url(#c)" stroke-width="2"/>
