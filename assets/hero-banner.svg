@@ -1,282 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 260" width="100%" fill="none">
-  <defs>
-    <!-- Deep Space Indigo-Obsidian Background -->
-    <linearGradient id="humanBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#070A12"/>
-      <stop offset="35%" stop-color="#0B0F1D"/>
-      <stop offset="70%" stop-color="#0F172A"/>
-      <stop offset="100%" stop-color="#080C16"/>
-    </linearGradient>
-
-    <!-- Sophisticated Aurora: Violet to Electric Cyan -->
-    <linearGradient id="auroraGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#818CF8"/>
-      <stop offset="40%" stop-color="#6366F1"/>
-      <stop offset="75%" stop-color="#38BDF8"/>
-      <stop offset="100%" stop-color="#06B6D4"/>
-    </linearGradient>
-
-    <!-- Warm Amber Glow for Human Touches -->
-    <linearGradient id="warmAmber" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#F59E0B"/>
-      <stop offset="100%" stop-color="#F97316"/>
-    </linearGradient>
-
-    <!-- Subtle Mint Emerald Glow -->
-    <linearGradient id="mintGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#10B981"/>
-      <stop offset="100%" stop-color="#34D399"/>
-    </linearGradient>
-
-    <!-- Elegant Single-Tone Border Runner -->
-    <linearGradient id="cleanBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.8"/>
-      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#6366F1" stop-opacity="0.8"/>
-    </linearGradient>
-
-    <!-- Soft Human Designer Glow Filter -->
-    <filter id="humanGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
-
-    <filter id="intenseSoft" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="8" result="b1"/>
-      <feGaussianBlur stdDeviation="16" result="b2"/>
-      <feMerge>
-        <feMergeNode in="b2"/>
-        <feMergeNode in="b1"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <!-- Elegant Developer Dot Grid -->
-    <pattern id="devGrid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.1" fill="#6366F1" fill-opacity="0.12"/>
-    </pattern>
-  </defs>
-
-  <style>
-    @keyframes floatParticle {
-      0%, 100% { transform: translateY(0px) scale(1); opacity: 0.3; }
-      50% { transform: translateY(-8px) scale(1.15); opacity: 0.8; }
-    }
-    @keyframes subtlePulse {
-      0%, 100% { transform: scale(1); opacity: 0.85; }
-      50% { transform: scale(1.03); opacity: 1; filter: drop-shadow(0 0 12px rgba(99,102,241,0.5)); }
-    }
-    @keyframes rotateSmooth {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-    @keyframes counterRotateSmooth {
-      from { transform: rotate(360deg); }
-      to { transform: rotate(0deg); }
-    }
-    @keyframes borderTravel {
-      0% { stroke-dashoffset: 0; }
-      100% { stroke-dashoffset: 800; }
-    }
-    @keyframes codeBlink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.2; }
-    }
-    @keyframes waveGlide {
-      0% { stroke-dashoffset: 600; opacity: 0.2; }
-      50% { opacity: 1; }
-      100% { stroke-dashoffset: 0; opacity: 0.2; }
-    }
-
-    .border-runner {
-      stroke-dasharray: 120 280;
-      animation: borderTravel 16s linear infinite;
-    }
-    .p-float-1 {
-      animation: floatParticle 4s ease-in-out infinite;
-    }
-    .p-float-2 {
-      animation: floatParticle 5s ease-in-out infinite 1.5s;
-    }
-    .p-float-3 {
-      animation: floatParticle 6s ease-in-out infinite 3s;
-    }
-    .logo-pulse {
-      transform-origin: 105px 130px;
-      animation: subtlePulse 5s ease-in-out infinite;
-    }
-    .spin-ring {
-      transform-origin: 840px 130px;
-      animation: rotateSmooth 12s linear infinite;
-    }
-    .counter-spin-ring {
-      transform-origin: 840px 130px;
-      animation: counterRotateSmooth 18s linear infinite;
-    }
-    .cursor-blink {
-      animation: codeBlink 1.4s ease-in-out infinite;
-    }
-    .bus-stream {
-      stroke-dasharray: 90 200;
-      animation: waveGlide 8s linear infinite;
-    }
-    .name-title {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "SF Pro Display", Roboto, Montserrat, sans-serif;
-      font-weight: 900;
-      letter-spacing: 3.5px;
-      fill: #FFFFFF;
-    }
-    .sub-title {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-weight: 600;
-      letter-spacing: 2px;
-      fill: #94A3B8;
-    }
-    .code-font {
-      font-family: "Fira Code", "SF Mono", Menlo, Consolas, monospace;
-    }
-  </style>
-
-  <!-- Base Canvas Frame -->
-  <rect x="2" y="2" width="956" height="256" rx="16" fill="url(#humanBg)" stroke="#1E293B" stroke-width="1.2"/>
-  <rect x="2" y="2" width="956" height="256" rx="16" fill="none" stroke="url(#cleanBorder)" stroke-width="1.8" class="border-runner"/>
-  <rect x="4" y="4" width="952" height="252" rx="14" fill="url(#devGrid)"/>
-
-  <!-- Atmospheric Ambient Glow Pockets (Violet-Indigo & Cyan) -->
-  <circle cx="120" cy="130" r="100" fill="#6366F1" fill-opacity="0.08" filter="url(#intenseSoft)"/>
-  <circle cx="500" cy="90" r="130" fill="#38BDF8" fill-opacity="0.06" filter="url(#intenseSoft)"/>
-  <circle cx="830" cy="130" r="110" fill="#818CF8" fill-opacity="0.08" filter="url(#intenseSoft)"/>
-
-  <!-- Subtle Floating Developer Particles -->
-  <circle cx="220" cy="50" r="2" fill="#38BDF8" class="p-float-1"/>
-  <circle cx="700" cy="40" r="2" fill="#818CF8" class="p-float-2"/>
-  <circle cx="450" cy="220" r="2.5" fill="#10B981" class="p-float-3"/>
-  <circle cx="340" cy="235" r="1.5" fill="#6366F1" class="p-float-1"/>
-  <circle cx="620" cy="225" r="2" fill="#38BDF8" class="p-float-2"/>
-
-  <!-- Elegant Flow Lines -->
-  <path d="M 210 36 L 730 36 L 760 64 L 940 64" stroke="#1E293B" stroke-width="1.2" fill="none"/>
-  <path d="M 210 36 L 730 36 L 760 64 L 940 64" stroke="url(#auroraGrad)" stroke-width="1.8" stroke-linecap="round" fill="none" class="bus-stream"/>
-
-  <path d="M 230 224 L 710 224 L 740 196 L 940 196" stroke="#1E293B" stroke-width="1.2" fill="none"/>
-  <path d="M 230 224 L 710 224 L 740 196 L 940 196" stroke="url(#auroraGrad)" stroke-width="1.8" stroke-linecap="round" fill="none" class="bus-stream" style="animation-delay: 3s;"/>
-
-  <!-- ==================== LEFT: HUMAN-CRAFTED MONOGRAM BRAND MARK ==================== -->
-  <g transform="translate(44, 50)">
-    <!-- Outer Segmented Ring -->
-    <circle cx="63" cy="63" r="66" stroke="#1E293B" stroke-width="1" stroke-dasharray="6 12" fill="none"/>
-    <circle cx="63" cy="63" r="66" stroke="url(#auroraGrad)" stroke-width="1.5" stroke-dasharray="16 28" fill="none" style="transform-origin: 63px 63px; animation: rotateSmooth 14s linear infinite;"/>
-
-    <!-- Matte Dark Glass Badge Base -->
-    <rect x="4" y="4" width="118" height="118" rx="20" fill="#0C1222" stroke="#1E293B" stroke-width="1.2"/>
-    <rect x="8" y="8" width="110" height="110" rx="16" fill="#090E1A" stroke="url(#auroraGrad)" stroke-width="1.2" stroke-opacity="0.5"/>
-
-    <!-- Hand-Crafted "PR" Monogram -->
-    <g transform="translate(14, 12)" class="logo-pulse">
-      <!-- Letter 'P' -->
-      <path d="M 22 24 L 22 80" stroke="#F8FAFC" stroke-width="6" stroke-linecap="round" fill="none"/>
-      <path d="M 22 24 L 43 24 C 54 24 60 30 60 40 C 60 50 54 55 43 55 L 22 55" stroke="#F8FAFC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-
-      <!-- Letter 'R' -->
-      <path d="M 64 24 L 64 80" stroke="#F8FAFC" stroke-width="6" stroke-linecap="round" fill="none"/>
-      <path d="M 64 24 L 84 24 C 95 24 100 30 100 40 C 100 50 95 55 84 55 L 64 55" stroke="#F8FAFC" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-      
-      <!-- 'R' Signature Aurora Gradient Leg -->
-      <path d="M 81 55 L 101 80" stroke="url(#auroraGrad)" stroke-width="6.5" stroke-linecap="round" fill="none" filter="url(#humanGlow)"/>
-    </g>
-
-    <!-- Live Status Node -->
-    <g transform="translate(14, 96)">
-      <rect x="0" y="0" width="98" height="18" rx="9" fill="#0D1628" stroke="#1E293B" stroke-width="1"/>
-      <circle cx="10" cy="9" r="3.5" fill="#10B981" class="cursor-blink"/>
-      <text x="20" y="12.5" class="code-font" font-size="8.5" font-weight="700" fill="#10B981" letter-spacing="0.5px">AVAILABLE 2028</text>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-labelledby="title desc">
+<title id="title">Blue Nova animated developer hero for Priya Ranjan</title>
+<desc id="desc">A futuristic navy and cyan hero banner with animated orbital rings, glowing nodes, scan lines, and a developer identity headline.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06111a"/><stop offset=".55" stop-color="#091b29"/><stop offset="1" stop-color="#07131c"/></linearGradient>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00e5ff"/><stop offset=".5" stop-color="#66f5ff"/><stop offset="1" stop-color="#4b8dff"/></linearGradient>
+  <radialGradient id="glow"><stop offset="0" stop-color="#00e5ff" stop-opacity=".22"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#174052" stroke-width=".65" opacity=".5"/></pattern>
+  <filter id="blur"><feGaussianBlur stdDeviation="7"/></filter>
+  <clipPath id="clip"><rect x="1" y="1" width="998" height="298" rx="18"/></clipPath>
+</defs>
+<g clip-path="url(#clip)">
+  <rect width="1000" height="300" fill="url(#bg)"/><rect width="1000" height="300" fill="url(#grid)" opacity=".65"/>
+  <ellipse cx="790" cy="144" rx="245" ry="190" fill="url(#glow)"/>
+  <path d="M0 242H1000" stroke="url(#neon)" stroke-width="1" opacity=".35"><animate attributeName="opacity" values=".12;.55;.12" dur="4s" repeatCount="indefinite"/></path>
+  <g transform="translate(790 142)">
+    <circle r="105" fill="none" stroke="#123c4b" stroke-width="1"/>
+    <circle r="81" fill="none" stroke="#00e5ff" stroke-width="1.5" stroke-dasharray="8 12" opacity=".8"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/></circle>
+    <ellipse rx="120" ry="47" fill="none" stroke="#3d8fff" stroke-width="1.4"><animateTransform attributeName="transform" type="rotate" from="-28" to="332" dur="18s" repeatCount="indefinite"/></ellipse>
+    <ellipse rx="120" ry="47" fill="none" stroke="#00e5ff" stroke-width="1" opacity=".7"><animateTransform attributeName="transform" type="rotate" from="42" to="-318" dur="27s" repeatCount="indefinite"/></ellipse>
+    <circle r="48" fill="#00e5ff" opacity=".09"/><circle r="32" fill="none" stroke="url(#neon)" stroke-width="2"><animate attributeName="r" values="29;35;29" dur="3.2s" repeatCount="indefinite"/></circle>
+    <path d="M-14 -11L-2 0L-14 11M4 12L16 -12" fill="none" stroke="#8af8ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="120" cy="0" r="4" fill="#00e5ff"><animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/></circle>
+    <circle cx="-85" cy="-58" r="3" fill="#4b8dff"><animate attributeName="r" values="2;5;2" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="24" cy="-103" r="3" fill="#8af8ff"><animate attributeName="opacity" values=".2;1;.2" dur="2s" repeatCount="indefinite"/></circle>
   </g>
-
-  <!-- ==================== CENTER: AUTHENTIC DEVELOPER IDENTITY ==================== -->
-  <g transform="translate(220, 0)">
-    <!-- Developer Greeting Tag -->
-    <g transform="translate(0, 42)">
-      <rect x="0" y="0" width="220" height="24" rx="12" fill="#0C1426" stroke="#1E293B" stroke-width="1"/>
-      <circle cx="12" cy="12" r="3.5" fill="#818CF8"/>
-      <text x="24" y="15.5" class="code-font" font-size="9.5" font-weight="700" fill="#818CF8">SOFTWARE ENGINEER &amp; BUILDER</text>
-    </g>
-
-    <!-- Primary Name -->
-    <text x="0" y="112" font-size="39" class="name-title">PRIYA RANJAN</text>
-
-    <!-- Subtitle Role Statement -->
-    <text x="2" y="139" font-size="12" class="sub-title">ENGINEER  •  SYSTEMS ARCHITECT  •  BUILDER</text>
-
-    <!-- Human-Crafted Discipline Badges (Sleek Dark Glass) -->
-    <g transform="translate(2, 162)">
-      <!-- Badge 1: Low-Level Systems -->
-      <g>
-        <rect x="0" y="0" width="138" height="25" rx="6" fill="#0A111F" stroke="#1E293B" stroke-width="1"/>
-        <circle cx="12" cy="12.5" r="3" fill="#38BDF8"/>
-        <text x="22" y="16" class="code-font" font-size="9" font-weight="700" fill="#E2E8F0">LOW-LEVEL SYSTEMS</text>
-      </g>
-
-      <!-- Badge 2: AI & Vector -->
-      <g transform="translate(146, 0)">
-        <rect x="0" y="0" width="140" height="25" rx="6" fill="#0A111F" stroke="#1E293B" stroke-width="1"/>
-        <circle cx="12" cy="12.5" r="3" fill="#818CF8"/>
-        <text x="22" y="16" class="code-font" font-size="9" font-weight="700" fill="#E2E8F0">AI &amp; DEEP LEARNING</text>
-      </g>
-
-      <!-- Badge 3: Cyber Defense -->
-      <g transform="translate(294, 0)">
-        <rect x="0" y="0" width="138" height="25" rx="6" fill="#0A111F" stroke="#1E293B" stroke-width="1"/>
-        <circle cx="12" cy="12.5" r="3" fill="#10B981"/>
-        <text x="22" y="16" class="code-font" font-size="9" font-weight="700" fill="#E2E8F0">CYBER DEFENSE</text>
-      </g>
-
-      <!-- Badge 4: Full-Stack Cloud -->
-      <g transform="translate(440, 0)">
-        <rect x="0" y="0" width="124" height="25" rx="6" fill="#0A111F" stroke="#1E293B" stroke-width="1"/>
-        <circle cx="12" cy="12.5" r="3" fill="#F59E0B"/>
-        <text x="22" y="16" class="code-font" font-size="9" font-weight="700" fill="#E2E8F0">FULL-STACK CLOUD</text>
-      </g>
-    </g>
-
-    <!-- Engineering Philosophy Quote -->
-    <text x="3" y="214" class="code-font" font-size="10.5" font-weight="500" fill="#64748B" letter-spacing="0.5px">
-      <tspan fill="#38BDF8">&gt;</tspan> Building systems that solve tangible, real-world problems from first principles.
-    </text>
+  <g font-family="monospace">
+    <text x="54" y="49" fill="#00e5ff" font-size="11" letter-spacing="3">PORTFOLIO SYSTEM // ONLINE</text><path d="M54 62H430" stroke="#1c4b5b"/>
+    <text x="51" y="121" fill="#00e5ff" opacity=".28" font-size="52" font-weight="700" filter="url(#blur)">PRIYA RANJAN</text>
+    <text x="48" y="117" fill="#e8f7ff" font-size="52" font-weight="700" letter-spacing="-2">PRIYA RANJAN</text>
+    <text x="52" y="153" fill="url(#neon)" font-size="18" letter-spacing="2">DEVELOPER · SYSTEMS THINKER</text>
+    <text x="54" y="184" fill="#a8c2d0" font-size="13">AI / ML <tspan fill="#00e5ff">•</tspan> CYBERSECURITY <tspan fill="#00e5ff">•</tspan> SOFTWARE ENGINEERING</text>
+    <rect x="54" y="207" width="205" height="27" rx="5" fill="#0b2633" stroke="#1b5264"/>
+    <circle cx="68" cy="220" r="3.5" fill="#00e5ff"><animate attributeName="opacity" values="1;.25;1" dur="1.2s" repeatCount="indefinite"/></circle>
+    <text x="80" y="224" fill="#d8faff" font-size="10" letter-spacing="1.2">BUILDING IN PROGRESS</text>
   </g>
-
-  <!-- ==================== RIGHT: REAL HUMAN DEVELOPER CODE HUD ==================== -->
-  <g transform="translate(760, 46)">
-    <!-- Base Developer Terminal HUD -->
-    <rect x="0" y="0" width="158" height="166" rx="14" fill="#0A101E" stroke="#1E293B" stroke-width="1.2"/>
-    
-    <!-- Top Terminal Title Bar -->
-    <rect x="0" y="0" width="158" height="26" rx="14" fill="#0E1628"/>
-    <rect x="0" y="14" width="158" height="12" fill="#0E1628"/>
-    <line x1="0" y1="26" x2="158" y2="26" stroke="#1E293B" stroke-width="1"/>
-
-    <!-- Terminal Window Dots -->
-    <circle cx="14" cy="13" r="3.5" fill="#EF4444" opacity="0.8"/>
-    <circle cx="25" cy="13" r="3.5" fill="#F59E0B" opacity="0.8"/>
-    <circle cx="36" cy="13" r="3.5" fill="#10B981" opacity="0.8"/>
-    <text x="64" y="16" class="code-font" font-size="8.5" font-weight="600" fill="#64748B">dev.config</text>
-
-    <!-- Inside Terminal Code Snippet (Human Developer Feel) -->
-    <g transform="translate(14, 42)">
-      <text x="0" y="10" class="code-font" font-size="9" fill="#818CF8">const <tspan fill="#F8FAFC">priya</tspan> = {</text>
-      <text x="10" y="26" class="code-font" font-size="9" fill="#94A3B8">role: <tspan fill="#38BDF8">"Engineer"</tspan>,</text>
-      <text x="10" y="42" class="code-font" font-size="9" fill="#94A3B8">degree: <tspan fill="#38BDF8">"B.Tech CSE"</tspan>,</text>
-      <text x="10" y="58" class="code-font" font-size="9" fill="#94A3B8">grad: <tspan fill="#10B981">2028</tspan>,</text>
-      <text x="10" y="74" class="code-font" font-size="9" fill="#94A3B8">openToWork: <tspan fill="#10B981">true</tspan></text>
-      <text x="0" y="90" class="code-font" font-size="9" fill="#818CF8">};</text>
-      <rect x="18" y="83" width="6" height="10" fill="#38BDF8" class="cursor-blink"/>
-    </g>
-
-    <!-- Bottom Status Line -->
-    <g transform="translate(0, 142)">
-      <line x1="10" y1="0" x2="148" y2="0" stroke="#1E293B" stroke-width="1"/>
-      <circle cx="16" cy="12" r="3" fill="#10B981"/>
-      <text x="26" y="15" class="code-font" font-size="8.5" font-weight="600" fill="#94A3B8">OS Kinematics &amp; AI</text>
-    </g>
-  </g>
-</svg>
+  <g opacity=".45" stroke="#00e5ff" fill="none"><path d="M480 38h40v-12h35"/><path d="M430 258h56v-15h24"/><circle cx="555" cy="26" r="2" fill="#00e5ff"/><circle cx="510" cy="243" r="2" fill="#00e5ff"/></g>
+  <rect x="1" y="1" width="998" height="298" rx="18" fill="none" stroke="#1a5364" stroke-width="1.5"/>
+  <rect x="1" y="1" width="998" height="3" rx="1.5" fill="url(#neon)" opacity=".8"><animate attributeName="opacity" values=".35;1;.35" dur="3.5s" repeatCount="indefinite"/></rect>
+</g></svg>
