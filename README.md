@@ -1,293 +1,244 @@
 <div align="center">
 
-<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="assets/hero-banner.svg" width="100%" alt="Open Priya Ranjan's projects — animated Blue Nova developer banner" /></a>
+<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="assets/hero-banner.svg" width="100%" alt="Green Nova animated developer portfolio banner — click to explore repositories" /></a>
 
 <br/>
 
-<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><sub><b>▰ GREEN NOVA / CYBER DEVELOPER PROFILE</b></sub></a>
+<a href="https://github.com/Priya-Ranjan-0201"><img src="https://img.shields.io/badge/PRIYA_RANJAN-GREEN_NOVA-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="Priya Ranjan — Green Nova developer profile" /></a>
 
-<sub><b>GREEN NOVA / DEVELOPER PROFILE</b> &nbsp; · &nbsp; BUILD SMALL. THINK IN SYSTEMS. KEEP LEARNING.</sub>
+<p><strong>COMPUTER SCIENCE & ENGINEERING · LOVELY PROFESSIONAL UNIVERSITY</strong></p>
+<p>AI/ML · CYBERSECURITY · SOFTWARE ENGINEERING</p>
+<p><em>Build small. Think in systems. Keep learning.</em></p>
 
-<br/><br/>
-
-<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/◈_EXPLORE-PROJECTS-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="Explore projects" /></a>
-<a href="https://www.linkedin.com/in/priyaranjan01"><img src="https://img.shields.io/badge/↗_CONNECT-LINKEDIN-06120A?style=for-the-badge&logo=linkedin&logoColor=39FF14" alt="Connect on LinkedIn" /></a>
-<a href="mailto:priyaranjan01@gmail.com"><img src="https://img.shields.io/badge/✉_SAY_HELLO-EMAIL-06120A?style=for-the-badge&logo=gmail&logoColor=39FF14" alt="Send email" /></a>
-
-<br/><br/>
-
-<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/ACCESS-GREEN_NOVA_TERMINAL-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="Explore the green-themed developer portfolio" /></a>
-
-**COMPUTER SCIENCE & ENGINEERING** &nbsp;·&nbsp; AI/ML &nbsp;·&nbsp; CYBERSECURITY &nbsp;·&nbsp; SOFTWARE ENGINEERING  
-*Curious by design. Building with intent.*
+<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE-PROJECTS-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="Explore GitHub projects" /></a>
+<a href="mailto:priye0201@gmail.com"><img src="https://img.shields.io/badge/CONTACT-EMAIL-06120A?style=for-the-badge&logo=gmail&logoColor=39FF14" alt="Email Priya Ranjan" /></a>
 
 </div>
 
-<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated Green Nova circuit divider" /></div>
+<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated neon-green circuit divider" /></div>
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&duration=2200&pause=900&color=39FF14&center=true&vCenter=true&width=260&height=36&lines=%3E+PRIYA+RANJAN;%3E+BUILDING+IN+PROGRESS" alt="Animated profile signature" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=17&duration=2400&pause=900&color=39FF14&center=true&vCenter=true&width=460&height=36&lines=%3E+BUILDING+USEFUL+SYSTEMS;%3E+LEARNING+AI+%26+CYBERSECURITY;%3E+ITERATE.+TEST.+IMPROVE." alt="Animated developer tagline" />
 
-**PRIYA RANJAN** · [@Priya-Ranjan-0201](https://github.com/Priya-Ranjan-0201) · 🎓 Computer Science & Engineering · Lovely Professional University · India
-
-<img src="https://img.shields.io/github/followers/Priya-Ranjan-0201?style=flat-square&label=Followers&color=39FF14&labelColor=#06120A" alt="GitHub followers" />
+<a href="https://github.com/Priya-Ranjan-0201"><img src="https://img.shields.io/github/followers/Priya-Ranjan-0201?style=flat-square&label=GitHub%20followers&color=39FF14&labelColor=06120A" alt="GitHub followers" /></a>
+<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/FOCUS-AI%2FML%20%7C%20SECURITY%20%7C%20WEB-06120A?style=flat-square&labelColor=06120A&color=39FF14" alt="Current focus areas" /></a>
 
 </div>
 
-## <code>🟩 01 / ABOUT ME</code>
+## <code>▰ 01 / ABOUT ME</code>
 
-I'm a Computer Science & Engineering student interested in building practical software at the intersection of **AI/ML, cybersecurity, and web engineering**. I enjoy taking an idea from a rough concept to a working system, understanding how its parts fit together, and improving it through iteration.
+I'm **Priya Ranjan**, a Computer Science & Engineering student at **Lovely Professional University (LPU), India**. I build and explore practical software across **AI/ML, cybersecurity, backend systems, and web development**.
 
-My focus is on strengthening software engineering fundamentals while building projects that demonstrate applied learning—not just collecting technologies.
+I like understanding how systems work under the hood—from algorithms and APIs to data pipelines and security signals—and turning that understanding into projects people can explore and use. My current priority is to strengthen core engineering fundamentals while building a credible, project-led portfolio.
 
-**WHAT I CARE ABOUT**
+<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated neon-green circuit divider" /></div>
 
-- **Applied AI** — Useful AI-enabled tools, retrieval, language models, and data-driven workflows.
-- **Digital Security** — Secure engineering, threat analysis, and defensive tools.
-- **Product Engineering** — Connecting frontend experiences, APIs, data, and backend services.
-- **Engineering Discipline** — Readable code, clear architecture, testing, and continuous improvement.
-
-**WORKING PRINCIPLES** · Learn the fundamentals · Build useful things · Keep code understandable · Iterate with feedback
-
-
-
-## <code>🟩 02 / SELECTED WORK</code>
+## <code>▰ 02 / SELECTED PROJECTS</code>
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/Priya-Ranjan-0201/VIREONIQ"><img src="assets/project_vireoniq.svg" width="100%" alt="VIREONIQ project" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/VIREONIQ"><img src="assets/project_vireoniq.svg" width="100%" alt="VIREONIQ animated project artwork — career intelligence and code analysis" /></a>
 
-### [VIREONIQ / PLACEIQ ↗](https://github.com/Priya-Ranjan-0201/VIREONIQ)
+### [VIREONIQ ↗](https://github.com/Priya-Ranjan-0201/VIREONIQ)
 
-Career intelligence and developer-focused tooling combining web application development, code analysis, and personalized guidance.
+**Developer career roadmap and code-analysis engine.** Combines Python AST-based static complexity analysis with vector-search and career trajectory concepts.
 
-**React · TypeScript · Python · FastAPI**
+**Stack:** Python · React · FastAPI · Qdrant
 
 <a href="https://github.com/Priya-Ranjan-0201/VIREONIQ"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/VIREONIQ?style=flat-square&color=39FF14&label=Stars" alt="VIREONIQ stars" /></a>
-<a href="https://github.com/Priya-Ranjan-0201/VIREONIQ"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-06120A?style=flat-square&logo=github&logoColor=39FF14" alt="Open repository" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/VIREONIQ"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-06120A?style=flat-square&logo=github&logoColor=39FF14" alt="Open VIREONIQ repository" /></a>
 
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/Priya-Ranjan-0201/TrustShield-X"><img src="assets/project_truthshield.svg" width="100%" alt="TrustShield-X project" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/TrustShield-X"><img src="assets/project_truthshield.svg" width="100%" alt="TrustShield-X animated project artwork — network defense and threat signals" /></a>
 
 ### [TrustShield-X ↗](https://github.com/Priya-Ranjan-0201/TrustShield-X)
 
-Cybersecurity-focused project exploring network and protocol inspection, defensive engineering, and security-oriented logging.
+**Network and header security engine.** Focuses on asynchronous network inspection, signed logs, defensive analysis, and STIX 2.1 threat modeling.
 
-**Python · AsyncIO · Networking · Security**
+**Stack:** Python 3.13 · AsyncIO · Networking · STIX 2.1
 
 <a href="https://github.com/Priya-Ranjan-0201/TrustShield-X"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/TrustShield-X?style=flat-square&color=39FF14&label=Stars" alt="TrustShield-X stars" /></a>
-<a href="https://github.com/Priya-Ranjan-0201/TrustShield-X"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-06120A?style=flat-square&logo=github&logoColor=39FF14" alt="Open repository" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/TrustShield-X"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-06120A?style=flat-square&logo=github&logoColor=39FF14" alt="Open TrustShield-X repository" /></a>
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><img src="assets/project_techontour.svg" width="100%" alt="Tech On Tour project" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><img src="assets/project_techontour.svg" width="100%" alt="Tech On Tour animated project artwork — smart tourism and travel discovery" /></a>
 
-### [Tech On Tour ↗](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR)
+### [Tech On Tour / TravelSathi ↗](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR)
 
-Smart tourism concept focused on helping travelers discover places and plan more informed journeys.
+**Smart tourism platform concept for the SIH finale.** Explores a multilingual travel twin, tourism discovery, and ways to support more informed, responsible travel.
 
-**React · Python · APIs · Travel Technology**
+**Stack:** Python · Web APIs · Smart Tourism · Multilingual UX
 
 <a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/TECH-ON-TOUR?style=flat-square&color=39FF14&label=Stars" alt="Tech On Tour stars" /></a>
-<a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-06120A?style=flat-square&logo=github&logoColor=39FF14" alt="Open repository" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-06120A?style=flat-square&logo=github&logoColor=39FF14" alt="Open Tech On Tour repository" /></a>
 
 </td>
 <td width="50%" valign="top">
 
-<a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><img src="assets/project_priocardix.svg" width="100%" alt="Priocardix-AI project" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><img src="assets/project_priocardix.svg" width="100%" alt="Priocardix-AI animated project artwork — ECG signals and preventive cardiology" /></a>
 
 ### [Priocardix-AI ↗](https://github.com/Priya-Ranjan-0201/Priocardix-AI)
 
-AI and data-science project exploring preventive cardiology concepts and explainable, data-informed risk analysis.
+**Preventive cardiology platform.** Explores multi-parameter risk scoring and TreeSHAP explainability through a data-informed health-risk workflow.
 
-**Python · Machine Learning · Data Science**
+**Stack:** JavaScript · AI/ML · Risk Scoring · Explainability
 
 <a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/Priocardix-AI?style=flat-square&color=39FF14&label=Stars" alt="Priocardix-AI stars" /></a>
-<a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-06120A?style=flat-square&logo=github&logoColor=39FF14" alt="Open repository" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/Priocardix-AI"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-06120A?style=flat-square&logo=github&logoColor=39FF14" alt="Open Priocardix-AI repository" /></a>
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-<a href="https://github.com/Priya-Ranjan-0201/BrainCheck"><img src="assets/project_braincheck.svg" width="100%" alt="BrainCheck project" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/BrainCheck"><img src="assets/project_braincheck.svg" width="100%" alt="BrainCheck animated project artwork — cognitive assessment and quiz platform" /></a>
 
 ### [BrainCheck ↗](https://github.com/Priya-Ranjan-0201/BrainCheck)
 
-Cognitive assessment and quiz application project, emphasizing web services and structured application design.
+**Containerized cognitive assessment and quiz platform.** Organized around modular Flask Blueprints, PostgreSQL schemas, and Docker Compose.
 
-**Python · Flask · PostgreSQL · Docker**
+**Stack:** Python · Flask · PostgreSQL · Docker
 
 <a href="https://github.com/Priya-Ranjan-0201/BrainCheck"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/BrainCheck?style=flat-square&color=39FF14&label=Stars" alt="BrainCheck stars" /></a>
-<a href="https://github.com/Priya-Ranjan-0201/BrainCheck"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-06120A?style=flat-square&logo=github&logoColor=39FF14" alt="Open repository" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/BrainCheck"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-06120A?style=flat-square&logo=github&logoColor=39FF14" alt="Open BrainCheck repository" /></a>
 
 </td>
 <td width="50%" valign="top">
 
-<div align="center"><sub>OPERATING SYSTEMS · ALGORITHM VISUALIZATION</sub></div>
+<a href="https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm"><img src="assets/disk-scheduling.svg" width="100%" alt="Animated Green Nova disk scheduling simulator showing the head traversing cylinder requests" /></a>
 
 ### [Disk Scheduling Visualizer ↗](https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm)
 
-Interactive visual exploration of operating-system disk scheduling algorithms and their trade-offs.
+**Operating-systems storage and disk-kinematics simulator.** An HTML5 Canvas visualizer benchmarking 11 disk-scheduling algorithms with animated head movement.
 
-**JavaScript · HTML · Canvas · Operating Systems**
+**Stack:** JavaScript · HTML5 Canvas · Operating Systems · Algorithms
 
-<a href="https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/Disk_Scheduling_Algorithm?style=flat-square&color=39FF14&label=Stars" alt="Disk Scheduling stars" /></a>
-<a href="https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-06120A?style=flat-square&logo=github&logoColor=39FF14" alt="Open repository" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm"><img src="https://img.shields.io/github/stars/Priya-Ranjan-0201/Disk_Scheduling_Algorithm?style=flat-square&color=39FF14&label=Stars" alt="Disk Scheduling Visualizer stars" /></a>
+<a href="https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm"><img src="https://img.shields.io/badge/OPEN_REPOSITORY-06120A?style=flat-square&logo=github&logoColor=39FF14" alt="Open Disk Scheduling repository" /></a>
 
 </td>
 </tr>
 </table>
 
 <div align="center">
-<a href="https://github.com/Priya-Ranjan-0201/HRCV-"><b>HRCV- — AI career / CV tooling ↗</b></a> &nbsp; · &nbsp;
-<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><b>Explore all repositories ↗</b></a>
-</div>
 
-<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated Green Nova circuit divider" /></div>
+<a href="https://github.com/Priya-Ranjan-0201/HRCV-"><b>HRCV- — AI career intelligence and ATS compatibility ↗</b></a>
 
-## <code>🟩 03 / TECHNOLOGY STACK</code>
-
-<div align="center">
-
-<img src="assets/tech-stack.svg" width="100%" alt="Animated Green Nova technology stack cards" />
-
-<sub>CORE LANGUAGES · PRODUCT ENGINEERING · AI/ML · CYBERSECURITY · DEVELOPER TOOLING</sub>
+<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/VIEW-ALL_REPOSITORIES-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="View all GitHub repositories" /></a>
 
 </div>
 
-<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated Green Nova circuit divider" /></div>
+<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated neon-green circuit divider" /></div>
 
-## <code>🟩 04 / GITHUB ANALYTICS</code>
+## <code>▰ 03 / TECHNOLOGY STACK</code>
+
+<div align="center">
+<img src="assets/tech-stack.svg" width="100%" alt="Green Nova technology stack infographic" />
+</div>
+
+**Languages:** Python · JavaScript · Java · C/C++ · HTML · CSS · TypeScript
+
+**Frontend:** React · TypeScript · Tailwind CSS
+
+**Backend and data:** FastAPI · Flask · Django · REST APIs · PostgreSQL · MySQL · SQL
+
+**AI/ML:** Machine learning · NLP · RAG concepts · data analysis · explainability
+
+**Security and tooling:** Cybersecurity fundamentals · networking · Linux · Git · GitHub · Docker · testing
+
+*These are technologies I've used, studied, or explored across coursework and projects; they are not a claim of equal proficiency in every tool.*
+
+<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated neon-green circuit divider" /></div>
+
+## <code>▰ 04 / GITHUB ANALYTICS</code>
 
 <div align="center">
 
-<a href="https://github.com/Priya-Ranjan-0201">
-  <img width="49%" src="./profile/stats.svg" alt="GitHub stats for Priya Ranjan" />
-</a>
-<a href="https://github.com/Priya-Ranjan-0201">
-  <img width="49%" src="./profile/top-langs.svg" alt="Languages detected in public GitHub repositories" />
-</a>
+<a href="https://github.com/Priya-Ranjan-0201"><img width="49%" src="./profile/stats.svg" alt="GitHub statistics for Priya Ranjan" /></a>
+<a href="https://github.com/Priya-Ranjan-0201"><img width="49%" src="./profile/top-langs.svg" alt="Languages detected in public GitHub repositories" /></a>
 
 <br/><br/>
 
-<a href="https://github.com/Priya-Ranjan-0201">
-  <img width="95%" src="https://github-readme-streak-stats.herokuapp.com/?user=Priya-Ranjan-0201&hide_border=true&background=#06120A&ring=#39FF14&fire=#39FF14&currStreakLabel=#39FF14&currStreakNum=FFFFFF&sideLabels=D8E7F0&sideNums=FFFFFF&dates=9BB0BF&stroke=1C5A2A&cache=1800" alt="Contribution streak calculated from GitHub activity" />
-</a>
+<a href="https://github.com/Priya-Ranjan-0201"><img width="95%" src="https://github-readme-streak-stats.herokuapp.com/?user=Priya-Ranjan-0201&hide_border=true&background=06120A&ring=39FF14&fire=39FF14&currStreakLabel=39FF14&currStreakNum=FFFFFF&sideLabels=D8E7F0&sideNums=FFFFFF&dates=9BB0BF&stroke=1C5A2A" alt="GitHub contribution streak" /></a>
 
 <br/><br/>
 
-<a href="https://github.com/Priya-Ranjan-0201#contributions">
-  <img src="https://img.shields.io/badge/VIEW-LIVE_GITHUB_CONTRIBUTIONS-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="View GitHub contribution calendar" />
-</a>
+<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE-REPOSITORY_ACTIVITY-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="Explore repository activity" /></a>
 
-<sub>Stats and language cards are regenerated automatically by GitHub Actions every 6 hours (and can be refreshed manually from Actions). The streak card is provided by an external service and may be delayed by its cache. For the canonical contribution calendar, use the link above. Language percentages reflect repository code; contribution counts follow GitHub's contribution rules.</sub>
+<sub>Stats and language cards are stored in this repository and refreshed by the scheduled GitHub Actions workflow. Their freshness depends on successful workflow runs. Contribution history is best checked on the native GitHub profile.</sub>
 
 </div>
 
-<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated Green Nova circuit divider" /></div>
+<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated neon-green circuit divider" /></div>
 
-## <code>🟩 05 / THE JOURNEY</code>
+## <code>▰ 05 / CURRENTLY EXPLORING</code>
 
 <table>
 <tr>
-<td width="65%" valign="top">
+<td width="33%" valign="top">
 
-**01 — FOUNDATIONS**  
-Building core programming knowledge and exploring computer science fundamentals.
+**AI / ML**
 
-**02 — VISUAL SYSTEMS**  
-Exploring interactive algorithm visualizations to make system behavior easier to understand.
-
-**03 — FULL-STACK & AI PROJECTS**  
-Working across web applications, APIs, data-driven tools, and AI-oriented projects.
-
-**04 — SECURITY & SYSTEM DESIGN**  
-Continuing to learn defensive engineering, architecture, testing, and practical software development.
+Building practical applications around machine learning, natural-language processing, retrieval, and explainable results.
 
 </td>
-<td width="35%" valign="middle" align="center">
+<td width="33%" valign="top">
 
-<div align="center">
-<code>FOUNDATIONS</code><br/>↓<br/><code>VISUAL SYSTEMS</code><br/>↓<br/><code>FULL-STACK + AI</code><br/>↓<br/><code>SECURE ENGINEERING</code>
-<br/><br/><sub><b>Progress over perfection.</b></sub>
-</div>
+**Cybersecurity**
+
+Strengthening networking and defensive engineering foundations through security-focused projects such as TrustShield-X.
+
+</td>
+<td width="33%" valign="top">
+
+**Software Engineering**
+
+Improving API design, modular architecture, testing, version control, containers, and maintainable full-stack development.
 
 </td>
 </tr>
 </table>
 
-<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated Green Nova circuit divider" /></div>
+**PrepPilot — interview-assistant project in development:** exploring interview knowledge bases, hybrid retrieval, resume/GitHub context, and question classification. No public repository link is included here because a public repository URL has not been verified.
 
-## <code>🟩 06 / CURRENTLY EXPLORING</code>
+<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated neon-green circuit divider" /></div>
 
-<div align="center"><img src="assets/explore-pulse.svg" width="72%" alt="Small animated exploration signal" /></div>
-
-<table>
-<tr>
-<td width="33%" align="center" valign="top"><b>◈ AI / ML</b><br/>Learning to turn models, data, and retrieval techniques into useful applications.</td>
-<td width="33%" align="center" valign="top"><b>◈ Cybersecurity</b><br/>Strengthening foundations in networks, threat analysis, and secure development.</td>
-<td width="33%" align="center" valign="top"><b>◈ Software Engineering</b><br/>Improving architecture, APIs, testing, version control, and deployment workflows.</td>
-</tr>
-</table>
-
-<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated Green Nova circuit divider" /></div>
-
-## <code>🟩 07 / PRINCIPLES & HIGHLIGHTS</code>
-
-<div align="center"><img src="assets/build-pulse.svg" width="72%" alt="Small animated build signal" /></div>
+## <code>▰ 06 / HOW I BUILD</code>
 
 <div align="center">
 
-| BUILD | LEARN | IMPROVE |
-|:---:|:---:|:---:|
-| Ship practical projects | Strengthen fundamentals | Iterate from feedback |
+| UNDERSTAND | BUILD | VALIDATE | ITERATE |
+|:---:|:---:|:---:|:---:|
+| Define the problem | Make a working version | Test assumptions | Improve from evidence |
 
 </div>
 
-I value demonstrable work, honest progress, and clear engineering decisions. Project status and repository activity are linked directly to GitHub rather than represented with static or unverified numbers.
+I value clear explanations, practical implementation, readable code, and honest reporting of what a project does. I prefer measurable functionality over decorative claims.
 
-<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated Green Nova circuit divider" /></div>
+<div align="center"><img src="assets/cyber-divider.svg" width="100%" alt="Animated neon-green circuit divider" /></div>
 
-## <code>🟩 08 / LET'S CONNECT</code>
+## <code>▰ 07 / CONNECT</code>
 
-<table>
-<tr>
-<td width="58%" valign="middle">
-
-I'm open to connecting about software projects, internships, collaborative learning, AI/ML, and cybersecurity.
-
-<br/>
-
-<a href="https://www.linkedin.com/in/priyaranjan01"><img src="https://img.shields.io/badge/LINKEDIN-Connect-06120A?style=for-the-badge&logo=linkedin&logoColor=39FF14" alt="LinkedIn" /></a>
-
-<a href="mailto:priyaranjan01@gmail.com"><img src="https://img.shields.io/badge/EMAIL-Say_Hello-06120A?style=for-the-badge&logo=gmail&logoColor=39FF14" alt="Email" /></a>
-
-<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/GITHUB-Explore_Code-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="GitHub repositories" /></a>
-
-</td>
-<td width="42%" valign="middle" align="center">
+I'm interested in **internships and collaborative opportunities** related to AI/ML, cybersecurity, and software engineering.
 
 <div align="center">
-<code>OPEN TO INTERNSHIPS</code><br/><br/><sub>AI/ML · Cybersecurity · Software Engineering</sub>
-</div>
 
-</td>
-</tr>
-</table>
+<a href="mailto:priye0201@gmail.com"><img src="https://img.shields.io/badge/EMAIL-priye0201%40gmail.com-06120A?style=for-the-badge&logo=gmail&logoColor=39FF14" alt="Email Priya Ranjan at priye0201@gmail.com" /></a>
+<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/GITHUB-Explore_Code-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="Explore my GitHub repositories" /></a>
 
-<div align="center">
+<br/><br/>
 
 <code>IDEAS → SYSTEMS → CODE → IMPACT</code>
 
-<sub>▰ DESIGNED WITH CURIOSITY · BUILT ONE ITERATION AT A TIME ▰</sub>
+<sub>GREEN NOVA · DESIGNED WITH CURIOSITY · BUILT ONE ITERATION AT A TIME</sub>
 
 </div>
