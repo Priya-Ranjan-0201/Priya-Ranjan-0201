@@ -1,241 +1,333 @@
+<!--
+  BLUE NOVA — GitHub Profile README
+  Repository: Priya-Ranjan-0201/Priya-Ranjan-0201
+  IMPORTANT:
+  1. Put your custom images in an `assets/` folder in this repository.
+  2. Replace any placeholder image paths with the matching asset names.
+  3. GitHub README does not support custom CSS, so this uses GitHub-safe Markdown/HTML.
+-->
+
 <div align="center">
 
-⚡ PRIYA RANJAN
-IDEAS → SYSTEMS → CODE → IMPACT
-Computer Science & Engineering Student · AI/ML · Cybersecurity · Web Development
+<img src="assets/hero-banner.png" alt="Blue Nova — Ideas to Systems to Code to Impact" width="100%" />
 
+# Priya Ranjan
 
+### Computer Science & Engineering Student · AI/ML · Cybersecurity · Web Development
 
+<p>
+  <img src="https://img.shields.io/badge/AI%2FML-00E5CC?style=for-the-badge&logo=googlecolab&logoColor=00120F" alt="AI/ML" />
+  <img src="https://img.shields.io/badge/Cybersecurity-00E5CC?style=for-the-badge&logo=hackthebox&logoColor=00120F" alt="Cybersecurity" />
+  <img src="https://img.shields.io/badge/Web_Development-00E5CC?style=for-the-badge&logo=react&logoColor=00120F" alt="Web Development" />
+  <img src="https://img.shields.io/badge/Problem_Solving-00E5CC?style=for-the-badge&logo=thealgorithms&logoColor=00120F" alt="Problem Solving" />
+</p>
+
+**Turning ideas into impactful systems through code, continuous learning, and real-world impact.**
+
+`IDEAS → SYSTEMS → CODE → IMPACT`
+
+<p>
+  <a href="https://github.com/Priya-Ranjan-0201"><img src="https://img.shields.io/badge/View%20Portfolio-00E5CC?style=for-the-badge&logo=github&logoColor=00120F" alt="View GitHub Portfolio" /></a>
+  <a href="https://github.com/Priya-Ranjan-0201"><img src="https://img.shields.io/badge/GitHub-071716?style=for-the-badge&logo=github&logoColor=00E5CC" alt="GitHub" /></a>
+  <a href="https://www.linkedin.com/in/priyaranjan01"><img src="https://img.shields.io/badge/LinkedIn-071716?style=for-the-badge&logo=linkedin&logoColor=00E5CC" alt="LinkedIn" /></a>
+  <a href="mailto:priyaranjan01@gmail.com"><img src="https://img.shields.io/badge/Email-071716?style=for-the-badge&logo=gmail&logoColor=00E5CC" alt="Email" /></a>
+</p>
 
 </div>
+
+---
 
 <table>
 <tr>
-<td width="30%" valign="top">
+<td width="27%" valign="top">
 
-◈ PROFILE
 <div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Priya-Ranjan-0201&bg_color=050b0b&color=00f5d4&line=00d7bd&point=ffffff&area=true&hide_border=true" width="100%" alt="Activity graph accent" />
-
-Priya Ranjan
-@Priya-Ranjan-0201
+  <img src="assets/profile-avatar.png" width="170" alt="Priya Ranjan profile avatar" />
+  <h3>Priya Ranjan</h3>
+  <p><code>@Priya-Ranjan-0201</code></p>
 </div>
 
-- 🎓 CSE Student
-- 🤖 AI/ML Enthusiast
-- 🛡️ Cybersecurity Learner
-- 🌐 Web Developer
+**Computer Science & Engineering Student**
+
+Building impactful projects with AI, security, and real-world applications.
+
+- 🎓 Lovely Professional University
 - 📍 Jalandhar, India
-- ✉️ Email me
-- 💼 LinkedIn
-◈ HIGHLIGHTS
-- ◇ Problem Solver
-- ◇ Continuous Learner
-- ◇ Open Source
-- ◇ Building for Impact
-“Consistent learning today builds better opportunities tomorrow.”
+- ✉️ [Email](mailto:priyaranjan01@gmail.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/priyaranjan01)
+- 🐙 [GitHub](https://github.com/Priya-Ranjan-0201)
+
+<div align="center">
+
+[![GitHub followers](https://img.shields.io/github/followers/Priya-Ranjan-0201?label=Followers&style=flat&color=00E5CC)](https://github.com/Priya-Ranjan-0201?tab=followers)
+
+</div>
+
+**Highlights**
+- ⚡ Open Source
+- ◈ Tech Enthusiast
+- 🧩 Problem Solver
+- ♾️ Continuous Learner
+- 💚 Building for Impact
+- 🌌 Always Exploring
+
+> “Consistent learning today builds extraordinary results tomorrow.”
 
 </td>
-<td width="70%" valign="top">
+<td valign="top">
 
-> Hello, World!
-I'm Priya Ranjan
-Computer Science & Engineering Student
-◈ AI/ML　◇ Cybersecurity　⌘ Web Development　✧ Problem Solving
-Turning ideas into impactful systems through code, creativity, and continuous learning.
+## <img src="https://img.shields.io/badge/◈-00E5CC?style=flat-square" alt="" /> About Me
 
-◈ ABOUT ME
-I'm a Computer Science & Engineering student passionate about Artificial Intelligence, Cybersecurity, Web Development, and building real-world solutions. I enjoy exploring new technologies, solving meaningful problems, and creating practical projects.
-I’m focused on strengthening my engineering fundamentals, contributing to open source, and building software that delivers useful impact.
-🧠 Problem Solver	🛡️ Security Mindset	</> Web Development	♧ Open Source
-Analytical thinking	Learn by building	Practical projects	Community contribution
+I'm a Computer Science & Engineering student passionate about AI, cybersecurity, and real-world problem solving. I enjoy building practical solutions, learning new technologies, and contributing to open source. My goal is to use technology to create meaningful impact and solve real-world challenges.
 
+<table>
+<tr>
+<td align="center"><b>♧ Problem Solver</b><br/><sub>Analytical thinking</sub></td>
+<td align="center"><b>⬡ Continuous Learner</b><br/><sub>Always growing</sub></td>
+<td align="center"><b>✳ Open Source</b><br/><sub>Contributor mindset</sub></td>
+<td align="center"><b>▣ Real-world Impact</b><br/><sub>Build · Learn · Improve</sub></td>
+</tr>
+</table>
+
+<div align="center">
+  <img src="assets/about-panel.png" width="100%" alt="Neon cyberpunk coding artwork" />
+</div>
+
+## Featured Projects
+
+<div align="center">
+
+| Project | What it does | Stack / Focus |
+|---|---|---|
+| **[PrepPilot](https://github.com/Priya-Ranjan-0201)** | Interview-preparation assistant concept combining interview knowledge, retrieval, and personalized preparation. Link to the dedicated repository if available. | `Python` `AI` `RAG` `NLP` |
+| **[TrustShield-X](https://github.com/Priya-Ranjan-0201/TrustShield-X)** | Digital trust and cyber-defense platform concept focused on misinformation, deepfakes, privacy risks, and identity protection. | `Python` `ML` `Cybersecurity` |
+| **[VIREONIQ / PLACEIQ](https://github.com/Priya-Ranjan-0201/VIREONIQ)** | AI-powered placement-preparation concept for resume intelligence, skill-gap analysis, and interview practice. | `React` `TypeScript` `FastAPI` |
+| **[Tech On Tour](https://github.com/Priya-Ranjan-0201/TECH-ON-TOUR)** | Smart tourism platform concept for itinerary generation, destination discovery, and travel planning. | `React` `Python` `Maps API` |
+| **[Priocardix-AI](https://github.com/Priya-Ranjan-0201/Priocardix-AI)** | AI-focused project. Visit the repository for current features and implementation details. | `AI` `Web` |
+| **[BrainCheck](https://github.com/Priya-Ranjan-0201/BrainCheck)** | Project repository for a brain/knowledge-check application. See repository for its exact scope. | `Web Development` |
+| **[Disk Scheduling Algorithm](https://github.com/Priya-Ranjan-0201/Disk_Scheduling_Algorithm)** | Operating-systems project exploring disk scheduling algorithms. | `C/C++` `Operating Systems` |
+| **[HRCV](https://github.com/Priya-Ranjan-0201/HRCV-)** | Resume/CV-related project. See repository for implementation details. | `Web Development` |
+
+</div>
+
+> **Note:** Replace the PrepPilot link above with its exact repository URL if it is hosted under a different name. Keep project descriptions aligned with what is actually implemented.
 
 </td>
 </tr>
 </table>
 
-> FEATURED PROJECTS <sub>━━━━━━━━━━━━━━━━━━━━ SELECTED SYSTEMS</sub>
+---
+
+## <img src="https://img.shields.io/badge/⌘-00E5CC?style=flat-square" alt="" /> Tech Stack
+
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="25%" valign="top">
 
-🛡️ TrustShield-X
-Digital Trust & Cyber Defense
-A cybersecurity-focused project exploring fake news, privacy risks, and digital identity threats.
-Python AI/ML Security
-↗ View repository
+**Programming Languages**
+
+<p>
+<img src="https://skillicons.dev/icons?i=python,c,cpp,java,js" alt="Python, C, C++, Java, JavaScript" />
+</p>
+
 </td>
-<td width="50%" valign="top">
+<td width="25%" valign="top">
 
-✦ VIREONIQ / PLACEIQ
-Career & Placement Intelligence
-A career intelligence platform concept for resume analysis, skill-gap insights, and placement preparation.
-React TypeScript AI Web
-↗ View repository
+**Frontend Development**
+
+<p>
+<img src="https://skillicons.dev/icons?i=react,nextjs,html,css,tailwind" alt="React, Next.js, HTML, CSS, Tailwind" />
+</p>
+
 </td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+<td width="25%" valign="top">
 
-🌍 TECH-ON-TOUR
-Smart Tourism Platform
-A smart tourism project focused on destination discovery, itinerary planning, and useful travel information.
-Web Travel Maps AI
-↗ View repository
+**Backend & Databases**
+
+<p>
+<img src="https://skillicons.dev/icons?i=nodejs,fastapi,postgres,mysql" alt="Node.js, FastAPI, PostgreSQL, MySQL" />
+</p>
+
 </td>
-<td width="50%" valign="top">
+<td width="25%" valign="top">
 
-❤️ Priocardix-AI
-Preventive Cardiology AI
-An AI/ML project exploring data-driven health risk analysis and explainable predictions.
-Python Machine Learning Data Science
-↗ View repository
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+**Tools & Others**
 
-🧠 BrainCheck
-Cognitive Assessment Project
-A web application project for quiz-based assessment and structured results.
-Python Flask PostgreSQL Docker
-↗ View repository
-</td>
-<td width="50%" valign="top">
+<p>
+<img src="https://skillicons.dev/icons?i=git,github,docker,vscode,figma" alt="Git, GitHub, Docker, VS Code, Figma" />
+</p>
 
-⚙️ Disk Scheduling Algorithm
-Operating Systems Visualizer
-An interactive project for exploring disk scheduling algorithms and their behavior.
-JavaScript Canvas Algorithms
-↗ View repository
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-📄 HRCV
-Resume & Career Tools
-A resume-focused project in the career intelligence space.
-Python FastAPI NLP React
-↗ View repository
-</td>
-<td width="50%" valign="top">
-
-🚀 PrepPilot
-Interview Preparation Assistant
-An interview-preparation concept combining personal knowledge, technical Q&A, and retrieval-based assistance.
-↗ Explore my repositories
 </td>
 </tr>
 </table>
 
 <details>
-<summary><b>＋ Complete repository directory</b></summary>
+<summary><b>Additional technologies and interests</b></summary>
 
-Project	Repository
-TECH-ON-TOUR	Open
-TrustShield-X	Open
-VIREONIQ	Open
-Priocardix-AI	Open
-BrainCheck	Open
-Disk Scheduling Algorithm	Open
-HRCV	Open
-Profile README	Open
-
+- AI / Machine Learning and NLP
+- Retrieval-Augmented Generation (RAG)
+- FastAPI, Flask, REST APIs
+- SQL, PostgreSQL, MySQL
+- Git, GitHub, Docker, CI/CD fundamentals
+- Cybersecurity and digital trust
 
 </details>
 
-> TECH STACK
-<table>
-<tr>
-<td valign="top" width="33%">
+---
 
-⌘ Programming
+## <img src="https://img.shields.io/badge/◉-00E5CC?style=flat-square" alt="" /> GitHub Analytics
 
-
-
-
-
-</td>
-<td valign="top" width="33%">
-
-◈ Frontend
-
-
-
-
-</td>
-<td valign="top" width="34%">
-
-⌬ Backend & Tools
-
-
-
-
-
-
-</td>
-</tr>
-</table>
-
-> GITHUB ANALYTICS
 <div align="center">
 
 <a href="https://github.com/Priya-Ranjan-0201">
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Priya-Ranjan-0201&show_icons=true&hide_border=true&bg_color=050b0b&title_color=00f5d4&icon_color=00f5d4&text_color=d7fffa&include_all_commits=true" alt="GitHub statistics" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Priya-Ranjan-0201&show_icons=true&hide_border=true&bg_color=06110F&title_color=00E5CC&icon_color=00E5CC&text_color=D9F7F1&ring_color=00E5CC" alt="GitHub statistics" />
 </a>
 <a href="https://github.com/Priya-Ranjan-0201">
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Priya-Ranjan-0201&layout=compact&hide_border=true&bg_color=050b0b&title_color=00f5d4&text_color=d7fffa" alt="Most used languages" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Priya-Ranjan-0201&layout=compact&hide_border=true&bg_color=06110F&title_color=00E5CC&text_color=D9F7F1" alt="Most-used languages" />
 </a>
 
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Priya-Ranjan-0201&bg_color=050b0b&color=00f5d4&line=00d7bd&point=ffffff&area=true&hide_border=true" alt="GitHub contribution activity graph" />
+<br/>
 
+<a href="https://git.io/streak-stats">
+  <img src="https://streak-stats.demolab.com?user=Priya-Ranjan-0201&hide_border=true&background=06110F&ring=00E5CC&fire=00E5CC&currStreakLabel=00E5CC&sideLabels=D9F7F1&currStreakNum=D9F7F1&sideNums=D9F7F1&dates=8AA8A2" alt="GitHub contribution streak" />
+</a>
+
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Priya-Ranjan-0201&bg_color=06110F&color=D9F7F1&line=00E5CC&point=00E5CC&area=true&hide_border=true" width="100%" alt="GitHub contribution activity graph" />
 
 </div>
 
-> MY JOURNEY
+<div align="center">
+  <img src="assets/analytics-quote.png" width="100%" alt="Small consistent steps lead to big results" />
+</div>
+
+---
+
+## <img src="https://img.shields.io/badge/✧-00E5CC?style=flat-square" alt="" /> My Journey
+
 <table>
-<tr><td width="18%"><b>2023</b></td><td>Started building computer science foundations and exploring programming.</td></tr>
-<tr><td><b>2024</b></td><td>Deepened core skills and began developing projects across web technologies.</td></tr>
-<tr><td><b>2025</b></td><td>Expanded project work and explored AI/ML and practical application development.</td></tr>
-<tr><td><b>2026</b></td><td>Building, learning, exploring cybersecurity, and preparing for internships and collaboration.</td></tr>
+<tr>
+<td width="15%" align="center"><b>2023</b></td>
+<td>Started my CSE journey — explored programming fundamentals and discovered my interest in technology.</td>
+</tr>
+<tr>
+<td align="center"><b>2024</b></td>
+<td>Built core skills and worked on mini projects; began exploring web development, AI/ML, and cybersecurity.</td>
+</tr>
+<tr>
+<td align="center"><b>2025</b></td>
+<td>Focused on larger project ideas and open-source development, including projects such as TrustShield-X and VIREONIQ.</td>
+</tr>
+<tr>
+<td align="center"><b>2026</b></td>
+<td>Continuing to build practical projects, strengthen engineering fundamentals, and work toward real-world impact.</td>
+</tr>
 </table>
 
-> CURRENTLY EXPLORING
+<div align="center">
+  <img src="assets/journey-landscape.png" width="100%" alt="A neon mountain landscape symbolizing continuous growth" />
+</div>
+
+---
+
+## <img src="https://img.shields.io/badge/⌁-00E5CC?style=flat-square" alt="" /> Currently Exploring
+
 <table>
 <tr>
 <td align="center" width="25%">
 
-◈ AI / ML
-Exploring machine learning, LLMs, and practical AI applications.
+### ◉ Advanced AI/ML
+
+Exploring LLMs, RAG, and real-world AI applications.
+
 </td>
 <td align="center" width="25%">
 
-🛡️ Cybersecurity
-Learning security concepts, threat analysis, and digital trust.
+### ⛨ Cybersecurity
+
+Learning threat analysis and security best practices.
+
 </td>
 <td align="center" width="25%">
 
-</> Full Stack
-Building useful web applications and strengthening backend skills.
+### ⌘ Scalable Web Systems
+
+Building responsive, maintainable full-stack applications.
+
 </td>
 <td align="center" width="25%">
 
-♧ Open Source
-Learning through collaboration and contributing to projects.
+### ♧ Open Source
+
+Contributing to useful projects and learning from the community.
+
 </td>
 </tr>
 </table>
 
-> LET'S CONNECT
-I'm open to internships, learning opportunities, collaboration, and building practical projects.
+---
+
+## <img src="https://img.shields.io/badge/✳-00E5CC?style=flat-square" alt="" /> Achievements & Highlights
+
 <div align="center">
 
+<img src="https://img.shields.io/badge/Focus-Project%20Building-06110F?style=for-the-badge&labelColor=06110F&color=00E5CC" alt="Project building" />
+<img src="https://img.shields.io/badge/Focus-Continuous%20Learning-06110F?style=for-the-badge&labelColor=06110F&color=00E5CC" alt="Continuous learning" />
+<img src="https://img.shields.io/badge/Focus-Open%20Source-06110F?style=for-the-badge&labelColor=06110F&color=00E5CC" alt="Open source" />
+<img src="https://img.shields.io/badge/Focus-Problem%20Solving-06110F?style=for-the-badge&labelColor=06110F&color=00E5CC" alt="Problem solving" />
 
+</div>
 
+*I value measurable progress, reliable implementation, and learning by building. Live GitHub statistics above reflect the data available from GitHub's widgets.*
 
-“Small consistent steps. Big results.”
-<sub>Designed around the Blue Nova aesthetic · Built by Priya Ranjan</sub>
+---
+
+## <img src="https://img.shields.io/badge/✉-00E5CC?style=flat-square" alt="" /> Let's Connect
+
+I'm open to discussing new ideas, collaborating on meaningful projects, learning from other developers, and exploring internship opportunities.
+
+<table>
+<tr>
+<td align="center" width="25%">
+<a href="https://github.com/Priya-Ranjan-0201">
+<img src="https://img.shields.io/badge/GitHub-071716?style=for-the-badge&logo=github&logoColor=00E5CC" alt="GitHub" /><br/>
+<sub>Explore my projects</sub>
+</a>
+</td>
+<td align="center" width="25%">
+<a href="https://www.linkedin.com/in/priyaranjan01">
+<img src="https://img.shields.io/badge/LinkedIn-071716?style=for-the-badge&logo=linkedin&logoColor=00E5CC" alt="LinkedIn" /><br/>
+<sub>Connect with me</sub>
+</a>
+</td>
+<td align="center" width="25%">
+<a href="mailto:priyaranjan01@gmail.com">
+<img src="https://img.shields.io/badge/Email-071716?style=for-the-badge&logo=gmail&logoColor=00E5CC" alt="Email" /><br/>
+<sub>Send me a message</sub>
+</a>
+</td>
+<td align="center" width="25%">
+<a href="https://github.com/Priya-Ranjan-0201?tab=repositories">
+<img src="https://img.shields.io/badge/Repositories-071716?style=for-the-badge&logo=github&logoColor=00E5CC" alt="Repositories" /><br/>
+<sub>View my work</sub>
+</a>
+</td>
+</tr>
+</table>
+
+<div align="center">
+  <img src="assets/connect-banner.png" width="100%" alt="Open to learning and collaboration" />
+  <br/><br/>
+  <b>Let's build something impactful together.</b>
+  <br/>
+  <code>BUILD · LEARN · GROW · REPEAT</code>
+  <br/><br/>
+  <a href="https://github.com/Priya-Ranjan-0201?tab=repositories">Explore repositories →</a>
+</div>
+
+---
+
+<div align="center">
+  <sub>Designed with a Blue Nova neon aesthetic · Built with Markdown and GitHub-compatible HTML</sub>
 </div>
