@@ -2,9 +2,9 @@
 <title id="title">Blue Nova animated developer hero for Priya Ranjan</title>
 <desc id="desc">A futuristic navy and cyan hero banner with animated orbital rings, glowing nodes, scan lines, and a developer identity headline.</desc>
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06111a"/><stop offset=".55" stop-color="#091b29"/><stop offset="1" stop-color="#07131c"/></linearGradient>
-  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00e5ff"/><stop offset=".5" stop-color="#66f5ff"/><stop offset="1" stop-color="#4b8dff"/></linearGradient>
-  <radialGradient id="glow"><stop offset="0" stop-color="#00e5ff" stop-opacity=".22"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></radialGradient>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06111a"/><stop offset=".55" stop-color="#091b29"/><stop offset="1" stop-color="#06120A"/></linearGradient>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#39FF14"/><stop offset=".5" stop-color="#66f5ff"/><stop offset="1" stop-color="#4b8dff"/></linearGradient>
+  <radialGradient id="glow"><stop offset="0" stop-color="#39FF14" stop-opacity=".22"/><stop offset="1" stop-color="#39FF14" stop-opacity="0"/></radialGradient>
   <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#174052" stroke-width=".65" opacity=".5"/></pattern>
   <filter id="blur"><feGaussianBlur stdDeviation="7"/></filter>
   <clipPath id="clip"><rect x="1" y="1" width="998" height="298" rx="18"/></clipPath>
@@ -15,26 +15,26 @@
   <path d="M0 242H1000" stroke="url(#neon)" stroke-width="1" opacity=".35"><animate attributeName="opacity" values=".12;.55;.12" dur="4s" repeatCount="indefinite"/></path>
   <g transform="translate(790 142)">
     <circle r="105" fill="none" stroke="#123c4b" stroke-width="1"/>
-    <circle r="81" fill="none" stroke="#00e5ff" stroke-width="1.5" stroke-dasharray="8 12" opacity=".8"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/></circle>
+    <circle r="81" fill="none" stroke="#39FF14" stroke-width="1.5" stroke-dasharray="8 12" opacity=".8"><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/></circle>
     <ellipse rx="120" ry="47" fill="none" stroke="#3d8fff" stroke-width="1.4"><animateTransform attributeName="transform" type="rotate" from="-28" to="332" dur="18s" repeatCount="indefinite"/></ellipse>
-    <ellipse rx="120" ry="47" fill="none" stroke="#00e5ff" stroke-width="1" opacity=".7"><animateTransform attributeName="transform" type="rotate" from="42" to="-318" dur="27s" repeatCount="indefinite"/></ellipse>
-    <circle r="48" fill="#00e5ff" opacity=".09"/><circle r="32" fill="none" stroke="url(#neon)" stroke-width="2"><animate attributeName="r" values="29;35;29" dur="3.2s" repeatCount="indefinite"/></circle>
-    <path d="M-14 -11L-2 0L-14 11M4 12L16 -12" fill="none" stroke="#8af8ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="120" cy="0" r="4" fill="#00e5ff"><animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/></circle>
+    <ellipse rx="120" ry="47" fill="none" stroke="#39FF14" stroke-width="1" opacity=".7"><animateTransform attributeName="transform" type="rotate" from="42" to="-318" dur="27s" repeatCount="indefinite"/></ellipse>
+    <circle r="48" fill="#39FF14" opacity=".09"/><circle r="32" fill="none" stroke="url(#neon)" stroke-width="2"><animate attributeName="r" values="29;35;29" dur="3.2s" repeatCount="indefinite"/></circle>
+    <path d="M-14 -11L-2 0L-14 11M4 12L16 -12" fill="none" stroke="#B9FFB0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="120" cy="0" r="4" fill="#39FF14"><animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/></circle>
     <circle cx="-85" cy="-58" r="3" fill="#4b8dff"><animate attributeName="r" values="2;5;2" dur="2.4s" repeatCount="indefinite"/></circle>
-    <circle cx="24" cy="-103" r="3" fill="#8af8ff"><animate attributeName="opacity" values=".2;1;.2" dur="2s" repeatCount="indefinite"/></circle>
+    <circle cx="24" cy="-103" r="3" fill="#B9FFB0"><animate attributeName="opacity" values=".2;1;.2" dur="2s" repeatCount="indefinite"/></circle>
   </g>
   <g font-family="monospace">
-    <text x="54" y="49" fill="#00e5ff" font-size="11" letter-spacing="3">PORTFOLIO SYSTEM // ONLINE</text><path d="M54 62H430" stroke="#1c4b5b"/>
-    <text x="51" y="121" fill="#00e5ff" opacity=".28" font-size="52" font-weight="700" filter="url(#blur)">PRIYA RANJAN</text>
+    <text x="54" y="49" fill="#39FF14" font-size="11" letter-spacing="3">PORTFOLIO SYSTEM // ONLINE</text><path d="M54 62H430" stroke="#1c4b5b"/>
+    <text x="51" y="121" fill="#39FF14" opacity=".28" font-size="52" font-weight="700" filter="url(#blur)">PRIYA RANJAN</text>
     <text x="48" y="117" fill="#e8f7ff" font-size="52" font-weight="700" letter-spacing="-2">PRIYA RANJAN</text>
     <text x="52" y="153" fill="url(#neon)" font-size="18" letter-spacing="2">DEVELOPER · SYSTEMS THINKER</text>
-    <text x="54" y="184" fill="#a8c2d0" font-size="13">AI / ML <tspan fill="#00e5ff">•</tspan> CYBERSECURITY <tspan fill="#00e5ff">•</tspan> SOFTWARE ENGINEERING</text>
+    <text x="54" y="184" fill="#a8c2d0" font-size="13">AI / ML <tspan fill="#39FF14">•</tspan> CYBERSECURITY <tspan fill="#39FF14">•</tspan> SOFTWARE ENGINEERING</text>
     <rect x="54" y="207" width="205" height="27" rx="5" fill="#0b2633" stroke="#1b5264"/>
-    <circle cx="68" cy="220" r="3.5" fill="#00e5ff"><animate attributeName="opacity" values="1;.25;1" dur="1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="68" cy="220" r="3.5" fill="#39FF14"><animate attributeName="opacity" values="1;.25;1" dur="1.2s" repeatCount="indefinite"/></circle>
     <text x="80" y="224" fill="#d8faff" font-size="10" letter-spacing="1.2">BUILDING IN PROGRESS</text>
   </g>
-  <g opacity=".45" stroke="#00e5ff" fill="none"><path d="M480 38h40v-12h35"/><path d="M430 258h56v-15h24"/><circle cx="555" cy="26" r="2" fill="#00e5ff"/><circle cx="510" cy="243" r="2" fill="#00e5ff"/></g>
+  <g opacity=".45" stroke="#39FF14" fill="none"><path d="M480 38h40v-12h35"/><path d="M430 258h56v-15h24"/><circle cx="555" cy="26" r="2" fill="#39FF14"/><circle cx="510" cy="243" r="2" fill="#39FF14"/></g>
   <rect x="1" y="1" width="998" height="298" rx="18" fill="none" stroke="#1a5364" stroke-width="1.5"/>
   <rect x="1" y="1" width="998" height="3" rx="1.5" fill="url(#neon)" opacity=".8"><animate attributeName="opacity" values=".35;1;.35" dur="3.5s" repeatCount="indefinite"/></rect>
 </g></svg>
