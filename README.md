@@ -1,18 +1,21 @@
 <div align="center">
 
-<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="assets/hero-banner.svg" width="100%" alt="Open Priya Ranjan's GitHub projects" /></a>
+<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="assets/hero-banner.svg" width="100%" alt="Open Priya Ranjan's projects — animated Blue Nova developer banner" /></a>
 
-<a href="https://github.com/Priya-Ranjan-0201"><code>╭─ BLUE NOVA / DEVELOPER PROFILE ─╮</code><br/><sub>BUILDING SMALL · THINKING SYSTEMS · LEARNING EVERY DAY</sub></a>
+<br/>
+
+<sub><b>BLUE NOVA / DEVELOPER PROFILE</b> &nbsp; · &nbsp; BUILD SMALL. THINK IN SYSTEMS. KEEP LEARNING.</sub>
 
 <br/><br/>
 
-<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><sub>◉ EXPLORE MY WORK: AI/ML &nbsp; · &nbsp; CYBERSECURITY &nbsp; · &nbsp; SOFTWARE ENGINEERING</sub></a>
+<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/◈_EXPLORE-PROJECTS-07131C?style=for-the-badge&logo=github&logoColor=00E5FF" alt="Explore projects" /></a>
+<a href="https://www.linkedin.com/in/priyaranjan01"><img src="https://img.shields.io/badge/↗_CONNECT-LINKEDIN-07131C?style=for-the-badge&logo=linkedin&logoColor=00E5FF" alt="Connect on LinkedIn" /></a>
+<a href="mailto:priyaranjan01@gmail.com"><img src="https://img.shields.io/badge/✉_SAY_HELLO-EMAIL-07131C?style=for-the-badge&logo=gmail&logoColor=00E5FF" alt="Send email" /></a>
 
-<a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/EXPLORE-PROJECTS-07131C?style=for-the-badge&logo=github&logoColor=00E5FF" alt="Explore projects" /></a>
-<a href="https://www.linkedin.com/in/priyaranjan01"><img src="https://img.shields.io/badge/CONNECT-LINKEDIN-07131C?style=for-the-badge&logo=linkedin&logoColor=00E5FF" alt="LinkedIn" /></a>
-<a href="mailto:priyaranjan01@gmail.com"><img src="https://img.shields.io/badge/SAY_HELLO-EMAIL-07131C?style=for-the-badge&logo=gmail&logoColor=00E5FF" alt="Email" /></a>
+<br/><br/>
 
-**COMPUTER SCIENCE & ENGINEERING** · AI/ML · CYBERSECURITY · SOFTWARE ENGINEERING<br/>Curious by design. Building with intent.
+**COMPUTER SCIENCE & ENGINEERING** &nbsp;·&nbsp; AI/ML &nbsp;·&nbsp; CYBERSECURITY &nbsp;·&nbsp; SOFTWARE ENGINEERING  
+*Curious by design. Building with intent.*
 
 </div>
 
