@@ -2,28 +2,28 @@
   <defs>
     <!-- Deep Obsidian Canvas -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#070A10"/>
-      <stop offset="50%" stop-color="#0B0F19"/>
-      <stop offset="100%" stop-color="#080C14"/>
+      <stop offset="0%" stop-color="#06120A"/>
+      <stop offset="50%" stop-color="#08170B"/>
+      <stop offset="100%" stop-color="#06120A"/>
     </linearGradient>
 
     <!-- Card Background -->
     <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0D1322"/>
-      <stop offset="100%" stop-color="#0A0E18"/>
+      <stop offset="0%" stop-color="#0A1B0D"/>
+      <stop offset="100%" stop-color="#08170B"/>
     </linearGradient>
 
-    <!-- Clean Ice Cyan Accent -->
-    <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="100%" stop-color="#0284C7"/>
+    <!-- Green Nova Accent -->
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39FF14"/>
+      <stop offset="100%" stop-color="#247A35"/>
     </linearGradient>
 
     <!-- Emerald Flame Gradient -->
     <linearGradient id="emeraldFlame" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#059669"/>
-      <stop offset="50%" stop-color="#10B981"/>
-      <stop offset="100%" stop-color="#34D399"/>
+      <stop offset="0%" stop-color="#247A35"/>
+      <stop offset="50%" stop-color="#39FF14"/>
+      <stop offset="100%" stop-color="#B9FFB0"/>
     </linearGradient>
 
     <!-- Soft Glow Filter -->
@@ -34,14 +34,14 @@
 
     <!-- Dot Pattern -->
     <pattern id="gridDots" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1" fill="#38BDF8" fill-opacity="0.12"/>
+      <circle cx="2" cy="2" r="1" fill="#39FF14" fill-opacity="0.12"/>
     </pattern>
   </defs>
 
   <style>
     @keyframes pulseSoft {
       0%, 100% { opacity: 0.85; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.02); filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.4)); }
+      50% { opacity: 1; transform: scale(1.02); filter: drop-shadow(0 0 8px rgba(57, 255, 20, 0.4)); }
     }
     @keyframes flameFlicker {
       0%, 100% { transform: scale(1) translateY(0); opacity: 0.9; }
@@ -87,22 +87,22 @@
   </style>
 
   <!-- Outer Canvas Container -->
-  <rect x="2" y="2" width="956" height="356" rx="16" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="1.2"/>
-  <rect x="2" y="2" width="956" height="356" rx="16" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.5" class="border-runner"/>
+  <rect x="2" y="2" width="956" height="356" rx="16" fill="url(#bgGrad)" stroke="#174A24" stroke-width="1.2"/>
+  <rect x="2" y="2" width="956" height="356" rx="16" fill="none" stroke="#39FF14" stroke-width="1.5" stroke-opacity="0.5" class="border-runner"/>
   <rect x="4" y="4" width="952" height="352" rx="14" fill="url(#gridDots)"/>
 
   <!-- ==================== TOP TITLE BAR ==================== -->
   <g transform="translate(24, 20)">
-    <rect x="0" y="0" width="340" height="26" rx="6" fill="#0E1726" stroke="#1E293B" stroke-width="1"/>
-    <circle cx="14" cy="13" r="4" fill="#10B981" class="live-dot" filter="url(#softGlow)"/>
+    <rect x="0" y="0" width="340" height="26" rx="6" fill="#08170B" stroke="#174A24" stroke-width="1"/>
+    <circle cx="14" cy="13" r="4" fill="#39FF14" class="live-dot" filter="url(#softGlow)"/>
     <text x="26" y="17" font-family="'SF Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#E2E8F0" letter-spacing="1px">
       GITHUB TELEMETRY // REAL-TIME METRICS
     </text>
 
     <!-- Right-side status -->
     <g transform="translate(620, 0)">
-      <circle cx="10" cy="13" r="3.5" fill="#38BDF8" class="live-dot"/>
-      <text x="22" y="17" font-family="'SF Mono', Consolas, monospace" font-size="9.5" font-weight="600" fill="#38BDF8" letter-spacing="0.8px">
+      <circle cx="10" cy="13" r="3.5" fill="#39FF14" class="live-dot"/>
+      <text x="22" y="17" font-family="'SF Mono', Consolas, monospace" font-size="9.5" font-weight="600" fill="#39FF14" letter-spacing="0.8px">
         SYNCHRONIZED VIA HOURLY TOKEN
       </text>
     </g>
@@ -110,18 +110,18 @@
 
   <!-- ==================== PANEL 1: CORE GITHUB STATS & GRADE ==================== -->
   <g transform="translate(24, 62)">
-    <rect x="0" y="0" width="320" height="274" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1"/>
-    <line x1="0" y1="0" x2="320" y2="0" stroke="url(#cyanLine)" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="0" y="0" width="320" height="274" rx="12" fill="url(#cardBg)" stroke="#174A24" stroke-width="1"/>
+    <line x1="0" y1="0" x2="320" y2="0" stroke="url(#greenLine)" stroke-width="2.5" stroke-linecap="round"/>
 
     <!-- Left Grade Crest -->
     <g transform="translate(0, 0)">
-      <circle cx="68" cy="72" r="38" stroke="#1E293B" stroke-width="4" fill="#0A101D"/>
-      <circle cx="68" cy="72" r="38" stroke="#38BDF8" stroke-width="4" stroke-dasharray="190 240" stroke-linecap="round" fill="none" class="pulse-ring" filter="url(#softGlow)"/>
-      <text x="68" y="79" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="900" fill="#38BDF8">A+</text>
+      <circle cx="68" cy="72" r="38" stroke="#174A24" stroke-width="4" fill="#0A101D"/>
+      <circle cx="68" cy="72" r="38" stroke="#39FF14" stroke-width="4" stroke-dasharray="190 240" stroke-linecap="round" fill="none" class="pulse-ring" filter="url(#softGlow)"/>
+      <text x="68" y="79" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="900" fill="#39FF14">A+</text>
       
       <!-- Rank Label -->
-      <rect x="23" y="122" width="90" height="20" rx="5" fill="#0F172A" stroke="#1E293B" stroke-width="0.8"/>
-      <text x="68" y="136" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="8.5" font-weight="700" fill="#38BDF8">S-TIER RANK</text>
+      <rect x="23" y="122" width="90" height="20" rx="5" fill="#0F172A" stroke="#174A24" stroke-width="0.8"/>
+      <text x="68" y="136" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="8.5" font-weight="700" fill="#39FF14">S-TIER RANK</text>
     </g>
 
     <!-- Core Metrics List -->
@@ -134,7 +134,7 @@
       <!-- Total Commits -->
       <g transform="translate(0, 50)">
         <text x="0" y="12" class="label-text">TOTAL COMMITS</text>
-        <text x="0" y="34" font-size="20" fill="#38BDF8" class="value-text">519</text>
+        <text x="0" y="34" font-size="20" fill="#39FF14" class="value-text">519</text>
       </g>
       <!-- PRs & Issues -->
       <g transform="translate(0, 100)">
@@ -144,18 +144,18 @@
     </g>
 
     <!-- Bottom Metric divider -->
-    <line x1="20" y1="205" x2="300" y2="205" stroke="#1E293B" stroke-width="1"/>
+    <line x1="20" y1="205" x2="300" y2="205" stroke="#174A24" stroke-width="1"/>
     <g transform="translate(20, 222)">
       <text x="0" y="12" class="label-text">CONTRIBUTED TO</text>
       <text x="0" y="32" font-size="16" class="value-text">18 Repositories</text>
-      <text x="175" y="32" font-family="'SF Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#10B981">100% AUDITED</text>
+      <text x="175" y="32" font-family="'SF Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#39FF14">100% AUDITED</text>
     </g>
   </g>
 
   <!-- ==================== PANEL 2: STREAK STATS ==================== -->
   <g transform="translate(360, 62)">
-    <rect x="0" y="0" width="290" height="274" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1"/>
-    <line x1="0" y1="0" x2="290" y2="0" stroke="url(#cyanLine)" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="0" y="0" width="290" height="274" rx="12" fill="url(#cardBg)" stroke="#174A24" stroke-width="1"/>
+    <line x1="0" y1="0" x2="290" y2="0" stroke="url(#greenLine)" stroke-width="2.5" stroke-linecap="round"/>
 
     <!-- Section Header -->
     <g transform="translate(20, 20)">
@@ -166,8 +166,8 @@
     <!-- Central Flame Radial Meter -->
     <g transform="translate(0, 0)">
       <!-- Outer Track -->
-      <circle cx="145" cy="114" r="45" stroke="#1E293B" stroke-width="5" fill="#0A0E18"/>
-      <circle cx="145" cy="114" r="45" stroke="#10B981" stroke-width="5" stroke-dasharray="283 283" stroke-linecap="round" fill="none" filter="url(#softGlow)"/>
+      <circle cx="145" cy="114" r="45" stroke="#174A24" stroke-width="5" fill="#08170B"/>
+      <circle cx="145" cy="114" r="45" stroke="#39FF14" stroke-width="5" stroke-dasharray="283 283" stroke-linecap="round" fill="none" filter="url(#softGlow)"/>
 
       <!-- Flame Icon -->
       <g class="flame-anim">
@@ -177,12 +177,12 @@
 
       <!-- Current Streak Count -->
       <text x="145" y="138" text-anchor="middle" font-size="26" font-weight="900" fill="#F8FAFC" class="value-text">12</text>
-      <text x="145" y="174" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#10B981" letter-spacing="1.2px">CURRENT STREAK</text>
+      <text x="145" y="174" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="10" font-weight="700" fill="#39FF14" letter-spacing="1.2px">CURRENT STREAK</text>
       <text x="145" y="188" text-anchor="middle" font-family="'SF Mono', Consolas, monospace" font-size="8.5" font-weight="600" fill="#8B949E">12 CONSECUTIVE DAYS</text>
     </g>
 
     <!-- Bottom Streak Stats (Total Contributions & Longest Streak) -->
-    <line x1="20" y1="205" x2="270" y2="205" stroke="#1E293B" stroke-width="1"/>
+    <line x1="20" y1="205" x2="270" y2="205" stroke="#174A24" stroke-width="1"/>
     
     <g transform="translate(20, 222)">
       <text x="0" y="12" class="label-text">TOTAL CONTRIBUTIONS</text>
@@ -191,14 +191,14 @@
 
     <g transform="translate(165, 222)">
       <text x="0" y="12" class="label-text">LONGEST STREAK</text>
-      <text x="0" y="34" font-size="20" fill="#38BDF8" class="value-text">12 <tspan font-size="13" fill="#8B949E">Days</tspan></text>
+      <text x="0" y="34" font-size="20" fill="#39FF14" class="value-text">12 <tspan font-size="13" fill="#8B949E">Days</tspan></text>
     </g>
   </g>
 
   <!-- ==================== PANEL 3: MOST USED LANGUAGES ==================== -->
   <g transform="translate(666, 62)">
-    <rect x="0" y="0" width="270" height="274" rx="12" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1"/>
-    <line x1="0" y1="0" x2="270" y2="0" stroke="url(#cyanLine)" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="0" y="0" width="270" height="274" rx="12" fill="url(#cardBg)" stroke="#174A24" stroke-width="1"/>
+    <line x1="0" y1="0" x2="270" y2="0" stroke="url(#greenLine)" stroke-width="2.5" stroke-linecap="round"/>
 
     <!-- Section Header -->
     <g transform="translate(18, 20)">
@@ -208,7 +208,7 @@
 
     <!-- Multi-Color Language Segment Bar -->
     <g transform="translate(18, 70)">
-      <rect x="0" y="0" width="234" height="6" rx="3" fill="#1E293B"/>
+      <rect x="0" y="0" width="234" height="6" rx="3" fill="#174A24"/>
       <g clip-path="url(#langBarClip)">
         <clipPath id="langBarClip">
           <rect x="0" y="0" width="234" height="6" rx="3"/>
@@ -261,11 +261,11 @@
     </g>
 
     <!-- Bottom Architecture Tag -->
-    <line x1="18" y1="205" x2="252" y2="205" stroke="#1E293B" stroke-width="1"/>
+    <line x1="18" y1="205" x2="252" y2="205" stroke="#174A24" stroke-width="1"/>
     <g transform="translate(18, 218)">
       <text x="0" y="12" class="label-text">PRIMARY ARCHITECTURE</text>
       <text x="0" y="30" font-size="13" class="value-text">TypeScript &amp; Python 3</text>
-      <text x="0" y="46" font-family="'SF Mono', Consolas, monospace" font-size="9" font-weight="600" fill="#38BDF8">SYSTEMS &amp; APPLIED AI</text>
+      <text x="0" y="46" font-family="'SF Mono', Consolas, monospace" font-size="9" font-weight="600" fill="#39FF14">SYSTEMS &amp; APPLIED AI</text>
     </g>
   </g>
 </svg>
