@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-labelledby="title desc">
-<title id="title">Blue Nova animated developer hero for Priya Ranjan</title>
-<desc id="desc">A futuristic navy and cyan hero banner with animated orbital rings, glowing nodes, scan lines, and a developer identity headline.</desc>
+<title id="title">Green Nova animated developer hero for Priya Ranjan</title>
+<desc id="desc">A futuristic navy and neon green hero banner with animated orbital rings, glowing nodes, scan lines, and a developer identity headline.</desc>
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06111a"/><stop offset=".55" stop-color="#091b29"/><stop offset="1" stop-color="#06120A"/></linearGradient>
   <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#39FF14"/><stop offset=".5" stop-color="#66f5ff"/><stop offset="1" stop-color="#4b8dff"/></linearGradient>
