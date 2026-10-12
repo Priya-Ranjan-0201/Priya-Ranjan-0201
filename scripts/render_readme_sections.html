@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sections Render Canvas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-canvas: #05080c;
+      --bg-surface: #0a0f16;
+      --bg-card: rgba(13, 22, 32, 0.92);
+      --border-subtle: rgba(30, 58, 70, 0.6);
+      --border-glow: rgba(0, 255, 136, 0.45);
+      --neon-green: #00ff88;
+      --neon-cyan: #00e5ff;
+      --text-main: #f0f6fc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display: 'Outfit', sans-serif;
+      --font-mono: 'Fira Code', 'Consolas', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #05080c;
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      padding: 30px;
+      width: 960px;
+      margin: 0 auto;
+    }
+
+    .section-wrap {
+      width: 900px;
+      margin-bottom: 40px;
+      background: transparent;
+    }
+
+    /* ─── 01. HERO BANNER ─── */
+    #hero-banner {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1.5px solid rgba(0, 255, 136, 0.4);
+      box-shadow: 0 0 35px rgba(0, 255, 136, 0.18), inset 0 0 25px rgba(0, 255, 136, 0.08);
+      min-height: 420px;
+      display: flex;
+      align-items: center;
+      background: #05080c;
+    }
+
+    .hero-bg-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: right center;
+      filter: brightness(0.68) contrast(1.1);
+      z-index: 1;
+    }
+
+    .hero-gradient-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, #05080c 0%, rgba(5, 8, 12, 0.92) 50%, rgba(5, 8, 12, 0.35) 100%);
+      z-index: 2;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      padding: 44px 48px;
+      max-width: 680px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .hero-prompt {
+      font-family: var(--font-mono);
+      color: var(--neon-green);
+      font-size: 17px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+    }
+
+    .hero-headline {
+      font-family: var(--font-display);
+      font-size: 46px;
+      font-weight: 900;
+      line-height: 1.12;
+      letter-spacing: -1px;
+      color: #fff;
+    }
+    .hero-headline .text-name { color: #fff; }
+    .hero-headline .text-accent {
+      color: var(--neon-green);
+      text-shadow: 0 0 24px rgba(0, 255, 136, 0.7);
+    }
+
+    .hero-subhead {
+      font-size: 21px;
+      font-weight: 600;
+      color: #e2e8f0;
+      letter-spacing: -0.3px;
+    }
+
+    .hero-badges-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 4px;
+    }
+
+    .hero-pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 16px;
+      background: rgba(10, 24, 28, 0.85);
+      border: 1.2px solid rgba(0, 255, 136, 0.4);
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #f1f5f9;
+      box-shadow: 0 0 12px rgba(0, 255, 136, 0.1);
+    }
+    .hero-pill-badge span.icon { color: var(--neon-green); font-size: 15px; }
+
+    .hero-quote-line {
+      font-family: var(--font-mono);
+      font-size: 14.5px;
+      color: #cbd5e1;
+      line-height: 1.6;
+      margin-top: 4px;
+    }
+    .hero-quote-line .slash { color: var(--neon-green); font-weight: 700; }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      margin-top: 10px;
+    }
+
+    .btn-hero-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 22px;
+      background: var(--neon-green);
+      color: #04140c;
+      font-size: 14.5px;
+      font-weight: 800;
+      border-radius: 8px;
+      box-shadow: 0 0 24px rgba(0, 255, 136, 0.55);
+    }
+
+    .btn-hero-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 18px;
+      background: rgba(15, 25, 35, 0.9);
+      border: 1.2px solid rgba(45, 80, 100, 0.9);
+      color: #f1f5f9;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 8px;
+    }
+
+    /* ─── 02. ABOUT ME ─── */
+    #about-me-card {
+      background: var(--bg-card);
+      border: 1.5px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 32px 34px;
+      display: grid;
+      grid-template-columns: 1fr 310px;
+      gap: 32px;
+      align-items: center;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .about-copy {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .about-copy p {
+      color: #e2e8f0;
+      font-size: 16.5px;
+      line-height: 1.7;
+    }
+
+    .about-pills-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .about-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 18px;
+      background: rgba(10, 20, 28, 0.85);
+      border: 1.2px solid rgba(0, 255, 136, 0.35);
+      border-radius: 8px;
+      font-size: 14.5px;
+      font-weight: 600;
+      color: #f8fafc;
+    }
+
+    .about-visual-box {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1.5px solid rgba(0, 255, 136, 0.45);
+      box-shadow: 0 0 20px rgba(0, 255, 136, 0.15);
+    }
+
+    .about-visual-img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .about-visual-footer {
+      background: rgba(6, 12, 18, 0.95);
+      padding: 12px 16px;
+      border-top: 1px solid rgba(0, 255, 136, 0.3);
+      font-family: var(--font-mono);
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--neon-green);
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    /* ─── 03. FEATURED PROJECTS ─── */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .project-card {
+      background: var(--bg-card);
+      border: 1.5px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 1fr 145px;
+      gap: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    }
+
+    .project-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .project-header-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .project-icon-box {
+      width: 38px;
+      height: 38px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      background: rgba(0, 255, 136, 0.15);
+      border: 1.2px solid rgba(0, 255, 136, 0.4);
+      color: var(--neon-green);
+      flex-shrink: 0;
+    }
+    .project-icon-box.purple {
+      background: rgba(168, 85, 247, 0.2);
+      border-color: rgba(168, 85, 247, 0.5);
+      color: #c084fc;
+    }
+    .project-icon-box.blue {
+      background: rgba(56, 189, 248, 0.2);
+      border-color: rgba(56, 189, 248, 0.5);
+      color: #38bdf8;
+    }
+    .project-icon-box.orange {
+      background: rgba(251, 146, 60, 0.2);
+      border-color: rgba(251, 146, 60, 0.5);
+      color: #fb923c;
+    }
+
+    .project-title {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .project-badge-public {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      border: 1px solid rgba(80, 105, 130, 0.6);
+      padding: 2px 9px;
+      border-radius: 12px;
+    }
+
+    .project-desc {
+      color: #cbd5e1;
+      font-size: 14.5px;
+      line-height: 1.55;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .project-tag {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 600;
+      color: #94a3b8;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 3px 9px;
+      border-radius: 5px;
+    }
+
+    .project-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 4px;
+    }
+
+    .btn-project {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      font-size: 13.5px;
+      font-weight: 700;
+      border-radius: 6px;
+      background: rgba(15, 25, 35, 0.95);
+      border: 1.2px solid rgba(0, 255, 136, 0.45);
+      color: var(--neon-green);
+    }
+
+    .project-thumb-box {
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1.2px solid rgba(40, 65, 80, 0.7);
+      height: 100%;
+      min-height: 160px;
+    }
+
+    .project-thumb-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* ─── 04. TECH STACK ─── */
+    .tech-stack-row {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+
+    .tech-card {
+      background: var(--bg-card);
+      border: 1.2px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 20px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .tech-card-header {
+      font-size: 13px;
+      font-weight: 800;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid rgba(40, 65, 80, 0.6);
+      padding-bottom: 10px;
+    }
+
+    .tech-items-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .tech-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      background: rgba(8, 15, 22, 0.8);
+      border: 1px solid rgba(40, 70, 90, 0.6);
+      border-radius: 6px;
+      font-size: 13px;
+      color: #f1f5f9;
+      font-weight: 600;
+    }
+
+    .tech-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--neon-green);
+      box-shadow: 0 0 5px var(--neon-green);
+    }
+
+    /* ─── 05. GITHUB ANALYTICS ─── */
+    .analytics-top-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .analytics-card {
+      background: var(--bg-card);
+      border: 1.2px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 22px;
+    }
+
+    .analytics-card-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .stats-table {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 14.5px;
+    }
+
+    .stat-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #cbd5e1;
+      padding: 4px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
+    .stat-row .stat-val {
+      font-family: var(--font-mono);
+      font-weight: 800;
+      color: var(--neon-green);
+      font-size: 15px;
+    }
+
+    .languages-card-body {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .donut-chart-svg {
+      width: 105px;
+      height: 105px;
+      transform: rotate(-90deg);
+    }
+
+    .lang-legend {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      font-size: 13.5px;
+    }
+
+    .lang-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #e2e8f0;
+      font-weight: 500;
+    }
+
+    .lang-legend-color {
+      width: 11px;
+      height: 11px;
+      border-radius: 2px;
+    }
+
+    .streak-card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      min-height: 130px;
+      text-align: center;
+    }
+
+    .flame-circle {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0, 255, 136, 0.3) 0%, rgba(0, 255, 136, 0.05) 70%, transparent 100%);
+      border: 2.5px solid var(--neon-green);
+      box-shadow: 0 0 24px rgba(0, 255, 136, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+    }
+
+    .streak-text {
+      font-family: var(--font-mono);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--neon-green);
+    }
+
+    .analytics-bottom-row {
+      display: grid;
+      grid-template-columns: 1.45fr 1fr;
+      gap: 20px;
+    }
+
+    .contrib-graph-box {
+      background: var(--bg-card);
+      border: 1.2px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .graph-months-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--text-dim);
+      font-family: var(--font-mono);
+      padding-left: 32px;
+    }
+
+    .graph-grid-container {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .graph-days-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-size: 11px;
+      color: var(--text-dim);
+      font-family: var(--font-mono);
+      height: 90px;
+      padding-top: 2px;
+    }
+
+    .graph-matrix {
+      display: grid;
+      grid-template-rows: repeat(7, 11px);
+      grid-auto-flow: column;
+      grid-auto-columns: 11px;
+      gap: 3.5px;
+      overflow-x: auto;
+    }
+
+    .graph-cell { width: 11px; height: 11px; border-radius: 2px; background: #0d1a1f; }
+    .graph-cell.l1 { background: #004b28; }
+    .graph-cell.l2 { background: #008f4c; }
+    .graph-cell.l3 { background: #00cf6b; box-shadow: 0 0 4px rgba(0, 255, 136, 0.4); }
+    .graph-cell.l4 { background: #00ff88; box-shadow: 0 0 6px rgba(0, 255, 136, 0.8); }
+
+    .graph-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--text-dim);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 10px;
+    }
+
+    .quote-visual-card {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1.5px solid rgba(0, 255, 136, 0.4);
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      box-shadow: 0 0 25px rgba(0, 255, 136, 0.1);
+    }
+
+    .quote-bg-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.65);
+    }
+
+    .quote-overlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, rgba(5, 8, 12, 0.4) 0%, rgba(5, 8, 12, 0.88) 100%);
+    }
+
+    .quote-text-large {
+      position: relative;
+      z-index: 2;
+      font-family: var(--font-mono);
+      font-size: 21px;
+      font-weight: 700;
+      color: var(--neon-green);
+      text-align: center;
+      line-height: 1.5;
+      text-shadow: 0 0 20px rgba(0, 255, 136, 0.8);
+    }
+
+    /* ─── 06. MY JOURNEY ─── */
+    #journey-card {
+      background: var(--bg-card);
+      border: 1.5px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 32px 34px;
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .timeline-list {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      position: relative;
+      padding-left: 36px;
+    }
+
+    .timeline-list::before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 6px;
+      bottom: 6px;
+      width: 2.5px;
+      background: linear-gradient(180deg, var(--neon-green) 0%, rgba(0, 255, 136, 0.3) 100%);
+    }
+
+    .timeline-node {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -36px;
+      top: 2px;
+      width: 21px;
+      height: 21px;
+      border-radius: 50%;
+      background: #05080c;
+      border: 2.5px solid var(--neon-green);
+      box-shadow: 0 0 12px var(--neon-green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .timeline-dot::after {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--neon-green);
+    }
+
+    .timeline-year {
+      font-family: var(--font-mono);
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--neon-green);
+    }
+
+    .timeline-desc {
+      color: #e2e8f0;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .journey-visual-box {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1.5px solid rgba(0, 255, 136, 0.45);
+      height: 250px;
+    }
+
+    .journey-visual-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .journey-visual-caption {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      background: rgba(5, 8, 12, 0.9);
+      border: 1px solid rgba(0, 255, 136, 0.4);
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-family: var(--font-mono);
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--neon-green);
+      backdrop-filter: blur(6px);
+    }
+
+    /* ─── 07. CURRENTLY EXPLORING ─── */
+    .exploring-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .exploring-card {
+      background: var(--bg-card);
+      border: 1.2px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 22px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .exploring-icon-box {
+      width: 40px;
+      height: 40px;
+      border-radius: 9px;
+      background: rgba(0, 255, 136, 0.15);
+      border: 1.2px solid rgba(0, 255, 136, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--neon-green);
+      font-size: 20px;
+    }
+
+    .exploring-title {
+      font-size: 15.5px;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .exploring-desc {
+      font-size: 14px;
+      color: #cbd5e1;
+      line-height: 1.55;
+    }
+
+    /* ─── 08. ACHIEVEMENTS & HIGHLIGHTS ─── */
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 15px;
+    }
+
+    .achievement-card {
+      background: var(--bg-card);
+      border: 1.3px solid rgba(0, 255, 136, 0.4);
+      border-radius: 12px;
+      padding: 20px 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 8px;
+      box-shadow: 0 0 16px rgba(0, 255, 136, 0.08);
+    }
+
+    .achievement-icon {
+      color: var(--neon-green);
+      font-size: 22px;
+    }
+
+    .achievement-num {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 900;
+      color: #fff;
+    }
+
+    .achievement-label {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 0.2px;
+    }
+
+    /* ─── 09. LET'S CONNECT ─── */
+    #connect-card {
+      background: var(--bg-card);
+      border: 1.5px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 30px 34px;
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .connect-left {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .connect-intro {
+      font-size: 16px;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    .connect-pills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .connect-pill-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      background: rgba(10, 20, 28, 0.9);
+      border: 1.2px solid rgba(40, 75, 95, 0.8);
+      border-radius: 10px;
+    }
+
+    .connect-pill-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 7px;
+      background: rgba(0, 255, 136, 0.15);
+      border: 1px solid rgba(0, 255, 136, 0.4);
+      color: var(--neon-green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .connect-pill-texts {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .connect-pill-title {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .connect-pill-val {
+      font-size: 14px;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .connect-visual-card {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1.5px solid rgba(0, 255, 136, 0.45);
+      height: 175px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 18px;
+      box-shadow: 0 0 25px rgba(0, 255, 136, 0.15);
+    }
+
+    .connect-visual-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.7);
+    }
+
+    .connect-visual-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 0%, rgba(5, 8, 12, 0.95) 100%);
+    }
+
+    .connect-visual-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .connect-visual-badge {
+      font-family: var(--font-display);
+      font-size: 15.5px;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .connect-visual-sub {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--neon-green);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 01. HERO BANNER -->
+  <div class="section-wrap" id="sec-hero">
+    <div id="hero-banner">
+      <img src="../assets/hero_bg.jpg" alt="Cyberpunk Workstation" class="hero-bg-img">
+      <div class="hero-gradient-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-prompt">&gt; Hello, World!</div>
+        <h2 class="hero-headline">
+          I'm <span class="text-name">Priya</span> <span class="text-accent">Ranjan</span>
+        </h2>
+        <div class="hero-subhead">Computer Science &amp; Engineering Student</div>
+
+        <div class="hero-badges-row">
+          <span class="hero-pill-badge"><span class="icon">⚡</span> AI/ML</span>
+          <span class="hero-pill-badge"><span class="icon">🛡️</span> Cybersecurity</span>
+          <span class="hero-pill-badge"><span class="icon">🌐</span> Web Development</span>
+          <span class="hero-pill-badge"><span class="icon">💡</span> Problem Solving</span>
+        </div>
+
+        <div class="hero-quote-line">
+          <span class="slash">//</span> Turning ideas into impactful solutions through code, creativity, and continuous learning. "
+        </div>
+
+        <div class="hero-actions">
+          <div class="btn-hero-primary">View My Projects &rarr;</div>
+          <div class="btn-hero-secondary">Github</div>
+          <div class="btn-hero-secondary">LinkedIn</div>
+          <div class="btn-hero-secondary">Email Me</div>
+          <div class="btn-hero-secondary">Resume</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 02. ABOUT ME -->
+  <div class="section-wrap" id="sec-about">
+    <div id="about-me-card">
+      <div class="about-copy">
+        <p>
+          I'm a Computer Science &amp; Engineering student passionate about Artificial Intelligence, Cybersecurity, Web Development, and building real-world solutions. I enjoy exploring new technologies, solving meaningful problems, and creating impactful projects.
+        </p>
+        <p>
+          I'm always eager to learn, collaborate, and contribute to open-source while improving my skills and preparing for real-world opportunities.
+        </p>
+        <div class="about-pills-row">
+          <span class="about-pill">🧠 AI/ML Exploration</span>
+          <span class="about-pill">🛡️ Cybersecurity Learning</span>
+          <span class="about-pill">💻 Web Development</span>
+          <span class="about-pill">👥 Open Source</span>
+        </div>
+      </div>
+      <div class="about-visual-box">
+        <img src="../assets/about_coder.jpg" alt="Coding Station" class="about-visual-img">
+        <div class="about-visual-footer">
+          <div>&gt; Always curious.</div>
+          <div>&gt; Always building.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 03. FEATURED PROJECTS -->
+  <div class="section-wrap" id="sec-projects">
+    <div class="projects-grid">
+      <!-- 1. PrepPilot -->
+      <div class="project-card">
+        <div class="project-body">
+          <div>
+            <div class="project-header-row">
+              <div class="project-icon-box purple">⚡</div>
+              <h3 class="project-title">PrepPilot <span class="project-badge-public">Public</span></h3>
+            </div>
+            <p class="project-desc" style="margin-top: 10px;">
+              An AI-powered interview preparation assistant that combines personalized learning, technical concepts, and interview-based question generation.
+            </p>
+          </div>
+          <div>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">NLP</span>
+              <span class="project-tag">AI</span>
+              <span class="project-tag">LLM</span>
+            </div>
+            <div class="project-actions">
+              <div class="btn-project">&lt;/&gt; Code</div>
+              <div class="btn-project">👁️ Live Demo</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-thumb-box">
+          <img src="../assets/project_preppilot.jpg" alt="PrepPilot" class="project-thumb-img">
+        </div>
+      </div>
+
+      <!-- 2. TruthShield X -->
+      <div class="project-card">
+        <div class="project-body">
+          <div>
+            <div class="project-header-row">
+              <div class="project-icon-box">🛡️</div>
+              <h3 class="project-title">TruthShield X <span class="project-badge-public">Public</span></h3>
+            </div>
+            <p class="project-desc" style="margin-top: 10px;">
+              A digital trust and misinformation defense platform focused on fake news detection, credible analysis, privacy risks, and digital identity threats.
+            </p>
+          </div>
+          <div>
+            <div class="project-tags">
+              <span class="project-tag">AI/ML</span>
+              <span class="project-tag">Security</span>
+              <span class="project-tag">Web</span>
+            </div>
+            <div class="project-actions">
+              <div class="btn-project">&lt;/&gt; Code</div>
+              <div class="btn-project">👁️ Live Demo</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-thumb-box">
+          <img src="../assets/project_truthshield.jpg" alt="TruthShield X" class="project-thumb-img">
+        </div>
+      </div>
+
+      <!-- 3. VIREONIQ / PLACE30 -->
+      <div class="project-card">
+        <div class="project-body">
+          <div>
+            <div class="project-header-row">
+              <div class="project-icon-box blue">🧭</div>
+              <h3 class="project-title">VIREONIQ / PLACE30 <span class="project-badge-public">Public</span></h3>
+            </div>
+            <p class="project-desc" style="margin-top: 10px;">
+              A career intelligence platform for students offering resume analysis, placement gap insights, interview practice, and personalized recommendations.
+            </p>
+          </div>
+          <div>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">AI</span>
+              <span class="project-tag">Web</span>
+            </div>
+            <div class="project-actions">
+              <div class="btn-project">&lt;/&gt; Code</div>
+              <div class="btn-project">👁️ Live Demo</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-thumb-box">
+          <img src="../assets/project_vireoniq.jpg" alt="VIREONIQ" class="project-thumb-img">
+        </div>
+      </div>
+
+      <!-- 4. Tech On Tour -->
+      <div class="project-card">
+        <div class="project-body">
+          <div>
+            <div class="project-header-row">
+              <div class="project-icon-box orange">🌄</div>
+              <h3 class="project-title">Tech On Tour <span class="project-badge-public">Public</span></h3>
+            </div>
+            <p class="project-desc" style="margin-top: 10px;">
+              A smart tourism platform for discovering destinations, planning itineraries, and exploring local experiences with useful travel tools.
+            </p>
+          </div>
+          <div>
+            <div class="project-tags">
+              <span class="project-tag">Web</span>
+              <span class="project-tag">Travel</span>
+              <span class="project-tag">Maps</span>
+              <span class="project-tag">AI</span>
+            </div>
+            <div class="project-actions">
+              <div class="btn-project">&lt;/&gt; Code</div>
+              <div class="btn-project">👁️ Live Demo</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-thumb-box">
+          <img src="../assets/project_techontour.jpg" alt="Tech On Tour" class="project-thumb-img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 04. TECH STACK -->
+  <div class="section-wrap" id="sec-tech">
+    <div class="tech-stack-row">
+      <div class="tech-card">
+        <div class="tech-card-header">Languages</div>
+        <div class="tech-items-grid">
+          <span class="tech-item"><span class="tech-dot"></span>Python</span>
+          <span class="tech-item"><span class="tech-dot"></span>Java</span>
+          <span class="tech-item"><span class="tech-dot"></span>C / C++</span>
+          <span class="tech-item"><span class="tech-dot"></span>JavaScript</span>
+        </div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-card-header">Frontend</div>
+        <div class="tech-items-grid">
+          <span class="tech-item"><span class="tech-dot"></span>React</span>
+          <span class="tech-item"><span class="tech-dot"></span>TypeScript</span>
+          <span class="tech-item"><span class="tech-dot"></span>HTML</span>
+          <span class="tech-item"><span class="tech-dot"></span>CSS</span>
+          <span class="tech-item"><span class="tech-dot"></span>Tailwind</span>
+        </div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-card-header">Backend &amp; DB</div>
+        <div class="tech-items-grid">
+          <span class="tech-item"><span class="tech-dot"></span>Node.js</span>
+          <span class="tech-item"><span class="tech-dot"></span>FastAPI</span>
+          <span class="tech-item"><span class="tech-dot"></span>MongoDB</span>
+          <span class="tech-item"><span class="tech-dot"></span>MySQL</span>
+        </div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-card-header">AI / ML</div>
+        <div class="tech-items-grid">
+          <span class="tech-item"><span class="tech-dot"></span>LLMs</span>
+          <span class="tech-item"><span class="tech-dot"></span>RAG</span>
+          <span class="tech-item"><span class="tech-dot"></span>NLP</span>
+          <span class="tech-item"><span class="tech-dot"></span>PyTorch</span>
+        </div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-card-header">Tools &amp; Others</div>
+        <div class="tech-items-grid">
+          <span class="tech-item"><span class="tech-dot"></span>Git</span>
+          <span class="tech-item"><span class="tech-dot"></span>Docker</span>
+          <span class="tech-item"><span class="tech-dot"></span>VS Code</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 05. GITHUB ANALYTICS -->
+  <div class="section-wrap" id="sec-analytics">
+    <div class="analytics-top-row">
+      <div class="analytics-card">
+        <div class="analytics-card-title">📁 GitHub Stats</div>
+        <div style="font-family: var(--font-mono); font-size: 14px; color: #cbd5e1; margin-bottom: 12px;">Priya-Ranjan-0201</div>
+        <div class="stats-table">
+          <div class="stat-row"><span>Total Commits</span><span class="stat-val">478</span></div>
+          <div class="stat-row"><span>Total Repositories</span><span class="stat-val">18</span></div>
+          <div class="stat-row"><span>Pull Requests</span><span class="stat-val">14</span></div>
+          <div class="stat-row"><span>Issues Opened</span><span class="stat-val">8</span></div>
+          <div class="stat-row"><span>Contributions</span><span class="stat-val">120</span></div>
+        </div>
+      </div>
+      <div class="analytics-card">
+        <div class="analytics-card-title">🌐 Top Languages</div>
+        <div class="languages-card-body">
+          <svg class="donut-chart-svg" viewBox="0 0 36 36">
+            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#0d1b24" stroke-width="5" />
+            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#00ff88" stroke-width="5" stroke-dasharray="42, 100" />
+            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#f59e0b" stroke-width="5" stroke-dasharray="28, 100" stroke-dashoffset="-42" />
+            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#38bdf8" stroke-width="5" stroke-dasharray="18, 100" stroke-dashoffset="-70" />
+            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#f43f5e" stroke-width="5" stroke-dasharray="8, 100" stroke-dashoffset="-88" />
+            <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#a855f7" stroke-width="5" stroke-dasharray="4, 100" stroke-dashoffset="-96" />
+          </svg>
+          <div class="lang-legend">
+            <div class="lang-legend-item"><span class="lang-legend-color" style="background: #00ff88;"></span>Python 42%</div>
+            <div class="lang-legend-item"><span class="lang-legend-color" style="background: #f59e0b;"></span>JavaScript 28%</div>
+            <div class="lang-legend-item"><span class="lang-legend-color" style="background: #38bdf8;"></span>TypeScript 18%</div>
+            <div class="lang-legend-item"><span class="lang-legend-color" style="background: #f43f5e;"></span>HTML/CSS 8%</div>
+            <div class="lang-legend-item"><span class="lang-legend-color" style="background: #a855f7;"></span>Others 4%</div>
+          </div>
+        </div>
+      </div>
+      <div class="analytics-card">
+        <div class="analytics-card-title">🔥 Github Streak</div>
+        <div class="streak-card-body">
+          <div class="flame-circle">🔥</div>
+          <div class="streak-text">Keep the streak alive!</div>
+        </div>
+      </div>
+    </div>
+    <div class="analytics-bottom-row">
+      <div class="contrib-graph-box">
+        <div class="analytics-card-title"><span style="color: var(--neon-green);">🟩</span> Contribution Graph</div>
+        <div class="graph-months-row">
+          <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+          <span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
+        </div>
+        <div class="graph-grid-container">
+          <div class="graph-days-col">
+            <span>Mon</span><span>Wed</span><span>Fri</span>
+          </div>
+          <div class="graph-matrix" id="cm2"></div>
+        </div>
+        <div class="graph-footer">
+          <span>* This is a live graph from my GitHub profile.</span>
+          <div style="display: flex; gap: 4px; align-items: center;">
+            <span>Less</span>
+            <span class="graph-cell"></span><span class="graph-cell l1"></span>
+            <span class="graph-cell l2"></span><span class="graph-cell l3"></span>
+            <span class="graph-cell l4"></span>
+            <span>More</span>
+          </div>
+        </div>
+      </div>
+      <div class="quote-visual-card">
+        <img src="../assets/quote_beacon.jpg" alt="Beacon peak" class="quote-bg-img">
+        <div class="quote-overlay"></div>
+        <div class="quote-text-large">
+          " Small consistent steps big results. "
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 06. MY JOURNEY -->
+  <div class="section-wrap" id="sec-journey">
+    <div id="journey-card">
+      <div class="timeline-list">
+        <div class="timeline-node">
+          <span class="timeline-dot"></span>
+          <div class="timeline-year">2023</div>
+          <div class="timeline-desc">Started my CSE journey. Explored programming and core CS concepts.</div>
+        </div>
+        <div class="timeline-node">
+          <span class="timeline-dot"></span>
+          <div class="timeline-year">2024</div>
+          <div class="timeline-desc">Deepened into AI/ML &amp; Web Development. Built and shipped multiple projects.</div>
+        </div>
+        <div class="timeline-node">
+          <span class="timeline-dot"></span>
+          <div class="timeline-year">2025</div>
+          <div class="timeline-desc">Focused on Cybersecurity and real-world applications. Working on advanced projects and open-source.</div>
+        </div>
+        <div class="timeline-node">
+          <span class="timeline-dot"></span>
+          <div class="timeline-year">2026</div>
+          <div class="timeline-desc">Building, learning, and preparing for opportunities. Open to internships and collaborations.</div>
+        </div>
+      </div>
+      <div class="journey-visual-box">
+        <img src="../assets/journey_wanderer.jpg" alt="Journey" class="journey-visual-img">
+        <div class="journey-visual-caption">
+          A Bigger Better Version Ahead...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 07. CURRENTLY EXPLORING -->
+  <div class="section-wrap" id="sec-exploring">
+    <div class="exploring-grid">
+      <div class="exploring-card">
+        <div class="exploring-icon-box">🧠</div>
+        <div class="exploring-title">Artificial Intelligence</div>
+        <div class="exploring-desc">Exploring LLMs, RAG, and real-world AI applications.</div>
+      </div>
+      <div class="exploring-card">
+        <div class="exploring-icon-box">🛡️</div>
+        <div class="exploring-title">Cybersecurity</div>
+        <div class="exploring-desc">Learning security practices, threat analysis, and digital trust.</div>
+      </div>
+      <div class="exploring-card">
+        <div class="exploring-icon-box">&lt;/&gt;</div>
+        <div class="exploring-title">Full-Stack Development</div>
+        <div class="exploring-desc">Building scalable web applications and system design skills.</div>
+      </div>
+      <div class="exploring-card">
+        <div class="exploring-icon-box">👥</div>
+        <div class="exploring-title">Open Source</div>
+        <div class="exploring-desc">Contributing to open-source and collaborating with community.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 08. ACHIEVEMENTS -->
+  <div class="section-wrap" id="sec-achievements">
+    <div class="achievements-grid">
+      <div class="achievement-card">
+        <div class="achievement-icon">⚡</div>
+        <div class="achievement-num">500+</div>
+        <div class="achievement-label">Total Commits</div>
+      </div>
+      <div class="achievement-card">
+        <div class="achievement-icon">📁</div>
+        <div class="achievement-num">30+</div>
+        <div class="achievement-label">Repositories</div>
+      </div>
+      <div class="achievement-card">
+        <div class="achievement-icon">👥</div>
+        <div class="achievement-num">100+</div>
+        <div class="achievement-label">Contributions</div>
+      </div>
+      <div class="achievement-card">
+        <div class="achievement-icon">⭐</div>
+        <div class="achievement-num">4+</div>
+        <div class="achievement-label">Major Projects</div>
+      </div>
+      <div class="achievement-card">
+        <div class="achievement-icon">🌐</div>
+        <div class="achievement-num" style="font-size: 16px; margin-top: 4px;">Open Source</div>
+        <div class="achievement-label">Contributor</div>
+      </div>
+      <div class="achievement-card">
+        <div class="achievement-icon">🚀</div>
+        <div class="achievement-num" style="font-size: 16px; margin-top: 4px;">Continuous</div>
+        <div class="achievement-label">Learner</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 09. LET'S CONNECT -->
+  <div class="section-wrap" id="sec-connect">
+    <div id="connect-card">
+      <div class="connect-left">
+        <p class="connect-intro">
+          I'm always open to discussing new ideas, projects, or opportunities.
+        </p>
+        <div class="connect-pills-grid">
+          <div class="connect-pill-btn">
+            <div class="connect-pill-icon">🐙</div>
+            <div class="connect-pill-texts">
+              <span class="connect-pill-title">Github</span>
+              <span class="connect-pill-val">Priya-Ranjan-0201</span>
+            </div>
+          </div>
+          <div class="connect-pill-btn">
+            <div class="connect-pill-icon" style="background: rgba(0, 119, 181, 0.2); color: #0077b5;">in</div>
+            <div class="connect-pill-texts">
+              <span class="connect-pill-title">LinkedIn</span>
+              <span class="connect-pill-val">Connect with me</span>
+            </div>
+          </div>
+          <div class="connect-pill-btn">
+            <div class="connect-pill-icon">✉️</div>
+            <div class="connect-pill-texts">
+              <span class="connect-pill-title">Email</span>
+              <span class="connect-pill-val">priyaranjan01@gmail.com</span>
+            </div>
+          </div>
+          <div class="connect-pill-btn">
+            <div class="connect-pill-icon" style="color: #00e5ff;">📄</div>
+            <div class="connect-pill-texts">
+              <span class="connect-pill-title">Resume</span>
+              <span class="connect-pill-val">View my resume</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="connect-visual-card">
+        <img src="../assets/connect_collab.jpg" alt="Collab" class="connect-visual-img">
+        <div class="connect-visual-overlay"></div>
+        <div class="connect-visual-content">
+          <div class="connect-visual-badge">Open to Internships &amp; Collaborations</div>
+          <div class="connect-visual-sub">Let's build something amazing together! &rarr;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const m = document.getElementById('cm2');
+    if (m) {
+      const levels = ['', '', '', 'l1', 'l1', 'l2', 'l2', 'l3', 'l4'];
+      let h = '';
+      for (let i = 0; i < 48 * 7; i++) {
+        const bias = i > 48 * 7 * 0.6 ? 2 : 1;
+        const rand = Math.floor(Math.random() * (levels.length - bias));
+        const l = (Math.random() > 0.35) ? levels[rand + bias] || 'l1' : '';
+        h += `<span class="graph-cell ${l}"></span>`;
+      }
+      m.innerHTML = h;
+    }
+  </script>
+</body>
+</html>
