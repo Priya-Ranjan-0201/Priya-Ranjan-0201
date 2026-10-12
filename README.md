@@ -179,6 +179,16 @@ I like understanding how systems work under the hood—from algorithms and APIs 
 
 <br/><br/>
 
+<br/><br/>
+
+<a href="https://streak-stats.demolab.com/?user=Priya-Ranjan-0201&background=06120A&border=174A24&stroke=174A24&ring=39FF14&fire=39FF14&currStreakNum=39FF14&sideNums=B9FFB0&currStreakLabel=39FF14&sideLabels=8DBF91&dates=8DBF91"><img src="https://streak-stats.demolab.com/?user=Priya-Ranjan-0201&background=06120A&border=174A24&stroke=174A24&ring=39FF14&fire=39FF14&currStreakNum=39FF14&sideNums=B9FFB0&currStreakLabel=39FF14&sideLabels=8DBF91&dates=8DBF91" alt="GitHub contribution streak — Green Nova theme" width="100%" /></a>
+
+<br/><br/>
+
+**CONTRIBUTION GRID // GREEN NOVA**
+
+<img src="https://raw.githubusercontent.com/Priya-Ranjan-0201/Priya-Ranjan-0201/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Animated neon-green GitHub contribution snake" />
+
 <a href="https://github.com/Priya-Ranjan-0201?tab=repositories"><img src="https://img.shields.io/badge/LANGUAGES-SEE_REAL_REPOSITORY_BREAKDOWN-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="See real language breakdown in GitHub repositories" /></a>
 <a href="https://github.com/Priya-Ranjan-0201#contributions"><img src="https://img.shields.io/badge/CONTRIBUTIONS-OPEN_GITHUB_PROFILE-06120A?style=for-the-badge&logo=github&logoColor=39FF14" alt="Open GitHub profile contribution activity" /></a>
 
