@@ -134,7 +134,7 @@
       <!-- Total Commits -->
       <g transform="translate(0, 50)">
         <text x="0" y="12" class="label-text">TOTAL COMMITS</text>
-        <text x="0" y="34" font-size="20" fill="#39FF14" class="value-text">801</text>
+        <text x="0" y="34" font-size="20" fill="#39FF14" class="value-text">816</text>
       </g>
       <!-- PRs & Issues -->
       <g transform="translate(0, 100)">
@@ -186,7 +186,7 @@
     
     <g transform="translate(20, 222)">
       <text x="0" y="12" class="label-text">TOTAL CONTRIBUTIONS</text>
-      <text x="0" y="34" font-size="20" class="value-text">189</text>
+      <text x="0" y="34" font-size="20" class="value-text">190</text>
     </g>
 
     <g transform="translate(165, 222)">
@@ -213,11 +213,11 @@
         <clipPath id="langBarClip">
           <rect x="0" y="0" width="234" height="6" rx="3"/>
         </clipPath>
-        <rect x="0.0" y="0" width="117.9" height="6" fill="#22C55E"/>
-<rect x="117.9" y="0" width="100.5" height="6" fill="#39FF14"/>
-<rect x="218.4" y="0" width="13.5" height="6" fill="#F7DF1E"/>
-<rect x="231.9" y="0" width="3.7" height="6" fill="#563D7C"/>
-<rect x="235.6" y="0" width="2.5" height="6" fill="#E34C26"/>
+        <rect x="0.0" y="0" width="118.5" height="6" fill="#22C55E"/>
+<rect x="118.5" y="0" width="99.4" height="6" fill="#39FF14"/>
+<rect x="217.9" y="0" width="13.4" height="6" fill="#F7DF1E"/>
+<rect x="231.3" y="0" width="3.7" height="6" fill="#563D7C"/>
+<rect x="235.0" y="0" width="2.5" height="6" fill="#E34C26"/>
       </g>
     </g>
 
@@ -227,14 +227,14 @@
         <g transform="translate(0, 0)">
           <circle cx="5" cy="5" r="4" fill="#22C55E"/>
           <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">Python</text>
-          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">49.1%</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">49.4%</text>
         </g>
         
 
         <g transform="translate(125, 0)">
           <circle cx="5" cy="5" r="4" fill="#39FF14"/>
           <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">TypeScript</text>
-          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">41.9%</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">41.4%</text>
         </g>
         
 
@@ -248,14 +248,14 @@
         <g transform="translate(125, 22)">
           <circle cx="5" cy="5" r="4" fill="#563D7C"/>
           <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">CSS</text>
-          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">1.6%</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">1.5%</text>
         </g>
         
 
         <g transform="translate(0, 44)">
           <circle cx="5" cy="5" r="4" fill="#E34C26"/>
           <text x="14" y="8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#CBD5E1">HTML</text>
-          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">1.1%</text>
+          <text x="88" y="8" font-family="'SF Mono', Consolas, monospace" font-size="9.5" fill="#8B949E">1.0%</text>
         </g>
         
     </g>
