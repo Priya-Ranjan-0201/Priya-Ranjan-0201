@@ -134,7 +134,7 @@
       <!-- Total Commits -->
       <g transform="translate(0, 50)">
         <text x="0" y="12" class="label-text">TOTAL COMMITS</text>
-        <text x="0" y="34" font-size="20" fill="#39FF14" class="value-text">852</text>
+        <text x="0" y="34" font-size="20" fill="#39FF14" class="value-text">854</text>
       </g>
       <!-- PRs & Issues -->
       <g transform="translate(0, 100)">
@@ -213,9 +213,9 @@
         <clipPath id="langBarClip">
           <rect x="0" y="0" width="234" height="6" rx="3"/>
         </clipPath>
-        <rect x="0.0" y="0" width="119.2" height="6" fill="#22C55E"/>
-<rect x="119.2" y="0" width="98.9" height="6" fill="#39FF14"/>
-<rect x="218.1" y="0" width="13.2" height="6" fill="#F7DF1E"/>
+        <rect x="0.0" y="0" width="119.3" height="6" fill="#22C55E"/>
+<rect x="119.3" y="0" width="98.8" height="6" fill="#39FF14"/>
+<rect x="218.1" y="0" width="13.3" height="6" fill="#F7DF1E"/>
 <rect x="231.3" y="0" width="3.6" height="6" fill="#563D7C"/>
 <rect x="235.0" y="0" width="2.5" height="6" fill="#E34C26"/>
       </g>
